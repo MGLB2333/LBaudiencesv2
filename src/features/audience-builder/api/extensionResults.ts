@@ -1,6 +1,7 @@
 import { createClient } from '@/lib/supabase/client';
 import { fetchAll } from '@/lib/supabase/pagination';
 import { getAvailableSegmentKeys } from './segmentAvailability';
+import { getDistrictsByTvRegion } from './tvRegions';
 
 export interface ExtensionSuggestion {
   segment_key: string;
@@ -242,12 +243,14 @@ export async function getProviderImpact({
   confidenceThreshold = 0.5,
   includeAnchorOnly = true,
   providers,
+  tvRegions,
 }: {
   anchorKey: string;
   includedSegmentKeys: string[];
   confidenceThreshold?: number;
   includeAnchorOnly?: boolean;
   providers?: string[]; // Optional filter: only include these providers (CCS is always included)
+  tvRegions?: string[]; // Optional filter: only include districts in these TV regions
 }): Promise<ExtensionResults> {
   const supabase = createClient();
 
@@ -305,7 +308,33 @@ export async function getProviderImpact({
     }
   }
 
-  const eligibleDistrictIds = Array.from(eligibleDistricts);
+  let eligibleDistrictIds = Array.from(eligibleDistricts);
+  
+  // Apply TV region filter if provided (AND logic: segmentEligible AND tvRegionAllowed)
+  if (tvRegions && tvRegions.length > 0) {
+    const tvRegionDistricts = await getDistrictsByTvRegion(tvRegions);
+    
+    // Intersection: only keep districts that are BOTH segment-eligible AND in TV regions
+    // Normalize TV region districts using the same function for consistent comparison
+    // (tvRegionDistricts come from DB as district_norm, but normalize to be safe)
+    const normalizedTvRegionSet = new Set(
+      tvRegionDistricts.map(d => normalizeDistrict(d))
+    );
+    
+    // Filter: keep only districts that exist in BOTH sets (AND logic - intersection)
+    // eligibleDistrictIds are already normalized from the Set above
+    eligibleDistrictIds = eligibleDistrictIds.filter((district) => {
+      // District is already normalized, but normalize again to be absolutely sure
+      const normalized = normalizeDistrict(district);
+      return normalizedTvRegionSet.has(normalized);
+    });
+    
+    // Update eligibleDistricts set to match filtered list for consistency
+    eligibleDistricts.clear();
+    for (const district of eligibleDistrictIds) {
+      eligibleDistricts.add(district);
+    }
+  }
 
   // Compute base districts (anchor only)
   const baseDistricts = new Set<string>();
@@ -540,11 +569,65 @@ export async function getProviderImpact({
       ? totalConfidences.reduce((a, b) => a + b, 0) / totalConfidences.length
       : 0;
 
+  // Calculate estimated households: sum real household counts, fallback to 2500 per district if NULL
+  let estimatedHouseholds = 0;
+  const FALLBACK_HOUSEHOLDS_PER_DISTRICT = 2500;
+  const districtsIncluded = includedDistrictsWithCentroids.length;
+  
+  if (districtsIncluded > 0) {
+    // Fetch household counts for included districts
+    const includedDistrictIds = includedDistrictsWithCentroids.map(d => d.district);
+    const batchSize = 1000;
+    let totalHouseholds = 0;
+    let districtsWithHouseholds = 0;
+    let districtsWithoutHouseholds = 0;
+    
+    for (let i = 0; i < includedDistrictIds.length; i += batchSize) {
+      const batch = includedDistrictIds.slice(i, i + batchSize);
+      const { data: householdData = [], error: householdError } = await supabase
+        .from('geo_districts')
+        .select('district, households')
+        .in('district', batch);
+      
+      if (householdError) {
+        console.warn('[extensionResults] Error fetching households batch:', householdError);
+        // Fallback: use constant for this batch
+        totalHouseholds += batch.length * FALLBACK_HOUSEHOLDS_PER_DISTRICT;
+        districtsWithoutHouseholds += batch.length;
+      } else {
+        for (const row of householdData) {
+          if (row.households !== null && row.households > 0) {
+            totalHouseholds += row.households;
+            districtsWithHouseholds++;
+          } else {
+            totalHouseholds += FALLBACK_HOUSEHOLDS_PER_DISTRICT;
+            districtsWithoutHouseholds++;
+          }
+        }
+      }
+    }
+    
+    estimatedHouseholds = totalHouseholds;
+    
+    if (process.env.NODE_ENV === 'development') {
+      const avgHouseholdsPerDistrict = districtsIncluded > 0 ? estimatedHouseholds / districtsIncluded : 0;
+      console.log(`[extensionResults] Households: ${districtsWithHouseholds} with real data, ${districtsWithoutHouseholds} using fallback`);
+      console.log(`[extensionResults] Total: ${estimatedHouseholds.toLocaleString()} households across ${districtsIncluded} districts (avg: ${avgHouseholdsPerDistrict.toFixed(0)} per district)`);
+      
+      // Sanity check: UK postcode districts typically have 1,000-50,000 households
+      if (avgHouseholdsPerDistrict > 100000) {
+        console.warn(`[extensionResults] ⚠️  Average households per district (${avgHouseholdsPerDistrict.toFixed(0)}) seems unusually high. Expected range: 1,000-50,000`);
+      } else if (avgHouseholdsPerDistrict < 500 && districtsWithHouseholds > 0) {
+        console.warn(`[extensionResults] ⚠️  Average households per district (${avgHouseholdsPerDistrict.toFixed(0)}) seems unusually low. Expected range: 1,000-50,000`);
+      }
+    }
+  }
+
   return {
     totals: {
       baseDistricts: baseDistricts.size,
-      includedDistricts: includedDistrictsWithCentroids.length,
-      estimatedHouseholds: includedDistrictsWithCentroids.length * 2500,
+      includedDistricts: districtsIncluded,
+      estimatedHouseholds,
       avgConfidence,
     },
     providerStats,

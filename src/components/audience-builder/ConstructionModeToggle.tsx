@@ -107,7 +107,7 @@ export function ConstructionModeToggle({ value, onChange, disabled = false }: Co
                 Validate anchor segment
               </Typography>
               <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary', lineHeight: 1.4, whiteSpace: 'pre-line' }}>
-                Best when you already know the audience you want.{'\n\n'}We start with a trusted base audience and check where other data partners agree.{'\n'}The more partners that confirm the same locations, the higher the confidence.
+                We start with a trusted base audience and check where other data partners agree.{'\n'}The more partners that confirm the same locations, the higher the confidence.
               </Typography>
             </Box>
           </Box>
@@ -165,7 +165,7 @@ export function ConstructionModeToggle({ value, onChange, disabled = false }: Co
                 Expand to similar segments
               </Typography>
               <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary', lineHeight: 1.4, whiteSpace: 'pre-line' }}>
-                Best when you want more reach.{'\n\n'}We start with your core audience and extend it using related signals from other data partners.{'\n'}This helps uncover additional areas that look similar, even if they aren&apos;t labelled the same.
+                We start with your core audience and extend it using related signals from other data partners.{'\n'}This helps uncover additional areas that look similar, even if they aren&apos;t labelled the same.
               </Typography>
             </Box>
           </Box>

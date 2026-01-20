@@ -132,7 +132,7 @@ export default function MapContent({
         
         if (constructionMode === 'validation') {
           // Validation mode: use agreement_count as display score
-          displayScore = (unit.agreement_count || 0) * 10; // Scale for visualization
+          displayScore = ((unit as any).agreement_count || 0) * 10; // Scale for visualization
           contributingSignals.push(...signals);
         } else {
           // Extension mode: use signal contributions

@@ -1,5 +1,6 @@
 import { createClient } from '@/lib/supabase/client';
 import { fetchAll } from '@/lib/supabase/pagination';
+import { getDistrictsByTvRegion } from './tvRegions';
 
 export interface ProviderStats {
   agreeingDistricts: number;
@@ -28,6 +29,7 @@ export interface ValidationResults {
     contributingProvidersCount: number;
     confidenceBand: 'Low' | 'Med' | 'High';
     avgAgreement: number; // For backward compatibility
+    estimatedHouseholds: number; // Sum of real household counts with fallback
   };
   debug?: {
     joinMissingCount: number; // Districts in signals not found in geo_districts
@@ -60,11 +62,13 @@ export async function getValidationResults({
   minAgreement,
   baseProvider = 'CCS',
   providers,
+  tvRegions,
 }: {
   segmentKey: string;
   minAgreement: number;
   baseProvider?: string;
   providers?: string[]; // Optional filter: only include these providers (excluding baseProvider)
+  tvRegions?: string[]; // Optional filter: only include districts in these TV regions
 }): Promise<ValidationResults> {
   const supabase = createClient();
   
@@ -90,6 +94,7 @@ export async function getValidationResults({
         contributingProvidersCount: 0,
         confidenceBand: 'Low',
         avgAgreement: 0,
+        estimatedHouseholds: 0,
       },
     };
   }
@@ -111,20 +116,6 @@ export async function getValidationResults({
   // Get base provider signals
   const baseProviderSignals = signalsByProvider.get(baseProvider) || [];
   
-  // DEV: Log base provider signals
-  if (process.env.NODE_ENV !== 'production') {
-    console.log('[validationResults] Base provider signals:', {
-      provider: baseProvider,
-      count: baseProviderSignals.length,
-      sample: baseProviderSignals.slice(0, 3).map(s => ({
-        district: s.district,
-        sectors_count: s.sectors_count,
-        has_score: s.has_score,
-        district_score_norm: s.district_score_norm,
-      })),
-    });
-  }
-  
   // Determine eligible districts (CCS base universe) - normalize district codes
   const eligibleDistricts = new Set<string>();
   for (const baseSignal of baseProviderSignals) {
@@ -142,23 +133,28 @@ export async function getValidationResults({
     }
   }
 
-  const eligibleDistrictIds = Array.from(eligibleDistricts);
+  let eligibleDistrictIds = Array.from(eligibleDistricts);
   
-  // DEV: Log eligible districts with sample raw data
-  if (process.env.NODE_ENV !== 'production') {
-    console.log('[validationResults] Eligible districts:', {
-      count: eligibleDistrictIds.length,
-      sample: eligibleDistrictIds.slice(0, 5),
-      sampleRaw: baseProviderSignals.slice(0, 3).map(s => ({
-        raw: s.district,
-        normalized: normalizeDistrict(s.district),
-        sectors_count: s.sectors_count,
-        has_score: s.has_score,
-        district_score_norm: s.district_score_norm,
-      })),
+  // Apply TV region filter if provided (AND logic: segmentEligible AND tvRegionAllowed)
+  if (tvRegions && tvRegions.length > 0) {
+    const tvRegionDistricts = await getDistrictsByTvRegion(tvRegions);
+    
+    // Intersection: only keep districts that are BOTH segment-eligible AND in TV regions
+    // Normalize TV region districts using the same function for consistent comparison
+    // (tvRegionDistricts come from DB as district_norm, but normalize to be safe)
+    const normalizedTvRegionSet = new Set(
+      tvRegionDistricts.map(d => normalizeDistrict(d))
+    );
+    
+    // Filter: keep only districts that exist in BOTH sets (AND logic - intersection)
+    // eligibleDistrictIds are already normalized from the Set above
+    eligibleDistrictIds = eligibleDistrictIds.filter((district) => {
+      // District is already normalized, but normalize again to be absolutely sure
+      const normalized = normalizeDistrict(district);
+      return normalizedTvRegionSet.has(normalized);
     });
   }
-
+  
   // Get all providers excluding base provider
   let validatingProviders = Array.from(signalsByProvider.keys()).filter(p => p !== baseProvider);
   
@@ -170,19 +166,6 @@ export async function getValidationResults({
   
   const contributingProvidersCount = validatingProviders.length;
   
-  // DEV: Log validating providers
-  if (process.env.NODE_ENV !== 'production') {
-    console.log('[validationResults] Validating providers:', {
-      providers: validatingProviders,
-      counts: validatingProviders.map(p => ({
-        provider: p,
-        signalCount: signalsByProvider.get(p)?.length || 0,
-        sampleDistricts: Array.from(new Set(signalsByProvider.get(p)?.map(s => s.district) || [])).slice(0, 3),
-        sampleNormalized: Array.from(new Set(signalsByProvider.get(p)?.map(s => normalizeDistrict(s.district)) || [])).slice(0, 3),
-      })),
-    });
-  }
-  
   // Build district lookup maps for each provider (with normalized district codes)
   const districtMapsByProvider = new Map<string, Map<string, DistrictSignalRow>>();
   for (const provider of validatingProviders) {
@@ -193,22 +176,6 @@ export async function getValidationResults({
       districtMap.set(normalizedDistrict, signal);
     }
     districtMapsByProvider.set(provider, districtMap);
-  }
-  
-  // DEV: Log district map stats with overlap check (after eligibleDistrictIds is computed)
-  if (process.env.NODE_ENV !== 'production') {
-    for (const provider of validatingProviders) {
-      const districtMap = districtMapsByProvider.get(provider)!;
-      const mapKeys = Array.from(districtMap.keys());
-      const overlap = eligibleDistrictIds.filter(d => mapKeys.includes(d)).length;
-      console.log(`[validationResults] ${provider} district map:`, {
-        totalSignals: signalsByProvider.get(provider)?.length || 0,
-        uniqueDistricts: districtMap.size,
-        sampleDistricts: mapKeys.slice(0, 3),
-        overlapWithEligible: overlap,
-        overlapPercentage: eligibleDistrictIds.length > 0 ? ((overlap / eligibleDistrictIds.length) * 100).toFixed(1) + '%' : '0%',
-      });
-    }
   }
 
   // Process each eligible district to compute agreement
@@ -249,96 +216,17 @@ export async function getValidationResults({
             providerStats[provider].agreeingDistricts++;
           }
         }
-      } else {
-        // DEV: Log missing matches for first few districts
-        if (process.env.NODE_ENV !== 'production' && eligibleDistrictIds.indexOf(district) < 3) {
-          console.log(`[validationResults] District ${district} not found in ${provider} map`, {
-            district,
-            provider,
-            mapSize: districtMap?.size || 0,
-            mapHasDistrict: districtMap?.has(district) || false,
-            sampleMapKeys: districtMap ? Array.from(districtMap.keys()).slice(0, 3) : [],
-          });
-        }
       }
     }
 
     agreementByDistrict[district] = agreeingCount;
     maxAgreement = Math.max(maxAgreement, agreeingCount);
   }
-  
-  // DEV: Log agreement distribution
-  if (process.env.NODE_ENV !== 'production') {
-    const agreementCounts: Record<number, number> = {};
-    for (const count of Object.values(agreementByDistrict)) {
-      agreementCounts[count] = (agreementCounts[count] || 0) + 1;
-    }
-    console.log('[validationResults] Agreement distribution:', {
-      totalEligible: eligibleDistrictIds.length,
-      maxAgreement,
-      distribution: agreementCounts,
-      districtsWithAgreement1Plus: Object.values(agreementByDistrict).filter(c => c >= 1).length,
-    });
-    
-    // Log sample district agreement computation
-    if (eligibleDistrictIds.length > 0) {
-      const sampleDistrict = eligibleDistrictIds[0];
-      console.log(`[validationResults] Sample district agreement:`, {
-        district: sampleDistrict,
-        agreementCount: agreementByDistrict[sampleDistrict] || 0,
-        validatingProviders,
-        providerSignals: validatingProviders.map(p => {
-          const map = districtMapsByProvider.get(p);
-          const signal = map?.get(sampleDistrict);
-          return {
-            provider: p,
-            found: !!signal,
-            sectors_count: signal?.sectors_count || 0,
-            has_score: signal?.has_score || false,
-            district_score_norm: signal?.district_score_norm || null,
-            wouldAgree: signal ? (
-              signal.sectors_count > 0 && (
-                signal.has_score ? (signal.district_score_norm ?? 0) >= 0.5 : true
-              )
-            ) : false,
-          };
-        }),
-      });
-    }
-  }
-  
-  // DEV: Log agreement computation results
-  if (process.env.NODE_ENV !== 'production') {
-    const agreementDistribution = Object.values(agreementByDistrict).reduce((acc, count) => {
-      acc[count] = (acc[count] || 0) + 1;
-      return acc;
-    }, {} as Record<number, number>);
-    console.log('[validationResults] Agreement computation:', {
-      eligibleCount: eligibleDistrictIds.length,
-      agreementDistribution,
-      maxAgreement,
-      districtsWithAgreement1Plus: Object.values(agreementByDistrict).filter(c => c >= 1).length,
-    });
-  }
 
   // Filter included districts based on minAgreement (districts already normalized)
   const includedDistrictIds = eligibleDistrictIds.filter(
     district => (agreementByDistrict[district] || 0) >= minAgreement
   );
-  
-  // DEV: Log agreement and included counts
-  if (process.env.NODE_ENV !== 'production') {
-    console.log('[validationResults] Agreement summary:', {
-      eligibleCount: eligibleDistrictIds.length,
-      agreementCounts: Object.values(agreementByDistrict).reduce((acc, count) => {
-        acc[count] = (acc[count] || 0) + 1;
-        return acc;
-      }, {} as Record<number, number>),
-      includedCount: includedDistrictIds.length,
-      minAgreement,
-      maxAgreement,
-    });
-  }
 
   // Build set of ALL districts in signals (for join missing count)
   const allSignalDistricts = new Set<string>();
@@ -386,16 +274,6 @@ export async function getValidationResults({
         missingDistricts.push(district);
       }
     }
-  }
-  
-  // DEV: Log missing districts for debugging
-  if (process.env.NODE_ENV !== 'production' && joinMissingCount > 0) {
-    console.log('[validationResults] Missing centroids:', {
-      totalMissing: joinMissingCount,
-      totalSignalDistricts: allSignalDistricts.size,
-      totalCentroidsFetched: fullCentroidMap.size,
-      sampleMissing: missingDistricts,
-    });
   }
 
   // Fetch centroids for included districts only (for map rendering)
@@ -466,6 +344,59 @@ export async function getValidationResults({
     ? includedDistricts.reduce((sum, d) => sum + d.agreementCount, 0) / districtsIncluded
     : 0;
   
+  // Calculate estimated households: sum real household counts, fallback to 2500 per district if NULL
+  let estimatedHouseholds = 0;
+  const FALLBACK_HOUSEHOLDS_PER_DISTRICT = 2500;
+  
+  if (districtsIncluded > 0) {
+    // Fetch household counts for included districts
+    const includedDistrictIds = includedDistricts.map(d => d.district);
+    const batchSize = 1000;
+    let totalHouseholds = 0;
+    let districtsWithHouseholds = 0;
+    let districtsWithoutHouseholds = 0;
+    
+    for (let i = 0; i < includedDistrictIds.length; i += batchSize) {
+      const batch = includedDistrictIds.slice(i, i + batchSize);
+      const { data: householdData = [], error: householdError } = await supabase
+        .from('geo_districts')
+        .select('district, households')
+        .in('district', batch);
+      
+      if (householdError) {
+        console.warn('[validationResults] Error fetching households batch:', householdError);
+        // Fallback: use constant for this batch
+        totalHouseholds += batch.length * FALLBACK_HOUSEHOLDS_PER_DISTRICT;
+        districtsWithoutHouseholds += batch.length;
+      } else {
+        for (const row of householdData) {
+          if (row.households !== null && row.households > 0) {
+            totalHouseholds += row.households;
+            districtsWithHouseholds++;
+          } else {
+            totalHouseholds += FALLBACK_HOUSEHOLDS_PER_DISTRICT;
+            districtsWithoutHouseholds++;
+          }
+        }
+      }
+    }
+    
+    estimatedHouseholds = totalHouseholds;
+    
+    if (process.env.NODE_ENV === 'development') {
+      const avgHouseholdsPerDistrict = districtsIncluded > 0 ? estimatedHouseholds / districtsIncluded : 0;
+      console.log(`[validationResults] Households: ${districtsWithHouseholds} with real data, ${districtsWithoutHouseholds} using fallback`);
+      console.log(`[validationResults] Total: ${estimatedHouseholds.toLocaleString()} households across ${districtsIncluded} districts (avg: ${avgHouseholdsPerDistrict.toFixed(0)} per district)`);
+      
+      // Sanity check: UK postcode districts typically have 1,000-50,000 households
+      if (avgHouseholdsPerDistrict > 100000) {
+        console.warn(`[validationResults] ⚠️  Average households per district (${avgHouseholdsPerDistrict.toFixed(0)}) seems unusually high. Expected range: 1,000-50,000`);
+      } else if (avgHouseholdsPerDistrict < 500 && districtsWithHouseholds > 0) {
+        console.warn(`[validationResults] ⚠️  Average households per district (${avgHouseholdsPerDistrict.toFixed(0)}) seems unusually low. Expected range: 1,000-50,000`);
+      }
+    }
+  }
+  
   // Confidence band logic
   let confidenceBand: 'Low' | 'Med' | 'High' = 'Low';
   if (contributingProvidersCount > 0) {
@@ -490,6 +421,7 @@ export async function getValidationResults({
       contributingProvidersCount,
       confidenceBand,
       avgAgreement,
+      estimatedHouseholds, // Add to totals
     },
     debug: process.env.NODE_ENV !== 'production' ? {
       joinMissingCount,

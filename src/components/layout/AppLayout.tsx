@@ -173,11 +173,11 @@ export function AppLayout({ children }: AppLayoutProps) {
               const isActive = stepNumber === currentStep;
               
               // Sub-sections for Brief (step 1)
-              const briefSubSections = stepNumber === 1 ? ['Target audience', 'Name', 'Client'] : [];
+              const briefSubSections = stepNumber === 1 ? ['Target audience', 'Name'] : [];
               // Sub-sections for Audience Selection (step 2)
               const selectionSubSections = stepNumber === 2 ? ['Construction mode', 'Select segment'] : [];
               // Sub-sections for Build & Explore (step 3)
-              const buildSubSections = stepNumber === 3 ? ['Visualisation'] : [];
+              const buildSubSections = stepNumber === 3 ? ['Visualisation', 'TV Spot Insights'] : [];
               // Sub-sections for Export (step 4)
               const exportSubSections = stepNumber === 4 ? ['Export summary', 'Export method', 'History'] : [];
               const subSections = briefSubSections.length > 0 ? briefSubSections 
@@ -191,7 +191,7 @@ export function AppLayout({ children }: AppLayoutProps) {
                       onClick={() => {
                         const audienceId = pathname?.split('/')[2];
                         if (audienceId) {
-                          router.push(`/audiences/${audienceId}/builder?step=${stepNumber}`);
+                          router.push(`/audiences/${audienceId}/builder?step=${stepNumber}`, { scroll: false });
                         }
                       }}
                       sx={{
@@ -237,19 +237,73 @@ export function AppLayout({ children }: AppLayoutProps) {
                         }}
                       />
                       {subSections.map((subSection, subIndex) => {
-                        const sectionId = subSection.toLowerCase().replace(/\s+/g, '-');
-                        const anchorId = stepNumber === 3 
-                          ? `export-${sectionId === 'summary' ? 'summary' : sectionId === 'downloads' ? 'actions' : sectionId === 'push-to-platform' ? 'actions' : 'history'}`
-                          : undefined;
+                        // Map section names to IDs based on step number
+                        let anchorId: string | undefined;
+                        if (stepNumber === 1) {
+                          // Brief step
+                          if (subSection === 'Target audience') anchorId = 'brief-target-audience';
+                          else if (subSection === 'Name') anchorId = 'brief-name';
+                          else if (subSection === 'Client') anchorId = 'brief-client';
+                        } else if (stepNumber === 2) {
+                          // Audience Selection step
+                          if (subSection === 'Construction mode') anchorId = 'selection-construction-mode';
+                          else if (subSection === 'Select segment') anchorId = 'selection-select-segment';
+                        } else if (stepNumber === 4) {
+                          // Export step
+                          if (subSection === 'Export summary') anchorId = 'export-summary';
+                          else if (subSection === 'Export method') anchorId = 'export-actions';
+                          else if (subSection === 'History') anchorId = 'export-history';
+                        }
+                        
+                        // For Build & Explore step, handle tab switching
+                        const isTvSpotInsights = stepNumber === 3 && subSection === 'TV Spot Insights';
+                        const isVisualisation = stepNumber === 3 && subSection === 'Visualisation';
+                        
+                        // Check if this sub-section is active (for Build & Explore, check tab param)
+                        const currentTab = stepNumber === 3 ? searchParams?.get('tab') || 'map' : undefined;
+                        const isSubSectionActive = isTvSpotInsights && currentTab === 'tvInsights' 
+                          || isVisualisation && currentTab === 'map';
                         
                         return (
                           <ListItem key={subSection} disablePadding>
                             <ListItemButton
                               onClick={() => {
-                                if (anchorId) {
-                                  const element = document.getElementById(anchorId);
-                                  if (element) {
-                                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                if (isTvSpotInsights || isVisualisation) {
+                                  // Navigate to Build & Explore step with tab param
+                                  const audienceId = pathname?.split('/')[2];
+                                  if (audienceId) {
+                                    const tab = isTvSpotInsights ? 'tvInsights' : 'map';
+                                    // Use replace to avoid adding to history and prevent flicker
+                                    router.replace(`/audiences/${audienceId}/builder?step=${stepNumber}&tab=${tab}`, { scroll: false });
+                                  }
+                                } else if (anchorId) {
+                                  // Navigate to step first if not already there
+                                  const audienceId = pathname?.split('/')[2];
+                                  if (audienceId) {
+                                    if (currentStep !== stepNumber) {
+                                      // Navigate to step first
+                                      router.push(`/audiences/${audienceId}/builder?step=${stepNumber}`, { scroll: false });
+                                      // Wait for navigation and component mount, then scroll
+                                      setTimeout(() => {
+                                        const element = document.getElementById(anchorId!);
+                                        if (element) {
+                                          // Add small offset for better visibility
+                                          const yOffset = -20;
+                                          const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                                          window.scrollTo({ top: y, behavior: 'smooth' });
+                                        }
+                                      }, 300);
+                                    } else {
+                                      // Already on the step, scroll immediately
+                                      setTimeout(() => {
+                                        const element = document.getElementById(anchorId);
+                                        if (element) {
+                                          const yOffset = -20;
+                                          const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                                          window.scrollTo({ top: y, behavior: 'smooth' });
+                                        }
+                                      }, 50);
+                                    }
                                   }
                                 }
                               }}
@@ -259,8 +313,9 @@ export function AppLayout({ children }: AppLayoutProps) {
                                 pl: 3.5,
                                 borderRadius: 0,
                                 minHeight: 28,
+                                bgcolor: isSubSectionActive ? 'rgba(2, 181, 231, 0.08)' : 'transparent',
                                 '&:hover': {
-                                  bgcolor: 'rgba(0,0,0,0.04)',
+                                  bgcolor: isSubSectionActive ? 'rgba(2, 181, 231, 0.12)' : 'rgba(0,0,0,0.04)',
                                 },
                               }}
                             >
@@ -268,8 +323,8 @@ export function AppLayout({ children }: AppLayoutProps) {
                                 primary={subSection}
                                 primaryTypographyProps={{
                                   fontSize: '0.75rem',
-                                  fontWeight: 400,
-                                  color: '#424242',
+                                  fontWeight: isSubSectionActive ? 600 : 400,
+                                  color: isSubSectionActive ? '#02b5e7' : '#424242',
                                 }}
                               />
                             </ListItemButton>

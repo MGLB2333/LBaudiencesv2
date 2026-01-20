@@ -7,6 +7,7 @@ export function useProviderImpact({
   confidenceThreshold = 0.5,
   includeAnchorOnly = true,
   providers,
+  tvRegions,
   enabled = true,
 }: {
   anchorKey: string;
@@ -14,11 +15,13 @@ export function useProviderImpact({
   confidenceThreshold?: number;
   includeAnchorOnly?: boolean;
   providers?: string[];
+  tvRegions?: string[];
   enabled?: boolean;
 }) {
   // Sort keys for stable query key
   const sortedKeys = [...includedSegmentKeys].sort().join(',');
   const providersKey = providers ? providers.sort().join('|') : '';
+  const tvRegionsKey = tvRegions && tvRegions.length > 0 ? tvRegions.sort().join('|') : '';
 
   return useQuery<ExtensionResults>({
     queryKey: [
@@ -28,6 +31,7 @@ export function useProviderImpact({
       confidenceThreshold,
       includeAnchorOnly,
       providersKey,
+      tvRegionsKey,
     ],
     queryFn: () =>
       getProviderImpact({
@@ -36,6 +40,7 @@ export function useProviderImpact({
         confidenceThreshold,
         includeAnchorOnly,
         providers,
+        tvRegions,
       }),
     enabled: enabled && !!anchorKey && includedSegmentKeys.length > 0,
     staleTime: 2 * 60 * 1000, // 2 minutes

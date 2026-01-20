@@ -1,0 +1,5044 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.8 e802775f",
+  "osm3s": {
+    "timestamp_osm_base": "2026-01-20T19:13:15Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 84893033,
+  "lat": 51.7089268,
+  "lon": -0.6116925,
+  "tags": {
+    "addr:postcode": "HP5 2AA",
+    "addr:street": "Townsend Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "contact:website": "https://www.wickes.co.uk/store/8456",
+    "name": "Wickes",
+    "opening_hours": "Mo-Sa 07:00-20:00; Su 10:00-16:00",
+    "phone": "+44 1494 776932",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "node",
+  "id": 245428150,
+  "lat": 51.8992644,
+  "lon": -1.1401049,
+  "tags": {
+    "addr:city": "Bicester",
+    "addr:postcode": "OX26 6PZ",
+    "addr:street": "Launton Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:website": "https://www.wickes.co.uk/store/8318",
+    "name": "Wickes",
+    "phone": "+44 1869 356200",
+    "postal_code": "OX26 6PZ",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "node",
+  "id": 411722002,
+  "lat": 51.4675804,
+  "lon": -2.1418812,
+  "tags": {
+    "addr:postcode": "SN14 6LH",
+    "addr:street": "Bumpers Way",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:website": "https://www.wickes.co.uk/store/8349",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 10:00-16:00",
+    "phone": "+44 1249 426600",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "node",
+  "id": 604108210,
+  "lat": 53.2344672,
+  "lon": -1.4376851,
+  "tags": {
+    "addr:city": "Chesterfield",
+    "addr:postcode": "S40 2AB",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:website": "https://www.wickes.co.uk/store/8283",
+    "fhrs:id": "1281774",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "node",
+  "id": 813245467,
+  "lat": 52.2993250,
+  "lon": -0.6168233,
+  "tags": {
+    "addr:city": "Rushden",
+    "addr:country": "GB",
+    "addr:postcode": "NN10 6BT",
+    "addr:street": "Crown Way",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:website": "https://www.wickes.co.uk/store/8460",
+    "name": "Wickes",
+    "operator": "Wickes",
+    "phone": "+44 1933 359499",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "node",
+  "id": 860311931,
+  "lat": 51.1571689,
+  "lon": -0.9566432,
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:website": "https://www.wickes.co.uk/store/8475",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "node",
+  "id": 1219170062,
+  "lat": 51.3405341,
+  "lon": -0.2583208,
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "contact:website": "https://www.wickes.co.uk/store/8309",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "node",
+  "id": 1628849056,
+  "lat": 51.8725644,
+  "lon": -0.3970506,
+  "tags": {
+    "addr:city": "Luton",
+    "addr:country": "GB",
+    "addr:housename": "Luton Retail Park",
+    "addr:postcode": "LU1 3JH",
+    "addr:street": "Gipsy Lane",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "fax": "+44 1582 282050",
+    "name": "Wickes",
+    "old_name": "B&Q",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 10:00-16:00",
+    "payment:cash": "yes",
+    "payment:coins": "yes",
+    "payment:contactless": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:mastercard": "yes",
+    "payment:notes": "yes",
+    "payment:visa": "yes",
+    "phone": "+44 1582 448040",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8398"
+  }
+},
+{
+  "type": "node",
+  "id": 1692412238,
+  "lat": 51.4613939,
+  "lon": -1.0141083,
+  "tags": {
+    "addr:city": "Reading",
+    "addr:country": "GB",
+    "addr:housename": "Reading Retail Park",
+    "addr:postcode": "RG30 1PR",
+    "addr:street": "Oxford Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "check_date:opening_hours": "2025-12-30",
+    "contact:website": "https://www.wickes.co.uk/store/8371",
+    "fax": "+44 118 956 8634",
+    "name": "Wickes",
+    "opening_hours": "Mo-Sa 07:00-20:00, Su 10:00-16:00",
+    "phone": "+44 118 958 8288",
+    "shop": "doityourself",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1741392445,
+  "lat": 52.6898712,
+  "lon": -1.8066435,
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:website": "https://www.wickes.co.uk/store/8359",
+    "name": "Wickes",
+    "phone": "+44 1543 516900",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8359"
+  }
+},
+{
+  "type": "node",
+  "id": 1881756194,
+  "lat": 55.9381502,
+  "lon": -3.2433363,
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "check_date": "2024-11-02",
+    "contact:website": "https://www.wickes.co.uk/store/8354",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:30-20:00; Sa 07:30-19:00; Su 09:00-18:00",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "node",
+  "id": 1991671178,
+  "lat": 51.4294545,
+  "lon": -0.1854481,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "53",
+    "addr:postcode": "SW17 0BW",
+    "addr:street": "Plough Lane",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:website": "https://www.wickes.co.uk/store/8059",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "node",
+  "id": 2211158134,
+  "lat": 53.0058963,
+  "lon": -1.1913632,
+  "tags": {
+    "addr:city": "Nottingham",
+    "addr:housename": "Springfield Retail Park",
+    "addr:postcode": "NG6 8AJ",
+    "addr:street": "Hucknall Lane",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:website": "https://www.wickes.co.uk/store/8364",
+    "fhrs:id": "713203",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 2456811442,
+  "lat": 53.5253389,
+  "lon": -2.3350744,
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "contact:website": "https://www.wickes.co.uk/store/8236",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2711873819,
+  "lat": 51.1368643,
+  "lon": -0.0354817,
+  "tags": {
+    "addr:city": "East Grinstead",
+    "addr:housename": "Bridge Park",
+    "addr:housenumber": "Unit A",
+    "addr:postcode": "RH19 1QY",
+    "addr:street": "Imberhorne Lane",
+    "addr:unit": "Unit A",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "fhrs:id": "1274103",
+    "name": "Wickes",
+    "phone": "+44 1342 328165",
+    "shop": "doityourself",
+    "source:postcode": "receipt",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.wickes.co.uk/store/8382",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2774674088,
+  "lat": 51.6185796,
+  "lon": -0.7202201,
+  "tags": {
+    "addr:city": "High Wycombe",
+    "addr:parentstreet": "Ryemead Way",
+    "addr:place": "Wycombe Retail Park",
+    "addr:postcode": "HP11 1FY",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8313"
+  }
+},
+{
+  "type": "node",
+  "id": 2840514138,
+  "lat": 52.5545480,
+  "lon": -1.3873038,
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:website": "https://www.wickes.co.uk/store/8458",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "node",
+  "id": 3071925002,
+  "lat": 53.4201300,
+  "lon": -2.1617105,
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:website": "https://www.wickes.co.uk/store/8081",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "node",
+  "id": 3291311594,
+  "lat": 51.4723407,
+  "lon": -0.1640582,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "491",
+    "addr:postcode": "SW11 4LW",
+    "addr:street": "Battersea Park Road",
+    "branch": "Kitchens & Bathrooms",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:website": "https://www.wickes.co.uk/store/8729",
+    "name": "Wickes",
+    "phone": "+44 20 7228 3109",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "node",
+  "id": 3891487188,
+  "lat": 54.9191202,
+  "lon": -1.4324924,
+  "tags": {
+    "addr:city": "Sunderland",
+    "addr:street": "Castletown Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "node",
+  "id": 4423423079,
+  "lat": 51.0691196,
+  "lon": -1.2968362,
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "node",
+  "id": 4551217993,
+  "lat": 51.2934350,
+  "lon": -2.5002078,
+  "tags": {
+    "addr:city": "Bristol",
+    "addr:postcode": "BS39 7SW",
+    "addr:street": "Old Mills",
+    "addr:unit": "C",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "fhrs:id": "1286216",
+    "name": "Wickes",
+    "name:en": "Wickes",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8486"
+  }
+},
+{
+  "type": "node",
+  "id": 4587121597,
+  "lat": 52.4542819,
+  "lon": -2.0415008,
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:website": "https://www.wickes.co.uk/store/8436",
+    "name": "Wickes",
+    "name:en": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "node",
+  "id": 4622097412,
+  "lat": 53.8463416,
+  "lon": -0.4089246,
+  "tags": {
+    "addr:city": "Beverley",
+    "addr:postcode": "HU17 0JU",
+    "addr:street": "Swinemoor Lane",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "contact:website": "https://www.wickes.co.uk/store/8454",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:30-20:00; Sa 07:30-19:00; Su 10:00-16:00",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "node",
+  "id": 4968776416,
+  "lat": 50.8144672,
+  "lon": -0.5567120,
+  "tags": {
+    "addr:city": "Littlehampton",
+    "addr:postcode": "BN17 5RA",
+    "addr:street": "Broad Piece",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "check_date": "2024-12-18",
+    "contact:website": "https://www.wickes.co.uk/store/8444",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "node",
+  "id": 5324523577,
+  "lat": 51.6110388,
+  "lon": 0.2737376,
+  "tags": {
+    "addr:postcode": "CM14 5LX",
+    "addr:street": "Brook Street",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 06:00-20:00; Sa 07:00-19:00; Su 10:00-16:00",
+    "phone": "+44 1277 233899",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8409"
+  }
+},
+{
+  "type": "node",
+  "id": 5571570028,
+  "lat": 51.3568046,
+  "lon": -0.1141648,
+  "tags": {
+    "addr:housenumber": "619",
+    "addr:street": "The Colonnades",
+    "addr:unit": "5",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "name": "Wickes",
+    "opening_hours": "Mo-Sa 07:00-20:00; Su 10:00-16:00",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8388"
+  }
+},
+{
+  "type": "node",
+  "id": 6512945578,
+  "lat": 51.8025802,
+  "lon": -0.1988661,
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:website": "https://www.wickes.co.uk/store/8500",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "node",
+  "id": 6580396350,
+  "lat": 52.7506094,
+  "lon": -1.4528428,
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:website": "https://www.wickes.co.uk/store/8360",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "node",
+  "id": 7026670023,
+  "lat": 53.6321505,
+  "lon": -2.9675454,
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:website": "https://www.wickes.co.uk/store/8719",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "node",
+  "id": 7307328851,
+  "lat": 50.8541837,
+  "lon": -0.9863880,
+  "tags": {
+    "addr:city": "Havant",
+    "addr:housename": "Central Retail Park",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:website": "https://www.wickes.co.uk/store/8338",
+    "last_checked": "2020-03-18",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 8144425439,
+  "lat": 51.5954403,
+  "lon": -2.9989678,
+  "tags": {
+    "addr:city": "Newport",
+    "addr:housename": "Discovery Park",
+    "addr:parentstreet": "Barrack Hill",
+    "addr:postcode": "NP20 5GN",
+    "addr:street": "Barrack Hill",
+    "addr:unit": "2",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:30-20:00; Sa 07:30-19:00; Su 10:00-16:00",
+    "phone": "+44 1633 850 555",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8290"
+  }
+},
+{
+  "type": "node",
+  "id": 8238395834,
+  "lat": 51.3581751,
+  "lon": 1.4016823,
+  "tags": {
+    "amenity": "waste_basket",
+    "operator": "Wickes",
+    "waste": "trash"
+  }
+},
+{
+  "type": "node",
+  "id": 8524651943,
+  "lat": 51.4991876,
+  "lon": -3.1426113,
+  "tags": {
+    "addr:city": "Cardiff",
+    "addr:housename": "Dragon Retail Park",
+    "addr:housenumber": "507",
+    "addr:postcode": "CF23 9AD",
+    "addr:street": "Newport Road",
+    "addr:unit": "1",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "fhrs:id": "1280296",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 10:00-16:00",
+    "phone": "+44 29 2011 4606",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8501"
+  }
+},
+{
+  "type": "node",
+  "id": 9242937217,
+  "lat": 51.5808669,
+  "lon": -0.2448379,
+  "tags": {
+    "addr:street": "The Hyde",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:website": "https://www.wickes.co.uk/store/8473",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "node",
+  "id": 10184201075,
+  "lat": 56.3977091,
+  "lon": -3.4418811,
+  "tags": {
+    "addr:city": "Perth",
+    "addr:housenumber": "1",
+    "addr:place": "St Catherine's Retail Park",
+    "addr:postcode": "PH1 5XD",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:phone": "+44 1738 643985",
+    "contact:website": "https://www.wickes.co.uk/store/8248",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 09:00-18:00",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "node",
+  "id": 10287195587,
+  "lat": 53.5375570,
+  "lon": -2.1250441,
+  "tags": {
+    "addr:city": "Oldham",
+    "addr:housename": "Wickes",
+    "addr:postcode": "OL8 1TA",
+    "addr:street": "Green Street",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:website": "https://www.wickes.co.uk/store/8374",
+    "name": "Wickes",
+    "phone": "+44161 904 2700",
+    "shop": "doityourself",
+    "source": "survey",
+    "source:geometry": "Bing"
+  }
+},
+{
+  "type": "node",
+  "id": 11399067249,
+  "lat": 51.3759381,
+  "lon": -0.2039730,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Kimpton Park Way",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "internet_access": "wlan",
+    "name": "Wickes",
+    "opening_hours": "Su 10:00-16:00; Mo-Fr 06:30-19:30",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8482"
+  }
+},
+{
+  "type": "node",
+  "id": 11399126042,
+  "lat": 51.5143709,
+  "lon": -0.3972594,
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8222"
+  }
+},
+{
+  "type": "node",
+  "id": 12117290615,
+  "lat": 54.7810634,
+  "lon": -1.5388182,
+  "tags": {
+    "addr:postcode": "DH1 2RH",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "fixme": "Add building profile when imagery updates",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8573"
+  }
+},
+{
+  "type": "node",
+  "id": 12623462448,
+  "lat": 53.1951457,
+  "lon": -2.9163859,
+  "tags": {
+    "access": "yes",
+    "check_date": "2025-02-27",
+    "defibrillator:location": "Inside foyer. On right wall next to exit door.",
+    "emergency": "defibrillator",
+    "indoor": "yes",
+    "operator": "Wickes"
+  }
+},
+{
+  "type": "node",
+  "id": 12961244886,
+  "lat": 51.4727917,
+  "lon": -0.0165983,
+  "tags": {
+    "addr:housenumber": "100",
+    "addr:street": "Blackheath Road",
+    "addr:unit": "A",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "check_date": "2025-07-13",
+    "check_date:opening_hours": "2024-11-06",
+    "contact:website": "https://www.wickes.co.uk/store/8281",
+    "currency:GBP": "yes",
+    "level": "0",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 10:00-16:00",
+    "shop": "doityourself",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 4076620,
+  "center": {
+    "lat": 51.4425746,
+    "lon": -0.0256711
+  },
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "7",
+    "addr:postcode": "SE6 4NU",
+    "addr:street": "Catford Hill",
+    "addr:suburb": "Catford",
+    "branch": "Catford",
+    "branch:id": "083",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "warehouse",
+    "check_date": "2025-11-22",
+    "contact:phone": "+44 20 8690 9872",
+    "currency:GBP": "yes",
+    "level": "0",
+    "name": "Wickes",
+    "opening_hours": "Su 10:00-16:00; Mo-Fr 07:00-20:00; Sa 07:00-19:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "ref:vatin": "GB336725881",
+    "second_hand": "no",
+    "shop": "doityourself",
+    "source": "survey",
+    "stroller": "yes",
+    "website": "https://www.wickes.co.uk/store/8083",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 4370094,
+  "center": {
+    "lat": 51.7514035,
+    "lon": -0.2794625
+  },
+  "tags": {
+    "addr:city": "St Albans",
+    "addr:postcode": "AL4 0JY",
+    "addr:street": "Acrewood Way",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 10:00-16:00",
+    "phone": "+44 1727 857545",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8238"
+  }
+},
+{
+  "type": "way",
+  "id": 5219529,
+  "center": {
+    "lat": 52.1441096,
+    "lon": -0.4217475
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "store",
+    "contact:website": "https://www.wickes.co.uk/store/8264",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 6197584,
+  "center": {
+    "lat": 51.6107393,
+    "lon": -0.0422426
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8322",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 23567260,
+  "center": {
+    "lat": 51.4440330,
+    "lon": 0.3624019
+  },
+  "tags": {
+    "addr:city": "Gravesend",
+    "addr:country": "GB",
+    "addr:postcode": "DA11 0BZ",
+    "addr:street": "Stuart Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8410",
+    "name": "Wickes",
+    "operator": "Wickes Building Supplies Ltd",
+    "ref:GB:uprn": "10012011679",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 25373114,
+  "center": {
+    "lat": 52.4124630,
+    "lon": -1.5139650
+  },
+  "tags": {
+    "addr:city": "Coventry",
+    "addr:postcode": "CV1 4BY",
+    "addr:street": "Ringway St Nicholas",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8075",
+    "name": "Wickes",
+    "ref:GB:uprn": "100071366872",
+    "shop": "doityourself",
+    "source:addr:postcode": "ONSUD;OS Open UPRN"
+  }
+},
+{
+  "type": "way",
+  "id": 25714915,
+  "center": {
+    "lat": 51.5169986,
+    "lon": 0.0060948
+  },
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "300",
+    "addr:postcode": "E16 4PA",
+    "addr:street": "Manor Road",
+    "addr:unit": "3",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "retail",
+    "name": "Wickes",
+    "phone": "+44 20 7511 0291",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8208"
+  }
+},
+{
+  "type": "way",
+  "id": 25758742,
+  "center": {
+    "lat": 52.0568429,
+    "lon": 1.1342390
+  },
+  "tags": {
+    "addr:city": "Ipswich",
+    "addr:housenumber": "270",
+    "addr:postcode": "IP2 0AQ",
+    "addr:street": "Ranelagh Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8350",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 10:00-16:00",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 26642572,
+  "center": {
+    "lat": 51.6457497,
+    "lon": 0.0884127
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8494",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 27763699,
+  "center": {
+    "lat": 51.2924897,
+    "lon": 0.1907126
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8411",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 27922803,
+  "center": {
+    "lat": 51.7526271,
+    "lon": -1.2895895
+  },
+  "tags": {
+    "addr:city": "Oxford",
+    "addr:postcode": "OX2 0HA",
+    "addr:street": "Botley Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8234",
+    "fhrs:id": "1285795",
+    "name": "Wickes",
+    "opening_hours": "Mo-Sa 07:00-20:00; Su 10:00-16:00",
+    "phone": "+44 1865 202030",
+    "roof:orientation": "along",
+    "roof:shape": "hipped",
+    "shop": "doityourself",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 28540439,
+  "center": {
+    "lat": 53.3115405,
+    "lon": -1.1288052
+  },
+  "tags": {
+    "addr:city": "Worksop",
+    "addr:postcode": "S80 1NU",
+    "addr:street": "Babbage Way",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8434",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 28941207,
+  "center": {
+    "lat": 50.8445768,
+    "lon": 0.4983664
+  },
+  "tags": {
+    "addr:city": "Bexhill-on-Sea",
+    "addr:place": "Ravenside Retail & Leisure Park",
+    "addr:postcode": "TN40 2JS",
+    "addr:unit": "8",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:phone": "+44 1424 229880",
+    "contact:website": "https://www.wickes.co.uk/store/8319",
+    "fhrs:id": "1267477",
+    "height": "10",
+    "name": "Wickes",
+    "nohousenumber": "yes",
+    "opening_hours": "Mo-Sa 07:00-20:00; Su 10:00-16:00",
+    "ref:GB:uprn": "10002665270",
+    "shop": "doityourself",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 29473111,
+  "center": {
+    "lat": 50.8357411,
+    "lon": -1.1855529
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "commercial",
+    "contact:website": "https://www.wickes.co.uk/store/8228",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 29907691,
+  "center": {
+    "lat": 51.5669262,
+    "lon": 0.1175071
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8372",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source": "yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 30164182,
+  "center": {
+    "lat": 51.0738487,
+    "lon": -4.0394343
+  },
+  "tags": {
+    "addr:city": "Barnstaple",
+    "addr:country": "GB",
+    "addr:postcode": "EX32 8NX",
+    "addr:street": "Rose Lane",
+    "addr:suburb": "Forches",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8256",
+    "fhrs:id": "1263423",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 30693253,
+  "center": {
+    "lat": 51.5381560,
+    "lon": 0.0690361
+  },
+  "tags": {
+    "addr:city": "Barking",
+    "addr:country": "GB",
+    "addr:postcode": "IG11 8BL",
+    "addr:street": "Hertford Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "building:levels": "2",
+    "contact:website": "https://www.wickes.co.uk/store/8297",
+    "name": "Wickes",
+    "ref:GB:uprn": "100100309",
+    "roof:height": "2",
+    "roof:shape": "hipped",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 31261128,
+  "center": {
+    "lat": 50.8770507,
+    "lon": -1.0335632
+  },
+  "tags": {
+    "addr:city": "Waterlooville",
+    "addr:housename": "Rockville Drive",
+    "addr:housenumber": "220",
+    "addr:street": "London Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8227",
+    "name": "Wickes",
+    "operator": "Wickes Building Supplies",
+    "phone": "+44 2392 231919",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 31415726,
+  "center": {
+    "lat": 52.4370535,
+    "lon": -1.8476598
+  },
+  "tags": {
+    "addr:city": "Birmingham",
+    "addr:housenumber": "1151",
+    "addr:postcode": "B28 8BX",
+    "addr:street": "Stratford Road",
+    "branch": "DIY Store",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8235",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source": "visual survey;OS_OpenData_StreetView"
+  }
+},
+{
+  "type": "way",
+  "id": 33637915,
+  "center": {
+    "lat": 54.9937313,
+    "lon": -1.4345815
+  },
+  "tags": {
+    "addr:city": "South Shields",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8441",
+    "name": "Wickes",
+    "ref:GB:uprn": "200000004544",
+    "shop": "doityourself",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 34232595,
+  "center": {
+    "lat": 52.0605210,
+    "lon": -2.7151835
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8367",
+    "name": "Wickes",
+    "operator": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 34508783,
+  "center": {
+    "lat": 51.3128752,
+    "lon": -0.6089343
+  },
+  "tags": {
+    "addr:city": "Woking",
+    "addr:housenumber": "102",
+    "addr:postcode": "GU21 2WB",
+    "addr:street": "Inkerman Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8080",
+    "name": "Wickes",
+    "opening_hours": "Mo-Sa 08:00-20:00; Su 10:00-16:00",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 34956394,
+  "center": {
+    "lat": 50.9302955,
+    "lon": -1.4243916
+  },
+  "tags": {
+    "addr:city": "Southampton",
+    "addr:housenumber": "271",
+    "addr:postcode": "SO16 6TP",
+    "addr:street": "Winchester Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "check_date": "2025-07-22",
+    "contact:website": "https://www.wickes.co.uk/store/8328",
+    "name": "Wickes",
+    "opening_hours": "Mo-Sa 07:30-20:00, Su 10:00-16:00",
+    "ref:GB:uprn": "100062509406",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 36744368,
+  "center": {
+    "lat": 52.0282646,
+    "lon": -0.7629417
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8429",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 36795359,
+  "center": {
+    "lat": 51.8832853,
+    "lon": 0.1748215
+  },
+  "tags": {
+    "addr:city": "Bishop's Stortford",
+    "addr:postcode": "CM23 5PP",
+    "addr:street": "Goodlifee Park, Stanstead Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8457",
+    "designation": "457",
+    "name": "Wickes",
+    "phone": "+44 1279 654267",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 37079681,
+  "center": {
+    "lat": 52.9381149,
+    "lon": -1.1594554
+  },
+  "tags": {
+    "addr:city": "Nottingham",
+    "addr:postcode": "NG2 1GW",
+    "addr:street": "Queen's Drive",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8071",
+    "fhrs:id": "1288931",
+    "name": "Wickes",
+    "old_fhrs:id": "713202",
+    "ref:GB:uprn": "200001391852",
+    "shop": "doityourself",
+    "source": "Yahoo",
+    "source:postcode": "ONS"
+  }
+},
+{
+  "type": "way",
+  "id": 37792283,
+  "center": {
+    "lat": 51.6880296,
+    "lon": -0.0337276
+  },
+  "tags": {
+    "addr:city": "Waltham Cross",
+    "addr:postcode": "EN8 7BF",
+    "addr:street": "Sturlas Way",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8243",
+    "name": "Wickes",
+    "phone": "+44 1992 622223",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 38043303,
+  "center": {
+    "lat": 51.4461085,
+    "lon": 0.2213082
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "building:colour": "brown",
+    "building:material": "brick",
+    "contact:website": "https://www.wickes.co.uk/store/8093",
+    "height": "7",
+    "name": "Wickes",
+    "note": "Building material is in part brown coloured brick, and in part blue coloured metal",
+    "roof:colour": "grey",
+    "roof:height": "1",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 38281456,
+  "center": {
+    "lat": 51.5612087,
+    "lon": -0.2215624
+  },
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "317",
+    "addr:postcode": "NW2 6JN",
+    "addr:street": "Cricklewood Broadway",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8072",
+    "fax": "+44 20 8208 3461",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 06:30-21:00; Sa 07:00-20:00; Su 10:00-16:00",
+    "phone": "+44 20 8450 9025",
+    "ref:GB:uprn": "202110065",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 38616430,
+  "center": {
+    "lat": 53.4815085,
+    "lon": -2.9533336
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8276"
+  }
+},
+{
+  "type": "way",
+  "id": 39888022,
+  "center": {
+    "lat": 51.2285447,
+    "lon": -0.3378364
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8240",
+    "name": "Wickes",
+    "ref:GB:uprn": "100062495115",
+    "shop": "doityourself",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 40135736,
+  "center": {
+    "lat": 50.7179738,
+    "lon": -3.4635429
+  },
+  "tags": {
+    "addr:city": "Exeter",
+    "addr:postcode": "EX2 7HY",
+    "addr:street": "Eagle Way",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "retail",
+    "building:levels": "2",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 10:00-16:00",
+    "payment:american_express": "yes",
+    "payment:apple_pay": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:google_pay": "yes",
+    "payment:mastercard": "yes",
+    "payment:notes": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "phone": "+44 1392 605500",
+    "roof:shape": "gabled",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8336",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 40188896,
+  "center": {
+    "lat": 50.3936421,
+    "lon": -4.0882030
+  },
+  "tags": {
+    "addr:city": "Plymouth",
+    "addr:housename": "Marsh Mills Park",
+    "addr:postcode": "PL6 8LX",
+    "addr:street": "Longbridge Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "building:levels": "1",
+    "contact:website": "https://www.wickes.co.uk/store/8292",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 42255309,
+  "center": {
+    "lat": 53.3627760,
+    "lon": -2.7221740
+  },
+  "tags": {
+    "addr:city": "Widnes",
+    "addr:postcode": "WA8 0TA",
+    "addr:street": "Earle Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "contact:website": "https://www.bmstores.co.uk/stores/widnes-bowers-472",
+    "fhrs:id": "140908",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 43633677,
+  "center": {
+    "lat": 51.5003483,
+    "lon": -0.3050452
+  },
+  "tags": {
+    "addr:city": "London",
+    "addr:postcode": "W5 4QS",
+    "addr:street": "South Ealing Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8414",
+    "name": "Wickes",
+    "ref:GB:uprn": "12153538",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 45773231,
+  "center": {
+    "lat": 51.4950727,
+    "lon": -3.5639057
+  },
+  "tags": {
+    "branch": "Bridgend",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8271",
+    "name": "Wickes",
+    "operator": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 46558564,
+  "center": {
+    "lat": 51.5581764,
+    "lon": -0.3824541
+  },
+  "tags": {
+    "addr:postcode": "HA4 0QB",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8078",
+    "name": "Wickes",
+    "ref:GB:uprn": "100023033577",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 48708147,
+  "center": {
+    "lat": 51.2655285,
+    "lon": -1.1053099
+  },
+  "tags": {
+    "addr:city": "Basingstoke",
+    "addr:postcode": "RG21 7RA",
+    "addr:street": "Millenium Court",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8332",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 10:00-16:00",
+    "phone": "+44 1256 726300",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 48777885,
+  "center": {
+    "lat": 51.7209832,
+    "lon": 0.6630591
+  },
+  "tags": {
+    "addr:postcode": "CM9 6UZ",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "commercial",
+    "contact:website": "https://www.wickes.co.uk/store/8449",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source": "OS_OpenData_StreetView",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 52303327,
+  "center": {
+    "lat": 54.3466730,
+    "lon": -1.4426274
+  },
+  "tags": {
+    "addr:city": "Northallerton",
+    "addr:postcode": "DL6 2XG",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8399",
+    "fhrs:id": "1851291",
+    "name": "Wickes",
+    "ref:GB:uprn": "100051958339",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 55389584,
+  "center": {
+    "lat": 53.3849797,
+    "lon": -3.0160180
+  },
+  "tags": {
+    "addr:city": "Birkenhead",
+    "addr:county": "Merseyside",
+    "addr:postcode": "CH41 9DF",
+    "addr:street": "The Rock Retail Park, New Chester Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "industrial",
+    "contact:website": "https://www.wickes.co.uk/store/8298",
+    "designation": "298",
+    "name": "Wickes",
+    "phone": "+44 151 647 0922",
+    "ref:GB:uprn": "42157814",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 56419014,
+  "center": {
+    "lat": 51.4354766,
+    "lon": -0.8943995
+  },
+  "tags": {
+    "addr:city": "Winnersh",
+    "addr:country": "GB",
+    "addr:housenumber": "1",
+    "addr:postcode": "RG41 5HH",
+    "addr:street": "Gazelle Close",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "building:levels": "2",
+    "contact:website": "https://www.wickes.co.uk/store/8465",
+    "name": "Wickes",
+    "opening_hours": "Mo-Sa 08:00-20:00; Su 10:00-16:00",
+    "phone": "+44 1189 893717",
+    "ref:GB:uprn": "14026830;10091832070;10091832071",
+    "shop": "doityourself",
+    "source:building": "OS_OpenData_StreetView",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 60730144,
+  "center": {
+    "lat": 51.0636002,
+    "lon": -1.7756976
+  },
+  "tags": {
+    "addr:housename": "Bourne Retail Park",
+    "addr:postcode": "SP1 2QQ",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8430",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 60952237,
+  "center": {
+    "lat": 51.2468476,
+    "lon": -0.5802068
+  },
+  "tags": {
+    "addr:city": "Guildford",
+    "addr:postcode": "GU1 1EL",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8385",
+    "name": "Wickes",
+    "note": "area re-developed in 2012",
+    "shop": "doityourself",
+    "source": "sas, visual estimate"
+  }
+},
+{
+  "type": "way",
+  "id": 72925428,
+  "center": {
+    "lat": 52.8103917,
+    "lon": -2.1215911
+  },
+  "tags": {
+    "addr:city": "Stafford",
+    "addr:street": "Madford Retail Park",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8299",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 80584594,
+  "center": {
+    "lat": 55.8384506,
+    "lon": -4.1549186
+  },
+  "tags": {
+    "addr:city": "Glasgow",
+    "addr:housenumber": "2345",
+    "addr:postcode": "G32 8XP",
+    "addr:street": "London Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8352",
+    "name": "Wickes",
+    "ref:GB:uprn": "906700403437",
+    "shop": "doityourself",
+    "source": "OS_OpenData_StreetView"
+  }
+},
+{
+  "type": "way",
+  "id": 81328985,
+  "center": {
+    "lat": 53.7681698,
+    "lon": -2.7058632
+  },
+  "tags": {
+    "addr:city": "Preston",
+    "addr:housenumber": "1",
+    "addr:postcode": "PR1 7RF",
+    "addr:street": "Aqueduct Street",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8273",
+    "name": "Wickes",
+    "ref:GB:uprn": "100012747982",
+    "shop": "doityourself",
+    "source": "Auto_OS_OpenData_StreetView"
+  }
+},
+{
+  "type": "way",
+  "id": 82216825,
+  "center": {
+    "lat": 52.5257580,
+    "lon": -1.8955726
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8334",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source": "OS_OpenData_StreetView"
+  }
+},
+{
+  "type": "way",
+  "id": 87375016,
+  "center": {
+    "lat": 53.3914529,
+    "lon": -1.4788424
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8412",
+    "name": "Wickes",
+    "ref:GB:uprn": "100052092997",
+    "shop": "doityourself",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 87685926,
+  "center": {
+    "lat": 52.0027422,
+    "lon": -0.7237238
+  },
+  "tags": {
+    "addr:city": "Milton Keynes",
+    "addr:country": "GB",
+    "addr:postcode": "MK1 1BX",
+    "addr:street": "Watling Street",
+    "addr:suburb": "Bletchley",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8279",
+    "fhrs:authority": "Milton Keynes",
+    "fhrs:id": "705596",
+    "fhrs:local_authority_id": "30602",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 89159327,
+  "center": {
+    "lat": 52.5732244,
+    "lon": -0.2179699
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8209",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 91959028,
+  "center": {
+    "lat": 51.9830710,
+    "lon": -0.2022476
+  },
+  "tags": {
+    "branch": "Letchworth Garden City",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8270",
+    "name": "Wickes",
+    "operator": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 95396425,
+  "center": {
+    "lat": 51.3397339,
+    "lon": -2.9609088
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8329",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source": "OS_OpenData_StreetView"
+  }
+},
+{
+  "type": "way",
+  "id": 96623031,
+  "center": {
+    "lat": 56.1120580,
+    "lon": -3.9079803
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8282",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 97086041,
+  "center": {
+    "lat": 53.6801014,
+    "lon": -1.5057327
+  },
+  "tags": {
+    "addr:city": "Wakefield",
+    "addr:postcode": "WF2 9SA",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8327",
+    "fhrs:id": "1291482",
+    "name": "Wickes",
+    "ref:GB:uprn": "63161108",
+    "shop": "doityourself",
+    "source": "survey;Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 99473351,
+  "center": {
+    "lat": 53.6881515,
+    "lon": -1.6290487
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8066",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source": "Bing;local_knowledge"
+  }
+},
+{
+  "type": "way",
+  "id": 100220417,
+  "center": {
+    "lat": 52.5089044,
+    "lon": -1.9541392
+  },
+  "tags": {
+    "addr:city": "Birmingham",
+    "addr:postcode": "B21 0LL",
+    "addr:street": "Holyhead Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8216",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source": "visual survey;bing"
+  }
+},
+{
+  "type": "way",
+  "id": 100532990,
+  "center": {
+    "lat": 54.0544037,
+    "lon": -2.8419353
+  },
+  "tags": {
+    "addr:city": "Lancaster",
+    "addr:postcode": "LA3 3FE",
+    "addr:street": "Mellishaw Lane",
+    "addr:substreet": "Sunnycliff Retail Park",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "industrial",
+    "contact:website": "https://www.wickes.co.uk/store/8251",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 100533060,
+  "center": {
+    "lat": 54.0544107,
+    "lon": -2.8425109
+  },
+  "tags": {
+    "access": "customers",
+    "amenity": "parking",
+    "fee": "no",
+    "operator": "Wickes",
+    "parking": "surface",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 106424787,
+  "center": {
+    "lat": 53.7942257,
+    "lon": -1.7828696
+  },
+  "tags": {
+    "addr:city": "Bradford",
+    "addr:postcode": "BD7 2BH",
+    "addr:street": "Princeroyd Way",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8055",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source:addr:postcode": "code-point_open"
+  }
+},
+{
+  "type": "way",
+  "id": 106566204,
+  "center": {
+    "lat": 52.4228483,
+    "lon": -1.9225330
+  },
+  "tags": {
+    "addr:city": "Birmingham",
+    "addr:postcode": "B30 2BJ",
+    "addr:street": "Ash Tree Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8417",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source": "visual survey;bing"
+  }
+},
+{
+  "type": "way",
+  "id": 107424118,
+  "center": {
+    "lat": 52.9034124,
+    "lon": -1.4454041
+  },
+  "tags": {
+    "addr:city": "Derby",
+    "addr:housenumber": "806",
+    "addr:postcode": "DE24 8WA",
+    "addr:street": "London Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8079",
+    "fhrs:id": "1355248",
+    "name": "Wickes",
+    "ref:GB:uprn": "100032257293",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 108382825,
+  "center": {
+    "lat": 53.7250316,
+    "lon": -1.8550017
+  },
+  "tags": {
+    "addr:city": "Halifax",
+    "addr:country": "GB",
+    "addr:postcode": "HX1 1SN",
+    "addr:street": "Wade Street",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:website": "https://www.wickes.co.uk/store/8303",
+    "landuse": "retail",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 109901247,
+  "center": {
+    "lat": 51.1317449,
+    "lon": 0.9046097
+  },
+  "tags": {
+    "addr:postcode": "TN24 0SH",
+    "addr:street": "Norman Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8090",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 121409520,
+  "center": {
+    "lat": 53.5947273,
+    "lon": -0.6446216
+  },
+  "tags": {
+    "addr:city": "Scunthorpe",
+    "addr:postcode": "DN15 6AF",
+    "addr:street": "Glebe Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8064",
+    "name": "Wickes",
+    "ref:GB:uprn": "100051966221",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 123845490,
+  "center": {
+    "lat": 51.6341505,
+    "lon": -3.9592894
+  },
+  "tags": {
+    "addr:city": "Swansea",
+    "addr:housename": "CWMDU INDUSTRIAL ESTATE",
+    "addr:postcode": "SA5 8LJ",
+    "addr:street": "Heol-y-Gors",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8323",
+    "name": "Wickes",
+    "opening_hours": "Mo-Sa 07:00-20:00; Su 10:00-16:00",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 132648854,
+  "center": {
+    "lat": 55.0080694,
+    "lon": -1.5061741
+  },
+  "tags": {
+    "addr:city": "Wallsend",
+    "addr:street": "Middle Engine Lane",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8229",
+    "name": "Wickes",
+    "opening_hours": "Mo-Sa 07:00-20:00; Su 10:00-16:00",
+    "ref:GB:uprn": "47178067",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 133855766,
+  "center": {
+    "lat": 51.8208700,
+    "lon": -0.8083799
+  },
+  "tags": {
+    "addr:city": "Aylesbury",
+    "addr:country": "GB",
+    "addr:housename": "Aylesbury Shopping Park",
+    "addr:postcode": "HP20 1DG",
+    "addr:unit": "12",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8316",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 135115802,
+  "center": {
+    "lat": 52.6047765,
+    "lon": -1.6736381
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8331",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 136395884,
+  "center": {
+    "lat": 51.5757611,
+    "lon": 0.6034426
+  },
+  "tags": {
+    "addr:city": "Rayleigh",
+    "addr:housenumber": "1",
+    "addr:postcode": "SS6 7TS",
+    "addr:street": "Rat Lane",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "check_date": "2024-09-08",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 06:30-20:00; Sa 06:30-19:00; Su 10:00-16:00",
+    "phone": "+44 1268 776262",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8082"
+  }
+},
+{
+  "type": "way",
+  "id": 141671565,
+  "center": {
+    "lat": 51.7808416,
+    "lon": 0.1069672
+  },
+  "tags": {
+    "addr:postcode": "CM20 2SU",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8337",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source:addr:postcode": "code-point_open"
+  }
+},
+{
+  "type": "way",
+  "id": 142638240,
+  "center": {
+    "lat": 53.0929148,
+    "lon": -2.4386827
+  },
+  "tags": {
+    "addr:city": "Crewe",
+    "addr:postcode": "CW2 7BB",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8250",
+    "name": "Wickes",
+    "ref:GB:uprn": "100012600155",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 145297957,
+  "center": {
+    "lat": 52.5322737,
+    "lon": -1.7772799
+  },
+  "tags": {
+    "addr:city": "Sutton Coldfield",
+    "addr:postcode": "B76 1FG",
+    "addr:street": "Walmley Ash Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8225",
+    "name": "Wickes",
+    "ref:GB:uprn": "100071484910",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 145464554,
+  "center": {
+    "lat": 51.7969760,
+    "lon": -0.0694967
+  },
+  "tags": {
+    "addr:city": "Hertford",
+    "addr:postcode": "SG13 7RQ",
+    "addr:street": "Madford Retail Park, Ware Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8453",
+    "designation": "8453",
+    "name": "Wickes",
+    "phone": "+44 1992 537678",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 145502494,
+  "center": {
+    "lat": 51.5726859,
+    "lon": -1.7700669
+  },
+  "tags": {
+    "addr:city": "Swindon",
+    "addr:postcode": "SN2 8DH",
+    "addr:street": "Gipsy Lane",
+    "branch": "EXTRA",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "check_date": "2025-11-06",
+    "contact:website": "https://www.wickes.co.uk/store/8342",
+    "fhrs:id": "1292856",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 146132612,
+  "center": {
+    "lat": 51.3755238,
+    "lon": -0.1307538
+  },
+  "tags": {
+    "addr:city": "Croydon",
+    "addr:housenumber": "114",
+    "addr:postcode": "CR0 4TB",
+    "addr:street": "Beddington Lane",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8215",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 147213195,
+  "center": {
+    "lat": 52.3055428,
+    "lon": -1.9344284
+  },
+  "tags": {
+    "addr:city": "Redditch",
+    "addr:postcode": "B98 8DU",
+    "addr:street": "Redditch Ringway",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8220",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 149870882,
+  "center": {
+    "lat": 51.3350989,
+    "lon": -2.2010086
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8275",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source": "Bing",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 149880779,
+  "center": {
+    "lat": 52.0711074,
+    "lon": -1.3364082
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8277",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 151650317,
+  "center": {
+    "lat": 53.0091831,
+    "lon": -2.1673640
+  },
+  "tags": {
+    "addr:postcode": "ST4 2HT",
+    "addr:street": "Victoria Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8231",
+    "fhrs:id": "746182",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source:addr": "FHRS Open Data"
+  }
+},
+{
+  "type": "way",
+  "id": 152110279,
+  "center": {
+    "lat": 53.7717014,
+    "lon": -0.3230705
+  },
+  "tags": {
+    "addr:city": "Hull",
+    "addr:postcode": "HU7 0DP",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8053",
+    "name": "Wickes",
+    "operator": "Wickes",
+    "ref:GB:uprn": "21112587",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 156329132,
+  "center": {
+    "lat": 53.4063601,
+    "lon": -1.3576839
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8065",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source": "Bing;survey"
+  }
+},
+{
+  "type": "way",
+  "id": 156762815,
+  "center": {
+    "lat": 52.7607064,
+    "lon": 0.3986768
+  },
+  "tags": {
+    "addr:city": "King's Lynn",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8428",
+    "name": "Wickes",
+    "operator": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 159037638,
+  "center": {
+    "lat": 51.8364128,
+    "lon": -2.2700141
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8377",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 163089576,
+  "center": {
+    "lat": 53.9888082,
+    "lon": -1.0953617
+  },
+  "tags": {
+    "addr:city": "York",
+    "addr:housenumber": "Unit 3",
+    "addr:postcode": "YO30 4XB",
+    "addr:street": "Lysander Close",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8471",
+    "name": "Wickes",
+    "ref:GB:uprn": "100052167702",
+    "shop": "doityourself",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 167176805,
+  "center": {
+    "lat": 51.7370600,
+    "lon": -0.4666183
+  },
+  "tags": {
+    "addr:city": "Hemel Hempstead",
+    "addr:housename": "Wickes",
+    "addr:postcode": "HP3 9SR",
+    "addr:street": "London Rd, Apsley",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "check_date": "2025-12-15",
+    "contact:website": "https://www.wickes.co.uk/store/8096",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00, Sa 07:30-19:00, Su 10:00-16:00",
+    "operator": "Wickes",
+    "phone": "+44 1442 216000",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 168786450,
+  "center": {
+    "lat": 51.9076622,
+    "lon": -2.0867657
+  },
+  "tags": {
+    "addr:city": "Cheltenham",
+    "addr:postcode": "GL51 9AD",
+    "addr:street": "Tewkesbury Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8074",
+    "name": "Wickes",
+    "opening_hours": "Mo-Sa 07:30-20:00; Su 10:00-16:00",
+    "operator:wikidata": "Q7998350",
+    "phone": "+44 1242 579447",
+    "shop": "doityourself",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 169273143,
+  "center": {
+    "lat": 52.4064601,
+    "lon": 0.7301879
+  },
+  "tags": {
+    "addr:city": "Thetford",
+    "addr:postcode": "IP24 3HZ",
+    "addr:street": "London Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8357",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source": "bing;survey",
+    "source:addr:postcode": "code-point_open"
+  }
+},
+{
+  "type": "way",
+  "id": 172516094,
+  "center": {
+    "lat": 54.5764209,
+    "lon": -1.2759392
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "retail",
+    "building:levels": "2",
+    "building:use": "shop",
+    "contact:website": "https://www.wickes.co.uk/store/8226",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 10:00-16:00",
+    "roof:shape": "pitched",
+    "shop": "doityourself",
+    "source": "local_knowledge",
+    "source:geometry": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 176324401,
+  "center": {
+    "lat": 51.2157070,
+    "lon": -1.4787996
+  },
+  "tags": {
+    "addr:housename": "Northern Avenue Retail Park",
+    "addr:postcode": "SP10 4DU",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8321",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 176830906,
+  "center": {
+    "lat": 51.5803904,
+    "lon": -0.0764704
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8091"
+  }
+},
+{
+  "type": "way",
+  "id": 177807550,
+  "center": {
+    "lat": 51.8740205,
+    "lon": 0.5673315
+  },
+  "tags": {
+    "addr:city": "Braintree",
+    "addr:postcode": "CM77 8YL",
+    "addr:street": "Century Drive",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8381",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 180749903,
+  "center": {
+    "lat": 54.8977483,
+    "lon": -2.9325219
+  },
+  "tags": {
+    "addr:city": "Carlisle",
+    "addr:postcode": "CA1 1JD",
+    "addr:street": "Dukes Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8253",
+    "name": "Wickes",
+    "ref:GB:uprn": "10008675211",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 182926061,
+  "center": {
+    "lat": 54.9897837,
+    "lon": -1.6743432
+  },
+  "tags": {
+    "addr:city": "Newcastle upon Tyne",
+    "addr:housename": "Unit 1",
+    "addr:postcode": "NE5 2SF",
+    "addr:street": "St James Retail Park",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "retail",
+    "building:levels": "1",
+    "contact:website": "https://www.wickes.co.uk/store/8348",
+    "name": "Wickes Extra",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 10:00-16:00",
+    "roof:levels": "0",
+    "shop": "doityourself",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 184451123,
+  "center": {
+    "lat": 51.7308993,
+    "lon": 0.4554594
+  },
+  "tags": {
+    "addr:city": "Chelmsford",
+    "addr:housenumber": "1",
+    "addr:postcode": "CM1 2QX",
+    "addr:street": "Baynes Place",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "name": "Wickes",
+    "opening_hours": "Mo-Sa 09:30-22:00; Su 10:00-16:00",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8566"
+  }
+},
+{
+  "type": "way",
+  "id": 184820195,
+  "center": {
+    "lat": 51.3426155,
+    "lon": 0.7155607
+  },
+  "tags": {
+    "addr:city": "Sittingbourne",
+    "addr:postcode": "ME10 1NU",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "name": "Wickes",
+    "phone": "+44 1795 562700",
+    "shop": "doityourself",
+    "source": "receipt"
+  }
+},
+{
+  "type": "way",
+  "id": 185103479,
+  "center": {
+    "lat": 52.6880609,
+    "lon": -2.0225649
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8261",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 185828810,
+  "center": {
+    "lat": 52.5090514,
+    "lon": -1.9545369
+  },
+  "tags": {
+    "amenity": "parking",
+    "capacity": "75",
+    "operator": "Wickes",
+    "parking": "surface",
+    "source": "survey;bing",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 188050057,
+  "center": {
+    "lat": 52.6890204,
+    "lon": -2.4445934
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8343",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 188144549,
+  "center": {
+    "lat": 50.8326384,
+    "lon": -0.1584778
+  },
+  "tags": {
+    "addr:postcode": "BN3 1SF",
+    "addr:street": "Davigdor Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "retail",
+    "building:levels": "2",
+    "contact:website": "https://www.wickes.co.uk/store/8230",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 188397848,
+  "center": {
+    "lat": 52.9759264,
+    "lon": -0.0280567
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:postcode": "PE21 8QN",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "check_date": "2025-05-13",
+    "contact:website": "https://www.wickes.co.uk/store/8355",
+    "name": "Wickes",
+    "payment:cash": "yes",
+    "ref:GB:uprn": "10008186667",
+    "shop": "doityourself",
+    "source": "Bing",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 190078566,
+  "center": {
+    "lat": 51.8994950,
+    "lon": 0.8963400
+  },
+  "tags": {
+    "addr:city": "Colchester",
+    "addr:postcode": "CO1 1XF",
+    "addr:street": "Clarendon Way",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8287",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 190477331,
+  "center": {
+    "lat": 51.4365958,
+    "lon": -0.3813182
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8260",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 197262713,
+  "center": {
+    "lat": 51.3693900,
+    "lon": 0.0003118
+  },
+  "tags": {
+    "addr:city": "West Wickham",
+    "addr:housenumber": "38 - 40",
+    "addr:postcode": "BR4 9HR",
+    "addr:street": "Croydon Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8461",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source": "bing",
+    "source:addr:postcode": "code-point_open"
+  }
+},
+{
+  "type": "way",
+  "id": 198478907,
+  "center": {
+    "lat": 51.4433789,
+    "lon": -2.5017289
+  },
+  "tags": {
+    "addr:city": "Bristol",
+    "addr:postcode": "BS30 7DA",
+    "addr:street": "Aldermoor Way",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "warehouse",
+    "contact:website": "https://www.wickes.co.uk/store/8077",
+    "name": "Wickes",
+    "ref:GB:uprn": "640920",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 199176828,
+  "center": {
+    "lat": 51.8866041,
+    "lon": -0.5093202
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8062",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 200771925,
+  "center": {
+    "lat": 53.4448273,
+    "lon": -1.9582167
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8366",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 201379520,
+  "center": {
+    "lat": 53.7954744,
+    "lon": -1.7836277
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "retail",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 201379524,
+  "center": {
+    "lat": 53.7961026,
+    "lon": -1.7800595
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "retail",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 201738304,
+  "center": {
+    "lat": 53.6417746,
+    "lon": -1.7937717
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8263",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source": "Survey; Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 206324460,
+  "center": {
+    "lat": 55.0779768,
+    "lon": -3.6239900
+  },
+  "tags": {
+    "addr:city": "Dumfries",
+    "addr:housename": "College Mains Retail Park",
+    "addr:postcode": "DG2 0NU",
+    "addr:street": "College Mains Road",
+    "addr:unit": "1",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8365",
+    "name": "Wickes",
+    "ref:GB:uprn": "137052433",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 209283088,
+  "center": {
+    "lat": 51.8154311,
+    "lon": -4.9638245
+  },
+  "tags": {
+    "addr:housename": "Springfield Retail Park",
+    "addr:postcode": "SA61 2PY",
+    "addr:street": "Fishguard Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8353",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 215082606,
+  "center": {
+    "lat": 53.6977297,
+    "lon": -1.3221298
+  },
+  "tags": {
+    "addr:city": "Pontefract",
+    "addr:housename": "Racecourse Retail Park",
+    "addr:postcode": "WF8 4PR",
+    "addr:street": "Park Road",
+    "addr:substreet": "Racecourse Retail Park",
+    "addr:unit": "1",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8267",
+    "fhrs:id": "1291483",
+    "name": "Wickes",
+    "operator": "Wickes",
+    "ref:GB:uprn": "63135614",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 216443153,
+  "center": {
+    "lat": 51.5341418,
+    "lon": -0.2974839
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8237",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 217820294,
+  "center": {
+    "lat": 53.8437061,
+    "lon": -1.5553344
+  },
+  "tags": {
+    "addr:city": "Leeds",
+    "addr:postcode": "LS17 5NY",
+    "branch": "Leeds Moor Allerton",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "building:levels": "2",
+    "construction": "retail",
+    "name": "Wickes",
+    "note": "Ground floor is accessible to public, mezzanine level is staff only. (This differs from when this was a Homebase previously.)",
+    "opening_hours": "Mo-Sa 08:00-20:00; Su 10:00-16:00",
+    "phone": "+44 113 868 2600",
+    "ref:GB:uprn": "72505273",
+    "shop": "doityourself",
+    "source:building": "bing",
+    "was:brand:wikidata": "Q9293447",
+    "was:brand:wikipedia": "en:Homebase",
+    "was:contact:website": "https://store.homebase.co.uk/leeds/moor-allerton-centre",
+    "was:name": "Homebase",
+    "was:opening_hours": "Mo-Th 08:00-20:00; Fr 08:00-21:00; Sa 08:00-20:00; Su 10:00-16:00",
+    "was:operator": "homebase",
+    "website": "https://www.wickes.co.uk/store/8564"
+  }
+},
+{
+  "type": "way",
+  "id": 219028558,
+  "center": {
+    "lat": 53.2347013,
+    "lon": -0.5068692
+  },
+  "tags": {
+    "addr:city": "Lincoln",
+    "addr:postcode": "LN2 4HU",
+    "addr:street": "Outer Circle Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "building:levels": "2",
+    "contact:website": "https://www.wickes.co.uk/store/8061",
+    "name": "Wickes",
+    "ref:GB:uprn": "235049189",
+    "shop": "doityourself",
+    "smoking": "outside"
+  }
+},
+{
+  "type": "way",
+  "id": 219627157,
+  "center": {
+    "lat": 53.5976006,
+    "lon": -2.2911579
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8284",
+    "name": "Wickes",
+    "ref:GB:uprn": "100012564690",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 220146779,
+  "center": {
+    "lat": 52.4232368,
+    "lon": -1.9224605
+  },
+  "tags": {
+    "access": "customers",
+    "amenity": "parking",
+    "capacity:disabled": "2",
+    "fee": "no",
+    "lit": "yes",
+    "name": "Wickes & Toolstation",
+    "operator": "Wickes",
+    "parking": "surface",
+    "smoothness": "bad",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 237459274,
+  "center": {
+    "lat": 51.8900570,
+    "lon": -0.1959386
+  },
+  "tags": {
+    "addr:city": "Stevenage",
+    "addr:postcode": "SG1 1XP",
+    "addr:street": "Monkswood Way",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "retail",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 10:00-16:00",
+    "phone": "+44 1438 314477",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8416"
+  }
+},
+{
+  "type": "way",
+  "id": 238965495,
+  "center": {
+    "lat": 51.2745148,
+    "lon": 0.5154201
+  },
+  "tags": {
+    "branch": "Maidstone",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "check_date": "2024-10-08",
+    "contact:website": "https://www.wickes.co.uk/store/8314",
+    "name": "Wickes",
+    "operator": "Wickes",
+    "phone": "+44 1622 690346",
+    "shop": "doityourself",
+    "source": "survey,Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 241077113,
+  "center": {
+    "lat": 52.4039722,
+    "lon": -0.7360324
+  },
+  "tags": {
+    "addr:city": "Kettering",
+    "addr:housename": "Wickes Extra",
+    "addr:postcode": "NN16 9TS",
+    "addr:street": "Northfield Avenue",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "building:levels": "1",
+    "check_date": "2023-01-09",
+    "check_date:opening_hours": "2024-02-23",
+    "contact:website": "https://www.wickes.co.uk/store/8326",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 10:00-16:00",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "roof:levels": "0",
+    "roof:shape": "round",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 241609734,
+  "center": {
+    "lat": 52.3405640,
+    "lon": -0.1851756
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8464",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 241826851,
+  "center": {
+    "lat": 52.8039531,
+    "lon": -1.6509104
+  },
+  "tags": {
+    "addr:city": "Burton-on-Trent",
+    "addr:postcode": "DE14 2AP",
+    "addr:street": "Wellington Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8404",
+    "name": "Wickes",
+    "ref:GB:uprn": "100032283306;100032283304;100032003499;100032283300",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 243573208,
+  "center": {
+    "lat": 50.7568938,
+    "lon": -1.9266984
+  },
+  "tags": {
+    "addr:housenumber": "891-895",
+    "addr:postcode": "BH11 8LL",
+    "addr:street": "Ringwood Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "check_date": "2022-05-28",
+    "contact:website": "https://www.wickes.co.uk/store/8246",
+    "fhrs:id": "1262398",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source:addr": "FHRS Open Data"
+  }
+},
+{
+  "type": "way",
+  "id": 251580387,
+  "center": {
+    "lat": 53.2720975,
+    "lon": -2.1199172
+  },
+  "tags": {
+    "addr:city": "Macclesfield",
+    "addr:postcode": "SK10 2SF",
+    "addr:street": "Hully Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8415",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:30-20:00; Sa 08:00-19:00; Su 10:00-16:00",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 254199915,
+  "center": {
+    "lat": 50.9244693,
+    "lon": -1.3082693
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8474",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 256304678,
+  "center": {
+    "lat": 53.1951180,
+    "lon": -2.9161162
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8262",
+    "height": "8.96",
+    "height:median": "7.74",
+    "name": "Wickes",
+    "phone": "+44 1244370941",
+    "ref:GB:uprn": "200000990155",
+    "shop": "doityourself",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 257603874,
+  "center": {
+    "lat": 52.1938842,
+    "lon": -2.2127805
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8406",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 261968597,
+  "center": {
+    "lat": 53.1212476,
+    "lon": -1.2528132
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:website": "https://www.wickes.co.uk/store/8067",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 262601570,
+  "center": {
+    "lat": 52.7333763,
+    "lon": -2.7290609
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:postcode": "SY1 4EN",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "commercial",
+    "contact:website": "https://www.wickes.co.uk/store/8268",
+    "name": "Wickes",
+    "ref:GB:uprn": "100071531989",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 264200899,
+  "center": {
+    "lat": 50.9552925,
+    "lon": -0.1397527
+  },
+  "tags": {
+    "addr:city": "Burgess Hill",
+    "addr:housenumber": "255",
+    "addr:postcode": "RH15 9QU",
+    "addr:street": "London Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8448",
+    "name": "Wickes",
+    "ref:GB:uprn": "10070632090",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 266187945,
+  "center": {
+    "lat": 53.5231708,
+    "lon": -1.1023090
+  },
+  "tags": {
+    "addr:city": "Doncaster",
+    "addr:postcode": "DN2 6AZ",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8239",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 285328318,
+  "center": {
+    "lat": 51.4813561,
+    "lon": 0.1689345
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8310",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 290003708,
+  "center": {
+    "lat": 52.5969013,
+    "lon": -2.1302359
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8437",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 303434356,
+  "center": {
+    "lat": 51.6577286,
+    "lon": -0.2534344
+  },
+  "tags": {
+    "addr:city": "Borehamwood",
+    "addr:housename": "Wickes",
+    "addr:housenumber": "UNIT 1 ELSTREE TRADE PARK",
+    "addr:postcode": "WD6 1GJ",
+    "addr:street": "Elstree Way",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8467",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 06:30-20:00, Sa 07:30-20:00, Su 10:00-16:00",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "payment:coins": "yes",
+    "payment:notes": "yes",
+    "ref:GB:uprn": "10013910722",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 307802376,
+  "center": {
+    "lat": 53.4027414,
+    "lon": -2.2989268
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8291",
+    "name": "Wickes",
+    "ref:GB:uprn": "10023052918",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 313090062,
+  "center": {
+    "lat": 52.2387120,
+    "lon": 0.7417028
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "name": "Wickes",
+    "old_name": "Homebase",
+    "shop": "doityourself",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 313276536,
+  "center": {
+    "lat": 52.5259231,
+    "lon": -1.8954344
+  },
+  "tags": {
+    "access": "customers",
+    "amenity": "parking",
+    "name": "Wickes",
+    "operator": "Wickes",
+    "parking": "surface",
+    "smoothness": "intermediate",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 318087895,
+  "center": {
+    "lat": 53.2005229,
+    "lon": -2.5137200
+  },
+  "tags": {
+    "addr:city": "Winsford",
+    "addr:housename": "Wharton Retail Park",
+    "addr:postcode": "CW7 3DB",
+    "addr:street": "Weaver Valley Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8459",
+    "name": "Wickes",
+    "operator": "WICKES",
+    "ref:GB:uprn": "100012603663",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 318088023,
+  "center": {
+    "lat": 53.2008431,
+    "lon": -2.5136174
+  },
+  "tags": {
+    "access": "customers",
+    "amenity": "parking",
+    "operator": "wickes",
+    "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 318105205,
+  "center": {
+    "lat": 52.4762211,
+    "lon": 1.7339016
+  },
+  "tags": {
+    "addr:city": "Lowestoft",
+    "addr:postcode": "NR32 2ED",
+    "addr:street": "Peto Way",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8317",
+    "fax": "+44 1502 526930",
+    "name": "Wickes",
+    "opening_hours": "Mo-Sa 07:00-20:00; Sa 07:00-19:00; Su 10:00-16:00",
+    "phone": "+44 1502 533320",
+    "shop": "doityourself",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 331711648,
+  "center": {
+    "lat": 53.1536254,
+    "lon": -1.2052381
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "name": "Wickes",
+    "ref:GB:uprn": "10091908186;10012813562;10091908187",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 332572962,
+  "center": {
+    "lat": 51.5920686,
+    "lon": -3.2189127
+  },
+  "tags": {
+    "addr:city": "Caerphilly",
+    "addr:housenumber": "Unit 10",
+    "addr:postcode": "CF83 3GX",
+    "addr:street": "Gallagher Retail Park",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8347",
+    "name": "Wickes",
+    "ref:GB:uprn": "43166095",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 332980578,
+  "center": {
+    "lat": 53.0018140,
+    "lon": -1.1381946
+  },
+  "tags": {
+    "addr:city": "Nottingham",
+    "addr:postcode": "NG5 6GY",
+    "addr:street": "Mansfield Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "building:levels": "1",
+    "contact:website": "https://www.wickes.co.uk/store/8257",
+    "fhrs:id": "708127",
+    "name": "Wickes",
+    "not:addr:postcode": "NG5 6BU",
+    "ref:GB:uprn": "10002893861",
+    "roof:levels": "0",
+    "shop": "doityourself",
+    "source": "survey",
+    "source:area": "Bing",
+    "source:postcode": "Wickes website"
+  }
+},
+{
+  "type": "way",
+  "id": 336063097,
+  "center": {
+    "lat": 50.8239870,
+    "lon": -0.3590868
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8221",
+    "name": "Wickes",
+    "ref:GB:uprn": "100062233774",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 355366270,
+  "center": {
+    "lat": 53.0019408,
+    "lon": -1.1385665
+  },
+  "tags": {
+    "access": "customers",
+    "amenity": "parking",
+    "fee": "no",
+    "operator": "Wickes",
+    "parking": "surface",
+    "source": "survey; Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 356942265,
+  "center": {
+    "lat": 53.5620089,
+    "lon": -1.4697250
+  },
+  "tags": {
+    "addr:city": "Barnsley",
+    "addr:postcode": "S71 1LS",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8247",
+    "name": "Wickes",
+    "ref:GB:uprn": "100052202299",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 364029784,
+  "center": {
+    "lat": 51.4124806,
+    "lon": -0.1917383
+  },
+  "tags": {
+    "addr:city": "London",
+    "addr:postcode": "SW19 3XD",
+    "addr:street": "Jubilee Way",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "commercial",
+    "contact:website": "https://www.wickes.co.uk/store/8214",
+    "name": "Wickes",
+    "opening_hours": "Mo-Sa 07:00-20:00; Su 10:00-16:00",
+    "operator:wikidata": "Q7998350",
+    "ref:GB:uprn": "48082956",
+    "shop": "doityourself",
+    "source": "local knowledge"
+  }
+},
+{
+  "type": "way",
+  "id": 364303324,
+  "center": {
+    "lat": 52.3846204,
+    "lon": -1.2594695
+  },
+  "tags": {
+    "addr:city": "Rugby",
+    "addr:postcode": "CV21 1GN",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8488",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 10:00-16:00",
+    "phone": "+441788536592",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 384987047,
+  "center": {
+    "lat": 54.5341290,
+    "lon": -1.5317021
+  },
+  "tags": {
+    "addr:city": "Darlington",
+    "addr:street": "Blackett Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8259",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 417910527,
+  "center": {
+    "lat": 53.8240297,
+    "lon": -1.5094903
+  },
+  "tags": {
+    "addr:street": "Roundhay Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8497",
+    "name": "Wickes",
+    "ref:GB:uprn": "72750678",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 419536752,
+  "center": {
+    "lat": 52.5284156,
+    "lon": -1.4617716
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8452",
+    "name": "Wickes",
+    "nohousenumber": "yes",
+    "shop": "doityourself",
+    "source": "Warwicks CC Aerial Imagery 2013"
+  }
+},
+{
+  "type": "way",
+  "id": 422869378,
+  "center": {
+    "lat": 50.8611593,
+    "lon": 0.2441862
+  },
+  "tags": {
+    "addr:city": "Hailsham",
+    "addr:housename": "Hailsham Retail Park",
+    "addr:postcode": "BN27 3JF",
+    "addr:street": "Diplocks Way",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8451",
+    "name": "Wickes",
+    "opening_hours": "Mo-Sa 07:00-20:00, Su 10:00-16:00",
+    "shop": "doityourself",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 430926707,
+  "center": {
+    "lat": 53.6498907,
+    "lon": -2.6285697
+  },
+  "tags": {
+    "addr:city": "Chorley",
+    "addr:postcode": "PR7 2BN",
+    "addr:street": "George Street",
+    "addr:unit": "Chorley Retail Park",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8431",
+    "name": "Wickes",
+    "ref:GB:uprn": "200004076835",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 445044315,
+  "center": {
+    "lat": 52.1859580,
+    "lon": 1.0018593
+  },
+  "tags": {
+    "addr:city": "Stowmarket",
+    "addr:housenumber": "1",
+    "addr:postcode": "IP14 1RT",
+    "addr:street": "Riverside Drive",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8493",
+    "fhrs:id": "1405209",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source:addr": "FHRS Open Data"
+  }
+},
+{
+  "type": "way",
+  "id": 447751700,
+  "center": {
+    "lat": 51.1554957,
+    "lon": 0.2902136
+  },
+  "tags": {
+    "addr:city": "Tunbridge Wells",
+    "addr:postcode": "TN2 3UG",
+    "addr:street": "Longfield Road",
+    "addr:unit": "1",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8484",
+    "name": "Wickes",
+    "opening_hours": "Mo-Sa 07:00-20:00;Su 10:00-16:00",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 452056523,
+  "center": {
+    "lat": 50.2641970,
+    "lon": -5.1228911
+  },
+  "tags": {
+    "addr:city": "Truro",
+    "addr:country": "GB",
+    "addr:postcode": "TR4 8GA",
+    "addr:street": "Threemilestone Retail Park",
+    "addr:suburb": "Greenbottom",
+    "addr:unit": "Unit 4",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8407",
+    "fax": "+44 1872 561646",
+    "name": "Wickes",
+    "opening_hours": "Mo 07:00-20:00, Tu 07:00-20:00, We 07:00-20:00, Fr 07:00-20:00, Sa 07:00-19:00, Su 10:00-16:00",
+    "operator": "Wickes Group Plc",
+    "phone": "+44 1872 561101",
+    "shop": "doityourself",
+    "source": "OS Local",
+    "source:id": "7B77C274-C7F2-4259-9E86-E266C85B4933",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 456641789,
+  "center": {
+    "lat": 53.8034239,
+    "lon": -3.0071445
+  },
+  "tags": {
+    "addr:city": "Blackpool",
+    "addr:postcode": "FY3 9TN",
+    "addr:street": "Preston New Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8296",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 459600835,
+  "center": {
+    "lat": 51.5211127,
+    "lon": -0.6158368
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8340",
+    "name": "Wickes",
+    "ref:GB:uprn": "100081304686;10002334897",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 475589411,
+  "center": {
+    "lat": 51.0210929,
+    "lon": -3.0914127
+  },
+  "tags": {
+    "addr:city": "Taunton",
+    "addr:country": "GB",
+    "addr:county": "Somerset",
+    "addr:parentstreet": "Priory Avenue",
+    "addr:postcode": "TA1 1QS",
+    "addr:street": "Priory Fields Retail Park",
+    "addr:unit": "6",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "retail",
+    "building:levels": "1",
+    "check_date": "2025-10-24",
+    "disused:shop": "doityourself",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 10:00-16:00",
+    "phone": "+44 1823 326943",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8048"
+  }
+},
+{
+  "type": "way",
+  "id": 497195800,
+  "center": {
+    "lat": 50.7995840,
+    "lon": -0.6635140
+  },
+  "tags": {
+    "addr:city": "Bognor Regis",
+    "addr:postcode": "PO22 9FL",
+    "addr:street": "Shripney Road",
+    "addr:unit": "Unit 1, Railside Retail Park",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8492",
+    "fhrs:authority": "Arun",
+    "fhrs:id": "1270070",
+    "fhrs:local_authority_id": "9102983",
+    "name": "Wickes",
+    "ref:GB:uprn": "10091568328;10091567823",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 501715823,
+  "center": {
+    "lat": 53.7684251,
+    "lon": -2.7058995
+  },
+  "tags": {
+    "access": "customers",
+    "amenity": "parking",
+    "operator": "Wickes",
+    "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 505587959,
+  "center": {
+    "lat": 52.6842681,
+    "lon": -1.0979010
+  },
+  "tags": {
+    "addr:city": "Thurmaston",
+    "addr:postcode": "LE4 8PH",
+    "addr:street": "Westmoreland Avenue",
+    "addr:unit": "5",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "industrial",
+    "contact:website": "https://www.wickes.co.uk/store/8520",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 10:00-16:00",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 506489646,
+  "center": {
+    "lat": 53.5736110,
+    "lon": -2.4321266
+  },
+  "tags": {
+    "addr:city": "Bolton",
+    "addr:postcode": "BL3 6DH",
+    "addr:street": "Bolton Shopping Park",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "name": "Wickes",
+    "old_name": "Decathlon",
+    "ref:GB:uprn": "10001245403",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 517090606,
+  "center": {
+    "lat": 51.2885606,
+    "lon": -0.7633374
+  },
+  "tags": {
+    "addr:housenumber": "13",
+    "addr:postcode": "GU14 7QU",
+    "addr:street": "Invincible Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8049",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 10:00-16:00",
+    "phone": "+44 1252 510251",
+    "shop": "doityourself",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 539515536,
+  "center": {
+    "lat": 51.1341733,
+    "lon": -0.1865190
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8390",
+    "name": "Wickes",
+    "note": "customer lift at rear of store",
+    "payment:cash": "yes",
+    "shop": "doityourself",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 547437888,
+  "center": {
+    "lat": 52.6483091,
+    "lon": 1.2591695
+  },
+  "tags": {
+    "addr:city": "Norwich",
+    "addr:country": "GB",
+    "addr:housenumber": "2",
+    "addr:postcode": "NR6 5BD",
+    "addr:street": "Turnpike Close",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "building:levels": "1",
+    "contact:website": "https://www.wickes.co.uk/store/8498",
+    "fhrs:id": "1282897",
+    "name": "Wickes",
+    "opening_hours": "Mo-Sa 07:00-20:00; Su 10:00-16:00",
+    "phone": "+44 1603 418000",
+    "ref": "8498",
+    "ref:GB:uprn": "10095578501;10090485181",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 554649922,
+  "center": {
+    "lat": 51.0951245,
+    "lon": 1.1626718
+  },
+  "tags": {
+    "addr:city": "Folkestone",
+    "addr:postcode": "CT19 5GA",
+    "addr:street": "Park Farm Road",
+    "branch": "Folkestone",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8479",
+    "name": "Wickes",
+    "opening_hours": "Mo-Sa 07:00-20:00; Su 10:00-16:00; Jan 01-02 10:00-16:00; Dec 31 07:00-16:00; Dec 29-30 07:00-19:00; Dec 27-28 07:00-18:00; Dec 25-26 off",
+    "phone": "+44 1303277258",
+    "ref:GB:uprn": "50100986",
+    "shop": "doityourself",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 559583161,
+  "center": {
+    "lat": 51.4163741,
+    "lon": -0.7639651
+  },
+  "tags": {
+    "addr:city": "Bracknell",
+    "addr:postcode": "RG12 1NS",
+    "addr:street": "Easthampstead Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8312",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 568257542,
+  "center": {
+    "lat": 52.4975606,
+    "lon": -0.6806608
+  },
+  "tags": {
+    "addr:city": "Corby",
+    "addr:country": "GB",
+    "addr:housenumber": "1",
+    "addr:postcode": "NN17 5AT",
+    "addr:street": "Courier Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source": "OS VectorMap District",
+    "website": "https://www.wickes.co.uk/store/8378",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 581246060,
+  "center": {
+    "lat": 53.8387893,
+    "lon": -1.7687688
+  },
+  "tags": {
+    "addr:city": "Shipley",
+    "addr:postcode": "BD17 7EY",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "commercial",
+    "contact:website": "https://www.wickes.co.uk/store/8483",
+    "fhrs:id": "1283144",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 10:00-16:00",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 587595240,
+  "center": {
+    "lat": 52.6530863,
+    "lon": 0.1483247
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8041",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 589238227,
+  "center": {
+    "lat": 53.5736946,
+    "lon": -0.0976646
+  },
+  "tags": {
+    "addr:city": "Grimsby",
+    "addr:postcode": "DN31 2SG",
+    "addr:street": "Birchin Way",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8469",
+    "name": "Wickes",
+    "ref:GB:uprn": "10090082791",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 609337970,
+  "center": {
+    "lat": 51.4340985,
+    "lon": -0.5299345
+  },
+  "tags": {
+    "addr:city": "Staines-upon-Thames",
+    "addr:housename": "Unit 2, Hawthorne Trade Park",
+    "addr:postcode": "TW18 3AY",
+    "addr:street": "Hawthorn Road",
+    "addr:unit": "2",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "warehouse",
+    "contact:website": "https://www.wickes.co.uk/store/8510",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 645780389,
+  "center": {
+    "lat": 52.5822353,
+    "lon": -1.1255645
+  },
+  "tags": {
+    "addr:city": "Wigston",
+    "addr:housename": "Wickes",
+    "addr:postcode": "LE18 4SE",
+    "addr:street": "Blaby Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "building:levels": "2",
+    "contact:phone": "+44 116 355 2489",
+    "contact:website": "https://www.wickes.co.uk/store/8393",
+    "name": "Wickes",
+    "opening_hours": "Mo-Sa 08:00-20:00; Su 10:00-16:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "roof:levels": "0",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 659905140,
+  "center": {
+    "lat": 50.8354686,
+    "lon": -1.1854389
+  },
+  "tags": {
+    "access": "customers",
+    "amenity": "parking",
+    "operator": "Wickes"
+  }
+},
+{
+  "type": "way",
+  "id": 668512593,
+  "center": {
+    "lat": 56.0815567,
+    "lon": -3.4103048
+  },
+  "tags": {
+    "addr:city": "Dunfermline",
+    "addr:postcode": "KY11 4LP",
+    "addr:street": "Halbeath Retail Park",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "retail",
+    "contact:website": "https://store.homebase.co.uk/dunfermline/halbeath-retail-park",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 09:00-18:00",
+    "phone": "+44 1383 329700",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 673427537,
+  "center": {
+    "lat": 53.0668636,
+    "lon": -2.2216001
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8455",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 673551660,
+  "center": {
+    "lat": 51.4119668,
+    "lon": -0.0646910
+  },
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "14",
+    "addr:postcode": "SE20 8PY",
+    "addr:street": "Anerley Station Road",
+    "addr:suburb": "Anerley",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "check_date": "2025-11-25",
+    "contact:facebook": "Wickes.co.uk",
+    "contact:instagram": "wickes",
+    "name": "Wickes",
+    "opening_hours": "Mo-Sa 07:00-18:00; Su 10:00-16:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+44 20 8778 4881",
+    "ref:GB:uprn": "100023251139",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8480",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 683865114,
+  "center": {
+    "lat": 50.7875921,
+    "lon": 0.3017671
+  },
+  "tags": {
+    "addr:city": "Eastbourne",
+    "addr:housenumber": "1",
+    "addr:postcode": "BN23 6PW",
+    "addr:street": "Hammonds Drive",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8265",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00, Su 10:00-16:00; Sa 07:00-20:00",
+    "phone": "+44 1323431631",
+    "ref:GB:uprn": "100062254930",
+    "shop": "doityourself",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702414777,
+  "center": {
+    "lat": 50.7395655,
+    "lon": -1.7459596
+  },
+  "tags": {
+    "addr:postcode": "BH23 3PY",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source:addr:postcode": "code-point_open",
+    "website": "https://www.wickes.co.uk/store/8481"
+  }
+},
+{
+  "type": "way",
+  "id": 704865343,
+  "center": {
+    "lat": 52.2386976,
+    "lon": -0.9288846
+  },
+  "tags": {
+    "addr:housename": "Wickes",
+    "addr:housenumber": "18",
+    "addr:postcode": "NN5 5AF",
+    "addr:street": "Tyne Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:website": "https://www.wickes.co.uk/store/8293",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 10:00-16:00",
+    "operator": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 706727024,
+  "center": {
+    "lat": 51.4003833,
+    "lon": -1.3005159
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "retail",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 713036992,
+  "center": {
+    "lat": 52.9199750,
+    "lon": -0.6497529
+  },
+  "tags": {
+    "addr:city": "Grantham",
+    "addr:postcode": "NG31 8HX",
+    "addr:street": "Gonerby Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "retail",
+    "name": "Wickes",
+    "phone": "+44 1476 570666",
+    "ref:GB:uprn": "100032254711",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 813602867,
+  "center": {
+    "lat": 52.0659182,
+    "lon": 1.2790608
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8044",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 837888213,
+  "center": {
+    "lat": 52.2593380,
+    "lon": 0.3976875
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8361",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 881159129,
+  "center": {
+    "lat": 51.3571151,
+    "lon": 1.4010401
+  },
+  "tags": {
+    "addr:city": "Broadstairs",
+    "addr:postcode": "CT10 2QW",
+    "addr:street": "Margate Road",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:website": "https://www.wickes.co.uk/store/8344",
+    "level": "0",
+    "name": "Wickes",
+    "nohousenumber": "yes",
+    "opening_hours": "Mo-Sa 07:00-18:00; Su 10:00-16:00",
+    "shop": "doityourself",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 895912104,
+  "center": {
+    "lat": 50.9345741,
+    "lon": -2.6667474
+  },
+  "tags": {
+    "addr:city": "Yeovil",
+    "addr:postcode": "BA20 2HP",
+    "addr:street": "Brympton Way",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "commercial",
+    "contact:website": "https://www.wickes.co.uk/store/8274",
+    "name": "Wickes",
+    "opening_hours": "Mo-Sa 07:00-18:00; Su 07:00-16:00",
+    "phone": "+44 1935 432054",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 900168133,
+  "center": {
+    "lat": 53.0484111,
+    "lon": -2.9853061
+  },
+  "tags": {
+    "addr:city": "Wrexham",
+    "addr:street": "Border Retail Park",
+    "alt_name:cy": "Wickes - Wrecsam",
+    "alt_name:en": "Wickes - Wrexham",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8308",
+    "name": "Wickes",
+    "name:cy": "Wickes",
+    "name:en": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 931791713,
+  "center": {
+    "lat": 51.7062990,
+    "lon": -1.9621382
+  },
+  "tags": {
+    "addr:city": "Cirencester",
+    "addr:postcode": "GL7 1YQ",
+    "addr:street": "Love Lane",
+    "addr:substreet": "Metric Trade Park",
+    "addr:unit": "1",
+    "branch": "Cirencester",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "retail",
+    "fhrs:id": "1275351",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 10:00-16:00",
+    "phone": "+44 1285 644349",
+    "ref:GB:uprn": "10024446265",
+    "shop": "doityourself",
+    "source": "Bing",
+    "website": "https://www.wickes.co.uk/store/8351"
+  }
+},
+{
+  "type": "way",
+  "id": 946640521,
+  "center": {
+    "lat": 51.6667781,
+    "lon": -0.3664915
+  },
+  "tags": {
+    "addr:postcode": "WD25 8HL",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "check_date": "2024-09-21",
+    "contact:website": "https://www.wickes.co.uk/store/8397",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 06:30-20:00; Sa 07:00-20:00; Su 10:00-16:00",
+    "ref:GB:uprn": "10013910377;10013914267",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 984362316,
+  "center": {
+    "lat": 52.2720116,
+    "lon": -1.5354750
+  },
+  "tags": {
+    "addr:city": "Leamington Spa",
+    "addr:housename": "UNIT A SPA PARK",
+    "addr:postcode": "CV31 3SS",
+    "addr:street": "Ashbourne Drive",
+    "branch": "Leamington Spa",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 987739556,
+  "center": {
+    "lat": 56.4773893,
+    "lon": -2.9297805
+  },
+  "tags": {
+    "addr:city": "Dundee",
+    "addr:postcode": "DD4 7XE",
+    "addr:street": "Milton of Craigie Road North",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "contact:phone": "+44 1382 456468",
+    "contact:website": "https://www.wickes.co.uk/store/8258",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 09:00-18:00",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 1028224281,
+  "center": {
+    "lat": 53.3439935,
+    "lon": -1.3587485
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "contact:website": "https://www.wickes.co.uk/store/8468",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 1031668940,
+  "center": {
+    "lat": 54.8977879,
+    "lon": -2.9328933
+  },
+  "tags": {
+    "access": "customers",
+    "amenity": "parking",
+    "operator": "Wickes",
+    "operator:type": "business",
+    "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 1034649887,
+  "center": {
+    "lat": 53.3942257,
+    "lon": -2.5914306
+  },
+  "tags": {
+    "addr:city": "Warrington",
+    "addr:housename": "Pinners Brow Retail Park",
+    "addr:postcode": "WA2 7XA",
+    "addr:street": "Pinners Brow",
+    "addr:unit": "B",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "yes",
+    "name": "Wickes",
+    "phone": "+44 1925 632263",
+    "ref:GB:uprn": "200000973743",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8301"
+  }
+},
+{
+  "type": "way",
+  "id": 1067853480,
+  "center": {
+    "lat": 51.1361376,
+    "lon": -2.9995266
+  },
+  "tags": {
+    "addr:city": "Bridgwater",
+    "addr:housename": "Unit 25",
+    "addr:postcode": "TA6 4DH",
+    "addr:street": "East Quay",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "website": "https://www.wickes.co.uk/store/8037"
+  }
+},
+{
+  "type": "way",
+  "id": 1108023605,
+  "center": {
+    "lat": 51.4787826,
+    "lon": 0.1034122
+  },
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "94",
+    "addr:postcode": "SE18 2BG",
+    "addr:street": "Kings Highway",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "fhrs:id": "1274358",
+    "name": "Wickes",
+    "ref:GB:uprn": "100023243082",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 1124698968,
+  "center": {
+    "lat": 51.7065017,
+    "lon": -1.9625684
+  },
+  "tags": {
+    "access": "customers",
+    "amenity": "parking",
+    "fee": "no",
+    "name": "Wickes",
+    "operator": "Wickes",
+    "operator:wikidata": "Q7998350",
+    "parking": "surface",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1155648153,
+  "center": {
+    "lat": 54.8922192,
+    "lon": -1.4530279
+  },
+  "tags": {
+    "access": "customers",
+    "amenity": "parking",
+    "capacity:disabled": "3",
+    "capacity:parent": "3",
+    "operator": "Wickes",
+    "operator:wikidata": "Q7998350",
+    "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 1155648157,
+  "center": {
+    "lat": 54.8924997,
+    "lon": -1.4530479
+  },
+  "tags": {
+    "addr:city": "Sunderland",
+    "addr:country": "GB",
+    "addr:place": "Pennywell Industrial Estate",
+    "addr:postcode": "SR4 9FA",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "fhrs:id": "1500278",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 1239423055,
+  "center": {
+    "lat": 52.4896600,
+    "lon": -2.1198680
+  },
+  "tags": {
+    "addr:postcode": "DY5 1HR",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "building": "retail",
+    "name": "Wickes",
+    "ref:GB:uprn": "90161304",
+    "shop": "doityourself",
+    "source:addr:postcode": "ONSUD;OS Open UPRN"
+  }
+},
+{
+  "type": "way",
+  "id": 1348246754,
+  "center": {
+    "lat": 53.7989924,
+    "lon": -1.6294968
+  },
+  "tags": {
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "brand:wikipedia": "en:Wickes",
+    "contact:website": "https://www.wickes.co.uk/store/8088",
+    "name": "Wickes",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 1351208533,
+  "center": {
+    "lat": 52.8996229,
+    "lon": -1.2630848
+  },
+  "tags": {
+    "addr:city": "Nottingham",
+    "addr:postcode": "NG10 2AU",
+    "addr:street": "Nottingham Road",
+    "addr:suburb": "Long Eaton",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "retail",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source:building": "estimate from local knowledge"
+  }
+},
+{
+  "type": "way",
+  "id": 1388076158,
+  "center": {
+    "lat": 57.1473441,
+    "lon": -2.2694113
+  },
+  "tags": {
+    "addr:city": "Westhill",
+    "addr:postcode": "AB32 6GD",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "name": "Wickes",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 09:00-18:00",
+    "phone": "+44 1224 014599",
+    "ref:GB:uprn": "151183642",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 1423272534,
+  "center": {
+    "lat": 50.4859902,
+    "lon": -3.5684704
+  },
+  "tags": {
+    "addr:city": "Torquay",
+    "addr:postcode": "TQ2 7FA",
+    "addr:street": "Orchard Way",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "building": "yes",
+    "name": "Wickes",
+    "shop": "doityourself",
+    "source": "OS_OpenData_OpenMapLocal",
+    "website": "https://www.wickes.co.uk/store/8549"
+  }
+},
+{
+  "type": "way",
+  "id": 1424562899,
+  "center": {
+    "lat": 51.3815027,
+    "lon": 0.5209510
+  },
+  "tags": {
+    "addr:city": "Chatham",
+    "addr:postcode": "ME4 6AA",
+    "addr:street": "New Cut",
+    "branch": "Chatham",
+    "brand": "Wickes",
+    "brand:wikidata": "Q7998350",
+    "contact:facebook": "https://www.facebook.com/Wickes.co.uk",
+    "email": "customerservices@wickes.co.uk",
+    "landuse": "retail",
+    "loc_name": "Wickes Chatham",
+    "name": "Wickes",
+    "opening_hours": "Mo-Sa 07:00-20:00, Su 10:00-16:00",
+    "operator": "Wickes Building Supplies Ltd",
+    "phone": "+44 1634 406060",
+    "shop": "doityourself",
+    "source": "local knowledge",
+    "stroller": "yes",
+    "website": "https://www.wickes.co.uk/store/8233",
+    "wheelchair": "yes"
+  }
+}
+
+  ]
+}

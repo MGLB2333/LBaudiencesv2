@@ -66,7 +66,7 @@ function MapContent({
         includedDistrictIds={includedDistrictIds}
         agreementByDistrict={agreementByDistrict}
         maxAgreement={maxAgreement}
-        onHover={onHover}
+        onHover={onHover ? (info) => onHover({ ...info, maxAgreement } as MapFeatureInfo) : undefined}
         visible={mode === 'hex'}
         layerRef={hexOverlayRef}
       />

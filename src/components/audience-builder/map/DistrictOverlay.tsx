@@ -75,10 +75,6 @@ export function DistrictOverlay({
       permanent: false,
       direction: 'top',
       className: 'district-tooltip',
-      style: {
-        fontSize: '12px',
-        padding: '4px 8px',
-      },
     });
 
     // Mouse events - will use current style from refs
@@ -138,7 +134,7 @@ export function DistrictOverlay({
     // Only create if we don't have a layer yet
     if (!layerRef.current) {
       const geoJsonLayer = L.geoJSON(features as any, {
-        style: getStyle,
+        style: getStyle as any,
         onEachFeature,
       });
 
@@ -175,7 +171,7 @@ export function DistrictOverlay({
     if (!layerRef.current || !visible) return;
 
     // Update each layer's style based on current lookups
-    layerRef.current.eachLayer((layer) => {
+    (layerRef.current as L.LayerGroup).eachLayer((layer) => {
       if (layer instanceof L.Path) {
         const districtId = (layer as any)._districtId;
         if (districtId) {

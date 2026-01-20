@@ -1,0 +1,5737 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.8 e802775f",
+  "osm3s": {
+    "timestamp_osm_base": "2026-01-20T19:11:13Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 432731929,
+  "lat": 54.7887316,
+  "lon": -1.5395735,
+  "tags": {
+    "addr:place": "Cathedral Park",
+    "addr:unit": "Unit 1",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/durham"
+  }
+},
+{
+  "type": "node",
+  "id": 1969962990,
+  "lat": 52.1913592,
+  "lon": 0.1383309,
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:housenumber": "15",
+    "addr:postcode": "CB1 7EA",
+    "addr:street": "Clifton Road Industrial Estate",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/cambridge-clifton-road"
+  }
+},
+{
+  "type": "node",
+  "id": 2218496216,
+  "lat": 51.8039449,
+  "lon": -0.1988910,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/welwyn"
+  }
+},
+{
+  "type": "node",
+  "id": 3274641719,
+  "lat": 51.3694514,
+  "lon": -0.4760322,
+  "tags": {
+    "addr:city": "Addlestone",
+    "addr:housenumber": "1",
+    "addr:postcode": "KT15 2SD",
+    "addr:street": "Hamm Moor Lane",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "phone": "+44 1932 821664",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/weybridge"
+  }
+},
+{
+  "type": "node",
+  "id": 3405047136,
+  "lat": 51.5356543,
+  "lon": -0.1171356,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/kings-cross"
+  }
+},
+{
+  "type": "node",
+  "id": 3778736299,
+  "lat": 53.3121876,
+  "lon": -3.4819915,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/rhyl"
+  }
+},
+{
+  "type": "node",
+  "id": 3828834854,
+  "lat": 54.6410051,
+  "lon": -1.6926123,
+  "tags": {
+    "addr:city": "Bishop Auckland",
+    "addr:street": "Staindrop Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/bishop-auckland"
+  }
+},
+{
+  "type": "node",
+  "id": 3842747734,
+  "lat": 54.5379854,
+  "lon": -1.5554922,
+  "tags": {
+    "addr:city": "Darlington",
+    "addr:postcode": "DL3 0XA",
+    "addr:street": "Meynell Road",
+    "addr:unit": "E",
+    "branch": "Darlington",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00",
+    "phone": "+44 1325 486723",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/darlington"
+  }
+},
+{
+  "type": "node",
+  "id": 4009572996,
+  "lat": 55.9380343,
+  "lon": -3.2377880,
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:housenumber": "17",
+    "addr:street": "Westfield Street",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "phone": "+44 131 346 7400",
+    "shop": "kitchen",
+    "source": "survey",
+    "website": "https://www.howdens.com/find-a-depot/edinburgh-gorgie"
+  }
+},
+{
+  "type": "node",
+  "id": 4228173694,
+  "lat": 55.9735162,
+  "lon": -3.1821427,
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:housenumber": "20",
+    "addr:street": "West Bowling Green Street",
+    "addr:unit": "1, 3-5",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00, Sa 08:00-12:00",
+    "phone": "+44 1315 536 518",
+    "shop": "kitchen",
+    "source": "survey",
+    "website": "https://www.howdens.com/find-a-depot/edinburgh-leith"
+  }
+},
+{
+  "type": "node",
+  "id": 4269600703,
+  "lat": 55.3974108,
+  "lon": -1.6905445,
+  "tags": {
+    "addr:city": "Alnwick",
+    "addr:street": "Hawthorn Close",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/alnwick"
+  }
+},
+{
+  "type": "node",
+  "id": 4364788186,
+  "lat": 54.9606450,
+  "lon": -1.5823359,
+  "tags": {
+    "addr:city": "Gateshead",
+    "addr:street": "Neilson Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/gateshead"
+  }
+},
+{
+  "type": "node",
+  "id": 4398043528,
+  "lat": 50.6447997,
+  "lon": -1.1814944,
+  "tags": {
+    "addr:city": "Sandown",
+    "addr:country": "GB",
+    "addr:housename": "Spithead Business Centre",
+    "addr:postcode": "PO36 9PH",
+    "addr:street": "Newport Road",
+    "addr:village": "Lake",
+    "brand": "Howdens",
+    "brand:wikidata": "Q5921438",
+    "contact:phone": "+44 1983 408474",
+    "level": "0",
+    "name": "Howdens",
+    "shop": "furniture",
+    "website": "https://www.howdens.com/find-a-depot/sandown"
+  }
+},
+{
+  "type": "node",
+  "id": 4401131693,
+  "lat": 54.9233159,
+  "lon": -1.6086357,
+  "tags": {
+    "addr:city": "Gateshead",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/team-valley"
+  }
+},
+{
+  "type": "node",
+  "id": 4500465782,
+  "lat": 54.8510313,
+  "lon": -6.2561716,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 4625628648,
+  "lat": 54.9783676,
+  "lon": -1.5670841,
+  "tags": {
+    "addr:city": "Newcastle Upon Tyne",
+    "addr:street": "Brough Park Way",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/brough-park"
+  }
+},
+{
+  "type": "node",
+  "id": 5058306309,
+  "lat": 55.8792658,
+  "lon": -4.2550584,
+  "tags": {
+    "addr:city": "Glasgow",
+    "addr:housenumber": "29",
+    "addr:postcode": "G22 5HT",
+    "addr:street": "Saracen Street",
+    "addr:unit": "6",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "brand:wikipedia": "en:Howdens Joinery",
+    "fax": "+44 1413 327 863",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00; Su off",
+    "phone": "+44 141 332 5850",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/glasgow-port-dundas"
+  }
+},
+{
+  "type": "node",
+  "id": 5596870605,
+  "lat": 51.4148662,
+  "lon": -0.7621544,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/bracknell"
+  }
+},
+{
+  "type": "node",
+  "id": 5635501131,
+  "lat": 52.9389227,
+  "lon": -1.4693881,
+  "tags": {
+    "addr:city": "Derby",
+    "addr:parentstreet": "Alfreton Road",
+    "addr:place": "Eagle Park",
+    "addr:postcode": "DE21 4BF",
+    "addr:unit": "15 - 16",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/derby-chester-green"
+  }
+},
+{
+  "type": "node",
+  "id": 5842563822,
+  "lat": 51.6216969,
+  "lon": -0.7240704,
+  "tags": {
+    "addr:city": "High Wycombe",
+    "addr:housename": "Unit 3-7, Wye Industrial Estate",
+    "addr:postcode": "HP11 1LH",
+    "addr:street": "London Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00; Su closed",
+    "phone": "+44 1494 465807",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/high-wycombe"
+  }
+},
+{
+  "type": "node",
+  "id": 6216658498,
+  "lat": 51.2777899,
+  "lon": -0.9601758,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source": "survey",
+    "website": "https://www.howdens.com/find-a-depot/hook"
+  }
+},
+{
+  "type": "node",
+  "id": 6315901188,
+  "lat": 51.3899958,
+  "lon": 0.1899629,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "entrance": "main",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/swanley"
+  }
+},
+{
+  "type": "node",
+  "id": 6696636057,
+  "lat": 54.6677998,
+  "lon": -2.7722153,
+  "tags": {
+    "addr:city": "Penrith",
+    "addr:country": "GB",
+    "addr:postcode": "CA11 9BD",
+    "addr:street": "Hartness Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens",
+    "phone": "+44 1768 210669",
+    "shop": "doityourself",
+    "website": "https://www.howdens.com/find-a-depot/penrith"
+  }
+},
+{
+  "type": "node",
+  "id": 6949764468,
+  "lat": 51.7758507,
+  "lon": -1.4897852,
+  "tags": {
+    "addr:city": "Witney",
+    "addr:housenumber": "12",
+    "addr:postcode": "OX28 4XZ",
+    "addr:street": "Avenue One",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source": "gps_surveys;video_surveys;local_knowledge",
+    "trade": "joinery",
+    "website": "https://www.howdens.com/find-a-depot/witney"
+  }
+},
+{
+  "type": "node",
+  "id": 6954545733,
+  "lat": 57.6996588,
+  "lon": -4.1674250,
+  "tags": {
+    "addr:city": "Invergordon",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "brand:wikipedia": "en:Howdens Joinery",
+    "description": "kitchen furniture and fitting",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00; PH closed",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/invergordon"
+  }
+},
+{
+  "type": "node",
+  "id": 6996381383,
+  "lat": 53.1421158,
+  "lon": 0.3198128,
+  "tags": {
+    "addr:city": "Skegness",
+    "addr:country": "GB",
+    "addr:postcode": "PE25 3ST",
+    "addr:street": "Heath Road",
+    "branch": "Skegness",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00",
+    "phone": "+44 1754 760 951",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/skegness"
+  }
+},
+{
+  "type": "node",
+  "id": 7366496246,
+  "lat": 51.4632400,
+  "lon": -1.0118861,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/reading"
+  }
+},
+{
+  "type": "node",
+  "id": 7467419139,
+  "lat": 53.5176955,
+  "lon": -2.2739857,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "trade",
+    "website": "https://www.howdens.com/find-a-depot/prestwich"
+  }
+},
+{
+  "type": "node",
+  "id": 7869212473,
+  "lat": 54.0599884,
+  "lon": -2.8387752,
+  "tags": {
+    "addr:city": "Morecambe",
+    "addr:postcode": "LA3 3AY",
+    "addr:street": "Northgate",
+    "addr:unit": "10",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "trade": "joinery",
+    "website": "https://www.howdens.com/find-a-depot/morecambe"
+  }
+},
+{
+  "type": "node",
+  "id": 8019658188,
+  "lat": 52.5710170,
+  "lon": -0.2268272,
+  "tags": {
+    "addr:city": "Peterborough",
+    "addr:country": "GB",
+    "addr:housenumber": "24",
+    "addr:postcode": "PE1 5UT",
+    "addr:street": "Harvester Way",
+    "branch": "Peterborough",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00",
+    "operator": "Howdens",
+    "phone": "+44 1733 554251",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/peterborough"
+  }
+},
+{
+  "type": "node",
+  "id": 8047557070,
+  "lat": 51.5500496,
+  "lon": -0.1426868,
+  "tags": {
+    "branch": "Kentish Town",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "email": "kentishtown@howdens.com",
+    "name": "Howdens Joinery",
+    "note": "Doors, Flooring, Kitchens, Hardware & Joinery",
+    "phone": "+44 20 7267 9663",
+    "shop": "kitchen",
+    "trade": "building_supplies",
+    "website": "https://www.howdens.com/find-a-depot/kentish-town"
+  }
+},
+{
+  "type": "node",
+  "id": 8334001530,
+  "lat": 53.2017157,
+  "lon": -2.3481085,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/holmes-chapel"
+  }
+},
+{
+  "type": "node",
+  "id": 8423395820,
+  "lat": 51.1354132,
+  "lon": -0.0353391,
+  "tags": {
+    "addr:city": "East Grinstead",
+    "addr:housenumber": "Unit 1A-1B",
+    "addr:postcode": "RH19 1TU",
+    "addr:street": "Imberhorne Lane",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "operator": "Howdens",
+    "phone": "+44 1342 410544",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/east-grinstead"
+  }
+},
+{
+  "type": "node",
+  "id": 8809843837,
+  "lat": 51.4211109,
+  "lon": -1.5179899,
+  "tags": {
+    "addr:city": "Hungerford",
+    "addr:postcode": "RG17 0YT",
+    "addr:street": "Tealgate",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00",
+    "shop": "kitchen",
+    "trade": "yes",
+    "website": "https://www.howdens.com/find-a-depot/hungerford"
+  }
+},
+{
+  "type": "node",
+  "id": 8923397829,
+  "lat": 51.9115940,
+  "lon": -2.5733331,
+  "tags": {
+    "addr:housenumber": "10",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/ross-on-wye"
+  }
+},
+{
+  "type": "node",
+  "id": 9175532851,
+  "lat": 52.9655732,
+  "lon": -2.6607009,
+  "tags": {
+    "addr:city": "Whitchurch",
+    "addr:housename": "Mullbry Business Park",
+    "addr:postcode": "SY13 1GR",
+    "addr:street": "Shakespeare Way",
+    "addr:unit": "Unit 2",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/whitchurch"
+  }
+},
+{
+  "type": "node",
+  "id": 9222491823,
+  "lat": 53.4020850,
+  "lon": -2.1532589,
+  "tags": {
+    "addr:city": "Stockport",
+    "addr:housenumber": "Units 12-13 Hillgate Business Centre",
+    "addr:postcode": "SK1 3AU",
+    "addr:street": "Swallow Street",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "brand:wikipedia": "en:Howdens Joinery",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 9228677129,
+  "lat": 55.1329746,
+  "lon": -6.6768992,
+  "tags": {
+    "addr:city": "Coleraine",
+    "addr:housenumber": "8",
+    "addr:postcode": "BT51 3DR",
+    "addr:street": "Castle Lane",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "phone": "+44 2870 447100",
+    "shop": "kitchen",
+    "trade": "building_supplies",
+    "website": "https://www.howdens.com/find-a-depot/coleraine"
+  }
+},
+{
+  "type": "node",
+  "id": 9272690176,
+  "lat": 51.5686920,
+  "lon": -3.0039930,
+  "tags": {
+    "addr:city": "Newport",
+    "addr:postcode": "NP20 2NN",
+    "addr:street": "Maesglas Retail Park",
+    "addr:suburb": "Maesglas",
+    "addr:unit": "Unit 1",
+    "branch": "Kitchens Newport",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00; Su Off; PH Off",
+    "operator": "Howdens Kitchens",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/newport"
+  }
+},
+{
+  "type": "node",
+  "id": 9483753128,
+  "lat": 52.3384547,
+  "lon": -0.0632358,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "brand:wikipedia": "en:Howdens Joinery",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/st-ives"
+  }
+},
+{
+  "type": "node",
+  "id": 9577865447,
+  "lat": 51.0682980,
+  "lon": -0.3160773,
+  "tags": {
+    "addr:city": "Horsham",
+    "addr:postcode": "RH13 5PX",
+    "addr:street": "Foundry Lane",
+    "addr:unit": "Unit 8",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "brand:wikipedia": "en:Howdens Joinery",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/horsham"
+  }
+},
+{
+  "type": "node",
+  "id": 9609581769,
+  "lat": 50.7554448,
+  "lon": -1.8415814,
+  "tags": {
+    "addr:housename": "Yeoman's Industrial Park",
+    "addr:street": "Yeomans Way",
+    "addr:unit": "Unit 3",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "brand:wikipedia": "en:Howdens Joinery",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/castlepoint"
+  }
+},
+{
+  "type": "node",
+  "id": 9691991979,
+  "lat": 52.9679332,
+  "lon": -1.0618436,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/netherfield"
+  }
+},
+{
+  "type": "node",
+  "id": 9702375828,
+  "lat": 52.6291633,
+  "lon": 1.3850461,
+  "tags": {
+    "addr:city": "Norwich",
+    "addr:country": "GB",
+    "addr:postcode": "NR13 5GE",
+    "addr:street": "Hawthorne Drive",
+    "addr:unit": "Unit 6",
+    "branch": "Norwich East",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00; Su,PH closed",
+    "ref": "DG95",
+    "shop": "kitchen",
+    "trade": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/norwich-east"
+  }
+},
+{
+  "type": "node",
+  "id": 9756926954,
+  "lat": 53.8350651,
+  "lon": -3.0268851,
+  "tags": {
+    "addr:city": "Blackpool",
+    "addr:postcode": "FY3 7UN",
+    "addr:street": "Mowbray Drive",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/blackpool"
+  }
+},
+{
+  "type": "node",
+  "id": 9876886815,
+  "lat": 51.5728627,
+  "lon": -2.9471201,
+  "tags": {
+    "addr:city": "Newport",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "trade",
+    "website": "https://www.howdens.com/find-a-depot/spytty-newport"
+  }
+},
+{
+  "type": "node",
+  "id": 9904482733,
+  "lat": 53.3969985,
+  "lon": -2.5422921,
+  "tags": {
+    "addr:city": "Warrington",
+    "addr:housenumber": "1C",
+    "addr:postcode": "WA1 4AG",
+    "addr:street": "New Cut Lane",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/warrington-woolston"
+  }
+},
+{
+  "type": "node",
+  "id": 10048842447,
+  "lat": 51.8028972,
+  "lon": -0.0619518,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/hertford"
+  }
+},
+{
+  "type": "node",
+  "id": 10124862518,
+  "lat": 53.7158223,
+  "lon": -1.3845636,
+  "tags": {
+    "addr:city": "Castleford",
+    "addr:housenumber": "C5-6",
+    "addr:postcode": "WF10 5NP",
+    "addr:street": "Willowbridge Way",
+    "addr:suburb": "Whitwood",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/castleford"
+  }
+},
+{
+  "type": "node",
+  "id": 10549102358,
+  "lat": 51.3164822,
+  "lon": -0.0853341,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/kenley"
+  }
+},
+{
+  "type": "node",
+  "id": 10649833985,
+  "lat": 54.8350228,
+  "lon": -1.4835218,
+  "tags": {
+    "addr:place": "Rainton Bridge Industrial Estate",
+    "addr:unit": "Units 1-3",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "operator": "Howdens Joinery",
+    "operator:wikidata": "Q5921438",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/houghton-le-spring"
+  }
+},
+{
+  "type": "node",
+  "id": 10686860552,
+  "lat": 50.7090285,
+  "lon": -1.2935784,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/isle-of-wight"
+  }
+},
+{
+  "type": "node",
+  "id": 10688379200,
+  "lat": 55.9657381,
+  "lon": -3.1331726,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "check_date": "2023-02-23",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/edinburgh-seafield"
+  }
+},
+{
+  "type": "node",
+  "id": 10707936801,
+  "lat": 51.5920759,
+  "lon": 0.0410731,
+  "tags": {
+    "addr:city": "Woodford Green",
+    "addr:housenumber": "16",
+    "addr:postcode": "IG8 8HF",
+    "addr:street": "Woodford Trading Estate",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00, Sa 08:00-12:00, Su closed",
+    "phone": "+44 20 8104 0500",
+    "shop": "kitchen",
+    "source": "survey;streetlevel imagery",
+    "website": "https://www.howdens.com/find-a-depot/woodford-green"
+  }
+},
+{
+  "type": "node",
+  "id": 10889640291,
+  "lat": 52.6890809,
+  "lon": -2.7737324,
+  "tags": {
+    "addr:housename": "St. Kenelm Business Park",
+    "addr:postcode": "SY3 9PU",
+    "addr:street": "Longden Road",
+    "addr:town": "Shrewsbury",
+    "addr:unit": "3",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "trade",
+    "trade": "building_supplies",
+    "website": "https://www.howdens.com/find-a-depot/meole-brace"
+  }
+},
+{
+  "type": "node",
+  "id": 10949081983,
+  "lat": 50.4717230,
+  "lon": -4.7421241,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/bodmin"
+  }
+},
+{
+  "type": "node",
+  "id": 10957764053,
+  "lat": 52.6595778,
+  "lon": -0.4656242,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/stamford"
+  }
+},
+{
+  "type": "node",
+  "id": 10964176272,
+  "lat": 53.9901985,
+  "lon": -1.0453641,
+  "tags": {
+    "addr:unit": "8-9",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "trade",
+    "trade": "timber",
+    "website": "https://www.howdens.com/find-a-depot/york-monks-cross"
+  }
+},
+{
+  "type": "node",
+  "id": 10994628711,
+  "lat": 56.3228774,
+  "lon": -2.9930344,
+  "tags": {
+    "addr:city": "Cupar",
+    "addr:postcode": "KY15 4RB",
+    "addr:street": "Eden Valley Business Park",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/cupar"
+  }
+},
+{
+  "type": "node",
+  "id": 10995814154,
+  "lat": 51.6201247,
+  "lon": -0.1416308,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 11140089019,
+  "lat": 50.7061018,
+  "lon": -3.5276118,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/exeter"
+  }
+},
+{
+  "type": "node",
+  "id": 11184464385,
+  "lat": 53.5237683,
+  "lon": -2.1420922,
+  "tags": {
+    "addr:city": "Oldham",
+    "addr:parentstreet": "Drury Lane",
+    "addr:postcode": "OL9 7PJ",
+    "addr:street": "Victoria Trading Estate",
+    "addr:suburb": "Chadderton",
+    "addr:unit": "1A",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/hollinwood"
+  }
+},
+{
+  "type": "node",
+  "id": 11195751913,
+  "lat": 51.4191455,
+  "lon": 0.3575110,
+  "tags": {
+    "addr:city": "Northfleet",
+    "addr:postcode": "DA11 8AB",
+    "addr:street": "Trade City, Coldharbour Road",
+    "addr:unit": "Unit 4",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00; Su off",
+    "operator": "Howdens",
+    "phone": "+44 1474 221100",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/northfleet"
+  }
+},
+{
+  "type": "node",
+  "id": 11212395502,
+  "lat": 55.8509552,
+  "lon": -4.2305458,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/glasgow-bridgeton"
+  }
+},
+{
+  "type": "node",
+  "id": 11341045990,
+  "lat": 53.5485914,
+  "lon": -2.1009512,
+  "tags": {
+    "addr:city": "Oldham",
+    "addr:parentstreet": "Coulton Close",
+    "addr:postcode": "OL1 4EB",
+    "addr:street": "Oldham Central Trading Park",
+    "addr:unit": "H & J",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/oldham"
+  }
+},
+{
+  "type": "node",
+  "id": 11371012832,
+  "lat": 53.6107025,
+  "lon": -2.1472922,
+  "tags": {
+    "addr:postcode": "OL16 5NA",
+    "addr:street": "Fishwick Street",
+    "addr:unit": "11",
+    "branch": "Rochdale",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00",
+    "phone": "+44 1706 868465",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/rochdale"
+  }
+},
+{
+  "type": "node",
+  "id": 11377566864,
+  "lat": 52.3181375,
+  "lon": -2.0595412,
+  "tags": {
+    "addr:housenumber": "27-29",
+    "addr:postcode": "B60 3DR",
+    "addr:street": "Sherwood Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00",
+    "phone": "+44 1527 212000",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/bromsgrove"
+  }
+},
+{
+  "type": "node",
+  "id": 11396916767,
+  "lat": 53.6014753,
+  "lon": -1.7806637,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/holmfirth"
+  }
+},
+{
+  "type": "node",
+  "id": 11397680925,
+  "lat": 51.4132457,
+  "lon": -0.1946845,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Sa 08:00-17:00",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/wimbledon-south-merton"
+  }
+},
+{
+  "type": "node",
+  "id": 11731210650,
+  "lat": 53.5951155,
+  "lon": -2.5668526,
+  "tags": {
+    "addr:city": "Bolton",
+    "addr:postcode": "BL6 5HY",
+    "addr:street": "Lodge Bank",
+    "addr:suburb": "Horwich",
+    "addr:unit": "11",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/horwich"
+  }
+},
+{
+  "type": "node",
+  "id": 11783389136,
+  "lat": 50.8416478,
+  "lon": 0.4640999,
+  "tags": {
+    "addr:city": "Bexhill-on-Sea",
+    "addr:housename": "Albany House",
+    "addr:housenumber": "42A",
+    "addr:postcode": "TN39 3LJ",
+    "addr:street": "Beeching Road",
+    "addr:unit": "1",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "contact:facebook": "https://www.facebook.com/howdensofficial/",
+    "contact:instagram": "howdensjoinery",
+    "contact:phone": "+44 1424 733134",
+    "contact:website": "https://www.howdens.com/find-a-depot/bexhill-on-sea",
+    "contact:youtube": "https://www.youtube.com/howdens",
+    "hearing_impaired:induction_loop": "yes",
+    "internet_access": "wlan",
+    "level": "0",
+    "name": "Howdens",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00",
+    "shop": "kitchen",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11898866827,
+  "lat": 52.5039744,
+  "lon": -3.3386860,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 11909846654,
+  "lat": 53.3831867,
+  "lon": -2.5994587,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 11936899773,
+  "lat": 53.5755512,
+  "lon": -0.0983231,
+  "tags": {
+    "addr:city": "Grimsby",
+    "addr:postcode": "DN31 2SG",
+    "addr:street": "Birchin Way",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "phone": "+44 1472 353 050",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/grimsby"
+  }
+},
+{
+  "type": "node",
+  "id": 12021419216,
+  "lat": 56.7259476,
+  "lon": -2.4642491,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 12107740238,
+  "lat": 52.6524011,
+  "lon": 1.2644228,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 12139597182,
+  "lat": 51.5225897,
+  "lon": -3.1944481,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 12140884156,
+  "lat": 55.8534154,
+  "lon": -4.2736432,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 12198482548,
+  "lat": 53.0875166,
+  "lon": -2.4277695,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 12208822931,
+  "lat": 53.1730315,
+  "lon": -2.2234629,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 12244786596,
+  "lat": 50.6330783,
+  "lon": -3.3742256,
+  "tags": {
+    "addr:city": "Exmouth",
+    "addr:postcode": "EX8 2NU",
+    "addr:substreet": "Liverton Business Park",
+    "addr:unit": "Unit B",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/exmouth"
+  }
+},
+{
+  "type": "node",
+  "id": 12316311159,
+  "lat": 56.4165127,
+  "lon": -3.4598565,
+  "tags": {
+    "addr:city": "Perth",
+    "addr:postcode": "PH1 3DZ",
+    "addr:street": "Arran Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "phone": "+44 1738 255000",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/north-muirton"
+  }
+},
+{
+  "type": "node",
+  "id": 12396856544,
+  "lat": 53.5392400,
+  "lon": -1.4331092,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 12469374524,
+  "lat": 54.9914897,
+  "lon": -1.4359769,
+  "tags": {
+    "addr:city": "South Shields",
+    "addr:housename": "Western Approach Trade Park",
+    "addr:postcode": "NE33 5QY",
+    "addr:street": "Western Approach",
+    "addr:unit": "Units 6-7",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens",
+    "shop": "trade",
+    "trade": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/south-shields"
+  }
+},
+{
+  "type": "node",
+  "id": 12673949083,
+  "lat": 52.2072445,
+  "lon": 0.1484557,
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB1 3EW",
+    "addr:street": "Coldhams Road",
+    "addr:unit": "Unit 6",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00; Su off",
+    "phone": "+44 1223 247238",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/cambridge"
+  }
+},
+{
+  "type": "node",
+  "id": 12703651212,
+  "lat": 54.1268952,
+  "lon": -2.7500865,
+  "tags": {
+    "addr:city": "Carnforth",
+    "addr:postcode": "LA6 1FW",
+    "addr:street": "Electric Drive",
+    "addr:unit": "5",
+    "branch": "Carnforth",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 07:30-12:00",
+    "phone": "+44 1524 532500",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/carnforth"
+  }
+},
+{
+  "type": "node",
+  "id": 12735359926,
+  "lat": 53.9091812,
+  "lon": -2.7773150,
+  "tags": {
+    "addr:parentstreet": "Green Lane West",
+    "addr:postcode": "PR3 1NJ",
+    "addr:street": "Manor Park Estate",
+    "addr:unit": "1",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "check_date": "2025-04-06",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00; Su off",
+    "operator": "Howden Joinery Ltd.",
+    "phone": "+44 1995 282000",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/garstang"
+  }
+},
+{
+  "type": "node",
+  "id": 12753214146,
+  "lat": 51.4802537,
+  "lon": -3.1539025,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 12846567938,
+  "lat": 55.9764644,
+  "lon": -3.9526704,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Tollpark Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "check_date": "2025-05-18",
+    "description": "Trade only",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 12855445055,
+  "lat": 54.7066608,
+  "lon": -1.5649438,
+  "tags": {
+    "addr:city": "Durham",
+    "addr:housenumber": "Unit 14",
+    "addr:postcode": "DH6 5JQ",
+    "addr:street": "Thinford Park, Loverose Way",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 12965778012,
+  "lat": 52.9203420,
+  "lon": -1.4994945,
+  "tags": {
+    "addr:city": "Derby",
+    "addr:parentstreet": "Parcel Terrace",
+    "addr:place": "Crown Park",
+    "addr:postcode": "DE1 1NA",
+    "addr:unit": "B5",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/crown-park-derby"
+  }
+},
+{
+  "type": "node",
+  "id": 12985709168,
+  "lat": 51.4147110,
+  "lon": -0.5336303,
+  "tags": {
+    "addr:city": "Thorpe",
+    "addr:postcode": "TW20 8RJ",
+    "addr:street": "Ten Acre Lane",
+    "addr:unit": "12",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/egham"
+  }
+},
+{
+  "type": "node",
+  "id": 13011383714,
+  "lat": 55.4351459,
+  "lon": -2.7622494,
+  "tags": {
+    "addr:city": "Hawick",
+    "addr:housenumber": "Unit 5",
+    "addr:postcode": "TD9 8RJ",
+    "addr:street": "Hawick Trade Park",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 13041121532,
+  "lat": 51.3502467,
+  "lon": -0.4747166,
+  "tags": {
+    "addr:city": "Byfleet",
+    "addr:postcode": "KT13 0YU",
+    "addr:street": "Vickers Drive North",
+    "addr:unit": "A302",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "phone": "+44 1932 532600",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/byfleet"
+  }
+},
+{
+  "type": "node",
+  "id": 13160200607,
+  "lat": 53.7023448,
+  "lon": -2.3297212,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 13243549986,
+  "lat": 51.7758522,
+  "lon": -1.4900341,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source": "gps_surveys;video_surveys; local_knowledge",
+    "trade": "joinery",
+    "website": "https://www.howdens.com/find-a-depot/witney"
+  }
+},
+{
+  "type": "node",
+  "id": 13470467105,
+  "lat": 53.4793754,
+  "lon": -2.2950217,
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 5314653,
+  "center": {
+    "lat": 53.7593058,
+    "lon": -2.4468638
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "retail",
+    "disused:shop": "carpets",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source": "OS streetview"
+  }
+},
+{
+  "type": "way",
+  "id": 23687349,
+  "center": {
+    "lat": 51.1360799,
+    "lon": -0.1694152
+  },
+  "tags": {
+    "addr:housenumber": "15",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "retail",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/crawley"
+  }
+},
+{
+  "type": "way",
+  "id": 24547012,
+  "center": {
+    "lat": 51.3836612,
+    "lon": -0.2238046
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 25808005,
+  "center": {
+    "lat": 52.0629143,
+    "lon": 1.2804092
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "building:levels": "1",
+    "name": "Howdens Joinery",
+    "roof:shape": "gabled",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/martlesham-heath"
+  }
+},
+{
+  "type": "way",
+  "id": 28498341,
+  "center": {
+    "lat": 51.3951812,
+    "lon": 0.1123982
+  },
+  "tags": {
+    "addr:street": "Mill Brook Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "warehouse",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/orpington"
+  }
+},
+{
+  "type": "way",
+  "id": 28826808,
+  "center": {
+    "lat": 55.9348439,
+    "lon": -3.1438086
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "warehouse",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/edinburgh-prestonfield"
+  }
+},
+{
+  "type": "way",
+  "id": 38582748,
+  "center": {
+    "lat": 50.8427542,
+    "lon": -1.0363529
+  },
+  "tags": {
+    "addr:city": "Farlington",
+    "addr:street": "Fitzherbert Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/portsmouth"
+  }
+},
+{
+  "type": "way",
+  "id": 40188921,
+  "center": {
+    "lat": 50.3958049,
+    "lon": -4.0878013
+  },
+  "tags": {
+    "addr:postcode": "PL6 8LH",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "10000103233",
+    "shop": "kitchen",
+    "source:addr:postcode": "ONSUD;OS Open UPRN",
+    "website": "https://www.howdens.com/find-a-depot/plymouth-marsh-mills"
+  }
+},
+{
+  "type": "way",
+  "id": 42255069,
+  "center": {
+    "lat": 53.3600149,
+    "lon": -2.7364693
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "100012810747",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/widnes"
+  }
+},
+{
+  "type": "way",
+  "id": 55385815,
+  "center": {
+    "lat": 51.2416783,
+    "lon": 0.5609400
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/maidstone"
+  }
+},
+{
+  "type": "way",
+  "id": 56818355,
+  "center": {
+    "lat": 52.4027933,
+    "lon": -1.5600779
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source": "OS OpenData StreetView",
+    "website": "https://www.howdens.com/find-a-depot/tile-hill"
+  }
+},
+{
+  "type": "way",
+  "id": 58709545,
+  "center": {
+    "lat": 52.4740590,
+    "lon": -1.7762929
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source": "OS_OpenData_StreetView",
+    "website": "https://www.howdens.com/find-a-depot/garretts-green"
+  }
+},
+{
+  "type": "way",
+  "id": 58780040,
+  "center": {
+    "lat": 52.4455824,
+    "lon": -1.8408381
+  },
+  "tags": {
+    "addr:city": "Birmingham",
+    "addr:postcode": "B11 3DJ",
+    "addr:street": "Spring Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source": "OS_OpenData_StreetView",
+    "website": "https://www.howdens.com/find-a-depot/hall-green"
+  }
+},
+{
+  "type": "way",
+  "id": 60623690,
+  "center": {
+    "lat": 51.2615295,
+    "lon": -0.5723520
+  },
+  "tags": {
+    "addr:city": "Guildford",
+    "addr:postcode": "GU1 1RA",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source": "sas",
+    "website": "https://www.howdens.com/find-a-depot/guildford-slyfield"
+  }
+},
+{
+  "type": "way",
+  "id": 61568124,
+  "center": {
+    "lat": 52.9038787,
+    "lon": -1.4517766
+  },
+  "tags": {
+    "addr:city": "Derby",
+    "addr:country": "GB",
+    "addr:parentstreet": "Ascot Drive",
+    "addr:place": "Sidney Robinson Business Park",
+    "addr:postcode": "DE24 8EH",
+    "addr:unit": "4",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source": "OS_OpenData_StreetView;survey",
+    "website": "https://www.howdens.com/find-a-depot/derby"
+  }
+},
+{
+  "type": "way",
+  "id": 63703222,
+  "center": {
+    "lat": 52.3757799,
+    "lon": -2.2508250
+  },
+  "tags": {
+    "addr:postcode": "DY10 1HY",
+    "addr:street": "Worcester Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/kidderminster"
+  }
+},
+{
+  "type": "way",
+  "id": 64260342,
+  "center": {
+    "lat": 52.2281156,
+    "lon": 0.1515881
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "CB4 1SS",
+    "addr:street": "Nuffield Close",
+    "addr:unit": "Units 7-10",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "check_date:opening_hours": "2025-07-15",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/nuffield"
+  }
+},
+{
+  "type": "way",
+  "id": 64962671,
+  "center": {
+    "lat": 57.4892144,
+    "lon": -4.2226331
+  },
+  "tags": {
+    "addr:city": "Inverness",
+    "addr:housenumber": "6",
+    "addr:postcode": "IV1 1SR",
+    "addr:street": "Henderson Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "130092370;130095229",
+    "shop": "kitchen",
+    "trade": "construction_supplies",
+    "website": "https://www.howdens.com/find-a-depot/inverness"
+  }
+},
+{
+  "type": "way",
+  "id": 76110857,
+  "center": {
+    "lat": 56.0108813,
+    "lon": -3.7703239
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "commercial",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/falkirk"
+  }
+},
+{
+  "type": "way",
+  "id": 82137359,
+  "center": {
+    "lat": 51.5079485,
+    "lon": -2.5618551
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "retail",
+    "name": "Howdens Joinery",
+    "nohousenumber": "yes",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/filton"
+  }
+},
+{
+  "type": "way",
+  "id": 83709822,
+  "center": {
+    "lat": 52.5030526,
+    "lon": -1.8727642
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/aston"
+  }
+},
+{
+  "type": "way",
+  "id": 88736239,
+  "center": {
+    "lat": 55.0962055,
+    "lon": -1.6077647
+  },
+  "tags": {
+    "addr:city": "Cramlington",
+    "addr:county": "Northumberland",
+    "addr:locality": "Nelson Park Industrial Estate",
+    "addr:postcode": "NE23 1WE",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "10035315924",
+    "shop": "kitchen",
+    "source": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/cramlington"
+  }
+},
+{
+  "type": "way",
+  "id": 89634893,
+  "center": {
+    "lat": 52.5306048,
+    "lon": -1.9101370
+  },
+  "tags": {
+    "addr:city": "Birmingham",
+    "addr:housenumber": "399",
+    "addr:postcode": "B42 1BT",
+    "addr:street": "Walsall Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00",
+    "phone": "+44 121 203 5000",
+    "shop": "kitchen",
+    "source": "OS_OpenData_Streetview",
+    "website": "https://www.howdens.com/find-a-depot/perry-barr"
+  }
+},
+{
+  "type": "way",
+  "id": 90241899,
+  "center": {
+    "lat": 51.9036765,
+    "lon": -1.1382626
+  },
+  "tags": {
+    "addr:city": "Bicester",
+    "addr:postcode": "OX26 4UL",
+    "addr:street": "Wedgwood Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "commercial",
+    "building:levels": "2",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "10011879560",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/bicester"
+  }
+},
+{
+  "type": "way",
+  "id": 91239615,
+  "center": {
+    "lat": 51.4442106,
+    "lon": 0.3571901
+  },
+  "tags": {
+    "addr:city": "Gravesend",
+    "addr:housenumber": "E1-E2",
+    "addr:postcode": "DA11 0DL",
+    "addr:street": "West Mill",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "brand:wikipedia": "en:Howdens Joinery",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00",
+    "phone": "+441474365723",
+    "shop": "kitchen",
+    "source:shape": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/gravesend"
+  }
+},
+{
+  "type": "way",
+  "id": 93166525,
+  "center": {
+    "lat": 51.7411045,
+    "lon": 0.5041294
+  },
+  "tags": {
+    "addr:city": "Chelmsford",
+    "addr:country": "GB",
+    "addr:postcode": "CM2 6UW",
+    "addr:street": "Northumberland Court",
+    "addr:unit": "8",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "brand:wikipedia": "en:Howdens Joinery",
+    "building:part": "yes",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00; Su, PH off",
+    "shop": "kitchen",
+    "source": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/chelmsford-north"
+  }
+},
+{
+  "type": "way",
+  "id": 99473350,
+  "center": {
+    "lat": 53.6879580,
+    "lon": -1.6280545
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "brand:wikipedia": "en:Howdens Joinery",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/dewsbury"
+  }
+},
+{
+  "type": "way",
+  "id": 102343912,
+  "center": {
+    "lat": 51.0350929,
+    "lon": -2.2726948
+  },
+  "tags": {
+    "addr:housenumber": "16",
+    "addr:street": "Old Market Centre",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/gillingham-dorset"
+  }
+},
+{
+  "type": "way",
+  "id": 106545886,
+  "center": {
+    "lat": 51.4977078,
+    "lon": -2.6879150
+  },
+  "tags": {
+    "addr:city": "Bristol",
+    "addr:housename": "Avonbridge Trading Estate",
+    "addr:postcode": "BS11 9QD",
+    "addr:street": "Atlantic Road",
+    "addr:unit": "Unit 1",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "299326",
+    "shop": "kitchen",
+    "source:outline": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/avonmouth"
+  }
+},
+{
+  "type": "way",
+  "id": 116597005,
+  "center": {
+    "lat": 57.5828961,
+    "lon": -3.8504859
+  },
+  "tags": {
+    "addr:postcode": "IV12 5QW",
+    "addr:street": "Balmakeith Industrial Estate",
+    "addr:unit": "2",
+    "branch": "Nairn",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00",
+    "phone": "+44 1667 262100",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/nairn"
+  }
+},
+{
+  "type": "way",
+  "id": 117696101,
+  "center": {
+    "lat": 53.3347782,
+    "lon": -0.9539943
+  },
+  "tags": {
+    "addr:city": "Retford",
+    "addr:postcode": "DN22 7SS",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "100032295527",
+    "shop": "kitchen",
+    "source": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/retford"
+  }
+},
+{
+  "type": "way",
+  "id": 123817250,
+  "center": {
+    "lat": 51.6683558,
+    "lon": -0.3931560
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/north-watford"
+  }
+},
+{
+  "type": "way",
+  "id": 128222869,
+  "center": {
+    "lat": 55.1624927,
+    "lon": -1.6710049
+  },
+  "tags": {
+    "addr:postcode": "NE61 6JT",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "2920010286",
+    "shop": "kitchen",
+    "source": "Bing",
+    "source:addr:postcode": "ONSUD;OS Open UPRN",
+    "website": "https://www.howdens.com/find-a-depot/morpeth"
+  }
+},
+{
+  "type": "way",
+  "id": 135165351,
+  "center": {
+    "lat": 52.6079011,
+    "lon": -1.6754927
+  },
+  "tags": {
+    "addr:city": "Tamworth",
+    "addr:housenumber": "Unit 3",
+    "addr:postcode": "B77 5DF",
+    "addr:street": "Brent",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "394030724",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/tamworth"
+  }
+},
+{
+  "type": "way",
+  "id": 137552614,
+  "center": {
+    "lat": 53.3704142,
+    "lon": -1.4728187
+  },
+  "tags": {
+    "addr:city": "Sheffield",
+    "addr:postcode": "S2 4SJ",
+    "addr:street": "Randall Street",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/bramall-lane"
+  }
+},
+{
+  "type": "way",
+  "id": 140968266,
+  "center": {
+    "lat": 53.8643625,
+    "lon": -1.6721677
+  },
+  "tags": {
+    "addr:city": "Leeds",
+    "addr:postcode": "LS19 7BN",
+    "addr:street": "Moorfield Close",
+    "addr:suburb": "Yeadon",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "retail",
+    "name": "Howdens Joinery",
+    "phone": "+44 113 250 3854",
+    "ref:GB:uprn": "72397634",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/yeadon"
+  }
+},
+{
+  "type": "way",
+  "id": 146834212,
+  "center": {
+    "lat": 51.6545005,
+    "lon": -0.1963604
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "retail",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/barnet"
+  }
+},
+{
+  "type": "way",
+  "id": 148161002,
+  "center": {
+    "lat": 55.5906379,
+    "lon": -2.4256508
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/kelso"
+  }
+},
+{
+  "type": "way",
+  "id": 148218891,
+  "center": {
+    "lat": 51.1383893,
+    "lon": -2.9969909
+  },
+  "tags": {
+    "addr:city": "Bridgwater",
+    "addr:housenumber": "24",
+    "addr:postcode": "TA6 4BH",
+    "addr:street": "Wylds Road",
+    "addr:unit": "Unit AA",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/bridgwater"
+  }
+},
+{
+  "type": "way",
+  "id": 148511212,
+  "center": {
+    "lat": 50.9972319,
+    "lon": -1.4971284
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "commercial",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "100062536712",
+    "shop": "kitchen",
+    "source": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/romsey"
+  }
+},
+{
+  "type": "way",
+  "id": 149404380,
+  "center": {
+    "lat": 51.5423707,
+    "lon": -2.4342689
+  },
+  "tags": {
+    "addr:city": "Yate",
+    "addr:postcode": "BS37 5PB",
+    "addr:street": "Millbrook Road",
+    "addr:unit": "Unit D",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "602733",
+    "shop": "kitchen",
+    "source": "survey",
+    "source:outline": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/yate"
+  }
+},
+{
+  "type": "way",
+  "id": 150714985,
+  "center": {
+    "lat": 52.3412606,
+    "lon": -0.1928102
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "brand:wikipedia": "en:Howdens Joinery",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/huntingdon"
+  }
+},
+{
+  "type": "way",
+  "id": 152193240,
+  "center": {
+    "lat": 53.1939691,
+    "lon": -3.4100981
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/denbigh"
+  }
+},
+{
+  "type": "way",
+  "id": 157731332,
+  "center": {
+    "lat": 53.3765804,
+    "lon": -3.0107561
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "42144412",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/birkenhead"
+  }
+},
+{
+  "type": "way",
+  "id": 161371131,
+  "center": {
+    "lat": 51.5778968,
+    "lon": -1.7639718
+  },
+  "tags": {
+    "addr:city": "Swindon",
+    "addr:postcode": "SN2 8HB",
+    "addr:street": "Bramble Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "retail",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "100121344700",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/swindon"
+  }
+},
+{
+  "type": "way",
+  "id": 162542460,
+  "center": {
+    "lat": 51.0965795,
+    "lon": 1.1681566
+  },
+  "tags": {
+    "addr:city": "Folkestone",
+    "addr:country": "GB",
+    "addr:housenumber": "Unit 5 - 6",
+    "addr:postcode": "CT19 5FG",
+    "addr:street": "Three Acre Trade Park",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00",
+    "phone": "+441303226783",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/folkestone"
+  }
+},
+{
+  "type": "way",
+  "id": 163062834,
+  "center": {
+    "lat": 53.9870211,
+    "lon": -1.1024757
+  },
+  "tags": {
+    "addr:city": "York",
+    "addr:postcode": "YO30 4XF",
+    "addr:street": "Kettlestring Lane",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "100052167670",
+    "shop": "kitchen",
+    "source": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/clifton-moor"
+  }
+},
+{
+  "type": "way",
+  "id": 169564857,
+  "center": {
+    "lat": 53.9574442,
+    "lon": -1.0676240
+  },
+  "tags": {
+    "addr:city": "York",
+    "addr:country": "GB",
+    "addr:housenumber": "12",
+    "addr:postcode": "YO10 3DP",
+    "addr:street": "Alexandra Court",
+    "branch": "York",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "email": "york@howdens.com",
+    "fax": "+44 1904 426 423",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00; Su off",
+    "operator": "Howden Joinery Group Plc",
+    "phone": "+44 1904 426 408",
+    "shop": "trade",
+    "trade": "wood",
+    "website": "https://www.howdens.com/find-a-depot/york",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 180543041,
+  "center": {
+    "lat": 50.8786712,
+    "lon": 0.0186052
+  },
+  "tags": {
+    "addr:city": "Lewes",
+    "addr:postcode": "BN7 2FB",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "commercial",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "100062634710",
+    "shop": "kitchen",
+    "source": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/lewes"
+  }
+},
+{
+  "type": "way",
+  "id": 190799540,
+  "center": {
+    "lat": 51.0443688,
+    "lon": 0.1831479
+  },
+  "tags": {
+    "addr:city": "Crowborough",
+    "addr:housename": "Melody House",
+    "addr:postcode": "TN6 2JJ",
+    "addr:street": "Farningham Road",
+    "branch": "Crowborough",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00; PH off",
+    "phone": "+44 1892 202100",
+    "ref:GB:uprn": "10033413110",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/crowborough"
+  }
+},
+{
+  "type": "way",
+  "id": 198926006,
+  "center": {
+    "lat": 51.6106347,
+    "lon": -0.2450012
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 200666334,
+  "center": {
+    "lat": 53.0874480,
+    "lon": -0.7870191
+  },
+  "tags": {
+    "addr:city": "Newark",
+    "addr:postcode": "NG24 2EG",
+    "addr:street": "Brunel Drive",
+    "addr:unit": "Unit 21",
+    "branch": "Newark",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00; PH off",
+    "phone": "+44 1636 612500",
+    "ref:GB:uprn": "200004258828",
+    "shop": "kitchen",
+    "source": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/newark"
+  }
+},
+{
+  "type": "way",
+  "id": 201227948,
+  "center": {
+    "lat": 53.7831707,
+    "lon": -1.7543695
+  },
+  "tags": {
+    "addr:city": "Bradford",
+    "addr:postcode": "BD5 7JL",
+    "addr:street": "Bowling Old Lane",
+    "branch": "West Bowling",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00",
+    "phone": "+44 1274 742238",
+    "shop": "kitchen",
+    "source": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/west-bowling"
+  }
+},
+{
+  "type": "way",
+  "id": 202097131,
+  "center": {
+    "lat": 53.7260408,
+    "lon": -1.8709966
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "retail",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "10035030503;10010182139",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/halifax"
+  }
+},
+{
+  "type": "way",
+  "id": 203415278,
+  "center": {
+    "lat": 53.7882310,
+    "lon": -1.5729014
+  },
+  "tags": {
+    "addr:city": "Leeds",
+    "addr:postcode": "LS12 1HE",
+    "addr:street": "Copley Hill Trading Estate",
+    "addr:unit": "D",
+    "branch": "Copley",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00",
+    "phone": "+44 113 2454684",
+    "shop": "kitchen",
+    "source": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/copley"
+  }
+},
+{
+  "type": "way",
+  "id": 207809917,
+  "center": {
+    "lat": 56.4089258,
+    "lon": -5.4678547
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00",
+    "shop": "kitchen",
+    "source": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/oban"
+  }
+},
+{
+  "type": "way",
+  "id": 210612974,
+  "center": {
+    "lat": 55.9924016,
+    "lon": -2.5097428
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/dunbar"
+  }
+},
+{
+  "type": "way",
+  "id": 220382053,
+  "center": {
+    "lat": 51.5469600,
+    "lon": -0.3453225
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/greenford"
+  }
+},
+{
+  "type": "way",
+  "id": 227506263,
+  "center": {
+    "lat": 53.4479743,
+    "lon": -1.3526234
+  },
+  "tags": {
+    "addr:city": "Rotherham",
+    "addr:postcode": "S62 6EW",
+    "branch": "Rotherham",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00",
+    "phone": "+44 1709 375112",
+    "shop": "kitchen",
+    "source": "Bing;survey",
+    "website": "https://www.howdens.com/find-a-depot/rotherham"
+  }
+},
+{
+  "type": "way",
+  "id": 231989308,
+  "center": {
+    "lat": 52.3822095,
+    "lon": -1.9886271
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source": "visual survey; bing",
+    "website": "https://www.howdens.com/find-a-depot/longbridge"
+  }
+},
+{
+  "type": "way",
+  "id": 232941116,
+  "center": {
+    "lat": 51.4118778,
+    "lon": -3.2461376
+  },
+  "tags": {
+    "addr:city": "Barry",
+    "addr:postcode": "CF63 2PQ",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "64042735",
+    "shop": "kitchen",
+    "source": "survey",
+    "website": "https://www.howdens.com/find-a-depot/barry"
+  }
+},
+{
+  "type": "way",
+  "id": 235901496,
+  "center": {
+    "lat": 50.8322113,
+    "lon": -0.2546851
+  },
+  "tags": {
+    "addr:city": "Shoreham-by-Sea",
+    "addr:postcode": "BN43 6RJ",
+    "addr:street": "Brighton Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "warehouse",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "60009683",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 237035230,
+  "center": {
+    "lat": 53.3009222,
+    "lon": -3.0568492
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source": "bing",
+    "website": "https://www.howdens.com/find-a-depot/neston"
+  }
+},
+{
+  "type": "way",
+  "id": 238696718,
+  "center": {
+    "lat": 52.5295367,
+    "lon": -1.7788438
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "10090257042",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/minworth"
+  }
+},
+{
+  "type": "way",
+  "id": 248594214,
+  "center": {
+    "lat": 52.9375898,
+    "lon": -1.1621793
+  },
+  "tags": {
+    "addr:city": "Nottingham",
+    "addr:postcode": "NG2 1LT",
+    "addr:street": "Gateside Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "industry": "fitted kitchen manufacturer",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source": "survey; Bing",
+    "source:postcode": "ONS",
+    "website": "https://www.howdens.com/find-a-depot/nottingham"
+  }
+},
+{
+  "type": "way",
+  "id": 255387777,
+  "center": {
+    "lat": 53.0353892,
+    "lon": -2.1888590
+  },
+  "tags": {
+    "addr:postcode": "ST6 3HX",
+    "addr:street": "Waterloo Road",
+    "branch": "Stoke-on-Trent",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00; PH off",
+    "phone": "+44 1782 209691",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/stoke-on-trent"
+  }
+},
+{
+  "type": "way",
+  "id": 258700911,
+  "center": {
+    "lat": 51.8946877,
+    "lon": -2.0600593
+  },
+  "tags": {
+    "addr:city": "Cheltenham",
+    "addr:postcode": "GL52 6QP",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/cheltenham"
+  }
+},
+{
+  "type": "way",
+  "id": 258850282,
+  "center": {
+    "lat": 52.9513157,
+    "lon": -1.3014010
+  },
+  "tags": {
+    "addr:city": "Ilkeston",
+    "addr:housename": "Quarry Hill Industrial Park",
+    "addr:parentstreet": "Merlin Way",
+    "addr:postcode": "DE7 4RA",
+    "addr:street": "Delta Court",
+    "addr:unit": "1-3",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "brand:wikipedia": "en:Howdens Joinery",
+    "name": "Howdens Joinery",
+    "old_name": "DAS",
+    "shop": "kitchen",
+    "source": "survey; Bing",
+    "source:addr": "website",
+    "website": "https://www.howdens.com/find-a-depot/ilkeston"
+  }
+},
+{
+  "type": "way",
+  "id": 260452113,
+  "center": {
+    "lat": 51.3682946,
+    "lon": -1.9662320
+  },
+  "tags": {
+    "addr:city": "Devizes",
+    "addr:housename": "Devizes Trade Centre",
+    "addr:street": "Hopton Road",
+    "addr:unit": "8-9",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "building:levels": "2",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Th 07:30-17:00; Sa 08:00-12:00",
+    "ref:GB:uprn": "10091711361",
+    "roof:shape": "gabled",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/devizes"
+  }
+},
+{
+  "type": "way",
+  "id": 260679169,
+  "center": {
+    "lat": 57.4146594,
+    "lon": -6.2070337
+  },
+  "tags": {
+    "addr:city": "Portree",
+    "addr:city:gd": "Port Rìgh",
+    "addr:postcode": "IV51 9HF",
+    "addr:street": "Dunvegan Road",
+    "addr:street:gd": "Rathad Dhùn Bheagain",
+    "branch": "Isle of Skye",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "roof:colour": "grey",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/isle-of-skye"
+  }
+},
+{
+  "type": "way",
+  "id": 264312582,
+  "center": {
+    "lat": 51.5006049,
+    "lon": -3.5508910
+  },
+  "tags": {
+    "addr:postcode": "CF31 3RT",
+    "addr:street": "Western Avenue",
+    "addr:unit": "11C",
+    "branch": "Bridgend",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00",
+    "phone": "+44 1656 767396",
+    "shop": "kitchen",
+    "source": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/bridgend"
+  }
+},
+{
+  "type": "way",
+  "id": 266741810,
+  "center": {
+    "lat": 52.1945575,
+    "lon": -2.2059384
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "brand:wikipedia": "en:Howdens Joinery",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/worcester"
+  }
+},
+{
+  "type": "way",
+  "id": 274867045,
+  "center": {
+    "lat": 53.9170116,
+    "lon": -3.0192417
+  },
+  "tags": {
+    "addr:city": "Fleetwood",
+    "addr:postcode": "FY7 6RP",
+    "addr:street": "Copse Road",
+    "branch": "Fleetwood",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00",
+    "phone": "+44 1253 777036",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/fleetwood"
+  }
+},
+{
+  "type": "way",
+  "id": 287231771,
+  "center": {
+    "lat": 52.4035365,
+    "lon": 0.7247880
+  },
+  "tags": {
+    "addr:city": "Thetford",
+    "addr:postcode": "IP24 3RW",
+    "addr:street": "Burrell Way",
+    "addr:unit": "B & C",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/thetford"
+  }
+},
+{
+  "type": "way",
+  "id": 294338763,
+  "center": {
+    "lat": 54.6367819,
+    "lon": -3.5631316
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/workington"
+  }
+},
+{
+  "type": "way",
+  "id": 309086393,
+  "center": {
+    "lat": 53.5729176,
+    "lon": -2.8775362
+  },
+  "tags": {
+    "addr:city": "Ormskirk",
+    "addr:housename": "Howdens Joinery",
+    "addr:housenumber": "7-8",
+    "addr:postcode": "L39 2AN",
+    "addr:street": "Hattersley Way",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/ormskirk"
+  }
+},
+{
+  "type": "way",
+  "id": 313914297,
+  "center": {
+    "lat": 55.9277076,
+    "lon": -3.2960227
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 313914300,
+  "center": {
+    "lat": 55.9270655,
+    "lon": -3.2961635
+  },
+  "tags": {
+    "addr:postcode": "EH11 4BP",
+    "addr:street": "Bankhead Crossway North",
+    "addr:unit": "6",
+    "branch": "Sighthill",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00",
+    "phone": "+44 131 4423952",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/edinburgh-sighthill"
+  }
+},
+{
+  "type": "way",
+  "id": 316250880,
+  "center": {
+    "lat": 55.8288375,
+    "lon": -4.2977187
+  },
+  "tags": {
+    "addr:city": "Glasgow",
+    "addr:housenumber": "45",
+    "addr:postcode": "G41 4AZ",
+    "addr:street": "Haggs Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "warehouse",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00",
+    "phone": "+44 1412330600",
+    "ref:GB:uprn": "906700173498",
+    "shop": "kitchen",
+    "source": "bing;local knowledge",
+    "website": "https://www.howdens.com/find-a-depot/glasgow-pollokshaws"
+  }
+},
+{
+  "type": "way",
+  "id": 317686523,
+  "center": {
+    "lat": 54.9217223,
+    "lon": -2.9527512
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "retail",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "trade": "building_supplies",
+    "website": "https://www.howdens.com/find-a-depot/kingstown"
+  }
+},
+{
+  "type": "way",
+  "id": 318387694,
+  "center": {
+    "lat": 54.8868935,
+    "lon": -2.9300960
+  },
+  "tags": {
+    "addr:city": "Carlisle",
+    "addr:postcode": "CA2 5AE",
+    "addr:street": "Currock Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "retail",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "10008675740",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/carlisle"
+  }
+},
+{
+  "type": "way",
+  "id": 320254405,
+  "center": {
+    "lat": 55.7428055,
+    "lon": -3.8464223
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "manufacture",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/carluke"
+  }
+},
+{
+  "type": "way",
+  "id": 322970573,
+  "center": {
+    "lat": 52.8867351,
+    "lon": -1.2680907
+  },
+  "tags": {
+    "addr:city": "Nottingham",
+    "addr:street": "Forbes Close",
+    "addr:suburb": "Long Eaton",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "commercial",
+    "craft": "joiner",
+    "name": "Howdens Joinery",
+    "shop": "trade",
+    "source": "survey",
+    "source:area": "Bing",
+    "trade": "joinery_products",
+    "trade_customers_only": "yes",
+    "website": "https://www.howdens.com/find-a-depot/long-eaton"
+  }
+},
+{
+  "type": "way",
+  "id": 323000494,
+  "center": {
+    "lat": 53.2035407,
+    "lon": -2.4985684
+  },
+  "tags": {
+    "addr:city": "Winsford",
+    "addr:housename": "Navigation Park",
+    "addr:postcode": "CW7 3RL",
+    "addr:street": "Road One",
+    "addr:unit": "Unit 3",
+    "branch": "Winsford",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "commercial",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00; PH off",
+    "phone": "+44 1606 559414",
+    "ref:GB:uprn": "10011719413",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/winsford"
+  }
+},
+{
+  "type": "way",
+  "id": 326208021,
+  "center": {
+    "lat": 51.5060554,
+    "lon": -0.3567615
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/southall"
+  }
+},
+{
+  "type": "way",
+  "id": 327033001,
+  "center": {
+    "lat": 52.2401603,
+    "lon": 0.7454774
+  },
+  "tags": {
+    "addr:postcode": "IP32 7BY",
+    "addr:street": "Easlea Road",
+    "branch": "Bury St Edmunds",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00; PH off",
+    "phone": "+44 1284 760243",
+    "shop": "kitchen",
+    "source": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/bury-st-edmunds"
+  }
+},
+{
+  "type": "way",
+  "id": 327123642,
+  "center": {
+    "lat": 52.2721163,
+    "lon": -1.5512473
+  },
+  "tags": {
+    "addr:housenumber": "Unit 2 Block C",
+    "addr:postcode": "CV34 6TJ",
+    "addr:street": "Harriott Drive",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/leamington-spa"
+  }
+},
+{
+  "type": "way",
+  "id": 330027773,
+  "center": {
+    "lat": 54.5366865,
+    "lon": -3.5843426
+  },
+  "tags": {
+    "addr:city": "Whitehaven",
+    "addr:postcode": "CA28 9HY",
+    "addr:street": "Meadow Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "commercial",
+    "name": "Howdens Joinery",
+    "phone": "+44 1946 591669",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/whitehaven"
+  }
+},
+{
+  "type": "way",
+  "id": 336887648,
+  "center": {
+    "lat": 51.2225580,
+    "lon": -0.7740781
+  },
+  "tags": {
+    "addr:city": "Farnham",
+    "addr:housenumber": "Unit 8A",
+    "addr:postcode": "GU9 9NP",
+    "addr:street": "Farnham Trading Estate",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "commercial",
+    "building:levels": "2",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00",
+    "phone": "+44 1252 719065",
+    "roof:levels": "0",
+    "shop": "kitchen",
+    "website": "https://howdens.com/find-a-depot/farnham"
+  }
+},
+{
+  "type": "way",
+  "id": 337671586,
+  "center": {
+    "lat": 53.0466938,
+    "lon": -2.2448951
+  },
+  "tags": {
+    "addr:postcode": "ST5 7RU",
+    "addr:street": "Brookhouse Road",
+    "addr:unit": "33-34",
+    "branch": "Newcastle Under Lyme",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00; PH off",
+    "phone": "+44 1782 562881",
+    "shop": "kitchen",
+    "source": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/newcastle-under-lyme"
+  }
+},
+{
+  "type": "way",
+  "id": 338929887,
+  "center": {
+    "lat": 54.1163107,
+    "lon": -3.2398397
+  },
+  "tags": {
+    "addr:city": "Barrow-in-Furness",
+    "addr:housename": "Howdens Joinery",
+    "addr:postcode": "LA14 5UZ",
+    "addr:street": "Ashburner Way",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "operator": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/barrow"
+  }
+},
+{
+  "type": "way",
+  "id": 338966420,
+  "center": {
+    "lat": 52.5931481,
+    "lon": 1.7123085
+  },
+  "tags": {
+    "addr:city": "Great Yarmouth",
+    "addr:street": "Bessemer Way",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/great-yarmouth"
+  }
+},
+{
+  "type": "way",
+  "id": 341220338,
+  "center": {
+    "lat": 53.8691388,
+    "lon": -2.3899687
+  },
+  "tags": {
+    "addr:postcode": "BB7 1AX",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "10022973911",
+    "shop": "kitchen",
+    "source": "OSOpendataStreetview",
+    "source:addr:postcode": "ONSUD;OS Open UPRN"
+  }
+},
+{
+  "type": "way",
+  "id": 346010520,
+  "center": {
+    "lat": 51.3557924,
+    "lon": 1.4095070
+  },
+  "tags": {
+    "addr:city": "Broadstairs",
+    "addr:housenumber": "1-2",
+    "addr:street": "Anson Close",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "10022962929",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/ramsgate"
+  }
+},
+{
+  "type": "way",
+  "id": 349039238,
+  "center": {
+    "lat": 54.9785431,
+    "lon": -2.0898275
+  },
+  "tags": {
+    "addr:city": "Hexham",
+    "addr:postcode": "NE46 4DQ",
+    "addr:street": "French Garden Industrial Estate",
+    "addr:unit": "Unit 1",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/hexham"
+  }
+},
+{
+  "type": "way",
+  "id": 352586767,
+  "center": {
+    "lat": 51.8826912,
+    "lon": 0.9294665
+  },
+  "tags": {
+    "addr:city": "Colchester",
+    "addr:housename": "Altbarn Industrial Estate",
+    "addr:postcode": "CO2 8LG",
+    "addr:street": "Hawkins Road",
+    "addr:unit": "Unit 2B",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source": "OS OpenMap Local",
+    "website": "https://www.howdens.com/find-a-depot/colchester"
+  }
+},
+{
+  "type": "way",
+  "id": 359144433,
+  "center": {
+    "lat": 52.2194344,
+    "lon": -2.7350978
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/leominster"
+  }
+},
+{
+  "type": "way",
+  "id": 364816910,
+  "center": {
+    "lat": 53.0019972,
+    "lon": -1.1185061
+  },
+  "tags": {
+    "addr:city": "Nottingham",
+    "addr:postcode": "NG5 7FJ",
+    "addr:street": "Eagle Close",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "200004046562",
+    "shop": "kitchen",
+    "source:building": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/arnold"
+  }
+},
+{
+  "type": "way",
+  "id": 367137199,
+  "center": {
+    "lat": 53.0122307,
+    "lon": -1.1896277
+  },
+  "tags": {
+    "addr:city": "Nottingham",
+    "addr:housenumber": "184",
+    "addr:postcode": "NG6 8AJ",
+    "addr:street": "Hucknall Lane",
+    "addr:unit": "2",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "retail",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source": "survey",
+    "source:addr": "NCC Open Data business rates accounts",
+    "website": "https://www.howdens.com/find-a-depot/nottingham-bulwell"
+  }
+},
+{
+  "type": "way",
+  "id": 371772239,
+  "center": {
+    "lat": 55.6084898,
+    "lon": -2.7875744
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source": "bing",
+    "website": "https://www.howdens.com/find-a-depot/galashiels"
+  }
+},
+{
+  "type": "way",
+  "id": 376441273,
+  "center": {
+    "lat": 51.0698086,
+    "lon": -1.2980037
+  },
+  "tags": {
+    "addr:city": "Winchester",
+    "addr:postcode": "SO23 7RX",
+    "addr:street": "Moorside Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "100062520477",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/winchester"
+  }
+},
+{
+  "type": "way",
+  "id": 376986597,
+  "center": {
+    "lat": 51.8091898,
+    "lon": 0.6507926
+  },
+  "tags": {
+    "addr:housenumber": "Units A & B",
+    "addr:postcode": "CM8 3YQ",
+    "addr:street": "Eastways",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "commercial",
+    "check_date": "2025-03-08",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00; Su off",
+    "phone": "+44 1376 542900",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/witham"
+  }
+},
+{
+  "type": "way",
+  "id": 386337470,
+  "center": {
+    "lat": 54.0484032,
+    "lon": -2.8256571
+  },
+  "tags": {
+    "addr:city": "Lancaster",
+    "addr:place": "Lune Industrial Estate",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 406986168,
+  "center": {
+    "lat": 53.8074417,
+    "lon": -1.5339393
+  },
+  "tags": {
+    "addr:city": "Leeds",
+    "addr:postcode": "LS7 1AQ",
+    "addr:street": "Nortech Close",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "warehouse",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/leeds"
+  }
+},
+{
+  "type": "way",
+  "id": 406986178,
+  "center": {
+    "lat": 53.8069859,
+    "lon": -1.5338666
+  },
+  "tags": {
+    "addr:city": "Leeds",
+    "addr:postcode": "LS7 1AQ",
+    "addr:street": "Nortech Close",
+    "addr:unit": "C1",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "warehouse",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/leeds"
+  }
+},
+{
+  "type": "way",
+  "id": 408940084,
+  "center": {
+    "lat": 52.6158015,
+    "lon": -1.1341604
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source": "os_opendata_streetview",
+    "website": "https://www.howdens.com/find-a-depot/leicester-city"
+  }
+},
+{
+  "type": "way",
+  "id": 410962545,
+  "center": {
+    "lat": 52.6504723,
+    "lon": 0.1575644
+  },
+  "tags": {
+    "addr:city": "Wisbech",
+    "addr:country": "GB",
+    "addr:housenumber": "79",
+    "addr:postcode": "PE13 2XQ",
+    "addr:street": "Boleness Road",
+    "addr:unit": "1",
+    "branch": "Wisbech",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00; PH off",
+    "phone": "+44 1945 581705",
+    "shop": "kitchen",
+    "source:geometry": "Mapbox",
+    "website": "https://www.howdens.com/find-a-depot/wisbech"
+  }
+},
+{
+  "type": "way",
+  "id": 414215520,
+  "center": {
+    "lat": 52.9020613,
+    "lon": -1.8546730
+  },
+  "tags": {
+    "addr:city": "Uttoxeter",
+    "addr:postcode": "ST14 8AL",
+    "addr:street": "Eastfields Drive",
+    "brand": "Howdens Joinery",
+    "brand:website": "https://www.howdens.com/",
+    "brand:wikidata": "Q5921438",
+    "brand:wikipedia": "en:Howdens Joinery",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "operator": "Howdens",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/uttoxeter"
+  }
+},
+{
+  "type": "way",
+  "id": 416724266,
+  "center": {
+    "lat": 56.0217455,
+    "lon": -3.8311379
+  },
+  "tags": {
+    "addr:country": "GB",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "commercial",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "136003059",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/larbert"
+  }
+},
+{
+  "type": "way",
+  "id": 424322871,
+  "center": {
+    "lat": 51.9164888,
+    "lon": -2.0969941
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 424502973,
+  "center": {
+    "lat": 50.9691986,
+    "lon": 0.0927008
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "mapillary": "465200234574227",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 448141518,
+  "center": {
+    "lat": 53.7761010,
+    "lon": -1.5161856
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "warehouse",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "72747334",
+    "shop": "trade",
+    "website": "https://www.howdens.com/find-a-depot/leeds-hunslet"
+  }
+},
+{
+  "type": "way",
+  "id": 467058322,
+  "center": {
+    "lat": 52.4057153,
+    "lon": -0.7447742
+  },
+  "tags": {
+    "addr:city": "Kettering",
+    "addr:country": "GB",
+    "addr:street": "Baron Avenue",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/kettering"
+  }
+},
+{
+  "type": "way",
+  "id": 470279532,
+  "center": {
+    "lat": 52.2346123,
+    "lon": -0.9148839
+  },
+  "tags": {
+    "addr:housename": "Howdens Joinery",
+    "addr:street": "St James Mill Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/northampton"
+  }
+},
+{
+  "type": "way",
+  "id": 471814328,
+  "center": {
+    "lat": 52.0677614,
+    "lon": -2.7232066
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/hereford"
+  }
+},
+{
+  "type": "way",
+  "id": 480054719,
+  "center": {
+    "lat": 51.1537043,
+    "lon": 0.2871280
+  },
+  "tags": {
+    "addr:housename": "Spa Industrial Park",
+    "addr:street": "Longfield Road",
+    "addr:unit": "14",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "100062554357",
+    "shop": "trade",
+    "source": "Bing Survey",
+    "trade": "building_supplies",
+    "website": "https://www.howdens.com/find-a-depot/tunbridge-wells"
+  }
+},
+{
+  "type": "way",
+  "id": 490082511,
+  "center": {
+    "lat": 51.6187744,
+    "lon": -0.1793317
+  },
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "N12 8QA",
+    "addr:street": "Finchley Industrial Centre",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "10094709935;10091871146;10091871147;10091871145;200220989;200220991",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/finchley"
+  }
+},
+{
+  "type": "way",
+  "id": 501024851,
+  "center": {
+    "lat": 52.3925484,
+    "lon": -1.4439377
+  },
+  "tags": {
+    "addr:city": "Coventry",
+    "addr:postcode": "CV3 2RT",
+    "addr:street": "Herald Way",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery Ltd",
+    "ref:GB:uprn": "10094854023",
+    "shop": "kitchen",
+    "source": "Warwicks CC Aerial Imagery 2013",
+    "source:addr:postcode": "ONSUD;OS Open UPRN",
+    "website": "https://www.howdens.com/find-a-depot/binley"
+  }
+},
+{
+  "type": "way",
+  "id": 502893745,
+  "center": {
+    "lat": 50.9822319,
+    "lon": 0.9493952
+  },
+  "tags": {
+    "addr:city": "New Romney",
+    "addr:postcode": "TN28 8LH",
+    "addr:street": "Mountfield Road",
+    "addr:unit": "20-21",
+    "branch": "New Romney",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "operator": "Howdens",
+    "shop": "trade",
+    "trade": "building_supplies",
+    "website": "https://www.howdens.com/find-a-depot/new-romney"
+  }
+},
+{
+  "type": "way",
+  "id": 505623886,
+  "center": {
+    "lat": 50.9552922,
+    "lon": -0.1424729
+  },
+  "tags": {
+    "addr:city": "Burgess Hill",
+    "addr:housenumber": "18",
+    "addr:postcode": "RH15 9NF",
+    "addr:street": "Victoria Way",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/burgess-hill"
+  }
+},
+{
+  "type": "way",
+  "id": 506573346,
+  "center": {
+    "lat": 53.5807114,
+    "lon": -2.4365903
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/bolton"
+  }
+},
+{
+  "type": "way",
+  "id": 516266126,
+  "center": {
+    "lat": 52.9299376,
+    "lon": -4.1404666
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/porthmadog"
+  }
+},
+{
+  "type": "way",
+  "id": 533899638,
+  "center": {
+    "lat": 51.5844993,
+    "lon": -0.1117298
+  },
+  "tags": {
+    "addr:city": "London",
+    "addr:place": "Cranford Way Industrial Estate",
+    "addr:postcode": "N8 9DG",
+    "addr:street": "Tottenham Lane",
+    "addr:unit": "A",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00; Su off",
+    "operator": "Howdens",
+    "ref:GB:uprn": "10093590993",
+    "shop": "kitchen",
+    "trade": "joinery_products",
+    "website": "https://www.howdens.com/find-a-depot/hornsey"
+  }
+},
+{
+  "type": "way",
+  "id": 540172705,
+  "center": {
+    "lat": 51.2469333,
+    "lon": -0.7401657
+  },
+  "tags": {
+    "addr:housenumber": "9,10",
+    "addr:street": "Alpha Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/aldershot"
+  }
+},
+{
+  "type": "way",
+  "id": 542335577,
+  "center": {
+    "lat": 51.2744143,
+    "lon": 1.0673839
+  },
+  "tags": {
+    "addr:city": "Canterbury",
+    "addr:country": "GB",
+    "addr:county": "Kent",
+    "addr:housenumber": "6",
+    "addr:postcode": "CT1 3RB",
+    "addr:street": "Cotton Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "warehouse",
+    "contact:phone": "+44 1227 762837",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00; Su,PH off",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/canterbury"
+  }
+},
+{
+  "type": "way",
+  "id": 542369869,
+  "center": {
+    "lat": 51.6096975,
+    "lon": -0.0024731
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "trade",
+    "source": "survey",
+    "website": "https://www.howdens.com/find-a-depot/chingford"
+  }
+},
+{
+  "type": "way",
+  "id": 546657567,
+  "center": {
+    "lat": 51.8729739,
+    "lon": 0.5695723
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 554135928,
+  "center": {
+    "lat": 52.3165062,
+    "lon": -0.6732473
+  },
+  "tags": {
+    "addr:city": "Wellingborough",
+    "addr:country": "GB",
+    "addr:housenumber": "15/19",
+    "addr:postcode": "NN8 4BH",
+    "addr:street": "Meadow Close",
+    "branch": "Wellingborough",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/wellingborough"
+  }
+},
+{
+  "type": "way",
+  "id": 554349417,
+  "center": {
+    "lat": 52.4009190,
+    "lon": -4.0390923
+  },
+  "tags": {
+    "addr:postcode": "SY23 3UD",
+    "addr:unit": "2",
+    "branch": "Aberystwyth",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00; PH off",
+    "phone": "+44 1970 639443",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/aberystwyth"
+  }
+},
+{
+  "type": "way",
+  "id": 577289740,
+  "center": {
+    "lat": 53.2175278,
+    "lon": -4.1096968
+  },
+  "tags": {
+    "addr:unit": "Units 3, 4, 6 & 7",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "commercial",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/bangor"
+  }
+},
+{
+  "type": "way",
+  "id": 586089092,
+  "center": {
+    "lat": 52.0794236,
+    "lon": -4.6586693
+  },
+  "tags": {
+    "addr:city": "Cardigan / Aberteifi",
+    "addr:place": "Pentood Industrial Estate",
+    "addr:postcode": "SA43 3AG",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00",
+    "phone": "+44 1239 282900",
+    "shop": "kitchen",
+    "trade": "building_supplies",
+    "url": "https://www.howdens.com/about-us/contact-your-local-depot/?p=Cardigan&olat=52.079373&olng=-4.657267000000000000&s=Cardigan",
+    "website": "https://www.howdens.com/find-a-depot/cardigan"
+  }
+},
+{
+  "type": "way",
+  "id": 592469422,
+  "center": {
+    "lat": 51.2923654,
+    "lon": 1.0896387
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "200000678172",
+    "shop": "kitchen",
+    "source": "survey",
+    "source:geometry": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/canterbury-broad-oak"
+  }
+},
+{
+  "type": "way",
+  "id": 605641075,
+  "center": {
+    "lat": 52.0792091,
+    "lon": -4.6584648
+  },
+  "tags": {
+    "access": "customers",
+    "amenity": "parking",
+    "fee": "no",
+    "operator": "Howdens Joinery",
+    "park_ride": "no",
+    "parking": "surface",
+    "supervised": "no",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 620929252,
+  "center": {
+    "lat": 50.8596225,
+    "lon": 0.2513318
+  },
+  "tags": {
+    "branch": "Hailsham",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/hailsham"
+  }
+},
+{
+  "type": "way",
+  "id": 628405358,
+  "center": {
+    "lat": 51.4152138,
+    "lon": -2.6105392
+  },
+  "tags": {
+    "addr:city": "Bristol",
+    "addr:postcode": "BS13 7TW",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/bishopsworth"
+  }
+},
+{
+  "type": "way",
+  "id": 633119461,
+  "center": {
+    "lat": 52.0115408,
+    "lon": 0.2593919
+  },
+  "tags": {
+    "addr:postcode": "CB10 2UP",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "brand:wikipedia": "en:Howdens Joinery",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/saffron-walden"
+  }
+},
+{
+  "type": "way",
+  "id": 642345731,
+  "center": {
+    "lat": 56.3845514,
+    "lon": -3.4337988
+  },
+  "tags": {
+    "addr:city": "Perth",
+    "addr:postcode": "PH2 8DR",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "124019864",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/perth"
+  }
+},
+{
+  "type": "way",
+  "id": 650814872,
+  "center": {
+    "lat": 50.9233249,
+    "lon": -1.3100393
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "commercial",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source:location": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/hedge-end"
+  }
+},
+{
+  "type": "way",
+  "id": 654347251,
+  "center": {
+    "lat": 50.2830475,
+    "lon": -3.7809370
+  },
+  "tags": {
+    "addr:housename": "Bridge Works",
+    "addr:postcode": "TQ7 1ES",
+    "addr:street": "Station Yard Industrial Estate",
+    "addr:unit": "8B",
+    "branch": "Kingsbridge",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00; PH off",
+    "phone": "+44 1548 857408",
+    "shop": "kitchen",
+    "source": "OS_OpenData_OpenMapLocal",
+    "website": "https://www.howdens.com/find-a-depot/kingsbridge"
+  }
+},
+{
+  "type": "way",
+  "id": 662268217,
+  "center": {
+    "lat": 52.5625597,
+    "lon": 0.0711429
+  },
+  "tags": {
+    "addr:city": "March",
+    "addr:country": "GB",
+    "addr:postcode": "PE15 0BN",
+    "addr:street": "Westry Avenue",
+    "branch": "March",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00",
+    "phone": "+44 1354 661141",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/march"
+  }
+},
+{
+  "type": "way",
+  "id": 680977668,
+  "center": {
+    "lat": 52.5157930,
+    "lon": -2.0670344
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/dudley"
+  }
+},
+{
+  "type": "way",
+  "id": 686251971,
+  "center": {
+    "lat": 50.7883931,
+    "lon": 0.3057532
+  },
+  "tags": {
+    "addr:housenumber": "18",
+    "addr:street": "Maple Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "10010662718",
+    "shop": "trade",
+    "trade": "building_supplies",
+    "website": "https://www.howdens.com/find-a-depot/eastbourne"
+  }
+},
+{
+  "type": "way",
+  "id": 690710408,
+  "center": {
+    "lat": 50.8328566,
+    "lon": -0.7935769
+  },
+  "tags": {
+    "addr:city": "Chichester",
+    "addr:postcode": "PO19 8TX",
+    "addr:street": "Terminus Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "100062612768",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/chichester"
+  }
+},
+{
+  "type": "way",
+  "id": 691522140,
+  "center": {
+    "lat": 50.9339136,
+    "lon": -1.5084174
+  },
+  "tags": {
+    "addr:city": "Southampton",
+    "addr:country": "GB",
+    "addr:housename": "South Hampshire Industrial Park",
+    "addr:postcode": "SO40 3SA",
+    "addr:street": "Brunel Road",
+    "addr:town": "Totton",
+    "addr:unit": "3",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "warehouse",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "10007448998",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/totton"
+  }
+},
+{
+  "type": "way",
+  "id": 701884165,
+  "center": {
+    "lat": 50.7333091,
+    "lon": -1.9888977
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/poole"
+  }
+},
+{
+  "type": "way",
+  "id": 705105944,
+  "center": {
+    "lat": 50.3645782,
+    "lon": -4.1178646
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "retail",
+    "mapillary": "1109813952916807",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "survey:date": "2022-05-09",
+    "website": "https://www.howdens.com/find-a-depot/cattedown"
+  }
+},
+{
+  "type": "way",
+  "id": 709207139,
+  "center": {
+    "lat": 54.8957826,
+    "lon": -1.5596374
+  },
+  "tags": {
+    "addr:city": "Chester-le-Street",
+    "addr:postcode": "DH3 2SB",
+    "addr:town": "Birtley",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens",
+    "shop": "trade",
+    "trade": "building_supplies",
+    "website": "https://www.howdens.com/find-a-depot/birtley"
+  }
+},
+{
+  "type": "way",
+  "id": 709605949,
+  "center": {
+    "lat": 52.5252557,
+    "lon": -0.2358994
+  },
+  "tags": {
+    "addr:city": "Peterborough",
+    "addr:country": "GB",
+    "addr:postcode": "PE7 3ZE",
+    "addr:street": "Harrier Way",
+    "addr:suburb": "Yaxley",
+    "branch": "Yaxley",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00",
+    "phone": "+44 1733 480200",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/yaxley"
+  }
+},
+{
+  "type": "way",
+  "id": 712702729,
+  "center": {
+    "lat": 50.9304854,
+    "lon": -2.9285138
+  },
+  "tags": {
+    "addr:city": "Ilminster",
+    "addr:country": "GB",
+    "addr:county": "Somerset",
+    "addr:parentstreet": "Station Road",
+    "addr:postcode": "TA19 9BL",
+    "addr:street": "Slape Industrial Estate",
+    "addr:unit": "3",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "building:levels": "2",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/ilminster"
+  }
+},
+{
+  "type": "way",
+  "id": 713101328,
+  "center": {
+    "lat": 52.3722601,
+    "lon": 1.1208444
+  },
+  "tags": {
+    "addr:city": "Diss",
+    "addr:street": "Vinces Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source:geometry": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/diss"
+  }
+},
+{
+  "type": "way",
+  "id": 731857081,
+  "center": {
+    "lat": 53.6946953,
+    "lon": -1.3001115
+  },
+  "tags": {
+    "addr:city": "Pontefract",
+    "addr:housename": "Baileygate Industrial Estate",
+    "addr:housenumber": "11",
+    "addr:postcode": "WF8 2LN",
+    "addr:street": "South Baileygate",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "brand:wikipedia": "en:Howdens Joinery",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "63133431",
+    "shop": "kitchen",
+    "source": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/pontefract"
+  }
+},
+{
+  "type": "way",
+  "id": 736664077,
+  "center": {
+    "lat": 52.4462068,
+    "lon": 1.7142962
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "brand:wikipedia": "en:Howdens Joinery",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/lowestoft"
+  }
+},
+{
+  "type": "way",
+  "id": 761766210,
+  "center": {
+    "lat": 50.7539699,
+    "lon": -1.9306770
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/bournemouth"
+  }
+},
+{
+  "type": "way",
+  "id": 780692406,
+  "center": {
+    "lat": 57.6777858,
+    "lon": -2.9481785
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 798492119,
+  "center": {
+    "lat": 57.2028533,
+    "lon": -3.8189874
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 804949191,
+  "center": {
+    "lat": 52.8251637,
+    "lon": -2.1130254
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/stafford"
+  }
+},
+{
+  "type": "way",
+  "id": 807942303,
+  "center": {
+    "lat": 51.8481118,
+    "lon": -4.3327134
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/carmarthen"
+  }
+},
+{
+  "type": "way",
+  "id": 822612163,
+  "center": {
+    "lat": 52.2615277,
+    "lon": 0.3916359
+  },
+  "tags": {
+    "addr:postcode": "CB8 7ER",
+    "addr:street": "Studlands Park Avenue",
+    "addr:unit": "2",
+    "branch": "Newmarket",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "commercial",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00; PH off",
+    "phone": "+44 1638 661976",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/newmarket"
+  }
+},
+{
+  "type": "way",
+  "id": 837838757,
+  "center": {
+    "lat": 51.4584498,
+    "lon": -0.1273995
+  },
+  "tags": {
+    "addr:city": "London",
+    "addr:postcode": "SW2 5DZ",
+    "addr:street": "Ellerslie Square",
+    "addr:unit": "10",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "commercial",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "100023354222",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/brixton"
+  }
+},
+{
+  "type": "way",
+  "id": 842071710,
+  "center": {
+    "lat": 50.9352048,
+    "lon": -2.6563913
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/yeovil"
+  }
+},
+{
+  "type": "way",
+  "id": 882710330,
+  "center": {
+    "lat": 50.3646012,
+    "lon": -4.1017033
+  },
+  "tags": {
+    "addr:city": "Plymouth",
+    "addr:housenumber": "54",
+    "addr:postcode": "PL9 7JQ",
+    "addr:street": "Oreston Road",
+    "branch": "Plymouth",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00; PH off",
+    "phone": "+44 1752 480432",
+    "ref:GB:uprn": "100041063855",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/plymouth"
+  }
+},
+{
+  "type": "way",
+  "id": 904808875,
+  "center": {
+    "lat": 51.1412411,
+    "lon": -2.7346377
+  },
+  "tags": {
+    "addr:city": "Glastonbury",
+    "addr:housename": "Morlands Enterprise Park",
+    "addr:postcode": "BA6 9FW",
+    "addr:street": "Morland Road",
+    "addr:unit": "Unit A",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "building:levels": "1",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/glastonbury"
+  }
+},
+{
+  "type": "way",
+  "id": 931208164,
+  "center": {
+    "lat": 51.0630249,
+    "lon": 0.5060092
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/hawkhurst"
+  }
+},
+{
+  "type": "way",
+  "id": 941511791,
+  "center": {
+    "lat": 50.4540370,
+    "lon": -4.4902198
+  },
+  "tags": {
+    "addr:postcode": "PL14 4LA",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "trade": "building_supplies",
+    "website": "https://www.howdens.com/find-a-depot/liskeard"
+  }
+},
+{
+  "type": "way",
+  "id": 942382140,
+  "center": {
+    "lat": 52.1509559,
+    "lon": -0.4127071
+  },
+  "tags": {
+    "addr:city": "Bedford",
+    "addr:housename": "Elms Farm Industrial Estate",
+    "addr:postcode": "MK41 0LZ",
+    "addr:street": "Hudson Road",
+    "addr:unit": "Units 1B & 1C",
+    "alt_name": "Howdens Joinery Properties Ltd",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/bedford-elm-farm"
+  }
+},
+{
+  "type": "way",
+  "id": 952484708,
+  "center": {
+    "lat": 57.1518926,
+    "lon": -2.1632698
+  },
+  "tags": {
+    "addr:city": "Aberdeen",
+    "addr:housename": "Fernhill Units",
+    "addr:postcode": "AB16 6TX",
+    "addr:street": "Lang Stracht",
+    "addr:unit": "Unit 3",
+    "branch": "Lang Stracht",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00",
+    "operator": "Howden Joinery Ltd",
+    "phone": "+44 1224 444 100",
+    "shop": "kitchen",
+    "trade": "building_supplies",
+    "website": "https://www.howdens.com/find-a-depot/lang-stracht"
+  }
+},
+{
+  "type": "way",
+  "id": 952569816,
+  "center": {
+    "lat": 51.5351567,
+    "lon": -0.0211086
+  },
+  "tags": {
+    "addr:city": "London",
+    "addr:street": "Wick Lane",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "trade",
+    "trade": "building_supplies",
+    "website": "https://www.howdens.com/find-a-depot/bow"
+  }
+},
+{
+  "type": "way",
+  "id": 965750892,
+  "center": {
+    "lat": 51.4113525,
+    "lon": 0.0135328
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/bromley"
+  }
+},
+{
+  "type": "way",
+  "id": 978237163,
+  "center": {
+    "lat": 57.6033464,
+    "lon": -4.4451301
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "check_date": "2025-04-28",
+    "name": "Howdens Joinery",
+    "shop": "doityourself",
+    "source": "bing"
+  }
+},
+{
+  "type": "way",
+  "id": 978460357,
+  "center": {
+    "lat": 52.0439409,
+    "lon": 0.7489446
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/sudbury"
+  }
+},
+{
+  "type": "way",
+  "id": 981319185,
+  "center": {
+    "lat": 50.8284125,
+    "lon": -0.3609997
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "10013358596",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/worthing"
+  }
+},
+{
+  "type": "way",
+  "id": 992218973,
+  "center": {
+    "lat": 50.7456446,
+    "lon": -3.9973779
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source": "Bing",
+    "website": "https://www.howdens.com/find-a-depot/okehampton"
+  }
+},
+{
+  "type": "way",
+  "id": 1007137741,
+  "center": {
+    "lat": 55.4331332,
+    "lon": -5.6137010
+  },
+  "tags": {
+    "addr:city": "Campbeltown",
+    "addr:housename": "Howdens",
+    "addr:street": "Tarbert Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/campbeltown"
+  }
+},
+{
+  "type": "way",
+  "id": 1012847887,
+  "center": {
+    "lat": 56.5514428,
+    "lon": -2.6150944
+  },
+  "tags": {
+    "addr:postcode": "DD11 2NJ",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 1025368867,
+  "center": {
+    "lat": 51.7413085,
+    "lon": 0.5041499
+  },
+  "tags": {
+    "access": "customers",
+    "amenity": "parking",
+    "fee": "no",
+    "operator": "Howdens Joinery",
+    "parking": "surface",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1032019450,
+  "center": {
+    "lat": 53.6980907,
+    "lon": -1.7777866
+  },
+  "tags": {
+    "addr:city": "Brighouse",
+    "addr:housenumber": "Unit 1",
+    "addr:postcode": "HD6 1LQ",
+    "addr:street": "Birds Royd Lane",
+    "branch": "Brighouse",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "brand:wikipedia": "en:Howdens Joinery",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00; PH off",
+    "phone": "+44 1484 723819",
+    "ref:GB:uprn": "10010182776",
+    "shop": "kitchen",
+    "source:addr:postcode": "code-point_open",
+    "website": "https://www.howdens.com/find-a-depot/brighouse"
+  }
+},
+{
+  "type": "way",
+  "id": 1063687128,
+  "center": {
+    "lat": 53.5602068,
+    "lon": -1.4722216
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/barnsley"
+  }
+},
+{
+  "type": "way",
+  "id": 1081956046,
+  "center": {
+    "lat": 51.7006491,
+    "lon": -4.0871674
+  },
+  "tags": {
+    "addr:city": "Llanelli",
+    "addr:housenumber": "Unit 1B",
+    "addr:postcode": "SA14 8DZ",
+    "addr:street": "Heol Trosserch",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 7:30-17:00; Sa 8:00-12:00",
+    "phone": "+44 1554 232100",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/llanelli"
+  }
+},
+{
+  "type": "way",
+  "id": 1090218859,
+  "center": {
+    "lat": 53.6527918,
+    "lon": -2.6241294
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/chorley"
+  }
+},
+{
+  "type": "way",
+  "id": 1105835168,
+  "center": {
+    "lat": 51.7027463,
+    "lon": -1.9613206
+  },
+  "tags": {
+    "addr:city": "Cirencester",
+    "addr:housenumber": "9",
+    "addr:postcode": "GL7 1YT",
+    "addr:street": "Wilkinson Road",
+    "addr:unit": "9",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00; Su off",
+    "phone": "+44 1285 651639",
+    "ref:GB:uprn": "100121369740;10095338813",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/cirencester"
+  }
+},
+{
+  "type": "way",
+  "id": 1108496128,
+  "center": {
+    "lat": 51.4907016,
+    "lon": 0.0259684
+  },
+  "tags": {
+    "addr:city": "London",
+    "addr:place": "Meridian Trading Estate",
+    "addr:postcode": "SE7 7SW",
+    "addr:street": "Lombard Wall",
+    "addr:unit": "2A",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00; Su,PH off; ",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/charlton"
+  }
+},
+{
+  "type": "way",
+  "id": 1119373215,
+  "center": {
+    "lat": 50.9810203,
+    "lon": -3.2061405
+  },
+  "tags": {
+    "addr:city": "Wellington",
+    "addr:country": "GB",
+    "addr:county": "Somerset",
+    "addr:postcode": "TA21 9AD",
+    "addr:street": "Westpark",
+    "addr:suburb": "Chelston",
+    "addr:unit": "5C",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building:levels": "2",
+    "building:part": "retail",
+    "facebook": "howdensofficia",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00; Su off",
+    "operator": "Howden Joinery Group PLC",
+    "phone": "+44 1823 200100",
+    "ref:company_no": "02128710",
+    "ref:vatin": "GB379578577",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/wellington"
+  }
+},
+{
+  "type": "way",
+  "id": 1123144099,
+  "center": {
+    "lat": 57.6459182,
+    "lon": -3.2976735
+  },
+  "tags": {
+    "addr:city": "Elgin",
+    "addr:postcode": "IV30 1AZ",
+    "addr:street": "Ashgrove Road",
+    "addr:unit": "Unit 1",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/elgin"
+  }
+},
+{
+  "type": "way",
+  "id": 1128437815,
+  "center": {
+    "lat": 51.8895419,
+    "lon": -0.2049930
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "commercial",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/stevenage"
+  }
+},
+{
+  "type": "way",
+  "id": 1150761114,
+  "center": {
+    "lat": 51.7242290,
+    "lon": 0.4525642
+  },
+  "tags": {
+    "addr:city": "Chelmsford",
+    "addr:postcode": "CM1 3AR",
+    "addr:street": "Westway",
+    "addr:unit": "6",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building:part": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "level": "0",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa 08:00-12:00; Su,PH off",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/chelmsford"
+  }
+},
+{
+  "type": "way",
+  "id": 1156329836,
+  "center": {
+    "lat": 51.5606303,
+    "lon": 0.0837447
+  },
+  "tags": {
+    "addr:postcode": "IG1 1QP",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "10034922137",
+    "shop": "kitchen",
+    "source:addr:postcode": "ONSUD;OS Open UPRN",
+    "trade": "yes",
+    "website": "https://www.howdens.com/find-a-depot/ilford"
+  }
+},
+{
+  "type": "way",
+  "id": 1211909575,
+  "center": {
+    "lat": 51.0255967,
+    "lon": -3.0868281
+  },
+  "tags": {
+    "addr:city": "Taunton",
+    "addr:country": "GB",
+    "addr:county": "Somerset",
+    "addr:parentstreet": "Venture Way",
+    "addr:postcode": "TA2 8DG",
+    "addr:street": "Merlin Industrial Park",
+    "addr:unit": "1-2",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "commercial",
+    "building:levels": "1",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/taunton"
+  }
+},
+{
+  "type": "way",
+  "id": 1217588916,
+  "center": {
+    "lat": 54.1511443,
+    "lon": -4.5256111
+  },
+  "tags": {
+    "addr:city": "Douglas",
+    "addr:country": "IM",
+    "addr:place": "Spring Valley Industrial Estate",
+    "addr:postcode": "IM2 2QS",
+    "addr:unit": "24",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "shop": "trade",
+    "source": "Isle of Man Government aerial imagery (2001)",
+    "trade": "kitchen_fitter",
+    "website": "https://www.howdens.com/find-a-depot/douglas"
+  }
+},
+{
+  "type": "way",
+  "id": 1219299619,
+  "center": {
+    "lat": 52.0618338,
+    "lon": 1.1287761
+  },
+  "tags": {
+    "addr:city": "Ipswich",
+    "addr:housenumber": "8",
+    "addr:postcode": "IP2 0UQ",
+    "addr:street": "Crompton Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/ipswich"
+  }
+},
+{
+  "type": "way",
+  "id": 1233493535,
+  "center": {
+    "lat": 51.3111125,
+    "lon": 0.8997122
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/faversham"
+  }
+},
+{
+  "type": "way",
+  "id": 1236304047,
+  "center": {
+    "lat": 52.9253691,
+    "lon": 1.2837962
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/cromer"
+  }
+},
+{
+  "type": "way",
+  "id": 1255038983,
+  "center": {
+    "lat": 53.1102143,
+    "lon": -1.2980921
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/sutton-in-ashfield"
+  }
+},
+{
+  "type": "way",
+  "id": 1268780894,
+  "center": {
+    "lat": 51.5626051,
+    "lon": -1.8176828
+  },
+  "tags": {
+    "addr:city": "Swindon",
+    "addr:postcode": "SN5 7YT",
+    "addr:street": "Bridgemead Close",
+    "addr:substreet": "Westmead Industrial Estate",
+    "addr:unit": "10-13",
+    "branch": "Swindon West",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "internet_access": "wlan",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-12:00",
+    "phone": "+44 1793 240100",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/swindon-west"
+  }
+},
+{
+  "type": "way",
+  "id": 1276170032,
+  "center": {
+    "lat": 51.7911563,
+    "lon": 1.1463726
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "trade": "kitchens"
+  }
+},
+{
+  "type": "way",
+  "id": 1291165310,
+  "center": {
+    "lat": 52.6534894,
+    "lon": -1.1432621
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 1296208901,
+  "center": {
+    "lat": 51.4834451,
+    "lon": -0.0611988
+  },
+  "tags": {
+    "addr:city": "London",
+    "addr:postcode": "SE15 1LR",
+    "addr:street": "Ruby Street",
+    "addr:unit": "24",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "commercial",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 1313578328,
+  "center": {
+    "lat": 51.5210966,
+    "lon": -0.6171895
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 1348312301,
+  "center": {
+    "lat": 51.1508720,
+    "lon": -0.5035343
+  },
+  "tags": {
+    "addr:city": "Cranleigh",
+    "addr:housenumber": "1",
+    "addr:postcode": "GU6 8PT",
+    "addr:street": "Manfield Park",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "warehouse",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 1348312303,
+  "center": {
+    "lat": 51.1508786,
+    "lon": -0.5031043
+  },
+  "tags": {
+    "addr:city": "Cranleigh",
+    "addr:housenumber": "3",
+    "addr:postcode": "GU6 8PT",
+    "addr:street": "Manfield Park",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "commercial",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 1352784985,
+  "center": {
+    "lat": 51.5821596,
+    "lon": 0.4486085
+  },
+  "tags": {
+    "addr:city": "Basildon",
+    "addr:postcode": "SS14 3GL",
+    "addr:street": "Luckyn Lane",
+    "addr:unit": "29-31",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building:part": "industrial",
+    "contact:website": "https://www.howdens.com/find-a-depot/basildon",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Fr 07:00-17:00; Sa 08:00-12:00; Su off",
+    "phone": "+44 1268 272340",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 1376497160,
+  "center": {
+    "lat": 52.5124733,
+    "lon": -1.9775210
+  },
+  "tags": {
+    "addr:city": "West Bromwich",
+    "addr:housename": "Unit 1 Junction 1 Industrial Estate",
+    "addr:housenumber": "27",
+    "addr:postcode": "B70 6RR",
+    "addr:street": "Birmingham Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "building:colour": "#ccb495",
+    "name": "Howdens Joinery",
+    "roof:colour": "#887871",
+    "roof:shape": "gabled",
+    "shop": "kitchen",
+    "source": "visual survey;bing",
+    "website": "https://www.howdens.com/find-a-depot/west-bromwich"
+  }
+},
+{
+  "type": "way",
+  "id": 1410544390,
+  "center": {
+    "lat": 51.2028003,
+    "lon": -1.4861984
+  },
+  "tags": {
+    "addr:city": "Andover",
+    "addr:housenumber": "Unit 9",
+    "addr:street": "Anton Mill Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 1420055729,
+  "center": {
+    "lat": 50.7719175,
+    "lon": -1.5504097
+  },
+  "tags": {
+    "addr:city": "Lymington",
+    "addr:housenumber": "110",
+    "addr:postcode": "SO41 8JY",
+    "addr:street": "Wellworthy Road",
+    "area": "yes",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "opening_hours": "Mo-Sa 07:30-17:00",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/lymington"
+  }
+},
+{
+  "type": "way",
+  "id": 1420735154,
+  "center": {
+    "lat": 51.4454083,
+    "lon": -0.1437005
+  },
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "10-12",
+    "addr:postcode": "SW12 0NA",
+    "addr:street": "Weir Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "phone": "+442086754933",
+    "ref:GB:uprn": "100023305033",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/balham"
+  }
+},
+{
+  "type": "way",
+  "id": 1432337864,
+  "center": {
+    "lat": 52.8153431,
+    "lon": 1.3850126
+  },
+  "tags": {
+    "addr:city": "North Walsham",
+    "addr:housenumber": "D-F",
+    "addr:street": "Hornbeam Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "source:outline": "Esri World Imagery"
+  }
+},
+{
+  "type": "way",
+  "id": 1441731641,
+  "center": {
+    "lat": 51.4088602,
+    "lon": 0.7652334
+  },
+  "tags": {
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 1452752878,
+  "center": {
+    "lat": 51.7627839,
+    "lon": 0.0034406
+  },
+  "tags": {
+    "addr:city": "Hoddesdon",
+    "addr:postcode": "EN11 0WZ",
+    "addr:street": "Pindar Road",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "phone": "+44 1992 602300",
+    "shop": "kitchen",
+    "website": "https://www.howdens.com/find-a-depot/hoddesdon"
+  }
+},
+{
+  "type": "way",
+  "id": 1453992316,
+  "center": {
+    "lat": 51.2294687,
+    "lon": -2.9607439
+  },
+  "tags": {
+    "addr:city": "Highbridge",
+    "addr:country": "GB",
+    "addr:county": "Somerset",
+    "addr:parentstreet": "Bristol Road",
+    "addr:postcode": "TA9 4HA",
+    "addr:street": "Oaktree Park",
+    "addr:unit": "C1",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 1463926041,
+  "center": {
+    "lat": 51.9421742,
+    "lon": 1.2608966
+  },
+  "tags": {
+    "addr:housename": "Portside Retail Park",
+    "addr:postcode": "CO12 4YA",
+    "addr:street": "Mariners Way",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 1465128736,
+  "center": {
+    "lat": 53.4999093,
+    "lon": -1.4725366
+  },
+  "tags": {
+    "addr:city": "Barnsley",
+    "addr:postcode": "S74 0SB",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "yes",
+    "name": "Howdens Joinery",
+    "ref:GB:uprn": "2007027510",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "relation",
+  "id": 16465442,
+  "center": {
+    "lat": 50.8473216,
+    "lon": -1.7880029
+  },
+  "tags": {
+    "addr:city": "Ringwood",
+    "addr:parentstreet": "Southampton Road",
+    "addr:postcode": "BH24 1JS",
+    "addr:substreet": "Carvers Trading Estate",
+    "addr:unit": "Unit 5-6",
+    "brand": "Howdens Joinery",
+    "brand:wikidata": "Q5921438",
+    "building": "industrial",
+    "name": "Howdens Joinery",
+    "shop": "kitchen",
+    "type": "multipolygon",
+    "website": "https://www.howdens.com/find-a-depot/ringwood"
+  }
+}
+
+  ]
+}

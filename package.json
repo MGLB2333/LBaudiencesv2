@@ -14,7 +14,14 @@
     "db:import-segment-geo": "tsx src/scripts/import-segment-geo-csv.ts",
     "db:sync-districts": "tsx src/scripts/sync-geo-districts-from-signals.ts",
     "db:import-district-centroids": "tsx src/scripts/import-real-district-centroids.ts",
-    "db:sync-missing-districts": "tsx src/scripts/sync-missing-districts-from-signals.ts"
+    "db:sync-missing-districts": "tsx src/scripts/sync-missing-districts-from-signals.ts",
+    "db:inspect-district-mapping": "tsx src/scripts/inspect-district-mapping.ts",
+    "db:import:district-mapping": "tsx src/scripts/import-district-mapping.ts",
+    "db:seed:pois": "tsx src/scripts/seed-store-pois.ts",
+    "db:import:pois:osm": "tsx src/scripts/import-store-pois-osm.ts",
+    "db:import:pois:magnet": "tsx src/scripts/import-magnet-pois-overpass.ts",
+    "db:import:pois:competitors": "tsx src/scripts/import-competitor-pois-overpass.ts",
+    "db:import:district-households": "tsx src/scripts/import-district-households.ts"
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",

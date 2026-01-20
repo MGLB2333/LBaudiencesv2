@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useCallback, useRef } from 'react';
 import { useMap } from 'react-leaflet';
-import { h3ToGeoBoundary, latLngToCell } from 'h3-js';
+import { cellToBoundary, latLngToCell } from 'h3-js';
 import L from 'leaflet';
 import { computeCentroidMap } from './geoUtils';
 import { GeoJSON } from 'geojson';
@@ -137,7 +137,7 @@ export function HexOverlay({
     hexData.forEach(({ hexId, agreement, contributingDistricts }) => {
       try {
         // Convert H3 cell to polygon boundary
-        const boundary = h3ToGeoBoundary(hexId, true); // true = geoJson format
+        const boundary = cellToBoundary(hexId, true); // true = geoJson format
         const latLngs = boundary.map(([lat, lng]) => L.latLng(lat, lng));
 
         const baseStyle = getHexStyle(agreement);
@@ -154,10 +154,6 @@ export function HexOverlay({
           permanent: false,
           direction: 'top',
           className: 'hex-tooltip',
-          style: {
-            fontSize: '12px',
-            padding: '4px 8px',
-          },
         });
 
         // Mouse events

@@ -1,0 +1,1716 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.8 e802775f",
+  "osm3s": {
+    "timestamp_osm_base": "2026-01-20T18:46:00Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 321783240,
+  "lat": 51.8613051,
+  "lon": -2.2167352,
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "name": "Magnet",
+    "note": "Approximated from nearby GPS-ing.",
+    "shop": "kitchen",
+    "source": "survey / approx"
+  }
+},
+{
+  "type": "node",
+  "id": 470310370,
+  "lat": 51.2624948,
+  "lon": -1.0858002,
+  "tags": {
+    "addr:city": "Basingstoke",
+    "addr:country": "GB",
+    "addr:county": "Hampshire",
+    "addr:housenumber": "14",
+    "addr:street": "London Street",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 674882511,
+  "lat": 52.4028100,
+  "lon": -1.8162079,
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "name": "Magnet",
+    "shop": "kitchen",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1798269827,
+  "lat": 55.9615630,
+  "lon": -3.1799851,
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:housenumber": "10B",
+    "addr:postcode": "EH7 5HW",
+    "addr:street": "Brunswick Place",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "check_date": "2025-08-04",
+    "name": "Magnet",
+    "opening_hours": "Mo-Sa 09:00-18:00",
+    "phone": "+44 131 558 8687",
+    "shop": "kitchen",
+    "source": "survey",
+    "website": "https://www.magnet.co.uk/kitchen-showrooms-edinburgh-leith-walk/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2116838312,
+  "lat": 53.3274920,
+  "lon": -2.9710225,
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "name": "Magnet",
+    "shop": "kitchen",
+    "source": "photograph"
+  }
+},
+{
+  "type": "node",
+  "id": 3306782960,
+  "lat": 51.4438485,
+  "lon": -0.3470248,
+  "tags": {
+    "addr:city": "Twickenham",
+    "addr:housenumber": "59",
+    "addr:postcode": "TW2 5BH",
+    "addr:street": "Staines Road",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "check_date": "2023-01-04",
+    "email": "twickenham.branch@magnet.co.uk",
+    "name": "Magnet",
+    "opening_hours": "Mo-Sa 09:00-18:00",
+    "payment:bancomat": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+44 20 8894 5952",
+    "shop": "kitchen",
+    "website": "https://www.magnet.co.uk/find-a-showroom/london/twickenham/"
+  }
+},
+{
+  "type": "node",
+  "id": 3378721102,
+  "lat": 51.6451135,
+  "lon": -0.0570893,
+  "tags": {
+    "addr:housenumber": "2a-2b",
+    "addr:interpolation": "alphabetic",
+    "addr:postcode": "EN1 1SP",
+    "addr:street": "Martinbridge Trading Estate",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "name": "Magnet",
+    "shop": "kitchen",
+    "website": "https://www.magnet.co.uk/find-a-showroom/london/enfield/"
+  }
+},
+{
+  "type": "node",
+  "id": 3693418357,
+  "lat": 53.9592550,
+  "lon": -2.0268368,
+  "tags": {
+    "addr:city": "Skipton",
+    "addr:postcode": "BD23 1RT",
+    "addr:street": "Broughton Road",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "name": "Magnet",
+    "phone": "+44 1756 798011",
+    "shop": "kitchen",
+    "website": "https://www.magnet.co.uk/"
+  }
+},
+{
+  "type": "node",
+  "id": 3962540488,
+  "lat": 55.9430028,
+  "lon": -3.0643621,
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 4377176439,
+  "lat": 55.9432950,
+  "lon": -3.2867091,
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "check_date": "2026-01-13",
+    "name": "Magnet",
+    "shop": "kitchen",
+    "website": "https://www.magnet.co.uk/kitchen-showrooms-corstorphine/"
+  }
+},
+{
+  "type": "node",
+  "id": 4397197289,
+  "lat": 51.8193004,
+  "lon": -0.8096700,
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "name": "Magnet",
+    "shop": "kitchen",
+    "website": "https://www.magnet.co.uk/find-a-showroom/south-east/aylesbury/"
+  }
+},
+{
+  "type": "node",
+  "id": 4401149170,
+  "lat": 54.9236531,
+  "lon": -1.6126106,
+  "tags": {
+    "addr:city": "Gateshead",
+    "branch": "Showroom",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 4640059358,
+  "lat": 51.4598836,
+  "lon": -0.1264506,
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 5092133871,
+  "lat": 53.3869781,
+  "lon": -2.3486882,
+  "tags": {
+    "addr:city": "Altrincham",
+    "addr:street": "Stamford New Road",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 5222016529,
+  "lat": 51.4321187,
+  "lon": -0.5460441,
+  "tags": {
+    "addr:city": "Egham",
+    "addr:housenumber": "21/23",
+    "addr:postcode": "TW20 9HN",
+    "addr:street": "The Precinct, High Street",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "check_date": "2025-04-16",
+    "name": "Magnet",
+    "phone": "+44 1784 434451",
+    "shop": "kitchen",
+    "website": "https://www.magnet.co.uk/kitchen-showrooms-egham/"
+  }
+},
+{
+  "type": "node",
+  "id": 5735211781,
+  "lat": 51.6313100,
+  "lon": -0.7545340,
+  "tags": {
+    "addr:city": "High Wycombe",
+    "addr:housenumber": "29-31",
+    "addr:postcode": "HP11 2DJ",
+    "addr:street": "Oxford Road",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "name": "Magnet",
+    "opening_hours": "Mo,Tu,We,Fr,Sa 09:00-18:00; Th 09:00-20:00; Su 11:00-17:00",
+    "phone": "+44 1494 464655",
+    "shop": "kitchen",
+    "website": "https://www.magnet.co.uk/kitchen-showrooms-high-wycombe/"
+  }
+},
+{
+  "type": "node",
+  "id": 5790640759,
+  "lat": 52.3310457,
+  "lon": -0.1817200,
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 6292232720,
+  "lat": 53.9852577,
+  "lon": -1.0476298,
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 6608930907,
+  "lat": 51.6469632,
+  "lon": 0.0548955,
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 6869224368,
+  "lat": 51.2290955,
+  "lon": -0.3347405,
+  "tags": {
+    "addr:city": "Dorking",
+    "addr:housenumber": "120",
+    "addr:postcode": "RH4 2EU",
+    "addr:street": "South Street",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "fax": "+44 1306 884201",
+    "name": "Magnet",
+    "opening_hours": "Mo-Sa 09:00-18:00; Su off",
+    "phone": "+44 1306 879916",
+    "shop": "kitchen",
+    "website": "https://www.magnet.co.uk/kitchen-showrooms-dorking/",
+    "wheelchair": "no",
+    "wheelchair:description": "Step from pavement"
+  }
+},
+{
+  "type": "node",
+  "id": 6986773800,
+  "lat": 51.5437310,
+  "lon": -0.0905153,
+  "tags": {
+    "addr:city": "London",
+    "addr:street": "Essex Road",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "name": "Magnet",
+    "shop": "kitchen",
+    "survey:date": "2019-11-17"
+  }
+},
+{
+  "type": "node",
+  "id": 7078487834,
+  "lat": 50.9692015,
+  "lon": 0.0948905,
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "mapillary": "267229815089050",
+    "name": "Magnet",
+    "opening_hours": "Mo-Sa 09:00-18:00; Su 10:00-16:00",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 8522857712,
+  "lat": 51.5000327,
+  "lon": -3.1390298,
+  "tags": {
+    "addr:city": "Cardiff",
+    "addr:housename": "The Avenue Retail Park",
+    "addr:postcode": "CF23 9FF",
+    "addr:street": "Newport Road",
+    "addr:unit": "1",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "name": "Magnet",
+    "shop": "kitchen",
+    "website": "https://www.magnet.co.uk/kitchen-showrooms-cardiff-retail"
+  }
+},
+{
+  "type": "node",
+  "id": 8933794086,
+  "lat": 51.7871687,
+  "lon": 0.1220007,
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 8954326783,
+  "lat": 51.3692179,
+  "lon": -0.1954528,
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 9057369737,
+  "lat": 51.3702229,
+  "lon": -0.3648465,
+  "tags": {
+    "addr:city": "Esher",
+    "addr:housenumber": "40",
+    "addr:postcode": "KT10 9QY",
+    "addr:street": "High Street",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "name": "Magnet",
+    "opening_hours": "Mo-We,Fr-Sa 09:00-18:00; Th 09:00-20:00; Su 11:00-17:00",
+    "phone": "+44 1372 468372",
+    "shop": "kitchen",
+    "website": "https://www.magnet.co.uk/kitchen-showrooms-esher/"
+  }
+},
+{
+  "type": "node",
+  "id": 9187607793,
+  "lat": 50.7040549,
+  "lon": -1.2945199,
+  "tags": {
+    "addr:city": "Newport",
+    "addr:country": "GB",
+    "addr:street": "River Way",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "contact:website": "https://www.magnet.co.uk/kitchen-showrooms-isle-of-wight",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 9762849080,
+  "lat": 50.8313565,
+  "lon": -0.7548568,
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 9808855122,
+  "lat": 51.4861551,
+  "lon": 0.0100315,
+  "tags": {
+    "addr:city": "London",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "check_date": "2024-09-28",
+    "level": "0",
+    "name": "Magnet",
+    "opening_hours": "Mo-Sa 09:00-18:00",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 9876916418,
+  "lat": 51.5749712,
+  "lon": -2.9497705,
+  "tags": {
+    "addr:city": "Newport",
+    "addr:place": "Leeway Industrial Estate",
+    "addr:postcode": "NP19 4SL",
+    "addr:unit": "Unit 6",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "email": "newport.branch@magnet.co.uk",
+    "name": "Magnet",
+    "opening_hours": "Mo-Sa 09:00-18:00; Su off",
+    "phone": "+44 1633 277 355",
+    "shop": "kitchen",
+    "website": "https://www.magnet.co.uk/kitchen-showrooms-newport/"
+  }
+},
+{
+  "type": "node",
+  "id": 9992576521,
+  "lat": 51.1306972,
+  "lon": 0.8924999,
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 10001807507,
+  "lat": 53.8442865,
+  "lon": -0.4307846,
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 10951398392,
+  "lat": 57.4950777,
+  "lon": -4.2248037,
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "name": "Magnet",
+    "shop": "kitchen",
+    "survey:date": "2019-07-25"
+  }
+},
+{
+  "type": "node",
+  "id": 11274027739,
+  "lat": 51.6438459,
+  "lon": -0.4277616,
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 11533822289,
+  "lat": 53.1920496,
+  "lon": -2.8885279,
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "name": "Magnet",
+    "opening_hours": "Mo-We,Fr,Sa 09:00-18:00; Th 09:00-20:00; Su 11:00-17:00",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 11693872707,
+  "lat": 51.2375348,
+  "lon": -0.2068994,
+  "tags": {
+    "addr:city": "Reigate",
+    "addr:housenumber": "21",
+    "addr:postcode": "RH2 9AA",
+    "addr:street": "High Street",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "name": "Magnet",
+    "phone": "+44 1737 532100",
+    "shop": "kitchen",
+    "source": "Survey photos 21/1/2024",
+    "wheelchair:description": "Several steps to door. Bell push for Wheelchair assistance."
+  }
+},
+{
+  "type": "node",
+  "id": 11805523420,
+  "lat": 53.2616702,
+  "lon": -2.1278240,
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 11843429212,
+  "lat": 53.7402930,
+  "lon": -2.4801023,
+  "tags": {
+    "addr:city": "Blackburn",
+    "addr:postcode": "BB2 3AG",
+    "addr:street": "Grimshaw Park",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 11939598061,
+  "lat": 51.3192596,
+  "lon": -2.2018547,
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 11981009731,
+  "lat": 55.8724788,
+  "lon": -4.2722620,
+  "tags": {
+    "addr:city": "Glasgow",
+    "addr:housenumber": "208",
+    "addr:postcode": "G4 9EJ",
+    "addr:street": "Great Western Road",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 55867489,
+  "center": {
+    "lat": 51.8834518,
+    "lon": 0.1727743
+  },
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "description": "Trade shop.",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 61570031,
+  "center": {
+    "lat": 52.8982308,
+    "lon": -1.4534308
+  },
+  "tags": {
+    "addr:city": "Derby",
+    "addr:postcode": "DE24 8GZ",
+    "addr:street": "Ascot Drive",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "name": "Magnet",
+    "ref:GB:uprn": "100032011974",
+    "shop": "kitchen",
+    "source": "OS_OpenData_StreetView"
+  }
+},
+{
+  "type": "way",
+  "id": 61842638,
+  "center": {
+    "lat": 51.3690877,
+    "lon": 0.5758351
+  },
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 75771742,
+  "center": {
+    "lat": 52.8019351,
+    "lon": -1.6352423
+  },
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "name": "Magnet",
+    "note": "Used to be Comet",
+    "shop": "kitchen",
+    "source": "OS_OpenData_StreetView;survey"
+  }
+},
+{
+  "type": "way",
+  "id": 81396470,
+  "center": {
+    "lat": 53.7634733,
+    "lon": -2.7270934
+  },
+  "tags": {
+    "addr:city": "Preston",
+    "addr:postcode": "PR2 1AU",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "building": "retail",
+    "name": "Magnet",
+    "ref:GB:uprn": "10007614050",
+    "shop": "kitchen",
+    "source": "Auto_OS_OpenData_StreetView"
+  }
+},
+{
+  "type": "way",
+  "id": 89175306,
+  "center": {
+    "lat": 52.5714677,
+    "lon": -0.2149328
+  },
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 91897935,
+  "center": {
+    "lat": 53.0977099,
+    "lon": -2.4363995
+  },
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "building": "yes",
+    "name": "Magnet",
+    "shop": "kitchen",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 92716241,
+  "center": {
+    "lat": 51.3807589,
+    "lon": -2.3707825
+  },
+  "tags": {
+    "addr:city": "Bath",
+    "addr:housenumber": "6-7",
+    "addr:postcode": "BA2 3QS",
+    "addr:street": "Ivo Peters Road",
+    "addr:substreet": "Pinesway Industrial Estate",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "building": "retail",
+    "name": "Magnet",
+    "shop": "kitchen",
+    "toilets:wheelchair": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 104650501,
+  "center": {
+    "lat": 56.4636311,
+    "lon": -2.9843217
+  },
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "industrial",
+    "building:levels": "1",
+    "level": "0",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 120955603,
+  "center": {
+    "lat": 52.6569072,
+    "lon": 1.2810035
+  },
+  "tags": {
+    "addr:city": "Norwich",
+    "addr:housenumber": "171",
+    "addr:postcode": "NR6 6RE",
+    "addr:street": "Mile Cross Lane",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "retail",
+    "email": "norwich.branch@magnet.co.uk",
+    "name": "Magnet",
+    "opening_hours": "Mo-Sa 09:00-17:00",
+    "phone": "+44 1603 415434",
+    "ref:GB:uprn": "100091574653",
+    "shop": "kitchen",
+    "source": "Bing",
+    "website": "https://www.magnet.co.uk/find-a-showroom/east-midlands-and-east-anglia/norwich/"
+  }
+},
+{
+  "type": "way",
+  "id": 122074929,
+  "center": {
+    "lat": 51.0248815,
+    "lon": -3.0879007
+  },
+  "tags": {
+    "addr:city": "Taunton",
+    "addr:postcode": "TA2 8DG",
+    "addr:street": "Venture Way",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "building": "yes",
+    "name": "Magnet",
+    "ref:GB:uprn": "200002928266",
+    "shop": "kitchen",
+    "source:addr:postcode": "ONSUD;OS Open UPRN"
+  }
+},
+{
+  "type": "way",
+  "id": 134065122,
+  "center": {
+    "lat": 51.5162011,
+    "lon": -0.1506682
+  },
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "78",
+    "addr:street": "Wigmore Street",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "building:levels": "5",
+    "name": "Magnet",
+    "shop": "kitchen",
+    "website": "https://www.magnet.co.uk/find-a-showroom/london/west-end/"
+  }
+},
+{
+  "type": "way",
+  "id": 148218895,
+  "center": {
+    "lat": 51.1392146,
+    "lon": -2.9953977
+  },
+  "tags": {
+    "addr:city": "Bridgwater",
+    "addr:housename": "Unit BB",
+    "addr:postcode": "TA6 4BH",
+    "addr:street": "Wylds Road",
+    "branch": "Trade",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "building": "yes",
+    "name": "Magnet",
+    "opening_hours": "Mo-Fr 09:00-17:00; Sa 08:00-12:00",
+    "operator": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 150900522,
+  "center": {
+    "lat": 50.2094931,
+    "lon": -5.2995921
+  },
+  "tags": {
+    "addr:city": "Camborne",
+    "addr:country": "GB",
+    "addr:place": "Station Yard",
+    "addr:postcode": "TR14 7AB",
+    "addr:street": "Trevu Road",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "building:colour": "#cccccc",
+    "building:material": "cement_block",
+    "check_date": "2025-07-01",
+    "email": "camborne.branch@magnet.co.uk",
+    "fax": "+44 1209 612291",
+    "name": "Magnet",
+    "phone": "+44 1209 710404",
+    "ref:GB:uprn": "10090524807;100041226214",
+    "shop": "kitchen",
+    "website": "https://www.magnet.co.uk/find-a-showroom/south-west/camborne/"
+  }
+},
+{
+  "type": "way",
+  "id": 155068966,
+  "center": {
+    "lat": 53.8645139,
+    "lon": -1.8528142
+  },
+  "tags": {
+    "addr:city": "Bingley",
+    "addr:housename": "Ashfield Mills",
+    "addr:postcode": "BD16 2EE",
+    "addr:street": "Keighley Road",
+    "addr:village": "Crossflatts",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 158023816,
+  "center": {
+    "lat": 52.1977739,
+    "lon": -1.7119623
+  },
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "name": "Magnet",
+    "shop": "kitchen",
+    "source": "visual survey; bing"
+  }
+},
+{
+  "type": "way",
+  "id": 161371139,
+  "center": {
+    "lat": 51.5763026,
+    "lon": -1.7709027
+  },
+  "tags": {
+    "branch": "Kitchen Showroom",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "building": "yes",
+    "name": "Magnet",
+    "roof:height": "2",
+    "roof:material": "metal",
+    "roof:shape": "gabled",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 202355111,
+  "center": {
+    "lat": 52.9565319,
+    "lon": -1.1838852
+  },
+  "tags": {
+    "addr:city": "Nottingham",
+    "addr:postcode": "NG7 3AG",
+    "building": "yes",
+    "name": "Magnet",
+    "operator": "Magnet",
+    "ref:GB:uprn": "10023983785",
+    "shop": "hardware",
+    "source": "survey",
+    "source:postcode": "ONS"
+  }
+},
+{
+  "type": "way",
+  "id": 223177649,
+  "center": {
+    "lat": 51.9496356,
+    "lon": -0.2770632
+  },
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "name": "Magnet",
+    "shop": "kitchen",
+    "source": "bing;local_knowlege"
+  }
+},
+{
+  "type": "way",
+  "id": 262132770,
+  "center": {
+    "lat": 53.1354229,
+    "lon": -1.2205283
+  },
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 273326065,
+  "center": {
+    "lat": 52.6741813,
+    "lon": -1.8320796
+  },
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "name": "Magnet",
+    "shop": "kitchen",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 280860898,
+  "center": {
+    "lat": 54.1456763,
+    "lon": -4.4773492
+  },
+  "tags": {
+    "addr:city": "Douglas",
+    "addr:country": "IM",
+    "addr:place": "Douglas Head Industrial Estate",
+    "addr:postcode": "IM1 5BF",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "industrial",
+    "name": "Magnet",
+    "shop": "kitchen",
+    "source": "Isle of Man Government aerial imagery (2001);survey"
+  }
+},
+{
+  "type": "way",
+  "id": 291749617,
+  "center": {
+    "lat": 51.0682911,
+    "lon": -1.7970957
+  },
+  "tags": {
+    "addr:city": "Salisbury",
+    "addr:housenumber": "3-5",
+    "addr:postcode": "SP1 2NH",
+    "addr:street": "High Street",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "building": "yes",
+    "building:levels": "2",
+    "building:material": "brick",
+    "name": "Magnet",
+    "opening_hours": "Mo-Sa 09:00-18:00; Su 11:00-17:00",
+    "shop": "kitchen",
+    "website": "https://www.magnet.co.uk/kitchen-showrooms-salisbury-shop/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 310262717,
+  "center": {
+    "lat": 53.8089147,
+    "lon": -1.5373900
+  },
+  "tags": {
+    "access": "customers",
+    "amenity": "parking",
+    "operator": "Magnet",
+    "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 316250881,
+  "center": {
+    "lat": 55.8293391,
+    "lon": -4.2969108
+  },
+  "tags": {
+    "addr:city": "Glasgow",
+    "addr:housenumber": "45",
+    "addr:postcode": "G41 4AZ",
+    "addr:street": "Haggs Road",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "building": "warehouse",
+    "email": "glasgowhaggs.branch@magnet.co.uk",
+    "name": "Magnet",
+    "opening_hours": "Mo-We 09:00-18:00; Th 09:00-20:00; Fr-Sa 09:00-18:00; Su 11:00-17:00",
+    "phone": "+441416329130",
+    "ref:GB:uprn": "906700173497",
+    "shop": "kitchen",
+    "source": "bing;local knowledge",
+    "website": "https://www.magnet.co.uk/kitchen-showrooms-glasgow-haggs-road/"
+  }
+},
+{
+  "type": "way",
+  "id": 320715498,
+  "center": {
+    "lat": 53.5590392,
+    "lon": -1.4759053
+  },
+  "tags": {
+    "addr:city": "Barnsley",
+    "addr:postcode": "S71 1LH",
+    "addr:street": "Old Mill Lane",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "name": "Magnet",
+    "ref:GB:uprn": "100052202296",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 368255026,
+  "center": {
+    "lat": 53.8771833,
+    "lon": -1.7244017
+  },
+  "tags": {
+    "addr:city": "Leeds",
+    "addr:postcode": "LS20 8NJ",
+    "addr:street": "Bradford Road",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "building": "yes",
+    "name": "Magnet Kitchens",
+    "ref:GB:uprn": "72563784",
+    "shop": "kitchen",
+    "source": "Bing",
+    "source:addr:postcode": "ONSUD;OS Open UPRN",
+    "website": "https://www.magnet.co.uk/kitchen-showrooms-guiseley/"
+  }
+},
+{
+  "type": "way",
+  "id": 370195042,
+  "center": {
+    "lat": 54.0368688,
+    "lon": -2.8004461
+  },
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "industrial",
+    "building:levels": "2",
+    "name": "Magnet",
+    "opening_hours": "Mo-Sa 09:00-18:00; Su off",
+    "roof:levels": "0",
+    "roof:shape": "gabled",
+    "shop": "kitchen",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 371019941,
+  "center": {
+    "lat": 51.4444902,
+    "lon": -2.5677711
+  },
+  "tags": {
+    "addr:city": "Bristol",
+    "addr:postcode": "BS2 0YB",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "building": "yes",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 371499160,
+  "center": {
+    "lat": 51.7224984,
+    "lon": 0.4474252
+  },
+  "tags": {
+    "addr:city": "Chelmsford",
+    "addr:housenumber": "42",
+    "addr:postcode": "CM1 3AE",
+    "addr:street": "Hanbury Road",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "email": "chelmsford.branch@magnet.co.uk",
+    "fax": "+44 1245 492972",
+    "name": "Magnet",
+    "opening_hours": "Mo-Sa 09:00-18:00; Su off",
+    "phone": "+44 1245 252277",
+    "shop": "kitchen",
+    "website": "https://www.magnet.co.uk/"
+  }
+},
+{
+  "type": "way",
+  "id": 467485820,
+  "center": {
+    "lat": 53.8074831,
+    "lon": -1.5355422
+  },
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "name": "Magnet",
+    "shop": "kitchen",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 491624492,
+  "center": {
+    "lat": 51.8864785,
+    "lon": 0.8359101
+  },
+  "tags": {
+    "addr:city": "Colchester",
+    "addr:housenumber": "2",
+    "addr:postcode": "CO3 8RQ",
+    "addr:street": "Tollgate East",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 506790614,
+  "center": {
+    "lat": 53.5764929,
+    "lon": -2.4424281
+  },
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "building": "yes",
+    "name": "Magnet",
+    "ref:GB:uprn": "100012838777",
+    "shop": "kitchen",
+    "website": "https://www.magnettrade.co.uk/"
+  }
+},
+{
+  "type": "way",
+  "id": 525632936,
+  "center": {
+    "lat": 52.0587177,
+    "lon": -1.3288263
+  },
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "building": "industrial",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 544415023,
+  "center": {
+    "lat": 52.8120775,
+    "lon": -2.1231054
+  },
+  "tags": {
+    "addr:city": "Stafford",
+    "addr:postcode": "ST16 2SD",
+    "addr:street": "Greyfriars Place",
+    "brand": "Magnet",
+    "brand:website": "https://www.magnet.co.uk/",
+    "brand:wikidata": "Q6731427",
+    "building": "retail",
+    "name": "Magnet",
+    "website": "https://www.magnet.co.uk/kitchen-showrooms-stafford"
+  }
+},
+{
+  "type": "way",
+  "id": 553864075,
+  "center": {
+    "lat": 51.2870726,
+    "lon": -0.7634429
+  },
+  "tags": {
+    "building": "commercial",
+    "name": "Magnet",
+    "operator": "Magnet",
+    "shop": "doityourself"
+  }
+},
+{
+  "type": "way",
+  "id": 621207811,
+  "center": {
+    "lat": 56.4102223,
+    "lon": -3.4539275
+  },
+  "tags": {
+    "addr:city": "Perth",
+    "addr:postcode": "PH1 3AA",
+    "addr:street": "Dunkeld Road",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "building": "retail",
+    "name": "Magnet",
+    "phone": "+44 1738 634007",
+    "ref:GB:uprn": "124000946",
+    "shop": "kitchen",
+    "website": "https://www.magnet.co.uk/kitchen-showrooms-perth/"
+  }
+},
+{
+  "type": "way",
+  "id": 659999199,
+  "center": {
+    "lat": 56.0761313,
+    "lon": -3.4708637
+  },
+  "tags": {
+    "addr:city": "Dunfermline",
+    "addr:postcode": "KY12 9EB",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "name": "Magnet",
+    "ref:GB:uprn": "320213531",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 680977669,
+  "center": {
+    "lat": 52.5160443,
+    "lon": -2.0658881
+  },
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 702917708,
+  "center": {
+    "lat": 50.9760552,
+    "lon": -1.3487153
+  },
+  "tags": {
+    "addr:city": "Eastleigh",
+    "addr:housenumber": "66",
+    "addr:postcode": "SO50 4HN",
+    "addr:street": "Twyford Road",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "building": "commercial",
+    "email": "Eastleigh.Branch@magnet.co.uk",
+    "name": "Magnet",
+    "opening_hours": "Mo-Sa 09:00-18:00; Su 11:00-17:00",
+    "phone": "+44 23 8061 3581",
+    "ref:GB:uprn": "10012195125",
+    "shop": "kitchen",
+    "website": "https://www.magnet.co.uk/kitchen-showrooms-eastleigh/"
+  }
+},
+{
+  "type": "way",
+  "id": 821625192,
+  "center": {
+    "lat": 50.7943591,
+    "lon": 0.2867825
+  },
+  "tags": {
+    "addr:city": "Eastbourne",
+    "addr:housenumber": "5",
+    "addr:postcode": "BN23 6QU",
+    "addr:street": "Marshall Road",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "name": "Magnet",
+    "opening_hours": "Mo-Sa 09:00-18:00 Su 11:00-17:00",
+    "phone": "+44 1323500444",
+    "ref:GB:uprn": "100062254825",
+    "shop": "kitchen",
+    "website": "https://www.magnet.co.uk/kitchen-showrooms-eastbourne"
+  }
+},
+{
+  "type": "way",
+  "id": 824948807,
+  "center": {
+    "lat": 51.4989294,
+    "lon": -0.1981934
+  },
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "245/249",
+    "addr:street": "Kensington High Street",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "check_date": "2024-10-12",
+    "name": "Magnet",
+    "shop": "kitchen",
+    "website": "https://www.magnet.co.uk/find-a-showroom/london/kensington/"
+  }
+},
+{
+  "type": "way",
+  "id": 827869344,
+  "center": {
+    "lat": 50.7382333,
+    "lon": -1.7685987
+  },
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 842071734,
+  "center": {
+    "lat": 50.9332026,
+    "lon": -2.6608800
+  },
+  "tags": {
+    "addr:city": "Yeovil",
+    "addr:country": "GB",
+    "addr:county": "Somerset",
+    "addr:housenumber": "15",
+    "addr:street": "Sea King Road",
+    "addr:suburb": "Lynx Trading Estate",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 866902488,
+  "center": {
+    "lat": 51.4907063,
+    "lon": -0.2921297
+  },
+  "tags": {
+    "addr:postcode": "TW8 9QR",
+    "addr:street": "Lionel Road South",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "building": "retail",
+    "name": "Magnet",
+    "shop": "kitchen",
+    "website": "https://www.magnet.co.uk/find-a-showroom/london/brentford/"
+  }
+},
+{
+  "type": "way",
+  "id": 966050357,
+  "center": {
+    "lat": 51.4567322,
+    "lon": 0.1422386
+  },
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 967688455,
+  "center": {
+    "lat": 51.5741421,
+    "lon": -0.4238403
+  },
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 975004969,
+  "center": {
+    "lat": 51.6910781,
+    "lon": -0.1793899
+  },
+  "tags": {
+    "branch": "Trade",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 983076561,
+  "center": {
+    "lat": 52.4647834,
+    "lon": -2.1508265
+  },
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 1006091374,
+  "center": {
+    "lat": 53.4019629,
+    "lon": -2.1498956
+  },
+  "tags": {
+    "addr:city": "Stockport",
+    "addr:postcode": "SK1 4LT",
+    "addr:street": "Hempshaw Lane",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 1034570905,
+  "center": {
+    "lat": 52.6086514,
+    "lon": -1.1488783
+  },
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "brand:wikipedia": "en:Magnet Kitchens",
+    "building": "yes",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 1126352033,
+  "center": {
+    "lat": 52.0601006,
+    "lon": -2.7295862
+  },
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "building": "yes",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 1228911805,
+  "center": {
+    "lat": 53.7754681,
+    "lon": -1.5346076
+  },
+  "tags": {
+    "addr:city": "Leeds",
+    "addr:housename": "Magnet Kitchens",
+    "addr:housenumber": "Unit 10",
+    "addr:postcode": "LS10 2BB",
+    "addr:street": "City South Retail Park",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "building": "yes",
+    "name": "Magnet Kitchens",
+    "opening_hours": "Mo-Sa 09:00-18:00",
+    "phone": "+44 113 271 6330",
+    "shop": "kitchen",
+    "website": "https://www.magnet.co.uk/kitchen-showrooms-hunslet"
+  }
+},
+{
+  "type": "way",
+  "id": 1306455873,
+  "center": {
+    "lat": 51.5567906,
+    "lon": 0.6001969
+  },
+  "tags": {
+    "addr:city": "Benfleet",
+    "addr:postcode": "SS7 2QP",
+    "addr:street": "London Road",
+    "addr:suburb": "Hadleigh",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "building": "yes",
+    "name": "Magnet",
+    "ref:GB:uprn": "100091620976",
+    "shop": "kitchen",
+    "source:addr:postcode": "ONSUD;OS Open UPRN",
+    "website": "https://www.magnet.co.uk/kitchen-showrooms-hadleigh/"
+  }
+},
+{
+  "type": "way",
+  "id": 1349240686,
+  "center": {
+    "lat": 51.5802854,
+    "lon": 0.4468322
+  },
+  "tags": {
+    "addr:city": "Basildon",
+    "addr:postcode": "SS14 3UL",
+    "addr:street": "Miles Gray Road",
+    "addr:unit": "6",
+    "air_conditioning": "yes",
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "building": "retail",
+    "check_date": "2025-07-08",
+    "email": "basildon.branch@magnet.co.uk",
+    "name": "Magnet",
+    "nohousenumber": "yes",
+    "opening_hours": "Mo,Th 09:00-20:00; Tu-We,Sa 09:00-18:00; Su 10:00-16:00",
+    "phone": "+44 1268 600260",
+    "shop": "kitchen",
+    "toilets": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1455964307,
+  "center": {
+    "lat": 52.6527803,
+    "lon": -0.4763180
+  },
+  "tags": {
+    "brand": "Magnet",
+    "brand:wikidata": "Q6731427",
+    "building": "yes",
+    "name": "Magnet",
+    "shop": "kitchen"
+  }
+}
+
+  ]
+}

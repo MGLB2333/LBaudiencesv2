@@ -24,7 +24,7 @@ export async function getAvailableSegments(): Promise<AvailableSegment[]> {
   // Group by segment_key
   const segmentMap = new Map<string, { ccsDistricts: Set<string>; providers: Set<string> }>();
 
-  for (const signal of allSignals || []) {
+  for (const signal of (allSignals || []) as any[]) {
     if (!signal.segment_key || !signal.district || !signal.provider) continue;
 
     const normalizedProvider = signal.provider.trim();

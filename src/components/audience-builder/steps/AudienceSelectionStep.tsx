@@ -272,7 +272,7 @@ export function AudienceSelectionStep({ audienceId, onNext, onBack }: AudienceSe
       </Box>
       
       {/* Construction Mode Toggle - Side by Side */}
-      <Box sx={{ mb: 3 }}>
+      <Box id="selection-construction-mode" sx={{ mb: 3, scrollMarginTop: '80px' }}>
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mb: 1.5 }}>
           <Typography variant="h6" sx={{ fontWeight: 600, fontSize: '1rem' }}>
             Construction Mode
@@ -313,7 +313,7 @@ export function AudienceSelectionStep({ audienceId, onNext, onBack }: AudienceSe
           )}
           
           {/* Anchor Provider Card */}
-          <Box sx={{ mb: 2 }}>
+          <Box id="selection-select-segment" sx={{ mb: 2, scrollMarginTop: '80px' }}>
             <Typography variant="h6" sx={{ fontWeight: 600, fontSize: '1rem', mb: 1 }}>
               Anchor Segment
             </Typography>

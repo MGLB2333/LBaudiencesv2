@@ -1,7 +1,7 @@
 'use client';
 
-import { Box, Card, CardContent, TextField, Typography, Button, IconButton, Modal, Backdrop, Fade, LinearProgress, CircularProgress } from '@mui/material';
-import { InfoOutlined } from '@mui/icons-material';
+import { Box, Card, CardContent, TextField, Typography, Button, IconButton, Modal, Backdrop, Fade, LinearProgress, CircularProgress, Divider, Chip } from '@mui/material';
+import { InfoOutlined, AttachFile, Close } from '@mui/icons-material';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -105,6 +105,8 @@ export function AudienceDetailsStep({ audienceId, onNext }: AudienceDetailsStepP
     error?: string;
   } | null>(null);
   const [mounted, setMounted] = useState(false);
+  const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   // Mark as mounted
   useEffect(() => {
@@ -194,6 +196,28 @@ export function AudienceDetailsStep({ audienceId, onNext }: AudienceDetailsStepP
     }
   };
 
+  const handleFileSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const files = Array.from(event.target.files || []);
+    const validExtensions = ['pdf', 'doc', 'docx', 'csv'];
+    const validFiles = files.filter(file => {
+      const ext = file.name.split('.').pop()?.toLowerCase();
+      return ext && validExtensions.includes(ext);
+    });
+    setSelectedFiles(prev => [...prev, ...validFiles]);
+    // Reset input so same file can be selected again
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+    }
+  };
+
+  const handleRemoveFile = (index: number) => {
+    setSelectedFiles(prev => prev.filter((_, i) => i !== index));
+  };
+
+  const handleAddFileClick = () => {
+    fileInputRef.current?.click();
+  };
+
   if (isLoading) {
     return <Typography>Loading...</Typography>;
   }
@@ -203,10 +227,10 @@ export function AudienceDetailsStep({ audienceId, onNext }: AudienceDetailsStepP
       <form onSubmit={handleSubmit(handleBuildAudience)}>
         <Box sx={{ maxWidth: '75%', mx: 'auto', display: 'flex', flexDirection: 'column', gap: 5 }}>
           {/* Audience Description Card */}
-          <Box>
+          <Box id="brief-target-audience" sx={{ scrollMarginTop: '80px' }}>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5, mb: 1 }}>
               <Typography variant="h6" sx={{ fontWeight: 600, fontSize: '1rem' }}>
-                Audience description
+                Who do you want to target?
               </Typography>
               <IconButton
                 size="small"
@@ -217,9 +241,10 @@ export function AudienceDetailsStep({ audienceId, onNext }: AudienceDetailsStepP
               </IconButton>
             </Box>
             <Card>
-              <CardContent sx={{ pb: 12, '&:last-child': { pb: 12 } }}>
+              <CardContent sx={{ pb: selectedFiles.length > 0 ? 2 : 2, '&:last-child': { pb: selectedFiles.length > 0 ? 2 : 2 } }}>
                 <TextField
-                placeholder="Describe your target audience and let AI help find the right signals..."
+                placeholder="Describe the people you want to reach, in your own words.
+e.g. 'People likely to be moving home in the next 12 months'"
                 multiline
                 rows={6}
                 {...register('description')}
@@ -228,6 +253,7 @@ export function AudienceDetailsStep({ audienceId, onNext }: AudienceDetailsStepP
                 fullWidth
                 size="small"
                 sx={{
+                  mb: 1,
                   '& .MuiOutlinedInput-root': {
                     bgcolor: '#f5f5f5',
                     borderRadius: 0,
@@ -250,12 +276,62 @@ export function AudienceDetailsStep({ audienceId, onNext }: AudienceDetailsStepP
                   },
                 }}
                 />
+                <Typography variant="caption" sx={{ fontSize: '0.7rem', color: 'text.secondary', display: 'block', mt: 0.5 }}>
+                  You can describe an audience, upload a brief, or add supporting files.
+                </Typography>
+                
+                {/* Footer with file upload */}
+                <Divider sx={{ my: 2 }} />
+                <Box>
+                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1 }}>
+                    <input
+                      ref={fileInputRef}
+                      type="file"
+                      accept=".pdf,.doc,.docx,.csv"
+                      multiple
+                      onChange={handleFileSelect}
+                      style={{ display: 'none' }}
+                    />
+                    <Button
+                      variant="outlined"
+                      size="small"
+                      startIcon={<AttachFile />}
+                      onClick={handleAddFileClick}
+                      sx={{ fontSize: '0.75rem', textTransform: 'none' }}
+                    >
+                      Add supporting file
+                    </Button>
+                    <Typography variant="caption" sx={{ fontSize: '0.7rem', color: 'text.secondary' }}>
+                      PDF, DOCX, CSV
+                    </Typography>
+                  </Box>
+                  {selectedFiles.length > 0 && (
+                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5, mt: 1 }}>
+                      {selectedFiles.map((file, index) => (
+                        <Chip
+                          key={index}
+                          label={file.name}
+                          onDelete={() => handleRemoveFile(index)}
+                          deleteIcon={<Close sx={{ fontSize: '0.875rem' }} />}
+                          size="small"
+                          sx={{
+                            fontSize: '0.7rem',
+                            height: 24,
+                            '& .MuiChip-label': {
+                              px: 1,
+                            },
+                          }}
+                        />
+                      ))}
+                    </Box>
+                  )}
+                </Box>
               </CardContent>
             </Card>
           </Box>
 
           {/* Audience Name & Dates Card */}
-          <Box>
+          <Box id="brief-name" sx={{ scrollMarginTop: '80px' }}>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5, mb: 1 }}>
               <Typography variant="h6" sx={{ fontWeight: 600, fontSize: '1rem' }}>
                 Audience name

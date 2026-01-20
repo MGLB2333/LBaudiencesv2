@@ -33,7 +33,7 @@ export async function createClientRecord(client: Omit<Client, 'id' | 'created_at
       name: client.name,
       url: client.url || null,
       updated_at: new Date().toISOString(),
-    })
+    } as any)
     .select()
     .single();
 
@@ -46,8 +46,8 @@ export async function createClientRecord(client: Omit<Client, 'id' | 'created_at
  */
 export async function updateClient(id: string, updates: Partial<Omit<Client, 'id' | 'created_at' | 'updated_at'>>): Promise<Client> {
   const supabase = createClient();
-  const { data, error } = await supabase
-    .from('admin_clients')
+  const { data, error } = await (supabase
+    .from('admin_clients') as any)
     .update({
       ...updates,
       updated_at: new Date().toISOString(),

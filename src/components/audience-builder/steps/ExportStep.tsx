@@ -164,7 +164,7 @@ export function ExportStep({ audienceId, onBack }: ExportStepProps) {
       </Typography>
 
       {/* Export Summary */}
-      <Box sx={{ mb: 3 }}>
+      <Box id="export-summary" sx={{ mb: 3, scrollMarginTop: '80px' }}>
         <Typography variant="h6" sx={{ fontWeight: 600, fontSize: '1rem', mb: 1 }}>
           Export summary
         </Typography>
@@ -178,7 +178,7 @@ export function ExportStep({ audienceId, onBack }: ExportStepProps) {
       </Box>
 
       {/* Export Actions */}
-      <Box sx={{ mb: 3 }}>
+      <Box id="export-actions" sx={{ mb: 3, scrollMarginTop: '80px' }}>
         <Typography variant="h6" sx={{ fontWeight: 600, fontSize: '1rem', mb: 1 }}>
           Export method
         </Typography>
@@ -203,7 +203,7 @@ export function ExportStep({ audienceId, onBack }: ExportStepProps) {
       </Box>
 
       {/* Export History */}
-      <Box>
+      <Box id="export-history" sx={{ scrollMarginTop: '80px' }}>
         <Typography variant="h6" sx={{ fontWeight: 600, fontSize: '1rem', mb: 1 }}>
           History
         </Typography>

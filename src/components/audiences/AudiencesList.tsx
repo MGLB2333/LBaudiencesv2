@@ -1,7 +1,7 @@
 'use client';
 
 import { Box, Card, CardContent, Typography, Button, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, IconButton, Menu, MenuItem, TextField, InputAdornment, Chip, Select, FormControl, InputLabel, Dialog, DialogTitle, DialogContent, DialogActions, Checkbox, FormControlLabel } from '@mui/material';
-import { Add as AddIcon, MoreVert as MoreVertIcon, Search as SearchIcon, FilterList as FilterIcon, FolderOpen as FolderOpenIcon } from '@mui/icons-material';
+import { Add as AddIcon, MoreVert as MoreVertIcon, Search as SearchIcon, FilterList as FilterIcon, FolderOpen as FolderOpenIcon, Close as CloseIcon } from '@mui/icons-material';
 import { useRouter } from 'next/navigation';
 import { useAudiences, useCreateAudience, useDeleteAudience } from '@/features/audience-builder/hooks/useAudiences';
 import { AppLayout } from '@/components/layout/AppLayout';
@@ -39,7 +39,7 @@ async function fetchAudienceDetails(audienceIds: string[]) {
 
   // Create client lookup map
   const clientMap = new Map<string, string>();
-  clients?.forEach(client => {
+  clients?.forEach((client: any) => {
     clientMap.set(client.id, client.name);
   });
 
@@ -58,19 +58,30 @@ async function fetchAudienceDetails(audienceIds: string[]) {
 
   // Build details map
   audienceIds.forEach((id) => {
-    const audience = audiences?.find(a => a.id === id);
-    const setting = settings?.find(s => s.audience_id === id);
-    const audienceSegments = segments?.filter(s => s.audience_id === id) || [];
-    const anchorSegment = audienceSegments.find(s => s.origin === 'brief' || s.is_selected) || audienceSegments[0];
+    const audience = (audiences as any[])?.find((a: any) => a.id === id);
+    const setting = (settings as any[])?.find((s: any) => s.audience_id === id);
+    const audienceSegments = (segments as any[])?.filter((s: any) => s.audience_id === id) || [];
+    
+    // Find anchor segment: prefer origin='brief', then is_selected=true, then first segment
+    // But exclude segments with the hardcoded "Families with kids over 11" label
+    const anchorSegment = audienceSegments.find((s: any) => s.origin === 'brief') 
+      || audienceSegments.find((s: any) => s.is_selected && s.segment_label !== 'Families with kids over 11')
+      || audienceSegments.find((s: any) => s.segment_label !== 'Families with kids over 11')
+      || audienceSegments[0];
     
     // Get client name from lookup
     const clientName = audience?.client_id 
       ? (clientMap.get(audience.client_id) || '—')
       : '—';
 
+    // Use audience name as fallback if segment label is the hardcoded value
+    const segmentName = anchorSegment?.segment_label === 'Families with kids over 11'
+      ? (audience?.name || '—')
+      : (anchorSegment?.segment_label || audience?.name || '—');
+
     detailsMap.set(id, {
       constructionMode: setting?.construction_mode || null,
-      segmentName: anchorSegment?.segment_label || '—',
+      segmentName: segmentName,
       client: clientName,
       households: null, // Will be populated from validation/extension results if available
       districts: null,
@@ -172,7 +183,7 @@ export function AudiencesList() {
     }
 
     // Find the client ID from the selected client name
-    const selectedClient = clients.find(c => c.name === newAudienceClient);
+    const selectedClient = (clients as any[]).find((c: any) => c.name === newAudienceClient);
     const clientId = selectedClient?.id || null;
 
     setCreating(true);
@@ -445,7 +456,7 @@ export function AudiencesList() {
                     sx={{ fontSize: '0.8125rem' }}
                   >
                     <MenuItem value="all" sx={{ fontSize: '0.8125rem' }}>All Clients</MenuItem>
-                    {clients.map((client) => (
+                    {(clients as any[]).map((client: any) => (
                       <MenuItem key={client.id} value={client.name} sx={{ fontSize: '0.8125rem' }}>
                         {client.name}
                       </MenuItem>
@@ -494,42 +505,108 @@ export function AudiencesList() {
           onClose={handleCreateCancel}
           maxWidth="sm"
           fullWidth
+          PaperProps={{
+            sx: {
+              borderRadius: 2,
+              boxShadow: '0 4px 20px rgba(0, 0, 0, 0.15)',
+            }
+          }}
         >
-          <DialogTitle sx={{ fontSize: '1.25rem', fontWeight: 600, pb: 1, bgcolor: '#f5f5f5', borderBottom: '1px solid #e0e0e0' }}>
-            Create New Audience
-          </DialogTitle>
-          <DialogContent>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3, mt: 1 }}>
+          {/* Header */}
+          <Box
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              px: 3,
+              py: 2.5,
+              borderBottom: '1px solid #e0e0e0',
+            }}
+          >
+            <Typography
+              sx={{
+                fontSize: '1.25rem',
+                fontWeight: 600,
+                color: '#212121',
+              }}
+            >
+              Create New Audience
+            </Typography>
+            <IconButton
+              onClick={handleCreateCancel}
+              size="small"
+              sx={{
+                color: '#757575',
+                '&:hover': {
+                  bgcolor: '#f5f5f5',
+                },
+              }}
+            >
+              <CloseIcon fontSize="small" />
+            </IconButton>
+          </Box>
+          
+          {/* Content */}
+          <DialogContent sx={{ px: 3, py: 3.5 }}>
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
               <Box>
-                <Typography variant="caption" sx={{ fontSize: '0.75rem', fontWeight: 500, color: 'text.secondary', display: 'block', mb: 0.75 }}>
+                <Typography
+                  sx={{
+                    fontSize: '0.875rem',
+                    fontWeight: 500,
+                    color: '#424242',
+                    display: 'block',
+                    mb: 1.25,
+                  }}
+                >
                   Client
                 </Typography>
-                <FormControl fullWidth size="small">
+                <FormControl fullWidth>
                   <Select
                     value={newAudienceClient}
                     onChange={(e) => setNewAudienceClient(e.target.value)}
                     displayEmpty
                     sx={{
-                      fontSize: '0.8125rem',
-                      bgcolor: '#f5f5f5',
+                      fontSize: '0.875rem',
+                      bgcolor: '#f0f8ff',
+                      '& .MuiOutlinedInput-notchedOutline': {
+                        borderColor: '#e0e0e0',
+                      },
+                      '&:hover .MuiOutlinedInput-notchedOutline': {
+                        borderColor: '#bdbdbd',
+                      },
+                      '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+                        borderColor: '#02b5e7',
+                        borderWidth: '1px',
+                      },
                       '& .MuiSelect-select': {
-                        py: 1,
+                        py: 1.5,
+                        px: 1.5,
                       },
                     }}
                   >
-                    <MenuItem value="" sx={{ fontSize: '0.8125rem' }}>
-                      <em>Select a client</em>
+                    <MenuItem value="" sx={{ fontSize: '0.875rem', color: '#9e9e9e' }}>
+                      Select a client
                     </MenuItem>
-                    {clients.map((client) => (
-                      <MenuItem key={client.id} value={client.name} sx={{ fontSize: '0.8125rem' }}>
+                    {(clients as any[]).map((client: any) => (
+                      <MenuItem key={client.id} value={client.name} sx={{ fontSize: '0.875rem' }}>
                         {client.name}
                       </MenuItem>
                     ))}
                   </Select>
                 </FormControl>
               </Box>
+              
               <Box>
-                <Typography variant="caption" sx={{ fontSize: '0.75rem', fontWeight: 500, color: 'text.secondary', display: 'block', mb: 0.75 }}>
+                <Typography
+                  sx={{
+                    fontSize: '0.875rem',
+                    fontWeight: 500,
+                    color: '#424242',
+                    display: 'block',
+                    mb: 1.25,
+                  }}
+                >
                   Audience Name
                 </Typography>
                 <TextField
@@ -537,24 +614,60 @@ export function AudiencesList() {
                   onChange={(e) => setNewAudienceName(e.target.value)}
                   required
                   fullWidth
-                  size="small"
                   placeholder="Enter audience name"
                   sx={{
-                    fontSize: '0.8125rem',
-                    '& .MuiInputBase-root': {
-                      bgcolor: '#f5f5f5',
+                    '& .MuiOutlinedInput-root': {
+                      bgcolor: '#f0f8ff',
+                      fontSize: '0.875rem',
+                      '& fieldset': {
+                        borderColor: '#e0e0e0',
+                      },
+                      '&:hover fieldset': {
+                        borderColor: '#bdbdbd',
+                      },
+                      '&.Mui-focused fieldset': {
+                        borderColor: '#02b5e7',
+                        borderWidth: '1px',
+                      },
                     },
                     '& .MuiInputBase-input': {
-                      fontSize: '0.8125rem',
-                      py: 1,
+                      py: 1.5,
+                      px: 1.5,
                     },
                   }}
                 />
               </Box>
             </Box>
           </DialogContent>
-          <DialogActions sx={{ px: 3, pb: 2 }}>
-            <Button onClick={handleCreateCancel} sx={{ fontSize: '0.8125rem' }}>
+          
+          {/* Footer */}
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'flex-end',
+              gap: 1.5,
+              px: 3,
+              py: 2.5,
+              borderTop: '1px solid #e0e0e0',
+              bgcolor: '#fafafa',
+            }}
+          >
+            <Button
+              onClick={handleCreateCancel}
+              variant="outlined"
+              sx={{
+                fontSize: '0.875rem',
+                textTransform: 'none',
+                px: 2.5,
+                py: 0.75,
+                borderColor: '#e0e0e0',
+                color: '#424242',
+                '&:hover': {
+                  borderColor: '#bdbdbd',
+                  bgcolor: 'white',
+                },
+              }}
+            >
               Cancel
             </Button>
             <Button
@@ -564,12 +677,20 @@ export function AudiencesList() {
               sx={{
                 bgcolor: '#02b5e7',
                 '&:hover': { bgcolor: '#02a0d0' },
-                fontSize: '0.8125rem',
+                fontSize: '0.875rem',
+                textTransform: 'none',
+                px: 2.5,
+                py: 0.75,
+                boxShadow: 'none',
+                '&:disabled': {
+                  bgcolor: '#e0e0e0',
+                  color: '#9e9e9e',
+                },
               }}
             >
               {creating ? 'Creating...' : 'Create'}
             </Button>
-          </DialogActions>
+          </Box>
         </Dialog>
 
         {/* Delete Confirmation Dialog */}

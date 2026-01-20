@@ -23,7 +23,7 @@ export function AudienceProfileStep({ audienceId, onNext, onBack }: AudienceProf
   const updateMutation = useUpdateProfileSettings();
   const rescoreMutation = useRescoreGeoUnits();
 
-  const coverageMetrics = calculateCoverageMetrics(constructionSettings);
+  const coverageMetrics = calculateCoverageMetrics(constructionSettings ?? null);
 
   const [scaleAccuracy, setScaleAccuracy] = useState(profile?.scale_accuracy ?? 50);
   const [pendingAccuracy, setPendingAccuracy] = useState<number | null>(null);
@@ -205,7 +205,7 @@ export function AudienceProfileStep({ audienceId, onNext, onBack }: AudienceProf
                 Primary Audience
               </Typography>
               <Typography variant="body1" sx={{ fontWeight: 600, mb: 1, fontSize: '0.875rem' }}>
-                {primarySegment?.segment_label || 'Families with kids over 11'}
+                {primarySegment?.segment_label || '—'}
               </Typography>
               <Typography variant="body2" color="success.main" sx={{ fontWeight: 600, fontSize: '0.8125rem' }}>
                 High
@@ -226,7 +226,7 @@ export function AudienceProfileStep({ audienceId, onNext, onBack }: AudienceProf
           <Grid item xs={12} md={8}>
             <Box sx={{ mb: 3 }}>
               <Typography variant="h6" sx={{ fontWeight: 600, mb: 2, fontSize: '1rem' }}>
-                {primarySegment?.segment_label || 'Families with kids over 11'}
+                {primarySegment?.segment_label || '—'}
               </Typography>
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 2 }}>
                 <Typography variant="body2" sx={{ minWidth: 80, fontSize: '0.8125rem' }}>

@@ -140,7 +140,7 @@ export function HexOverlayLayer({ hexes, maxAgreementGlobal, visible }: HexOverl
         if (!bounds) {
           bounds = L.latLngBounds(latLngs);
         } else {
-          bounds.extend(latLngs);
+          latLngs.forEach(latLng => bounds!.extend(latLng));
         }
 
         // Calculate intensity

@@ -1,8 +1,8 @@
 'use client';
 
-import { Box, Card, CardContent, Typography, Button, Link, Slider, Chip, Dialog, DialogTitle, DialogContent, DialogActions, Avatar, Switch, FormControlLabel, Accordion, AccordionSummary, AccordionDetails, CircularProgress } from '@mui/material';
-import { useRouter } from 'next/navigation';
-import { ExpandMore, CheckCircle } from '@mui/icons-material';
+import { Box, Card, CardContent, Typography, Button, Link, Slider, Chip, Dialog, DialogTitle, DialogContent, DialogActions, Avatar, Switch, FormControlLabel, Accordion, AccordionSummary, AccordionDetails, CircularProgress, Tabs, Tab } from '@mui/material';
+import { useRouter, useSearchParams } from 'next/navigation';
+import { ExpandMore, CheckCircle, MapOutlined, LiveTvOutlined } from '@mui/icons-material';
 import { useState, useEffect, useMemo, useRef, useCallback, memo } from 'react';
 import { useWhyRender } from '@/hooks/useWhyRender';
 import { ConstructionMode } from '@/lib/types';
@@ -13,6 +13,10 @@ import { useUpdateSegmentSelection } from '@/features/audience-builder/hooks/use
 import { useValidationResults } from '@/features/audience-builder/hooks/useValidationResults';
 import { useExtensionSuggestions } from '@/features/audience-builder/hooks/useExtensionSuggestions';
 import { useProviderImpact } from '@/features/audience-builder/hooks/useProviderImpact';
+import { usePoisByIds, usePoiDistrictMap, usePoisByBrands } from '@/features/audience-builder/hooks/useStorePois';
+import { StorePoi } from '@/features/audience-builder/api/storePois';
+import { useBattleZoneDistricts } from '@/features/audience-builder/hooks/useBattleZones';
+import { useDistrictCentroids } from '@/features/audience-builder/hooks/useDistrictCentroids';
 import { useBuilderContext } from '../BuilderContext';
 import { toggleSelectedSegment, getSelectedSegmentKeys } from '@/features/audience-builder/api/selectedSegments';
 import * as geoDistrictsApi from '@/features/audience-builder/api/geoDistricts';
@@ -20,7 +24,14 @@ import { GeoJSON } from 'geojson';
 import { ValidationMapPanel } from './ValidationMapPanel';
 import { ValidationSidebar } from './ValidationSidebar';
 import { ExtensionSidebar } from './ExtensionSidebar';
+import { MapToolDrawer } from './MapToolDrawer';
+import { StorePoiPicker } from '../map/StorePoiPicker';
+import { BattleZonesSection } from './BattleZonesSection';
+import { TvRegionFilter } from './TvRegionFilter';
 import { IncludedDistrict } from '@/features/audience-builder/api/validationResults';
+import { useQuery } from '@tanstack/react-query';
+import { getDistrictsByTvRegion } from '@/features/audience-builder/api/tvRegions';
+import { TvSpotInsightsPanel } from '../tv-insights/TvSpotInsightsPanel';
 
 
 interface BuildExploreStepProps {
@@ -52,20 +63,49 @@ function ProviderAvatar({ provider }: { provider: string }) {
 
 export function BuildExploreStep({ audienceId, onNext, onBack }: BuildExploreStepProps) {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const { data: audience } = useAudience(audienceId);
   const { data: settings } = useConstructionSettings(audienceId);
   const { data: segments = [] } = useSegments(audienceId, 'primary', settings?.construction_mode);
   const updateSegmentSelection = useUpdateSegmentSelection();
-  const { state, setValidationMinAgreement, setIncludedSegmentKeys, getAllProvidersForBuild, confirmSelection } = useBuilderContext();
+  const { state, setValidationMinAgreement, setIncludedSegmentKeys, getAllProvidersForBuild, confirmSelection, setTvRegions, setSelectedPoiIds, setSelectedPoiBrands, setBattleZonesEnabled, setBattleZoneBaseBrand, setBattleZoneCompetitorBrands, setBattleZoneRings, setActiveTab } = useBuilderContext();
   const selectionConfirmed = state.selectionConfirmed;
   const hasValidSelection = Boolean(state.selectionConfirmed && state.selectedSegmentKey && state.selectedSegmentKey.length > 0);
   const [mounted, setMounted] = useState(false);
   const [waitingForState, setWaitingForState] = useState(true);
+  const [activeTool, setActiveTool] = useState<'stores' | 'locations' | 'battleZones' | null>(null);
   
   // Mark as mounted
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  // Sync activeTab with URL param (optimized to prevent flicker)
+  useEffect(() => {
+    if (mounted) {
+      const tabParam = searchParams?.get('tab');
+      if (tabParam === 'tvInsights' || tabParam === 'map') {
+        if (state.activeTab !== tabParam) {
+          // Update immediately for smooth transition
+          setActiveTab(tabParam);
+        }
+      } else if (!tabParam && state.activeTab !== 'map') {
+        // Default to map if no tab param
+        setActiveTab('map');
+      }
+    }
+  }, [mounted, searchParams, state.activeTab, setActiveTab]);
+
+  // Update URL when tab changes (optimized to prevent flicker)
+  const handleTabChange = (newValue: 'map' | 'tvInsights') => {
+    // Update state immediately for instant UI feedback
+    setActiveTab(newValue);
+    // Update URL without scroll, using replace to avoid history stack
+    const currentTab = searchParams?.get('tab');
+    if (currentTab !== newValue) {
+      router.replace(`/audiences/${audienceId}/builder?step=3&tab=${newValue}`, { scroll: false });
+    }
+  };
 
   // Initialize slider values from context on mount
   useEffect(() => {
@@ -237,6 +277,7 @@ export function BuildExploreStep({ audienceId, onNext, onBack }: BuildExploreSte
     confidenceThreshold: confidenceThresholdApplied,
     includeAnchorOnly: true,
     providers: constructionMode === 'extension' ? selectedProviders : undefined,
+    tvRegions: state.tvRegions.length > 0 ? state.tvRegions : undefined,
     enabled: constructionMode === 'extension' && mounted && extensionSelectedKeys.length > 0 && hasValidSelection,
   });
   
@@ -253,12 +294,14 @@ export function BuildExploreStep({ audienceId, onNext, onBack }: BuildExploreSte
     setIncludedSegmentKeys(includedSegmentKeys);
   }, [includedSegmentKeys.join(','), setIncludedSegmentKeys]);
 
-  // Fetch validation results ONCE per segment build (no minAgreement in query key)
+  // Fetch validation results with current slider value (minAgreement in query key)
   // Use selectedSegmentKey from context (set in Step 2)
   const segmentKey = selectedSegmentKey || 'home_movers';
   const { data: validationResults, isLoading: validationLoading, error: validationError } = useValidationResults({
     segmentKey,
+    minAgreement: sliderApplied, // Pass current slider value so API calculates households for filtered districts
     providers: constructionMode === 'validation' ? selectedProviders : undefined,
+    tvRegions: state.tvRegions.length > 0 ? state.tvRegions : undefined,
     enabled: constructionMode === 'validation' && mounted && hasValidSelection,
   });
   
@@ -338,31 +381,14 @@ export function BuildExploreStep({ audienceId, onNext, onBack }: BuildExploreSte
     return {};
   }, [constructionMode, validationResults, districts]);
 
-  // Derive included districts with centroids from validationResults based on sliderApplied
-  // Filter by sliderApplied to get districts with agreement >= sliderApplied
+  // Derive included districts with centroids from validationResults
+  // Note: validationResults.includedDistricts is already filtered by minAgreement (sliderApplied) in the API
   // MUST be stable reference
   const includedDistricts = useMemo(() => {
     if (constructionMode === 'validation' && validationResults) {
-      // Filter ALL includedDistricts from validationResults where agreementCount >= sliderApplied
-      // validationResults.includedDistricts contains all districts that passed the base threshold (minAgreement=1)
-      // We filter by sliderApplied to show only districts with >= sliderApplied providers agreeing
-      const allDistricts = validationResults.includedDistricts || [];
-      const filtered = allDistricts.filter(d => d.agreementCount >= sliderApplied);
-      
-      // DEV: Log slider filtering
-      if (process.env.NODE_ENV !== 'production') {
-        console.log('[BuildExploreStep] Slider filtering:', {
-          sliderApplied,
-          totalDistricts: allDistricts.length,
-          filteredCount: filtered.length,
-          agreementDistribution: allDistricts.reduce((acc, d) => {
-            acc[d.agreementCount] = (acc[d.agreementCount] || 0) + 1;
-            return acc;
-          }, {} as Record<number, number>),
-        });
-      }
-      
-      return filtered;
+      // validationResults.includedDistricts already contains only districts with agreement >= minAgreement
+      // No additional client-side filtering needed
+      return validationResults.includedDistricts || [];
     } else if (constructionMode === 'extension' && providerImpact) {
       // Extension mode: use providerImpact results
       return providerImpact.includedDistricts.map(d => ({
@@ -502,8 +528,146 @@ export function BuildExploreStep({ audienceId, onNext, onBack }: BuildExploreSte
   };
   // Calculate metrics synchronously from derived data
   const districtsIncluded = includedDistrictIds.length;
-  const avgHouseholdsPerDistrict = 2500;
-  const audienceSize = districtsIncluded * avgHouseholdsPerDistrict;
+  // Use estimatedHouseholds from validationResults if available, otherwise calculate from districts
+  // Note: validationResults.totals.estimatedHouseholds now uses real household sums
+  const audienceSize = constructionMode === 'validation' && validationResults?.totals?.estimatedHouseholds
+    ? validationResults.totals.estimatedHouseholds
+    : districtsIncluded * 2500; // Fallback for extension mode or when validationResults not available
+  
+  // Calculate TV region counts for explanatory copy
+  const { data: tvRegionDistricts = [] } = useQuery({
+    queryKey: ['tvRegionDistricts', state.tvRegions],
+    queryFn: () => getDistrictsByTvRegion(state.tvRegions),
+    enabled: state.tvRegions.length > 0,
+    staleTime: 10 * 60 * 1000, // 10 minutes
+  });
+
+  // Fetch POIs from both sources: brands and individual IDs
+  const { data: brandPois = [] } = usePoisByBrands(state.selectedPoiBrands);
+  const { data: individualPois = [] } = usePoisByIds(state.selectedPoiIds);
+
+  // Merge and dedupe POIs from both sources
+  const displayPois = useMemo(() => {
+    const poiMap = new Map<string, StorePoi>();
+    
+    // Add brand POIs
+    brandPois.forEach(poi => {
+      poiMap.set(poi.id, poi);
+    });
+    
+    // Add individual POIs (will overwrite if duplicate, but that's fine)
+    individualPois.forEach(poi => {
+      poiMap.set(poi.id, poi);
+    });
+    
+    return Array.from(poiMap.values());
+  }, [brandPois, individualPois]);
+
+  // Get district mappings for all displayed POIs
+  const displayPoiIds = useMemo(() => displayPois.map(p => p.id), [displayPois]);
+  const { data: poiDistrictMap = {} } = usePoiDistrictMap(displayPoiIds);
+
+  // Build POI markers for map
+  const poiMarkers = useMemo(() => {
+    return displayPois.map(poi => ({
+      id: poi.id,
+      lat: poi.lat,
+      lng: poi.lng,
+      label: `${poi.brand} - ${poi.name}`,
+    }));
+  }, [displayPois]);
+
+  // Build POI districts mapping (district -> { count, pois[] })
+  const poiDistricts = useMemo(() => {
+    const mapping: Record<string, { count: number; pois: Array<{ id: string; name: string }> }> = {};
+    
+    displayPois.forEach(poi => {
+      const districtMapping = poiDistrictMap[poi.id];
+      if (districtMapping) {
+        const district = districtMapping.district;
+        if (!mapping[district]) {
+          mapping[district] = { count: 0, pois: [] };
+        }
+        mapping[district].count++;
+        mapping[district].pois.push({ id: poi.id, name: poi.name });
+      }
+    });
+    
+    return mapping;
+  }, [displayPois, poiDistrictMap]);
+
+  const tvRegionDistrictsCount = useMemo(() => {
+    if (state.tvRegions.length === 0) return undefined;
+    return tvRegionDistricts.length;
+  }, [state.tvRegions.length, tvRegionDistricts.length]);
+
+  const finalEligibleCount = useMemo(() => {
+    if (state.tvRegions.length === 0) return undefined;
+    if (constructionMode === 'validation' && validationResults) {
+      // For validation: eligible districts after TV region filter
+      return validationResults.eligibleDistrictIds.length;
+    } else if (constructionMode === 'extension' && providerImpact) {
+      // For extension: included districts after TV region filter
+      return providerImpact.totals.includedDistricts;
+    }
+    return undefined;
+  }, [state.tvRegions.length, constructionMode, validationResults, providerImpact]);
+
+  // Battle zones data
+  const battleZonesOptions = useMemo(() => {
+    if (!state.battleZonesEnabled || !state.battleZoneBaseBrand) return null;
+    return {
+      baseBrand: state.battleZoneBaseBrand,
+      competitorBrands: state.battleZoneCompetitorBrands.length > 0 ? state.battleZoneCompetitorBrands : undefined,
+      rings: state.battleZoneRings,
+      tvRegions: state.tvRegions.length > 0 ? state.tvRegions : undefined,
+    };
+  }, [
+    state.battleZonesEnabled,
+    state.battleZoneBaseBrand,
+    state.battleZoneCompetitorBrands,
+    state.battleZoneRings,
+    state.tvRegions,
+  ]);
+
+  const { data: battleZoneDistricts = [] } = useBattleZoneDistricts(
+    battleZonesOptions,
+    state.battleZonesEnabled && !!state.battleZoneBaseBrand
+  );
+
+  // Normalize district function (matches validationResults.ts)
+  const normalizeDistrict = useCallback((d: string): string => {
+    return d.trim().toUpperCase().replace(/\s+/g, '');
+  }, []);
+
+  // Get unique battle zone districts for centroid lookup
+  const battleDistricts = useMemo(() => {
+    if (!state.battleZonesEnabled || battleZoneDistricts.length === 0) {
+      return [];
+    }
+    const districts = battleZoneDistricts.map(d => normalizeDistrict(d.district));
+    return Array.from(new Set(districts));
+  }, [state.battleZonesEnabled, battleZoneDistricts, normalizeDistrict]);
+
+  // Fetch centroids for battle zone districts
+  const { data: battleZoneCentroids = [], isLoading: centroidsLoading } = useDistrictCentroids(
+    battleDistricts,
+    state.battleZonesEnabled && battleDistricts.length > 0
+  );
+
+  // Debug logging
+  useEffect(() => {
+    if (process.env.NODE_ENV === 'development' && state.battleZonesEnabled) {
+      console.log('[BuildExploreStep] Battle zones state:', {
+        battleZoneDistrictsCount: battleZoneDistricts.length,
+        battleDistrictsCount: battleDistricts.length,
+        battleZoneCentroidsCount: battleZoneCentroids.length,
+        centroidsLoading,
+        sampleDistricts: battleDistricts.slice(0, 5),
+        sampleCentroids: battleZoneCentroids.slice(0, 5),
+      });
+    }
+  }, [state.battleZonesEnabled, battleZoneDistricts.length, battleDistricts.length, battleZoneCentroids.length, centroidsLoading]);
   
   // Calculate confidence level from validation results
 
@@ -559,25 +723,123 @@ export function BuildExploreStep({ audienceId, onNext, onBack }: BuildExploreSte
 
   return (
     <Box sx={{ maxWidth: 1400, mx: 'auto' }} suppressHydrationWarning>
-      {/* Map and sidebar side-by-side layout */}
-      <Box sx={{ mb: 2 }}>
-        <Typography variant="subtitle2" sx={{ fontWeight: 600, fontSize: '0.875rem', mb: 1 }}>
-          Audience visualisation
-        </Typography>
-        <Box sx={{ display: 'flex', width: '100%', minHeight: '600px', borderRadius: 1, overflow: 'hidden' }}>
+      {/* Tabs */}
+      <Box sx={{ mb: 2, borderBottom: 1, borderColor: 'divider' }}>
+        <Tabs 
+          value={state.activeTab} 
+          onChange={(_, newValue) => handleTabChange(newValue as 'map' | 'tvInsights')}
+          sx={{
+            '& .MuiTab-root': {
+              textTransform: 'none',
+              fontSize: '0.875rem',
+              fontWeight: 500,
+              minHeight: 48,
+            },
+          }}
+        >
+          <Tab 
+            icon={<MapOutlined sx={{ fontSize: '1.1rem', mb: 0.5 }} />} 
+            iconPosition="start"
+            label="Audience visualisation" 
+            value="map" 
+          />
+          <Tab 
+            icon={<LiveTvOutlined sx={{ fontSize: '1.1rem', mb: 0.5 }} />} 
+            iconPosition="start"
+            label="TV spot insights" 
+            value="tvInsights" 
+          />
+        </Tabs>
+      </Box>
+
+      {/* Content based on active tab */}
+      <Box sx={{ position: 'relative', width: '100%', minHeight: '600px' }}>
+        {/* Map panel - keep mounted but hide when not active */}
+        <Box 
+          sx={{ 
+            display: 'flex',
+            width: '100%',
+            minHeight: '600px',
+            borderRadius: 1,
+            overflow: 'hidden',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            visibility: state.activeTab === 'map' ? 'visible' : 'hidden',
+            opacity: state.activeTab === 'map' ? 1 : 0,
+            transition: 'opacity 0.15s ease-out, visibility 0.15s ease-out',
+            pointerEvents: state.activeTab === 'map' ? 'auto' : 'none',
+            zIndex: state.activeTab === 'map' ? 1 : 0,
+          }}
+        >
           {/* Map panel - takes remaining space */}
-          <Box sx={{ flex: 1, position: 'relative', minHeight: '600px' }}>
+          <Box sx={{ flex: 1, position: 'relative', minHeight: '600px', overflow: 'hidden' }}>
             <ValidationMapPanel
             includedDistricts={includedDistricts}
             maxAgreement={maxAgreement}
             overlayMode={overlayMode}
             hexResolution={hexResolution}
+            onOverlayModeChange={setOverlayMode}
+            onHexResolutionChange={setHexResolution}
             mounted={mounted}
+            poiMarkers={poiMarkers}
+            poiDistricts={poiDistricts}
+            battleZonesEnabled={state.battleZonesEnabled}
+            battleZoneDistricts={battleZoneDistricts}
+            battleZoneCentroids={battleZoneCentroids}
+            battleZoneBaseBrand={state.battleZoneBaseBrand}
+            battleZoneCompetitorBrands={state.battleZoneCompetitorBrands}
           />
-        </Box>
+          {/* Tool Drawer - positioned inside map container */}
+          <MapToolDrawer open={activeTool !== null} tool={activeTool} onClose={() => setActiveTool(null)}>
+            <Box sx={{ '& .MuiCard-root, & .MuiPaper-root': { mb: 2, '&:last-child': { mb: 0 } } }}>
+              {activeTool === 'stores' ? (
+                <StorePoiPicker
+                  selectedPoiIds={state.selectedPoiIds}
+                  onPoiIdsChange={setSelectedPoiIds}
+                  selectedPoiBrands={state.selectedPoiBrands || []}
+                  onPoiBrandsChange={setSelectedPoiBrands}
+                />
+              ) : activeTool === 'locations' ? (
+                <Box>
+                  <TvRegionFilter
+                    selectedRegions={state.tvRegions}
+                    onRegionsChange={setTvRegions}
+                    tvRegionDistrictsCount={state.tvRegions.length > 0 ? tvRegionDistrictsCount : undefined}
+                    finalEligibleCount={finalEligibleCount}
+                  />
+                  <Box sx={{ mt: 3, pt: 2, borderTop: '1px solid #e0e0e0' }}>
+                    <Typography variant="subtitle2" sx={{ fontWeight: 600, fontSize: '0.875rem', mb: 1 }}>
+                      Nearby districts
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary" sx={{ fontSize: '0.75rem' }}>
+                      Coming soon: Use district_neighbors to find and highlight adjacent districts.
+                    </Typography>
+                  </Box>
+                </Box>
+              ) : activeTool === 'battleZones' ? (
+                <BattleZonesSection
+                  baseBrand={state.battleZoneBaseBrand}
+                  onBaseBrandChange={setBattleZoneBaseBrand}
+                  competitorBrands={state.battleZoneCompetitorBrands}
+                  onCompetitorBrandsChange={setBattleZoneCompetitorBrands}
+                  ringsDraft={state.battleZoneRings}
+                  ringsApplied={state.battleZoneRings}
+                  onRingsDraftChange={setBattleZoneRings}
+                  onRingsApply={setBattleZoneRings}
+                  enabled={state.battleZonesEnabled}
+                  onEnabledChange={setBattleZonesEnabled}
+                  tvRegions={state.tvRegions}
+                />
+              ) : null}
+            </Box>
+          </MapToolDrawer>
+          </Box>
 
-        {/* Sidebar - fixed width and height */}
-        <Box sx={{ width: 380, flexShrink: 0, height: '600px' }}>
+          {/* Sidebar - fixed width and height */}
+          <Box sx={{ width: 380, flexShrink: 0, height: '600px' }}>
           {constructionMode === 'validation' ? (
             <ValidationSidebar
               constructionMode={constructionMode}
@@ -597,14 +859,23 @@ export function BuildExploreStep({ audienceId, onNext, onBack }: BuildExploreSte
               onToggleSegment={handleToggleSegment}
               expandedExplain={expandedExplain}
               onToggleExplain={setExpandedExplain}
-              geoDistrictsCount={districts.length}
-              includedDistrictIds={includedDistrictIds}
-              selectedPoiTypes={selectedPoiTypes}
-              onPoiTypeToggle={handlePoiTypeToggle}
-              onBattlegroundClick={handleBattlegroundClick}
+              selectedTvRegions={state.tvRegions}
+              onTvRegionsChange={setTvRegions}
+              tvRegionDistrictsCount={tvRegionDistrictsCount}
+              finalEligibleCount={finalEligibleCount}
+              selectedPoiIds={state.selectedPoiIds}
+              onPoiIdsChange={setSelectedPoiIds}
+              selectedPoiBrands={state.selectedPoiBrands}
+              onPoiBrandsChange={setSelectedPoiBrands}
+              activeTool={activeTool}
+              onToolClick={setActiveTool}
+              overlayMode={overlayMode}
+              onOverlayModeChange={setOverlayMode}
+              hexResolution={hexResolution}
+              onHexResolutionChange={setHexResolution}
             />
-          ) : (
-            <ExtensionSidebar
+            ) : (
+              <ExtensionSidebar
               anchorKey={anchorKey}
               anchorLabel={anchorLabel}
               confidenceThreshold={confidenceThresholdApplied}
@@ -618,11 +889,46 @@ export function BuildExploreStep({ audienceId, onNext, onBack }: BuildExploreSte
               providerImpactLoading={providerImpactLoading}
               expandedExplain={expandedExplain}
               onToggleExplain={setExpandedExplain}
-              selectedPoiTypes={selectedPoiTypes}
-              onPoiTypeToggle={handlePoiTypeToggle}
+              selectedTvRegions={state.tvRegions}
+              onTvRegionsChange={setTvRegions}
+              tvRegionDistrictsCount={tvRegionDistrictsCount}
+              finalEligibleCount={finalEligibleCount}
+              selectedPoiIds={state.selectedPoiIds}
+              onPoiIdsChange={setSelectedPoiIds}
+              selectedPoiBrands={state.selectedPoiBrands}
+              onPoiBrandsChange={setSelectedPoiBrands}
+              activeTool={activeTool}
+              onToolClick={setActiveTool}
+              overlayMode={overlayMode}
+              onOverlayModeChange={setOverlayMode}
+              hexResolution={hexResolution}
+              onHexResolutionChange={setHexResolution}
             />
           )}
+          </Box>
         </Box>
+
+        {/* TV Spot Insights Panel - keep mounted but hide when not active */}
+        <Box 
+          sx={{ 
+            display: 'block',
+            minHeight: '600px',
+            borderRadius: 1,
+            overflow: 'hidden',
+            bgcolor: 'background.paper',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            visibility: state.activeTab === 'tvInsights' ? 'visible' : 'hidden',
+            opacity: state.activeTab === 'tvInsights' ? 1 : 0,
+            transition: 'opacity 0.15s ease-out, visibility 0.15s ease-out',
+            pointerEvents: state.activeTab === 'tvInsights' ? 'auto' : 'none',
+            zIndex: state.activeTab === 'tvInsights' ? 1 : 0,
+          }}
+        >
+          <TvSpotInsightsPanel />
         </Box>
       </Box>
 

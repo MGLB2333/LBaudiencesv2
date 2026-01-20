@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
         start_date: '2024-01-01',
         end_date: '2024-12-31',
         budget_total: 500000,
-      })
+      } as any)
       .select()
       .single();
 
@@ -37,9 +37,10 @@ export async function POST(request: NextRequest) {
     }
 
     // Create segments
+    const audienceId = (audience as any).id;
     const segments = [
       {
-        audience_id: audience.id,
+        audience_id: audienceId,
         segment_type: 'primary' as const,
         construction_mode: 'extension' as const,
         provider: 'ONS',
@@ -50,7 +51,7 @@ export async function POST(request: NextRequest) {
         weight: 1,
       },
       {
-        audience_id: audience.id,
+        audience_id: audienceId,
         segment_type: 'primary' as const,
         construction_mode: 'extension' as const,
         provider: 'Experian',
@@ -61,7 +62,7 @@ export async function POST(request: NextRequest) {
         weight: 1,
       },
       {
-        audience_id: audience.id,
+        audience_id: audienceId,
         segment_type: 'primary' as const,
         construction_mode: 'extension' as const,
         provider: 'CCS',
@@ -73,20 +74,20 @@ export async function POST(request: NextRequest) {
       },
     ];
 
-    await supabase.from('audience_segments').insert(segments);
+    await supabase.from('audience_segments').insert(segments as any);
 
     // Create profile settings
     await supabase.from('audience_profile_settings').insert({
-      audience_id: audience.id,
+      audience_id: audienceId,
       scale_accuracy: 50,
       reach_mode: 'balanced',
       derived_audience_size: 5050000,
       confidence_high: 0.6,
       confidence_medium: 0.3,
       confidence_low: 0.1,
-    });
+    } as any);
 
-    return NextResponse.json({ success: true, audienceId: audience.id });
+    return NextResponse.json({ success: true, audienceId: audienceId });
   } catch (error) {
     console.error('Seed error:', error);
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });

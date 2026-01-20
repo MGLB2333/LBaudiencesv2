@@ -1,0 +1,2009 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.8 e802775f",
+  "osm3s": {
+    "timestamp_osm_base": "2026-01-20T19:12:14Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 31314249,
+  "lat": 52.5967338,
+  "lon": -0.2636747,
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "name": "Wren Kitchens",
+    "operator": "Wren",
+    "shop": "kitchen",
+    "website": "https://www.wrenkitchens.com/showrooms/peterborough"
+  }
+},
+{
+  "type": "node",
+  "id": 1251878388,
+  "lat": 51.8733937,
+  "lon": -0.3984717,
+  "tags": {
+    "addr:city": "Luton",
+    "addr:country": "GB",
+    "addr:housename": "Luton Retail Park",
+    "addr:postcode": "LU1 3JH",
+    "addr:street": "Gipsy Lane",
+    "addr:unit": "4a",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "name": "Wren Kitchens",
+    "old_name": "Carpetright",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-18:00; Su 10:00-17:00",
+    "phone": "+44 1582 853596",
+    "shop": "kitchen",
+    "website": "https://www.wrenkitchens.com/showrooms/luton"
+  }
+},
+{
+  "type": "node",
+  "id": 1291889707,
+  "lat": 52.1302769,
+  "lon": -0.4591269,
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/bedford",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 1895286875,
+  "lat": 51.6120891,
+  "lon": -0.0408871,
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 1907582977,
+  "lat": 53.7740092,
+  "lon": -2.6797285,
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/preston",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 2302958293,
+  "lat": 51.1568117,
+  "lon": 0.2874097,
+  "tags": {
+    "addr:city": "Tunbridge Wells",
+    "addr:housename": "Fountains Retail Park",
+    "addr:postcode": "TN2 3FB",
+    "addr:street": "Dowding Way",
+    "addr:unit": "6",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-Fr 09:00-20:00; We 09:00-21:00; Sa 09:00-18:00; Su 11:00-17:00",
+    "shop": "kitchen",
+    "website": "https://www.wrenkitchens.com/showrooms/tunbridge-wells"
+  }
+},
+{
+  "type": "node",
+  "id": 2712759815,
+  "lat": 57.1611948,
+  "lon": -2.1122791,
+  "tags": {
+    "addr:city": "Aberdeen",
+    "addr:postcode": "AB24 3LJ",
+    "addr:street": "Bedford Road",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo,Sa 09:00-18:00; Tu-Fr 09:00-20:00; Su 10:30-16:00",
+    "phone": "+44 1224 432025",
+    "shop": "kitchen",
+    "website": "https://www.wrenkitchens.com/showrooms/aberdeen",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2774674068,
+  "lat": 51.6186286,
+  "lon": -0.7198179,
+  "tags": {
+    "addr:city": "High Wycombe",
+    "addr:parentstreet": "Ryemead Way",
+    "addr:place": "Wycombe Retail Park",
+    "addr:postcode": "HP11 1FY",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "name": "Wren Kitchens",
+    "shop": "kitchen",
+    "website": "https://www.wrenkitchens.com/showrooms/high-wycombe"
+  }
+},
+{
+  "type": "node",
+  "id": 4263402316,
+  "lat": 52.0308154,
+  "lon": -0.7663890,
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/milton_keynes",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 4317146689,
+  "lat": 51.4369909,
+  "lon": -0.0193729,
+  "tags": {
+    "addr:city": "London",
+    "addr:postcode": "SE6 2QU",
+    "addr:street": "Bromley Road",
+    "branch": "Catford Showroom",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "check_date": "2023-03-20",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/bromley",
+    "currency:GBP": "yes",
+    "level": "0",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-18:00; Su 10:30-17:00",
+    "operator": "Wren Kitchens",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "second_hand": "no",
+    "shop": "kitchen",
+    "source": "survey",
+    "stroller": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4564976056,
+  "lat": 52.4784084,
+  "lon": -2.1140021,
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 4672244268,
+  "lat": 55.0112164,
+  "lon": -1.4985621,
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "name": "Wren Kitchens",
+    "shop": "kitchen",
+    "website": "https://www.wrenkitchens.com/showrooms/north-shields",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4702134817,
+  "lat": 53.9922929,
+  "lon": -1.1019144,
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/york",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo,Tu,Th,Fr 09:00-20:00; We 09:00-21:00; Sa 09:00-18:00; Su 10:30-17:00",
+    "shop": "kitchen",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5174561472,
+  "lat": 51.7841331,
+  "lon": 0.1096866,
+  "tags": {
+    "addr:city": "Harlow",
+    "addr:postcode": "CM20 2DA",
+    "addr:street": "Edinburgh Way",
+    "addr:substreet": "Queensgate Centre",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/harlow",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 5201078926,
+  "lat": 56.1349516,
+  "lon": -3.2013861,
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/kirkcaldy",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 5221348587,
+  "lat": 51.5679634,
+  "lon": -0.2274604,
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/staples_corner",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 5647584779,
+  "lat": 56.1130612,
+  "lon": -3.9116478,
+  "tags": {
+    "addr:city": "Stirling",
+    "addr:place": "Springkerse Retail Park",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/stirling",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 5780394973,
+  "lat": 51.2895946,
+  "lon": -0.7595855,
+  "tags": {
+    "addr:postcode": "GU14 7GY",
+    "addr:street": "Solartron Road",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/farnborough",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-18:00; Su 10:30-17:00",
+    "phone": "+441252941815",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 5916003256,
+  "lat": 51.4908908,
+  "lon": 0.0228247,
+  "tags": {
+    "addr:city": "London",
+    "addr:place": "Brocklebank Retail Park",
+    "addr:postcode": "SE7 7FR",
+    "addr:street": "Brocklebank Road",
+    "addr:unit": "B",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "internet_access": "wlan",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-18:00; Su 10:30-17:00",
+    "phone": "+44 20 8090 3898",
+    "shop": "kitchen",
+    "website": "https://www.wrenkitchens.com/showrooms/greenwich"
+  }
+},
+{
+  "type": "node",
+  "id": 7117939224,
+  "lat": 51.5138552,
+  "lon": -0.6211162,
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/slough",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 7319862924,
+  "lat": 55.9356148,
+  "lon": -3.1021652,
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "check_date": "2025-07-19",
+    "name": "Wren Kitchens",
+    "shop": "kitchen",
+    "website": "https://www.wrenkitchens.com/showrooms/fort-kinnaird-edinburgh"
+  }
+},
+{
+  "type": "node",
+  "id": 7821421249,
+  "lat": 53.6577722,
+  "lon": -1.7678950,
+  "tags": {
+    "access": "customers",
+    "addr:city": "Huddersfield",
+    "addr:postcode": "HD1 6PF",
+    "addr:street": "Leeds Road",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/huddersfield",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 7838072378,
+  "lat": 52.3019162,
+  "lon": -0.6184469,
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/rushden_lakes",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 7928470858,
+  "lat": 51.5692189,
+  "lon": -2.9990612,
+  "tags": {
+    "addr:city": "Newport",
+    "addr:country": "GB",
+    "addr:housenumber": "Unit 8",
+    "addr:parentstreet": "Docks Way",
+    "addr:place": "28 East Retail Park",
+    "addr:postcode": "NP20 2NW",
+    "addr:suburb": "Maesglas",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/newport",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-18:00; Su 10:30-17:00",
+    "phone": "+44 1633 740 386",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 8042220898,
+  "lat": 53.5316404,
+  "lon": -1.1549881,
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "name": "Wren Kitchens",
+    "shop": "kitchen",
+    "website": "https://www.wrenkitchens.com/showrooms/doncaster"
+  }
+},
+{
+  "type": "node",
+  "id": 8118166418,
+  "lat": 53.5456810,
+  "lon": -1.0805933,
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 8556243594,
+  "lat": 55.9050047,
+  "lon": -4.3767174,
+  "tags": {
+    "addr:city": "Glasgow",
+    "addr:housename": "Great Western Retail Park",
+    "addr:postcode": "G15 6RX",
+    "addr:street": "Allerdyce Road",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-18:00; Su 10:30-17:00",
+    "phone": "+44 141 611 9503",
+    "shop": "kitchen",
+    "website": "https://www.wrenkitchens.com/showrooms/glasgow"
+  }
+},
+{
+  "type": "node",
+  "id": 8829029362,
+  "lat": 55.8596736,
+  "lon": -4.4170678,
+  "tags": {
+    "addr:city": "Paisley",
+    "addr:country": "GB",
+    "addr:housename": "Abbotsinch Shopping Park",
+    "addr:postcode": "PA3 4EP",
+    "addr:street": "Washington Road",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "name": "Wren Kitchens",
+    "shop": "kitchen",
+    "website": "https://www.wrenkitchens.com/showrooms/paisley"
+  }
+},
+{
+  "type": "node",
+  "id": 8922963425,
+  "lat": 54.7807508,
+  "lon": -1.5362676,
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/durham",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 9280799414,
+  "lat": 50.7090573,
+  "lon": -3.5372047,
+  "tags": {
+    "addr:city": "Exeter",
+    "addr:housename": "Stone Lane Retail Park",
+    "addr:postcode": "EX2 8LH",
+    "addr:street": "Marsh Barton Road",
+    "addr:unit": "1",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-18:00; Su 10:30-17:00",
+    "phone": "+44 1392 770007",
+    "shop": "kitchen",
+    "website": "https://www.wrenkitchens.com/showrooms/exeter"
+  }
+},
+{
+  "type": "node",
+  "id": 9906315045,
+  "lat": 55.4800786,
+  "lon": -4.5935109,
+  "tags": {
+    "addr:city": "Ayr",
+    "addr:parentstreet": "Liberator Drive",
+    "addr:place": "Heathfield Retail Park",
+    "addr:postcode": "KA8 9BF",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-18:00; Su 10:30-17:00",
+    "shop": "kitchen",
+    "website": "https://www.wrenkitchens.com/showrooms/ayr"
+  }
+},
+{
+  "type": "node",
+  "id": 9914270611,
+  "lat": 53.7269127,
+  "lon": -0.3778123,
+  "tags": {
+    "addr:city": "Hull",
+    "addr:postcode": "HU3 4SA",
+    "addr:street": "St Andrews Quay",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "name": "Wren Kitchens",
+    "shop": "kitchen",
+    "source:addr:postcode": "code-point_open",
+    "website": "https://www.wrenkitchens.com/showrooms/hull"
+  }
+},
+{
+  "type": "node",
+  "id": 10184201076,
+  "lat": 56.3988395,
+  "lon": -3.4415416,
+  "tags": {
+    "addr:city": "Perth",
+    "addr:place": "St Catherine's Retail Park",
+    "addr:postcode": "PH1 5XA",
+    "addr:unit": "8A",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/perth",
+    "name": "Wren Kitchens",
+    "phone": "+44 1738 338003",
+    "shop": "kitchen",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10651728850,
+  "lat": 53.4435319,
+  "lon": -2.7321743,
+  "tags": {
+    "addr:city": "St Helens",
+    "addr:postcode": "WA9 1JF",
+    "addr:street": "Milverny Way",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "check_date": "2023-02-12",
+    "name": "Wren Kitchens",
+    "shop": "kitchen",
+    "source:addr:postcode": "ons_uprn_lookup",
+    "website": "https://www.wrenkitchens.com/showrooms/st-helens"
+  }
+},
+{
+  "type": "node",
+  "id": 10739351619,
+  "lat": 55.8362588,
+  "lon": -4.0829120,
+  "tags": {
+    "addr:city": "Uddingston",
+    "addr:postcode": "G71 5PR",
+    "addr:street": "Rannoch Road",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 11382053824,
+  "lat": 51.4181943,
+  "lon": -0.9748315,
+  "tags": {
+    "addr:postcode": "RG2 0GG",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "check_date:opening_hours": "2022-05-11",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/reading",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-18:00; Su 10:30-17:00",
+    "phone": "+441189 144599",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 12878637844,
+  "lat": 53.4614083,
+  "lon": -2.2833571,
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "node",
+  "id": 13322888922,
+  "lat": 54.6580875,
+  "lon": -5.9258188,
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 28498321,
+  "center": {
+    "lat": 51.3981275,
+    "lon": 0.1141843
+  },
+  "tags": {
+    "addr:city": "Orpington",
+    "addr:postcode": "BR5 3SG",
+    "addr:street": "Sevenoaks Way",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "retail",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/orpington",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-18:00; Su 11:00-17:00",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 42867746,
+  "center": {
+    "lat": 52.2069222,
+    "lon": 0.1461700
+  },
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:country": "GB",
+    "addr:place": "Beehive Centre",
+    "addr:postcode": "CB1 3ET",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "retail",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 50734666,
+  "center": {
+    "lat": 56.4807163,
+    "lon": -2.9948149
+  },
+  "tags": {
+    "addr:city": "Dundee",
+    "addr:housename": "Kingsway West Retail Park",
+    "addr:postcode": "DD3 8RX",
+    "addr:street": "Clepington Road",
+    "addr:unit": "2",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "retail",
+    "check_date": "2025-08-22",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/dundee",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-18:00; Su 10:30-17:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+44 1382 281333",
+    "ref:GB:uprn": "9059077676",
+    "shop": "kitchen",
+    "source": "yahoo",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 56248587,
+  "center": {
+    "lat": 53.5852256,
+    "lon": -2.4262144
+  },
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "yes",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/bolton",
+    "name": "Wren Kitchens",
+    "ref:GB:uprn": "100012551995",
+    "shop": "kitchen",
+    "source": "OS_OpenData_StreetView"
+  }
+},
+{
+  "type": "way",
+  "id": 62142388,
+  "center": {
+    "lat": 51.7344482,
+    "lon": -0.4628307
+  },
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "yes",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/hemel_hempstead",
+    "name": "Wren Kitchens",
+    "shop": "kitchen",
+    "source": "Yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 95511649,
+  "center": {
+    "lat": 54.9233035,
+    "lon": -1.6167739
+  },
+  "tags": {
+    "addr:postcode": "NE11 0BD",
+    "addr:unit": "17",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "retail",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/gateshead",
+    "name": "Wren Kitchens",
+    "old_name": "Halfords",
+    "shop": "kitchen",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 96034512,
+  "center": {
+    "lat": 53.7602726,
+    "lon": -2.4474750
+  },
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "yes",
+    "check_date": "2024-09-15",
+    "check_date:opening_hours": "2024-09-15",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-We 10:00-19:00; Th 10:00-20:00; Fr 10:00-19:00; Sa 09:00-18:00; Su 11:00-17:00",
+    "phone": "+44 1254 924848",
+    "shop": "kitchen",
+    "website": "https://www.dreams.co.uk/store/blackburn"
+  }
+},
+{
+  "type": "way",
+  "id": 97085958,
+  "center": {
+    "lat": 53.6785278,
+    "lon": -1.5050606
+  },
+  "tags": {
+    "addr:city": "Wakefield",
+    "addr:housename": "Westgate Retail And Leisure Park",
+    "addr:postcode": "WF2 9SD",
+    "addr:street": "Ings Road",
+    "addr:unit": "1",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building": "yes",
+    "name": "Wren Kitchens",
+    "shop": "kitchen",
+    "source": "survey;Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 105885236,
+  "center": {
+    "lat": 52.0338231,
+    "lon": 1.2078746
+  },
+  "tags": {
+    "addr:city": "Ipswich",
+    "addr:postcode": "IP3 9SN",
+    "addr:street": "The Sandlings",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "retail",
+    "name": "Wren Kitchens",
+    "shop": "kitchen",
+    "website": "https://www.wrenkitchens.com/showrooms/ipswich"
+  }
+},
+{
+  "type": "way",
+  "id": 114432368,
+  "center": {
+    "lat": 51.8921330,
+    "lon": -0.1971800
+  },
+  "tags": {
+    "addr:city": "Stevenage",
+    "addr:postcode": "SG1 1XN",
+    "addr:street": "Great North Road",
+    "addr:substreet": "9Yards Stevenage",
+    "addr:town": "Stevenage",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "retail",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-18:00; Su 10:30-17:00",
+    "operator": "Wren Kitchens",
+    "phone": "+44 1438 518846",
+    "shop": "kitchen",
+    "source": "local knowledge;Official Website",
+    "website": "https://www.wrenkitchens.com/showrooms/stevenage"
+  }
+},
+{
+  "type": "way",
+  "id": 132626913,
+  "center": {
+    "lat": 52.6464086,
+    "lon": 1.3253399
+  },
+  "tags": {
+    "addr:city": "Norwich",
+    "addr:country": "GB",
+    "addr:postcode": "NR7 9AZ",
+    "addr:street": "ClothesShoes",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "yes",
+    "name": "Wren Kitchens",
+    "ref:GB:uprn": "200004284462",
+    "shop": "kitchen",
+    "source": "Bing",
+    "website": "https://www.wrenkitchens.com/showrooms/norwich"
+  }
+},
+{
+  "type": "way",
+  "id": 135478343,
+  "center": {
+    "lat": 50.7377935,
+    "lon": -1.9876751
+  },
+  "tags": {
+    "addr:postcode": "BH15 3BZ",
+    "addr:street": "Fleets Lane",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building": "yes",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/poole",
+    "name": "Wren Kitchens",
+    "old_name": "Comet",
+    "operator": "Wren Living Ltd",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 143691380,
+  "center": {
+    "lat": 51.4873618,
+    "lon": 0.2763832
+  },
+  "tags": {
+    "addr:city": "West Thurrock",
+    "addr:postcode": "RM20 1WN",
+    "addr:street": "Lakeside Retail Park",
+    "air_conditioning": "yes",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building": "retail",
+    "building:levels": "2",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/lakeside",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Wren Kitchens",
+    "nohousenumber": "yes",
+    "opening_hours": "Mo-Tu 09:00-21:00; We 09:00-22:00; Th-Fr 09:00-20:00; Sa 09:00-18:00; Su 11:00-17:00",
+    "phone": "+44 1708 209209",
+    "roof:levels": "0",
+    "shop": "kitchen",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 148050724,
+  "center": {
+    "lat": 52.5175256,
+    "lon": -1.8036516
+  },
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building": "retail",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/erdington",
+    "name": "Wren Kitchens",
+    "shop": "kitchen",
+    "source": "bing"
+  }
+},
+{
+  "type": "way",
+  "id": 161656154,
+  "center": {
+    "lat": 50.2651544,
+    "lon": -5.0966245
+  },
+  "tags": {
+    "addr:city": "Truro",
+    "addr:country": "GB",
+    "addr:county": "Cornwall",
+    "addr:parentstreet": "Oak Lane",
+    "addr:postcode": "TR1 3LN",
+    "addr:street": "Treliske Retail Park",
+    "addr:unit": "2",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "retail",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-18:00; Su 10:30-17:00",
+    "shop": "kitchen",
+    "website": "https://www.wrenkitchens.com/showrooms/truro"
+  }
+},
+{
+  "type": "way",
+  "id": 172516096,
+  "center": {
+    "lat": 54.5757522,
+    "lon": -1.2764333
+  },
+  "tags": {
+    "addr:city": "Stockton-on-Tees",
+    "addr:postcode": "TS18 2RB",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "yes",
+    "building:levels": "1",
+    "building:use": "shop",
+    "name": "Wren Kitchens",
+    "old_name": "Michael O'Connor - Furniture Shop",
+    "roof:shape": "hipped",
+    "shop": "kitchen",
+    "source": "local_knowledge",
+    "source:geometry": "Bing",
+    "website": "https://www.wrenkitchens.com/showrooms/stockton"
+  }
+},
+{
+  "type": "way",
+  "id": 184637232,
+  "center": {
+    "lat": 53.5727267,
+    "lon": -0.0816383
+  },
+  "tags": {
+    "addr:city": "Grimsby",
+    "addr:hamlet": "High Point Retail Park",
+    "addr:postcode": "DN31 1TY",
+    "addr:street": "Victoria Street North",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "yes",
+    "check_date": "2025-01-10",
+    "name": "Wren Kitchens",
+    "old_name": "Carpetright",
+    "opening_hours": "Mo-Sa 09:00-20:00; Su 10:30-17:00",
+    "operator": "Wren Kitchens",
+    "shop": "kitchen",
+    "website": "https://www.wrenkitchens.com/showrooms/grimsby"
+  }
+},
+{
+  "type": "way",
+  "id": 191973284,
+  "center": {
+    "lat": 50.9058443,
+    "lon": -1.4136740
+  },
+  "tags": {
+    "addr:city": "Southampton",
+    "addr:postcode": "SO15 1QJ",
+    "addr:street": "Western Esplanade",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "yes",
+    "check_date": "2024-04-03",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-18:00; Su 10:30-17:00",
+    "shop": "kitchen",
+    "source:addr:postcode": "code-point_open"
+  }
+},
+{
+  "type": "way",
+  "id": 203009413,
+  "center": {
+    "lat": 53.7877314,
+    "lon": -1.5414813
+  },
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building": "retail",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/leeds",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 208043812,
+  "center": {
+    "lat": 50.8345768,
+    "lon": -0.3661782
+  },
+  "tags": {
+    "addr:city": "Worthing",
+    "addr:postcode": "BN14 9LA",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "retail",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/worthing",
+    "name": "Wren Kitchens",
+    "ref:GB:uprn": "100062234238",
+    "shop": "kitchen",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 219899178,
+  "center": {
+    "lat": 51.8748217,
+    "lon": -2.2467721
+  },
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "yes",
+    "check_date": "2023-02-11",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/gloucester",
+    "name": "Wren Kitchens",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "shop": "kitchen",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 229406459,
+  "center": {
+    "lat": 53.4436701,
+    "lon": -1.3436894
+  },
+  "tags": {
+    "addr:city": "Rotherham",
+    "addr:housename": "Retail World",
+    "addr:postcode": "S60 1TG",
+    "addr:street": "Stadium Way",
+    "addr:suburb": "Parkgate",
+    "addr:unit": "4B",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Outfit (retailer)",
+    "building": "retail",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 231834223,
+  "center": {
+    "lat": 53.3746767,
+    "lon": -1.4641538
+  },
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building": "yes",
+    "fixme": "Has store moved? Address on website at https://www.wrenkitchens.com/showrooms/sheffield doesn't match this location.",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 236417136,
+  "center": {
+    "lat": 52.9448537,
+    "lon": -1.1596217
+  },
+  "tags": {
+    "addr:city": "Nottingham",
+    "addr:place": "Castle Marina Retail Park",
+    "addr:postcode": "NG7 1GX",
+    "addr:street": "Castle Bridge Road",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building": "retail",
+    "name": "Wren Kitchens",
+    "old_name": "Comet",
+    "old_shop": "electrical",
+    "ref:GB:uprn": "100032287969",
+    "shop": "kitchen",
+    "source": "Yahoo; Bing",
+    "source:postcode": "ONS"
+  }
+},
+{
+  "type": "way",
+  "id": 255459754,
+  "center": {
+    "lat": 52.3982630,
+    "lon": -1.8184297
+  },
+  "tags": {
+    "addr:city": "Solihull",
+    "addr:postcode": "B90 4BP",
+    "addr:street": "Stratford Road",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building": "retail",
+    "name": "Wren Kitchens",
+    "shop": "kitchen",
+    "source": "OS_OpenData_StreetView"
+  }
+},
+{
+  "type": "way",
+  "id": 261876972,
+  "center": {
+    "lat": 51.7319725,
+    "lon": 0.4938185
+  },
+  "tags": {
+    "addr:city": "Chelmsford",
+    "addr:housename": "Chelmer Village Retail Park",
+    "addr:postcode": "CM2 6XE",
+    "addr:street": "Chelmer Village Way",
+    "addr:unit": "A2",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building:part": "yes",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/chelmsford",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-Tu,Th-Fr 09:00-20:00; We 09:00-22:00; Sa 09:00-18:00; Su 11:00-17:00",
+    "opening_hours:covid19": "off",
+    "phone": "+44 1245 200903",
+    "shop": "kitchen",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 266741779,
+  "center": {
+    "lat": 52.2102014,
+    "lon": -2.2013982
+  },
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "yes",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 290220852,
+  "center": {
+    "lat": 52.6276302,
+    "lon": -1.7020064
+  },
+  "tags": {
+    "addr:city": "Tamworth",
+    "addr:housename": "Ventura Retail Park",
+    "addr:postcode": "B78 3JD",
+    "addr:street": "Ventura Park Road",
+    "addr:unit": "3",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "retail",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/tamworth",
+    "name": "Wren Kitchens",
+    "ref:GB:uprn": "394031270",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 296042668,
+  "center": {
+    "lat": 53.7670213,
+    "lon": -0.3286150
+  },
+  "tags": {
+    "addr:city": "Hull",
+    "addr:housename": "Stoneferry Retail Park",
+    "addr:postcode": "HU7 0BE",
+    "addr:street": "Stoneferry Road",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "yes",
+    "contact:phone": "+44 1482 810 026",
+    "fixme": "Has store moved? Address on website at http://www.wrenliving.com/stores/hull doesn't match this location.",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-Fr 09:00-20:00,Sa 09:00-18:00,Su 10:30-17:00",
+    "ref:GB:uprn": "21137449",
+    "shop": "furniture"
+  }
+},
+{
+  "type": "way",
+  "id": 296725062,
+  "center": {
+    "lat": 55.9256869,
+    "lon": -3.3060189
+  },
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building": "retail",
+    "check_date": "2025-02-16",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/edinburgh",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-18:00; Su 10:30-17:00",
+    "shop": "kitchen",
+    "source": "survey",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 299904388,
+  "center": {
+    "lat": 51.2940698,
+    "lon": 0.4697296
+  },
+  "tags": {
+    "addr:city": "Maidstone",
+    "addr:country": "GB",
+    "addr:postcode": "ME20 7TP",
+    "addr:street": "London Road",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "commercial",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 304653938,
+  "center": {
+    "lat": 51.6493682,
+    "lon": -0.3846458
+  },
+  "tags": {
+    "addr:city": "Watford",
+    "addr:postcode": "WD17 2JZ",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "yes",
+    "name": "Wren Kitchens",
+    "ref:GB:uprn": "10008853826",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 313090090,
+  "center": {
+    "lat": 52.2393208,
+    "lon": 0.7404538
+  },
+  "tags": {
+    "addr:postcode": "IP32 7BT",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "yes",
+    "check_date": "2024-09-04",
+    "name": "Wren Kitchens",
+    "old_name": "Carpetright",
+    "shop": "kitchen",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 316688355,
+  "center": {
+    "lat": 51.5209278,
+    "lon": 0.0706085
+  },
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:postcode": "E6 6LG",
+    "addr:street": "Claps Gate Lane",
+    "addr:substreet": "Gateway Retail Park",
+    "addr:suburb": "Beckton",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building": "retail",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/beckton",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo,Tu,Th,Fr 09:00-20:00; We 09:00-21:00; Sa 09:00-18:00; Su 10:30-17:00",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 317802777,
+  "center": {
+    "lat": 51.8846397,
+    "lon": 0.8347703
+  },
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "retail",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/colchester",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 366946138,
+  "center": {
+    "lat": 51.5255403,
+    "lon": -2.6009236
+  },
+  "tags": {
+    "addr:city": "Bristol",
+    "addr:postcode": "BS34 5TX",
+    "addr:street": "Lysander Road",
+    "addr:suburb": "Cribbs Causeway",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "yes",
+    "name": "Wren Kitchens",
+    "shop": "kitchen",
+    "website": "https://www.wrenkitchens.com/showrooms/bristol-cribbs-causeway"
+  }
+},
+{
+  "type": "way",
+  "id": 369342801,
+  "center": {
+    "lat": 52.3907616,
+    "lon": -2.2562207
+  },
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "yes",
+    "name": "Wren Kitchens",
+    "shop": "kitchen",
+    "source": "survey",
+    "website": "https://www.facebook.com/OakClearanceKidderminster/"
+  }
+},
+{
+  "type": "way",
+  "id": 514000181,
+  "center": {
+    "lat": 53.4000142,
+    "lon": -2.3574540
+  },
+  "tags": {
+    "addr:city": "Altrincham",
+    "addr:postcode": "WA14 5GR",
+    "addr:street": "George Richards Way",
+    "addr:unit": "9",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building": "yes",
+    "name": "Wren Kitchens",
+    "ref:GB:uprn": "100012799801;10070492374",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 529562285,
+  "center": {
+    "lat": 52.2308677,
+    "lon": -0.9063999
+  },
+  "tags": {
+    "addr:city": "Northampton",
+    "addr:country": "GB",
+    "addr:postcode": "NN1 1ET",
+    "addr:street": "Towcester Road",
+    "addr:suburb": "Nene Valley Retail Park",
+    "addr:unit": "4",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "yes",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 549429897,
+  "center": {
+    "lat": 51.6545188,
+    "lon": -0.0581358
+  },
+  "tags": {
+    "addr:housenumber": "Unit 2",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "yes",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 551074784,
+  "center": {
+    "lat": 53.7460873,
+    "lon": -1.6425139
+  },
+  "tags": {
+    "addr:city": "Batley",
+    "addr:housename": "Unit 9",
+    "addr:postcode": "WF17 9LX",
+    "addr:street": "Holden Ing Way",
+    "addr:suburb": "Birstall",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building": "yes",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-Fr 10:00-20:00; Sa 10:00-18:00; Su 10:30-17:00",
+    "operator": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 565146563,
+  "center": {
+    "lat": 52.9409357,
+    "lon": -1.4651557
+  },
+  "tags": {
+    "addr:city": "Derby",
+    "addr:housenumber": "2B",
+    "addr:place": "The Meteor Centre",
+    "addr:postcode": "DE21 4SY",
+    "addr:street": "Mansfield Road",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "retail",
+    "name": "Wren Kitchens",
+    "shop": "kitchen",
+    "website": "https://www.wrenkitchens.com"
+  }
+},
+{
+  "type": "way",
+  "id": 586044279,
+  "center": {
+    "lat": 53.1974000,
+    "lon": -2.9138458
+  },
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building": "retail",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/chester",
+    "height": "11.09",
+    "height:median": "8.87",
+    "name": "Wren Kitchens",
+    "ref:GB:uprn": "10012217930",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 589008555,
+  "center": {
+    "lat": 51.5822564,
+    "lon": 0.1669887
+  },
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "yes",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/romford",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 592451190,
+  "center": {
+    "lat": 52.0654077,
+    "lon": -2.7166095
+  },
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "retail",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 601285466,
+  "center": {
+    "lat": 54.6581049,
+    "lon": -5.9258191
+  },
+  "tags": {
+    "addr:city": "Newtownabbey",
+    "addr:housename": "Abbey Retail Park",
+    "addr:postcode": "BT36 7LB",
+    "addr:street": "Church Road",
+    "branch": "Newtownabbey",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "retail",
+    "check_date": "2025-11-04",
+    "currency:GBP": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Wren Kitchens",
+    "operator": "Wren",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+44 28 9568 5994",
+    "shop": "kitchen",
+    "smoking": "no",
+    "start_date": "2025-12-19",
+    "website": "https://www.wrenkitchens.com/showrooms/newtonabbey",
+    "wikipedia": "en:Wren Kitchens"
+  }
+},
+{
+  "type": "way",
+  "id": 651632921,
+  "center": {
+    "lat": 50.8178674,
+    "lon": -1.0552885
+  },
+  "tags": {
+    "addr:city": "Portsmouth",
+    "addr:country": "GB",
+    "addr:county": "Hampshire",
+    "addr:housename": "Ocean Retail Park",
+    "addr:postcode": "PO3 5NP",
+    "addr:street": "Burrfields Road",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building:part": "yes",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/portsmouth",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 715345153,
+  "center": {
+    "lat": 51.5583509,
+    "lon": -1.8129630
+  },
+  "tags": {
+    "addr:city": "Swindon",
+    "addr:parentstreet": "Great Western Way",
+    "addr:postcode": "SN5 7YF",
+    "addr:street": "Ashworth Road",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building": "retail",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/swindon",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-Tu 09:00-20:00; We 09:00-21:00; Th-Fr 09:00-20:00; Sa 09:00-18:00; Su 10:30-17:00",
+    "phone": "+44 1793 683528",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 732086173,
+  "center": {
+    "lat": 53.0264314,
+    "lon": -2.1867674
+  },
+  "tags": {
+    "addr:city": "Stoke-on-Trent",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building": "yes",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/stoke",
+    "name": "Wren Kitchens",
+    "shop": "kitchen",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 756036550,
+  "center": {
+    "lat": 52.6367849,
+    "lon": -1.1217190
+  },
+  "tags": {
+    "addr:city": "Leicester",
+    "addr:housename": "Unit 10a, St Georges Retail Park",
+    "addr:postcode": "LE1 1SG",
+    "addr:street": "St Georges Way",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building": "retail",
+    "building:levels": "1",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/leicester",
+    "height": "8.5",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-Tu 10:00-20:00; We 10:00-21:00; Th,Fr 09:00-20:00; Sa 09:00-18:00; Su 10:30-17:00",
+    "operator": "St George's Retail Park",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 757320813,
+  "center": {
+    "lat": 52.7388020,
+    "lon": -2.7196740
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:postcode": "SY1 4YA",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "commercial",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/shrewsbury",
+    "name": "Wren Kitchens",
+    "ref:GB:uprn": "200000122777",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 821889835,
+  "center": {
+    "lat": 50.7852402,
+    "lon": 0.3066796
+  },
+  "tags": {
+    "addr:city": "Eastbourne",
+    "addr:postcode": "BN22 7SG",
+    "addr:street": "Lottbridge Drove",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building": "yes",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/eastbourne",
+    "layer": "1",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-Tu 10:00-20:00; We-Sa 10:00-18:00; Su 10:30-17:00",
+    "phone": "+44 1323660003",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 886050639,
+  "center": {
+    "lat": 51.3621935,
+    "lon": 1.3954089
+  },
+  "tags": {
+    "addr:city": "Broadstairs",
+    "addr:parentstreet": "Westwood Road",
+    "addr:postcode": "CT10 2FG",
+    "addr:street": "Westwood Retail Park",
+    "addr:suburb": "Westwood",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/broadstairs",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-18:00; Su 10:30-17:00",
+    "shop": "kitchen",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 891439426,
+  "center": {
+    "lat": 50.3928259,
+    "lon": -4.0871223
+  },
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "yes",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/plymouth",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 937806532,
+  "center": {
+    "lat": 52.0743078,
+    "lon": -1.3419390
+  },
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building": "yes",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/banbury",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 959611596,
+  "center": {
+    "lat": 51.2471292,
+    "lon": -0.5783418
+  },
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "retail",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 962278127,
+  "center": {
+    "lat": 53.4113497,
+    "lon": -2.5988644
+  },
+  "tags": {
+    "addr:city": "Warrington",
+    "addr:housename": "Junction NINE Retail Park",
+    "addr:postcode": "WA2 8TW",
+    "addr:street": "Winwick Road",
+    "air_conditioning": "yes",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building": "yes",
+    "contact:phone": "+44 1925 591000",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/warrington",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Wren Kitchens",
+    "old_name": "Mothercare",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-18:00; Su 10:30-17:00",
+    "pets_allowed": "yes",
+    "shop": "kitchen",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1013734104,
+  "center": {
+    "lat": 51.2519117,
+    "lon": -1.1075871
+  },
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building": "yes",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/basingstoke",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 1042950152,
+  "center": {
+    "lat": 51.5813684,
+    "lon": 0.4433743
+  },
+  "tags": {
+    "addr:city": "Basildon",
+    "addr:postcode": "SS14 3AF",
+    "addr:street": "Miles Gray Road",
+    "addr:unit": "D2",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building:part": "retail",
+    "check_date": "2025-07-08",
+    "contact:website": "https://www.wrenkitchens.com/showrooms/basildon",
+    "name": "Wren Kitchens",
+    "opening_hours": "Mo,Th-Fr 09:00-20:00; Tu-We 09:00-21:00; Sa 09:00-18:00; Su 10:30-17:00",
+    "phone": "+44 1268 921846",
+    "shop": "kitchen",
+    "website": "https://www.wrenkitchens.com"
+  }
+},
+{
+  "type": "way",
+  "id": 1090620843,
+  "center": {
+    "lat": 53.6853703,
+    "lon": -0.4084093
+  },
+  "tags": {
+    "addr:city": "Barton-upon-Humber",
+    "addr:postcode": "DN18 6BP",
+    "building": "industrial",
+    "name": "Wren Kitchens",
+    "operator": "Wren Kitchens",
+    "ref:GB:uprn": "10095555991"
+  }
+},
+{
+  "type": "way",
+  "id": 1113719031,
+  "center": {
+    "lat": 54.9297467,
+    "lon": -2.9490141
+  },
+  "tags": {
+    "addr:city": "Carlisle",
+    "addr:postcode": "CA3 0GW",
+    "addr:street": "Parkhouse Road",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "retail",
+    "name": "Wren Kitchens",
+    "ref:GB:uprn": "10008715873",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 1116500309,
+  "center": {
+    "lat": 53.4768791,
+    "lon": -2.1267204
+  },
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "brand:wikipedia": "en:Wren Kitchens",
+    "building": "yes",
+    "name": "Wren Kitchens",
+    "shop": "kitchen",
+    "website": "https://www.wrenkitchens.com/showrooms/ashton"
+  }
+},
+{
+  "type": "way",
+  "id": 1200702409,
+  "center": {
+    "lat": 53.5586991,
+    "lon": -2.1385753
+  },
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "yes",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 1288807417,
+  "center": {
+    "lat": 53.1381400,
+    "lon": -1.2035906
+  },
+  "tags": {
+    "addr:city": "Mansfield",
+    "addr:postcode": "NG18 1HA",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "retail",
+    "name": "Wren Kitchens",
+    "ref:GB:uprn": "10012813462",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 1327260615,
+  "center": {
+    "lat": 54.9104227,
+    "lon": -1.3943242
+  },
+  "tags": {
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building:part": "retail",
+    "name": "Wren Kitchens",
+    "shop": "kitchen"
+  }
+},
+{
+  "type": "way",
+  "id": 1347451243,
+  "center": {
+    "lat": 52.5262759,
+    "lon": -2.0292373
+  },
+  "tags": {
+    "addr:housename": "Site 5",
+    "addr:street": "Link 41 Business Park",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "building": "industrial",
+    "commercial": "distribution_centre",
+    "depot": "truck",
+    "industrial": "depot",
+    "name": "Wren Kitchens- Tipton Depot"
+  }
+},
+{
+  "type": "relation",
+  "id": 6913291,
+  "center": {
+    "lat": 51.6566365,
+    "lon": -3.9037758
+  },
+  "tags": {
+    "addr:city": "Swansea",
+    "addr:postcode": "SA7 9RF",
+    "addr:street": "Nantyffin Road",
+    "addr:unit": "1, Swansea Enterprise Park",
+    "brand": "Wren Kitchens",
+    "brand:wikidata": "Q8037744",
+    "name": "Wren Kitchens",
+    "name:cy": "Wren Kitchens",
+    "shop": "kitchen",
+    "type": "multipolygon",
+    "website": "https://www.wrenkitchens.com/showrooms/swansea"
+  }
+}
+
+  ]
+}

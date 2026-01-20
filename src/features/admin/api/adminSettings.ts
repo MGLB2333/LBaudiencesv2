@@ -45,7 +45,7 @@ export async function upsertAppSetting(key: string, value: any): Promise<AppSett
         key,
         value,
         updated_at: new Date().toISOString(),
-      },
+      } as any,
       {
         onConflict: 'key',
       }

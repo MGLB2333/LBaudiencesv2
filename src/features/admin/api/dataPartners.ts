@@ -77,8 +77,8 @@ export async function updateDataPartner(
     }
   }
   
-  const { data, error } = await supabase
-    .from('data_partners')
+  const { data, error } = await (supabase
+    .from('data_partners') as any)
     .update({
       ...finalUpdates,
       updated_at: new Date().toISOString(),
@@ -136,7 +136,7 @@ export async function syncDataPartnersFromSignals(): Promise<number> {
   if (signalsError) throw signalsError;
   
   const uniqueProviders = new Set<string>();
-  signals?.forEach(s => {
+  (signals as any[])?.forEach((s: any) => {
     if (s.provider && s.provider.trim()) {
       uniqueProviders.add(s.provider.trim());
     }
@@ -150,7 +150,7 @@ export async function syncDataPartnersFromSignals(): Promise<number> {
       .insert({
         provider_key: provider,
         display_name: provider,
-      })
+      } as any)
       .select()
       .maybeSingle();
     

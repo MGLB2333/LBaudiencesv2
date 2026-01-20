@@ -42,7 +42,7 @@ export async function createAudience(audience: {
     .insert({
       ...audience,
       user_id: user.id,
-    })
+    } as any)
     .select()
     .single();
 
@@ -50,13 +50,13 @@ export async function createAudience(audience: {
 
   // Create default profile settings
   await supabase.from('audience_profile_settings').insert({
-    audience_id: data.id,
+    audience_id: (data as any).id,
     scale_accuracy: 50,
     derived_audience_size: 5000000,
     confidence_high: 0.6,
     confidence_medium: 0.3,
     confidence_low: 0.1,
-  });
+  } as any);
 
   return data;
 }
@@ -66,8 +66,8 @@ export async function updateAudience(
   updates: Partial<Audience>
 ): Promise<Audience> {
   const supabase = createClient();
-  const { data, error } = await supabase
-    .from('audiences')
+  const { data, error } = await (supabase
+    .from('audiences') as any)
     .update(updates)
     .eq('id', id)
     .select()

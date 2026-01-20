@@ -12,6 +12,14 @@ interface BuilderState {
   selectionConfirmed: boolean;
   selectedProviders: string[]; // Non-CCS providers selected in step 2
   selectedSegmentKey: string | null; // Canonical segment key from geo_district_signals
+  tvRegions: string[]; // TV region keys for filtering map (e.g., ['london', 'stv_north'])
+  selectedPoiIds: string[]; // Selected store POI IDs (manual selection)
+  selectedPoiBrands: string[]; // Selected store POI brands (show all stores for these brands)
+  battleZonesEnabled: boolean;
+  battleZoneBaseBrand: string;
+  battleZoneCompetitorBrands: string[];
+  battleZoneRings: number;
+  activeTab: 'map' | 'tvInsights'; // Active tab in Build & Explore step
 }
 
 interface BuilderContextType {
@@ -22,6 +30,14 @@ interface BuilderContextType {
   setSelectionConfirmed: (confirmed: boolean) => void;
   setSelectedProviders: (providers: string[], keepSelectionConfirmed?: boolean) => void;
   setSelectedSegmentKey: (segmentKey: string | null) => void;
+  setTvRegions: (regions: string[]) => void;
+  setSelectedPoiIds: (poiIds: string[]) => void;
+  setSelectedPoiBrands: (brands: string[]) => void;
+  setBattleZonesEnabled: (enabled: boolean) => void;
+  setBattleZoneBaseBrand: (brand: string) => void;
+  setBattleZoneCompetitorBrands: (brands: string[]) => void;
+  setBattleZoneRings: (rings: number) => void;
+  setActiveTab: (tab: 'map' | 'tvInsights') => void;
   confirmSelection: (segmentKey: string, providers: string[]) => void; // Helper to set all selection state at once
   getAllProvidersForBuild: () => string[]; // Returns ['CCS', ...selectedProviders]
 }
@@ -38,6 +54,14 @@ export function BuilderProvider({ children, audienceId }: { children: ReactNode;
     selectionConfirmed: false,
     selectedProviders: [],
     selectedSegmentKey: null,
+    tvRegions: [],
+    selectedPoiIds: [],
+    selectedPoiBrands: [],
+    battleZonesEnabled: false,
+    battleZoneBaseBrand: '',
+    battleZoneCompetitorBrands: [],
+    battleZoneRings: 0,
+    activeTab: 'map',
   });
 
   // Track if we're on the client to prevent SSR/client mismatches
@@ -164,6 +188,74 @@ export function BuilderProvider({ children, audienceId }: { children: ReactNode;
     }));
   };
 
+  const setTvRegions = (regions: string[]) => {
+    setState(prev => {
+      // Idempotent: only update if different
+      const prevSorted = [...prev.tvRegions].sort().join(',');
+      const newSorted = [...regions].sort().join(',');
+      if (prevSorted === newSorted) return prev;
+      return { ...prev, tvRegions: regions };
+    });
+  };
+
+  const setSelectedPoiIds = (poiIds: string[]) => {
+    setState(prev => {
+      // Idempotent: only update if different
+      const prevSorted = [...prev.selectedPoiIds].sort().join(',');
+      const newSorted = [...poiIds].sort().join(',');
+      if (prevSorted === newSorted) return prev;
+      return { ...prev, selectedPoiIds: poiIds };
+    });
+  };
+
+  const setSelectedPoiBrands = (brands: string[]) => {
+    setState(prev => {
+      // Idempotent: only update if different
+      const prevSorted = [...prev.selectedPoiBrands].sort().join(',');
+      const newSorted = [...brands].sort().join(',');
+      if (prevSorted === newSorted) return prev;
+      return { ...prev, selectedPoiBrands: brands };
+    });
+  };
+
+  const setBattleZonesEnabled = (enabled: boolean) => {
+    setState(prev => {
+      if (prev.battleZonesEnabled === enabled) return prev;
+      return { ...prev, battleZonesEnabled: enabled };
+    });
+  };
+
+  const setBattleZoneBaseBrand = (brand: string) => {
+    setState(prev => {
+      if (prev.battleZoneBaseBrand === brand) return prev;
+      return { ...prev, battleZoneBaseBrand: brand };
+    });
+  };
+
+  const setBattleZoneCompetitorBrands = (brands: string[]) => {
+    setState(prev => {
+      // Idempotent: only update if different
+      const prevSorted = [...prev.battleZoneCompetitorBrands].sort().join(',');
+      const newSorted = [...brands].sort().join(',');
+      if (prevSorted === newSorted) return prev;
+      return { ...prev, battleZoneCompetitorBrands: brands };
+    });
+  };
+
+  const setBattleZoneRings = (rings: number) => {
+    setState(prev => {
+      if (prev.battleZoneRings === rings) return prev;
+      return { ...prev, battleZoneRings: rings };
+    });
+  };
+
+  const setActiveTab = (tab: 'map' | 'tvInsights') => {
+    setState(prev => {
+      if (prev.activeTab === tab) return prev;
+      return { ...prev, activeTab: tab };
+    });
+  };
+
   const getAllProvidersForBuild = (): string[] => {
     // Always include CCS, then selected providers
     return ['CCS', ...state.selectedProviders];
@@ -179,10 +271,17 @@ export function BuilderProvider({ children, audienceId }: { children: ReactNode;
         setSelectionConfirmed,
         setSelectedProviders,
         setSelectedSegmentKey,
+        setTvRegions,
+        setSelectedPoiIds,
+        setSelectedPoiBrands,
+        setBattleZonesEnabled,
+        setBattleZoneBaseBrand,
+        setBattleZoneCompetitorBrands,
+        setBattleZoneRings,
+        setActiveTab,
         confirmSelection,
         getAllProvidersForBuild,
       }}
-      suppressHydrationWarning
     >
       <div suppressHydrationWarning>
         {children}
@@ -205,6 +304,14 @@ export function useBuilderContext(): BuilderContextType {
           selectionConfirmed: false,
           selectedProviders: [],
           selectedSegmentKey: null,
+          tvRegions: [],
+          selectedPoiIds: [],
+          selectedPoiBrands: [],
+          battleZonesEnabled: false,
+          battleZoneBaseBrand: '',
+          battleZoneCompetitorBrands: [],
+          battleZoneRings: 0,
+          activeTab: 'map',
         },
         setConstructionMode: () => {},
         setValidationMinAgreement: () => {},
@@ -212,6 +319,14 @@ export function useBuilderContext(): BuilderContextType {
         setSelectionConfirmed: () => {},
         setSelectedProviders: () => {},
         setSelectedSegmentKey: () => {},
+        setTvRegions: () => {},
+        setSelectedPoiIds: () => {},
+        setSelectedPoiBrands: () => {},
+        setBattleZonesEnabled: () => {},
+        setBattleZoneBaseBrand: () => {},
+        setBattleZoneCompetitorBrands: () => {},
+        setBattleZoneRings: () => {},
+        setActiveTab: () => {},
         confirmSelection: () => {},
         getAllProvidersForBuild: () => ['CCS'],
       };

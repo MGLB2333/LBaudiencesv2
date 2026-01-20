@@ -61,6 +61,7 @@ export function useExportContext(audienceId: string): {
   // Fetch validation results for Validation mode
   const { data: validationResults, isLoading: validationLoading } = useValidationResults({
     segmentKey: anchorKey,
+    minAgreement: 1,
     enabled: mode === 'validation',
   });
 
@@ -211,9 +212,11 @@ export function useExportContext(audienceId: string): {
     
     if (mode === 'validation' && validationResults) {
       includedCount = validationResults.totals.districtsIncluded;
-      estimatedHouseholds = includedCount * 2500;
+      // Use real household sum from validationResults (now includes estimatedHouseholds in totals)
+      estimatedHouseholds = validationResults.totals.estimatedHouseholds || includedCount * 2500;
     } else if (mode === 'extension' && providerImpact) {
       includedCount = providerImpact.totals.includedDistricts;
+      // Use real household sum from providerImpact (already updated to sum real households)
       estimatedHouseholds = providerImpact.totals.estimatedHouseholds;
     }
 

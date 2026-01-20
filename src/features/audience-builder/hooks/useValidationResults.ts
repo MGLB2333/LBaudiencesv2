@@ -2,30 +2,35 @@ import { useQuery } from '@tanstack/react-query';
 import { getValidationResults, ValidationResults } from '../api/validationResults';
 
 /**
- * Fetch validation results once per segment build.
- * Query key does NOT include minAgreement - data is fetched once and filtered client-side.
+ * Fetch validation results for a segment with specific filters.
+ * Query key includes minAgreement so results refetch when slider changes.
  */
 export function useValidationResults({
   segmentKey,
+  minAgreement,
   providers,
+  tvRegions,
   enabled = true,
 }: {
   segmentKey: string;
+  minAgreement: number;
   providers?: string[];
+  tvRegions?: string[];
   enabled?: boolean;
 }) {
   // Stable providers key for query key
   const providersKey = providers ? providers.sort().join('|') : '';
+  // Stable tvRegions key (sorted for consistency)
+  const tvRegionsKey = tvRegions && tvRegions.length > 0 ? tvRegions.sort().join('|') : '';
   
   return useQuery<ValidationResults>({
-    queryKey: ['validationResults', segmentKey, providersKey], // Include providers in key
+    queryKey: ['validationResults', segmentKey, minAgreement, providersKey, tvRegionsKey], // Include minAgreement in key
     queryFn: async () => {
-      // Fetch with minAgreement=1 to get all eligible districts
-      // Client-side filtering will apply the actual minAgreement threshold
-      return await getValidationResults({ segmentKey, minAgreement: 1, providers });
+      // Fetch with actual minAgreement so estimatedHouseholds reflects the filtered district set
+      return await getValidationResults({ segmentKey, minAgreement, providers, tvRegions });
     },
-    enabled: enabled && !!segmentKey,
-    staleTime: 5 * 60 * 1000, // 5 minutes - data is stable per segment build
+    enabled: enabled && !!segmentKey && minAgreement > 0,
+    staleTime: 2 * 60 * 1000, // 2 minutes - shorter since slider changes trigger refetches
     refetchOnWindowFocus: false,
     refetchOnReconnect: false,
     refetchOnMount: true,

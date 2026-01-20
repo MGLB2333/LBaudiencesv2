@@ -54,14 +54,14 @@ export function ResultsStep({ audienceId, onNext, onBack }: ResultsStepProps) {
   const updateSegmentSelection = useUpdateSegmentSelection();
   const queryClient = useQueryClient();
   
-  const [constructionMode, setConstructionMode] = useState<ConstructionMode,>(settings?.construction_mode || 'extension');
-  const [expandedExplain, setExpandedExplain] = useState<string | null,>(null);
+  const [constructionMode, setConstructionMode] = useState<ConstructionMode>(settings?.construction_mode || 'extension');
+  const [expandedExplain, setExpandedExplain] = useState<string | null>(null);
   const [providerModalOpen, setProviderModalOpen] = useState(false);
   const [descriptionExpanded, setDescriptionExpanded] = useState(false);
   const [isRebuilding, setIsRebuilding] = useState(false);
   const [validationMinAgreement, setValidationMinAgreement] = useState(1);
-  const [geoUnits, setGeoUnits] = useState<any[],>([]);
-  const [districtsWithAgreement, setDistrictsWithAgreement] = useState<any[],>([]);
+  const [geoUnits, setGeoUnits] = useState<any[]>([]);
+  const [districtsWithAgreement, setDistrictsWithAgreement] = useState<any[]>([]);
 
   // Filter segments first (needed by useEffects below)
   const anchorSegment = segments.find(s => s.origin === 'brief' && s.provider === 'CCS');
@@ -74,6 +74,7 @@ export function ResultsStep({ audienceId, onNext, onBack }: ResultsStepProps) {
   const segmentKey = 'home_movers'; // TODO: derive from anchor segment or audience
   const { data: validationResults, isLoading: validationLoading } = useValidationResults({
     segmentKey,
+    minAgreement: validationMinAgreement,
     enabled: constructionMode === 'validation',
   });
 
@@ -109,7 +110,7 @@ export function ResultsStep({ audienceId, onNext, onBack }: ResultsStepProps) {
     if (constructionMode === 'validation' && validationResults) {
       // Filter includedDistricts by current minAgreement
       const filteredIncluded = validationResults.includedDistricts.filter(
-        district => (validationResults.agreementByDistrict[district] || 0) >= validationMinAgreement
+        districtObj => (validationResults.agreementByDistrict[districtObj.district] || 0) >= validationMinAgreement
       );
       
       // Fetch district geometries
@@ -117,19 +118,19 @@ export function ResultsStep({ audienceId, onNext, onBack }: ResultsStepProps) {
         .then((allDistricts) => {
           const districtMap = new Map(allDistricts.map(d => [d.district, d]));
           
-          const convertedUnits = filteredIncluded.map((district) => {
-            const districtGeo = districtMap.get(district);
-            const agreementCount = validationResults.agreementByDistrict[district] || 0;
+          const convertedUnits = filteredIncluded.map((districtObj) => {
+            const districtGeo = districtMap.get(districtObj.district);
+            const agreementCount = validationResults.agreementByDistrict[districtObj.district] || 0;
             // Use a default confidence based on agreement ratio
             const avgConfidence = validationResults.totals.contributingProvidersCount > 0
               ? agreementCount / validationResults.totals.contributingProvidersCount
               : 0;
             
             return {
-              id: `district_${district}`,
+              id: `district_${districtObj.district}`,
               audience_id: audienceId,
               geo_type: 'postcode_sector' as const,
-              geo_id: district,
+              geo_id: districtObj.district,
               score: avgConfidence * 100,
               confidence_tier: avgConfidence >= 0.7 ? 'high' : avgConfidence >= 0.4 ? 'medium' : 'low',
               drivers: {
@@ -142,13 +143,13 @@ export function ResultsStep({ audienceId, onNext, onBack }: ResultsStepProps) {
             };
           });
           setGeoUnits(convertedUnits);
-          setDistrictsWithAgreement(filteredIncluded.map(district => {
-            const agreementCount = validationResults.agreementByDistrict[district] || 0;
+          setDistrictsWithAgreement(filteredIncluded.map(districtObj => {
+            const agreementCount = validationResults.agreementByDistrict[districtObj.district] || 0;
             const avgConfidence = validationResults.totals.contributingProvidersCount > 0
               ? agreementCount / validationResults.totals.contributingProvidersCount
               : 0;
             return {
-              district,
+              district: districtObj.district,
               centroid_lat: 0, // Will be filled from geo_districts
               centroid_lng: 0,
               geometry: null,
@@ -170,7 +171,7 @@ export function ResultsStep({ audienceId, onNext, onBack }: ResultsStepProps) {
   }, [audienceId, constructionMode, validationResults, validationMinAgreement]);
 
   // Coverage metrics only used in Extension mode (not Validation mode)
-  const coverageMetrics = constructionMode === 'extension' ? calculateCoverageMetrics(settings) : {
+  const coverageMetrics = constructionMode === 'extension' ? calculateCoverageMetrics(settings ?? null) : {
     activeSignalsCount: 0,
     modelledConfidence: 0,
     estimatedMatchCoverage: 0,
@@ -244,7 +245,7 @@ export function ResultsStep({ audienceId, onNext, onBack }: ResultsStepProps) {
   // Extension mode: use existing logic
   const includedCount = constructionMode === 'validation' && validationResults
     ? validationResults.includedDistricts.filter(
-        d => (validationResults.agreementByDistrict[d] || 0) >= validationMinAgreement
+        d => (validationResults.agreementByDistrict[d.district] || 0) >= validationMinAgreement
       ).length
     : geoUnits.filter((unit: any) => {
         const drivers = unit.drivers as any;
@@ -255,10 +256,11 @@ export function ResultsStep({ audienceId, onNext, onBack }: ResultsStepProps) {
   
   // Validation mode: estimated audience size (derived live from validationResults)
   // Extension mode: use existing logic
-  const avgHouseholdsPerDistrict = 2500;
-  const audienceSize = constructionMode === 'validation' && validationResults
-    ? includedCount * avgHouseholdsPerDistrict
+  const audienceSize = constructionMode === 'validation' && validationResults?.totals?.estimatedHouseholds
+    ? validationResults.totals.estimatedHouseholds
     : (() => {
+        // Extension mode: fallback calculation
+        // Fallback: use target_reach proportion or constant
         const baseAudienceSize = audience?.target_reach || 5000000;
         const totalGeoUnits = geoUnits.length || 1;
         return Math.round(baseAudienceSize * (includedCount / totalGeoUnits));
