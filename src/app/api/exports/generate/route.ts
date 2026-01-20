@@ -158,14 +158,14 @@ export async function POST(request: NextRequest) {
           .select('*')
           .eq('audience_id', audienceId)
           .in('segment_key', includedSegmentKeys);
-        segments = segs;
+        segments = segs || [];
       } else {
         const { data: segs = [] } = await supabase
           .from('audience_segments')
           .select('*')
           .eq('audience_id', audienceId)
           .eq('is_selected', true);
-        segments = segs;
+        segments = segs || [];
       }
     } else {
       // Extension mode: segments come from selectedSegmentKeys
