@@ -191,7 +191,7 @@ export async function POST(request: NextRequest) {
           .select('segment_key, label, provider')
           .in('segment_key', selectedKeys)
           .eq('is_active', true);
-        segments = segLibs.map(s => ({
+        segments = (segLibs || []).map((s: any) => ({
           segment_key: s.segment_key,
           segment_label: s.label,
           provider: s.provider,
@@ -226,6 +226,7 @@ export async function POST(request: NextRequest) {
     
     // Generate content
     let content: string;
+    let features: any[] = [];
     if (exportType === 'csv') {
       // Add metadata as commented JSON line
       const metadataLine = `# ${JSON.stringify(metadata)}`;
@@ -294,7 +295,7 @@ export async function POST(request: NextRequest) {
       });
       content = [metadataLine, headers.join(','), ...rows].join('\n');
     } else {
-      const features = geoUnits.map((unit) => {
+      features = geoUnits.map((unit) => {
         if (isValidationMode) {
           // Validation mode: district-based GeoJSON
           const district = districts.find(d => d.district === unit.geo_id);
