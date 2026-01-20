@@ -1,0 +1,51 @@
+{
+  "name": "audience-builder",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:seed": "tsx supabase/seed.ts",
+    "db:seed-districts": "tsx src/scripts/seed-geo-districts.ts",
+    "db:seed-signals": "tsx src/scripts/generate-audience-signals.ts",
+    "db:seed-geo": "npm run db:seed-districts && npm run db:seed-signals",
+    "db:import-segment-geo": "tsx src/scripts/import-segment-geo-csv.ts",
+    "db:sync-districts": "tsx src/scripts/sync-geo-districts-from-signals.ts",
+    "db:import-district-centroids": "tsx src/scripts/import-real-district-centroids.ts",
+    "db:sync-missing-districts": "tsx src/scripts/sync-missing-districts-from-signals.ts"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.11.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@hookform/resolvers": "^3.3.2",
+    "@mui/icons-material": "^5.15.0",
+    "@mui/material": "^5.15.0",
+    "@supabase/auth-helpers-nextjs": "^0.8.7",
+    "@supabase/supabase-js": "^2.39.0",
+    "@tanstack/react-query": "^5.17.0",
+    "date-fns": "^3.0.0",
+    "h3-js": "^4.4.0",
+    "leaflet": "^1.9.4",
+    "papaparse": "^5.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.49.2",
+    "react-leaflet": "^4.2.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.8",
+    "@types/node": "^20.10.6",
+    "@types/papaparse": "^5.3.14",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "14.0.4",
+    "next": "14.0.4",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
