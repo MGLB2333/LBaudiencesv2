@@ -44,16 +44,16 @@ export async function POST(request: NextRequest) {
     }
 
     // Get construction settings first (needed to determine mode)
-    const { data: constructionSettings } = await supabase
+    const { data: constructionSettings, error: settingsError } = await supabase
       .from('audience_construction_settings')
       .select('*')
       .eq('audience_id', audienceId)
       .single();
 
     // Determine if we're in validation mode and should use districts
-    const isValidationMode = constructionSettings?.construction_mode === 'validation';
+    const isValidationMode = constructionSettings && (constructionSettings as any).construction_mode === 'validation';
     // Use validationMinAgreement from context if provided, otherwise fall back to DB (default 1)
-    const minAgreement = validationMinAgreement !== undefined ? validationMinAgreement : (constructionSettings?.validation_min_agreement || 1);
+    const minAgreement = validationMinAgreement !== undefined ? validationMinAgreement : ((constructionSettings as any)?.validation_min_agreement || 1);
     
     let geoUnits: any[] = [];
     let districts: any[] = [];
@@ -202,14 +202,14 @@ export async function POST(request: NextRequest) {
 
     // Build metadata
     const metadata: any = {
-      mode: constructionSettings?.construction_mode || 'extension',
+      mode: (constructionSettings as any)?.construction_mode || 'extension',
       included_segments: segments.map(s => ({
         segment_key: s.segment_key,
         segment_label: s.segment_label,
         provider: s.provider,
         origin: s.origin,
       })),
-      last_built_at: constructionSettings?.last_run_at || null,
+      last_built_at: (constructionSettings as any)?.last_run_at || null,
       activation_target: activationTarget,
       recommended_threshold: recommendedThreshold,
       export_generated_at: new Date().toISOString(),
