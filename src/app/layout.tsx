@@ -9,6 +9,11 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Audience Builder - LightBoxTV',
   description: 'Build and manage your target audiences',
+  icons: {
+    icon: '/logos/LogoMark3.png',
+    shortcut: '/logos/LogoMark3.png',
+    apple: '/logos/LogoMark3.png',
+  },
 };
 
 export default function RootLayout({

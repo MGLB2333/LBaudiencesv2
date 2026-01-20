@@ -233,6 +233,7 @@ export function useExportContext(audienceId: string): {
     audience,
     settings,
     mode,
+    audienceId,
     segments,
     validationResults,
     providerImpact,

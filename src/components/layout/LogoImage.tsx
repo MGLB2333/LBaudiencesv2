@@ -1,6 +1,7 @@
 'use client';
 
 import { Box } from '@mui/material';
+import Image from 'next/image';
 import { useSelectedLogo } from '@/features/admin/hooks/useAdminSettings';
 
 export function LogoImage() {
@@ -15,10 +16,13 @@ export function LogoImage() {
 
   return (
     <Box sx={{ display: 'flex', alignItems: 'center', height: 48 }}>
-      <img
+      <Image
         src={`/logos/${logoFile}`}
         alt="Logo"
+        height={logoHeight}
+        width={logoHeight * 2} // Approximate aspect ratio
         style={{ height: logoHeight, width: 'auto', objectFit: 'contain' }}
+        unoptimized
       />
     </Box>
   );

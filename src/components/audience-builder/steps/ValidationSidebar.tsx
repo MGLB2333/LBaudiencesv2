@@ -295,7 +295,7 @@ export const ValidationSidebar = memo(function ValidationSidebar({
               ) : (
                 <Box sx={{ p: 2, bgcolor: '#f9f9f9', borderRadius: 1, mb: 2 }}>
                   <Typography variant="body2" color="text.secondary" sx={{ fontSize: '0.8125rem' }}>
-                    No suggested segments found. Click "Build audience" in Step 1 to generate suggestions.
+                    No suggested segments found. Click &quot;Build audience&quot; in Step 1 to generate suggestions.
                   </Typography>
                 </Box>
               )}
