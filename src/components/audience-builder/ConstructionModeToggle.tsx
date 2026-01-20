@@ -104,11 +104,10 @@ export function ConstructionModeToggle({ value, onChange, disabled = false }: Co
             />
             <Box sx={{ flex: 1 }}>
               <Typography variant="body2" sx={{ fontWeight: 600, fontSize: '0.875rem', mb: 0.5 }}>
-                Validate named segment
+                Validate anchor segment
               </Typography>
-              <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary', lineHeight: 1.4 }}>
-                CCS is the base universe. Other providers match the SAME named segment like-for-like. 
-                Confidence increases where multiple sources agree on locations.
+              <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary', lineHeight: 1.4, whiteSpace: 'pre-line' }}>
+                Best when you already know the audience you want.{'\n\n'}We start with a trusted base audience and check where other data partners agree.{'\n'}The more partners that confirm the same locations, the higher the confidence.
               </Typography>
             </Box>
           </Box>
@@ -163,11 +162,10 @@ export function ConstructionModeToggle({ value, onChange, disabled = false }: Co
             />
             <Box sx={{ flex: 1 }}>
               <Typography variant="body2" sx={{ fontWeight: 600, fontSize: '0.875rem', mb: 0.5 }}>
-                Discover adjacent segments
+                Expand to similar segments
               </Typography>
-              <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary', lineHeight: 1.4 }}>
-                CCS is a contributor. The system suggests adjacent segments inferred by context/behaviour. 
-                Segments are not matched by name but discovered through adjacency.
+              <Typography variant="caption" sx={{ fontSize: '0.75rem', color: 'text.secondary', lineHeight: 1.4, whiteSpace: 'pre-line' }}>
+                Best when you want more reach.{'\n\n'}We start with your core audience and extend it using related signals from other data partners.{'\n'}This helps uncover additional areas that look similar, even if they aren&apos;t labelled the same.
               </Typography>
             </Box>
           </Box>

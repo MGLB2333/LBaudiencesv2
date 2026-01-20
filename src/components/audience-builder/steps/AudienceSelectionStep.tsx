@@ -277,11 +277,6 @@ export function AudienceSelectionStep({ audienceId, onNext, onBack }: AudienceSe
           <Typography variant="h6" sx={{ fontWeight: 600, fontSize: '1rem' }}>
             Construction Mode
           </Typography>
-          {process.env.NODE_ENV === 'development' && (
-            <Typography variant="caption" sx={{ fontSize: '0.7rem', color: '#9e9e9e', fontFamily: 'monospace' }}>
-              Mode: {localConstructionMode}
-            </Typography>
-          )}
         </Box>
         <ConstructionModeToggle
           value={localConstructionMode}
@@ -582,26 +577,6 @@ export function AudienceSelectionStep({ audienceId, onNext, onBack }: AudienceSe
         </DialogActions>
       </Dialog>
       
-      {/* DEV Panel */}
-      {process.env.NODE_ENV === 'development' && (
-        <Box sx={{ mt: 4, p: 2, bgcolor: '#f5f5f5', borderRadius: 1, border: '1px solid #e0e0e0' }}>
-          <Typography variant="caption" sx={{ fontWeight: 600, display: 'block', mb: 1 }}>
-            DEV Debug Info
-          </Typography>
-          <Typography variant="caption" sx={{ fontSize: '0.75rem', display: 'block' }}>
-            selectedSegmentKey: {selectedSegmentKey || 'null'}
-          </Typography>
-          <Typography variant="caption" sx={{ fontSize: '0.75rem', display: 'block' }}>
-            CCS Districts: {ccsCount.toLocaleString()}
-          </Typography>
-          <Typography variant="caption" sx={{ fontSize: '0.75rem', display: 'block' }}>
-            Providers: {validators.length}
-          </Typography>
-          <Typography variant="caption" sx={{ fontSize: '0.75rem', display: 'block' }}>
-            selectedProviders: {state.selectedProviders.join(', ') || 'none'}
-          </Typography>
-        </Box>
-      )}
     </Box>
   );
 }
