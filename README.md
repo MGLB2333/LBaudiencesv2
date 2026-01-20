@@ -2,6 +2,8 @@
 
 A full-stack web application for building and managing target audiences, built with Next.js, TypeScript, Material UI, and Supabase.
 
+<!-- Trigger Vercel deployment -->
+
 ## Features
 
 - **5-Step Workflow**: Complete audience building process from details to export
