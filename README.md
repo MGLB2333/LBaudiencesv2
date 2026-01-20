@@ -2,7 +2,7 @@
 
 A full-stack web application for building and managing target audiences, built with Next.js, TypeScript, Material UI, and Supabase.
 
-<!-- Trigger Vercel deployment -->
+<!-- Deployment trigger -->
 
 ## Features
 
