@@ -409,7 +409,7 @@ export async function POST(request: NextRequest) {
         user_id: user.id,
         export_type: exportType,
         storage_path: uploadData.path,
-      })
+      } as any)
       .select()
       .single();
 
