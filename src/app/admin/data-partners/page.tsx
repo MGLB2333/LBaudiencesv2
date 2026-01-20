@@ -105,7 +105,7 @@ export default function DataPartnersPage() {
               <TableRow>
                 <TableCell colSpan={6} align="center" sx={{ py: 4 }}>
                   <Typography variant="body2" color="text.secondary">
-                    No data partners yet. Click "Sync from data" to load providers from uploaded files.
+                    No data partners yet. Click &quot;Sync from data&quot; to load providers from uploaded files.
                   </Typography>
                 </TableCell>
               </TableRow>

@@ -158,7 +158,7 @@ export function MapStep({ audienceId, onNext, onBack }: MapStepProps) {
                         Map Explainability
                       </Typography>
                       <Typography variant="body2" sx={{ fontSize: '0.8125rem' }}>
-                        Hover over map areas to see which signals contributed to each location's score. 
+                        Hover over map areas to see which signals contributed to each location&apos;s score. 
                         Scores are calculated deterministically from your signal configuration.
                       </Typography>
                     </Box>

@@ -828,7 +828,7 @@ export function ResultsStep({ audienceId, onNext, onBack }: ResultsStepProps) {
                       Base universe provider
                     </Typography>
                     <Typography variant="caption" color="text.secondary" sx={{ fontSize: '0.75rem' }}>
-                      Defines eligible districts (confidence &gt;= 0.5)
+                      Defines eligible districts (confidence {'>='} 0.5)
                     </Typography>
                   </Box>
                   <Box>

@@ -75,14 +75,17 @@ export default function LogoPage() {
                     position: 'relative',
                   }}
                 >
-                  <img
+                  <Image
                     src={`/logos/${logo.file}`}
                     alt={logo.label}
+                    width={120}
+                    height={60}
                     style={{
                       maxWidth: '100%',
                       maxHeight: '100%',
                       objectFit: 'contain',
                     }}
+                    unoptimized
                   />
                 </Box>
                 <Typography variant="body2" sx={{ color: '#ffffff', fontWeight: 500 }}>

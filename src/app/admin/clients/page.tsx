@@ -106,7 +106,7 @@ export default function ClientsPage() {
               <TableRow>
                 <TableCell colSpan={4} align="center" sx={{ py: 4 }}>
                   <Typography variant="body2" color="text.secondary">
-                    No clients yet. Click "New Client" to add one.
+                    No clients yet. Click &quot;New Client&quot; to add one.
                   </Typography>
                 </TableCell>
               </TableRow>

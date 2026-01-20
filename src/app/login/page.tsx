@@ -81,7 +81,7 @@ export default function LoginPage() {
               {loading ? 'Signing in...' : 'Sign In'}
             </Button>
             <Typography variant="body2" align="center">
-              Don't have an account?{' '}
+              Don&apos;t have an account?{' '}
               <Link href="/signup" underline="hover">
                 Sign up
               </Link>
