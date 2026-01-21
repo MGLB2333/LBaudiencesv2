@@ -1,4 +1,5 @@
 import { createClient } from '@/lib/supabase/client';
+import { getDataPartnersByKeys } from '@/features/admin/api/dataPartners';
 
 export interface SegmentProvider {
   provider: string;
@@ -28,7 +29,7 @@ export async function getSegmentProviders(params: {
   
   // Group by provider and count distinct districts
   const providerMap = new Map<string, Set<string>>();
-  signals.forEach(signal => {
+  (signals as any[]).forEach((signal: any) => {
     if (!signal.provider || !signal.district) return;
     if (!providerMap.has(signal.provider)) {
       providerMap.set(signal.provider, new Set());

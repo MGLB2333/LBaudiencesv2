@@ -65,7 +65,7 @@ export async function getDistrictCentroids(
 
     if (data) {
       // Map results back to normalized district codes for lookup
-      const batchResults = data.map(row => ({
+      const batchResults = (data as any[]).map((row: any) => ({
         district: row.district_norm || row.district, // Prefer district_norm, fallback to district
         centroid_lat: row.centroid_lat,
         centroid_lng: row.centroid_lng,

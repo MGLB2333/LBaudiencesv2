@@ -65,7 +65,7 @@ export async function getPoiDistrictMap(poiIds: string[]): Promise<Record<string
   if (error) throw error;
 
   const mapping: Record<string, PoiDistrictMapping> = {};
-  (data || []).forEach((row) => {
+  ((data as any[]) || []).forEach((row: any) => {
     mapping[row.poi_id] = {
       poi_id: row.poi_id,
       district: row.district,
@@ -93,7 +93,7 @@ export async function createPoi(payload: {
   const supabase = createClient();
   const { data, error } = await supabase
     .from('store_pois')
-    .insert(payload)
+    .insert(payload as any)
     .select()
     .single();
 
@@ -119,8 +119,8 @@ export async function updatePoi(
   }>
 ): Promise<StorePoi> {
   const supabase = createClient();
-  const { data, error } = await supabase
-    .from('store_pois')
+  const { data, error } = await (supabase
+    .from('store_pois') as any)
     .update(updates)
     .eq('id', id)
     .select()
@@ -168,7 +168,7 @@ export async function getPoiBrands(): Promise<PoiBrand[]> {
 
   // Group by brand and count
   const brandMap = new Map<string, number>();
-  (data || []).forEach((poi) => {
+  ((data as any[]) || []).forEach((poi: any) => {
     const brand = poi.brand;
     brandMap.set(brand, (brandMap.get(brand) || 0) + 1);
   });
@@ -210,7 +210,7 @@ export async function getPoisByBrands(brands: string[]): Promise<StorePoi[]> {
 
   // Filter by brands (case-insensitive)
   const brandsLower = brands.map(b => b.toLowerCase());
-  const filtered = (data || []).filter(poi => 
+  const filtered = ((data as any[]) || []).filter((poi: any) =>
     brandsLower.includes(poi.brand.toLowerCase())
   );
 

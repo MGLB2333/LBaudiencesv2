@@ -251,7 +251,7 @@ export async function getValidationResults({
     if (batchError) {
       console.warn(`[validationResults] Error fetching centroids batch ${i / batchSize + 1}:`, batchError);
     } else {
-      allDistrictCentroids = allDistrictCentroids.concat(batchCentroids);
+      allDistrictCentroids = allDistrictCentroids.concat(batchCentroids || []);
     }
   }
 
@@ -283,10 +283,11 @@ export async function getValidationResults({
     .in('district', includedDistrictIds);
 
   const centroidMap = new Map<string, { lat: number; lng: number }>();
-  for (const row of districtCentroids) {
-    centroidMap.set(row.district, {
-      lat: Number(row.centroid_lat),
-      lng: Number(row.centroid_lng),
+  for (const row of ((districtCentroids as any[]) || [])) {
+    const r = row as any;
+    centroidMap.set(r.district, {
+      lat: Number(r.centroid_lat),
+      lng: Number(r.centroid_lng),
     });
   }
 
@@ -369,7 +370,7 @@ export async function getValidationResults({
         totalHouseholds += batch.length * FALLBACK_HOUSEHOLDS_PER_DISTRICT;
         districtsWithoutHouseholds += batch.length;
       } else {
-        for (const row of householdData) {
+        for (const row of (householdData as any[]) || []) {
           if (row.households !== null && row.households > 0) {
             totalHouseholds += row.households;
             districtsWithHouseholds++;

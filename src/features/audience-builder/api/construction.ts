@@ -26,13 +26,14 @@ export async function getConstructionSettings(
   if (error && error.code !== 'PGRST116') throw error;
   if (!data) return null;
 
+  const row = data as any;
   return {
-    audience_intent: data.audience_intent as any,
-    construction_mode: data.construction_mode,
-    active_signals: (data.active_signals as any) || {},
-    last_run_at: data.last_run_at || null,
-    validation_min_agreement: data.validation_min_agreement || 1,
-    validation_agreement_mode: (data.validation_agreement_mode as any) || 'threshold',
+    audience_intent: row.audience_intent as any,
+    construction_mode: row.construction_mode,
+    active_signals: (row.active_signals as any) || {},
+    last_run_at: row.last_run_at || null,
+    validation_min_agreement: row.validation_min_agreement || 1,
+    validation_agreement_mode: (row.validation_agreement_mode as any) || 'threshold',
   };
 }
 
@@ -51,33 +52,35 @@ export async function updateConstructionSettings(
   };
 
   if (existing) {
-    const { data, error } = await supabase
-      .from('audience_construction_settings')
+    const { data, error } = await (supabase
+      .from('audience_construction_settings') as any)
       .update(payload)
       .eq('audience_id', audienceId)
       .select()
       .single();
 
     if (error) throw error;
+    const updateRow = data as any;
     return {
-      audience_intent: data.audience_intent as any,
-      construction_mode: data.construction_mode,
-      active_signals: (data.active_signals as any) || {},
-      last_run_at: data.last_run_at || null,
+      audience_intent: updateRow.audience_intent as any,
+      construction_mode: updateRow.construction_mode,
+      active_signals: (updateRow.active_signals as any) || {},
+      last_run_at: updateRow.last_run_at || null,
     };
   } else {
-    const { data, error } = await supabase
-      .from('audience_construction_settings')
+    const { data, error } = await (supabase
+      .from('audience_construction_settings') as any)
       .insert(payload)
       .select()
       .single();
 
     if (error) throw error;
+    const insertRow = data as any;
     return {
-      audience_intent: data.audience_intent as any,
-      construction_mode: data.construction_mode,
-      active_signals: (data.active_signals as any) || {},
-      last_run_at: data.last_run_at || null,
+      audience_intent: insertRow.audience_intent as any,
+      construction_mode: insertRow.construction_mode,
+      active_signals: (insertRow.active_signals as any) || {},
+      last_run_at: insertRow.last_run_at || null,
     };
   }
 }

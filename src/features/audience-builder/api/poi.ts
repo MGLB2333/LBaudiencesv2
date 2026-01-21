@@ -28,7 +28,7 @@ export async function createPoiLayer(
       audience_id: audienceId,
       ...layer,
       is_enabled: true,
-    })
+    } as any)
     .select()
     .single();
 
@@ -41,8 +41,8 @@ export async function updatePoiLayer(
   updates: Partial<PoiLayer>
 ): Promise<PoiLayer> {
   const supabase = createClient();
-  const { data, error } = await supabase
-    .from('poi_layers')
+  const { data, error } = await (supabase
+    .from('poi_layers') as any)
     .update(updates)
     .eq('id', layerId)
     .select()

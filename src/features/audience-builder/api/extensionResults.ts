@@ -86,11 +86,12 @@ export async function getExtensionSuggestions({
     .eq('is_active', true)
     .single();
 
-  if (!anchorSegment || !anchorSegment.adjacency) {
+  const anchor = anchorSegment as any;
+  if (!anchor || !anchor.adjacency) {
     return [];
   }
 
-  const adjacency = anchorSegment.adjacency as {
+  const adjacency = anchor.adjacency as {
     related_segments?: string[];
     adjacency_score?: number;
   };
@@ -127,8 +128,10 @@ export async function getExtensionSuggestions({
     return [];
   }
 
+  const segmentsArray = segments as any[];
+
   // Get provider segment aliases for labels
-  const segmentKeys = segments.map((s) => s.segment_key);
+  const segmentKeys = segmentsArray.map((s: any) => s.segment_key);
   const { data: aliases } = await supabase
     .from('provider_segment_aliases')
     .select('canonical_key, provider, provider_segment_label')
@@ -138,7 +141,7 @@ export async function getExtensionSuggestions({
   const providersBySegment = new Map<string, Set<string>>();
   const labelsBySegment = new Map<string, Map<string, string>>();
 
-  for (const segment of segments) {
+  for (const segment of segmentsArray) {
     if (!providersBySegment.has(segment.segment_key)) {
       providersBySegment.set(segment.segment_key, new Set());
     }
@@ -152,7 +155,7 @@ export async function getExtensionSuggestions({
 
   // Add aliases
   if (aliases) {
-    for (const alias of aliases) {
+    for (const alias of (aliases as any[])) {
       if (providersBySegment.has(alias.canonical_key)) {
         providersBySegment.get(alias.canonical_key)!.add(alias.provider);
         labelsBySegment.get(alias.canonical_key)!.set(alias.provider, alias.provider_segment_label);
@@ -172,7 +175,7 @@ export async function getExtensionSuggestions({
   
   // Count districts and providers per segment
   const segmentStats = new Map<string, { districts: Set<string>; providers: Set<string> }>();
-  signalData?.forEach(row => {
+  (signalData as any[])?.forEach((row: any) => {
     if (!row.segment_key) return;
     if (!segmentStats.has(row.segment_key)) {
       segmentStats.set(row.segment_key, { districts: new Set(), providers: new Set() });
@@ -183,8 +186,8 @@ export async function getExtensionSuggestions({
   });
 
   // Build suggestions with adjacency scores, filtering by availability
-  const suggestions: ExtensionSuggestion[] = segments
-    .filter(segment => availableSet.has(segment.segment_key)) // Only data-backed segments
+  const suggestions: ExtensionSuggestion[] = segmentsArray
+    .filter((segment: any) => availableSet.has(segment.segment_key)) // Only data-backed segments
     .map((segment, index) => {
       const segmentAdjacency = (segment.adjacency as any) || {};
       const adjacencyScore = segmentAdjacency.adjacency_score || 0.5;
@@ -423,7 +426,7 @@ export async function getProviderImpact({
 
     if (geoDistricts) {
       for (const districtId of batch) {
-        const geo = geoDistricts.find((g) => normalizeDistrict(g.district) === districtId);
+        const geo = (geoDistricts as any[]).find((g: any) => normalizeDistrict(g.district) === districtId);
         if (geo && geo.centroid_lat && geo.centroid_lng) {
           const providers = Array.from(districtProviderMap.get(districtId) || []);
           const confidences = districtConfidenceMap.get(districtId) || [];
@@ -454,7 +457,7 @@ export async function getProviderImpact({
 
   const aliasMap = new Map<string, Map<string, string>>(); // segment_key -> provider -> label
   if (aliases) {
-    for (const alias of aliases) {
+    for (const alias of (aliases as any[])) {
       if (!aliasMap.has(alias.canonical_key)) {
         aliasMap.set(alias.canonical_key, new Map());
       }
@@ -595,7 +598,7 @@ export async function getProviderImpact({
         totalHouseholds += batch.length * FALLBACK_HOUSEHOLDS_PER_DISTRICT;
         districtsWithoutHouseholds += batch.length;
       } else {
-        for (const row of householdData) {
+        for (const row of (householdData as any[]) || []) {
           if (row.households !== null && row.households > 0) {
             totalHouseholds += row.households;
             districtsWithHouseholds++;

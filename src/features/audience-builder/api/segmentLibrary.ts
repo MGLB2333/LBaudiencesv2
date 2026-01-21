@@ -65,16 +65,17 @@ export async function getSegmentMatches(
   const matches: SegmentMatch[] = [];
   const providers = ['CCS', 'ONS', 'Experian', 'Outra', 'TwentyCI'];
   
-  for (const segment of librarySegments || []) {
-    if (segment.provider !== briefProvider) {
+  for (const segment of (librarySegments as any[]) || []) {
+    const seg = segment as any;
+    if (seg.provider !== briefProvider) {
       // Calculate match confidence based on key similarity
-      const keySimilarity = calculateSimilarity(briefSegmentKey, segment.segment_key);
+      const keySimilarity = calculateSimilarity(briefSegmentKey, seg.segment_key);
       const agreementLevel = keySimilarity > 0.8 ? 'high' : keySimilarity > 0.5 ? 'medium' : 'low';
       
       matches.push({
-        provider: segment.provider,
-        segment_key: segment.segment_key,
-        segment_label: segment.label,
+        provider: seg.provider,
+        segment_key: seg.segment_key,
+        segment_label: seg.label,
         match_confidence: keySimilarity,
         agreement_level: agreementLevel,
       });
@@ -121,18 +122,18 @@ export async function getSuggestedSegments(
   }
 
   // Filter out existing segments and apply search query client-side
-  let filtered = (librarySegments || []).filter(
-    seg => !existingSegmentKeys.includes(seg.segment_key)
+  let filtered = ((librarySegments as any[]) || []).filter(
+    (seg: any) => !existingSegmentKeys.includes(seg.segment_key)
   );
 
   // Apply search query if provided
   if (searchQuery && searchQuery.trim()) {
     const queryLower = searchQuery.toLowerCase();
-    filtered = filtered.filter(seg => 
+    filtered = filtered.filter((seg: any) => 
       seg.label.toLowerCase().includes(queryLower) ||
       seg.description?.toLowerCase().includes(queryLower) ||
       seg.segment_key.toLowerCase().includes(queryLower) ||
-      seg.tags.some(tag => tag.toLowerCase().includes(queryLower))
+      (seg.tags || []).some((tag: any) => tag.toLowerCase().includes(queryLower))
     );
   }
 
@@ -150,13 +151,14 @@ export async function getSuggestedSegments(
       ? (adjacency?.adjacency_score || 0.7)
       : 0.5;
 
+    const seg = segment as any;
     return {
-      id: segment.id,
-      provider: segment.provider,
-      segment_key: segment.segment_key,
-      label: segment.label,
-      description: segment.description,
-      why_suggested: exampleSignals?.evidence || `Related to your selected segments based on ${segment.provider} data`,
+      id: seg.id,
+      provider: seg.provider,
+      segment_key: seg.segment_key,
+      label: seg.label,
+      description: seg.description,
+      why_suggested: exampleSignals?.evidence || `Related to your selected segments based on ${seg.provider} data`,
       evidence: JSON.stringify(exampleSignals?.signals || []),
       adjacency_score: adjacencyScore,
     };

@@ -54,5 +54,10 @@ export async function rescoreGeoUnits(
   }
 
   // Rescore existing geo units
-  await scoreAndSaveGeoUnits(audienceId, existing, settings, scaleAccuracy);
+  // Map GeoUnit[] to ProviderGeoUnit[] format
+  const mappedExisting = existing.map(unit => ({
+    ...unit,
+    drivers: (unit.drivers as any) || {},
+  })) as any;
+  await scoreAndSaveGeoUnits(audienceId, mappedExisting, settings, scaleAccuracy);
 }

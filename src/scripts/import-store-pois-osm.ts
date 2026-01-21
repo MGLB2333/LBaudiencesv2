@@ -143,7 +143,7 @@ async function geocodeAddress(address: string): Promise<{ lat: number; lng: numb
  * Check if a POI already exists (by brand + name, case-insensitive)
  */
 async function findExistingPoi(
-  supabase: ReturnType<typeof createClient>,
+  supabase: any,
   brand: string,
   name: string
 ): Promise<{ id: string } | null> {
@@ -188,11 +188,11 @@ async function importStorePoisFromOSM() {
     .not('centroid_lat', 'is', null)
     .not('centroid_lng', 'is', null);
 
-  if (!centroidCheckError && (centroidCheck || 0) === 0) {
+  if (!centroidCheckError && (!centroidCheck || (centroidCheck as any[]).length === 0)) {
     console.warn('⚠ WARNING: No districts have centroids! District mapping will fail.');
     console.warn('   Please import district centroids first using: npm run db:import-district-centroids\n');
   } else if (!centroidCheckError) {
-    console.log(`✓ Found ${centroidCheck} districts with centroids (ready for mapping)\n`);
+    console.log(`✓ Found ${(centroidCheck as any[]).length} districts with centroids (ready for mapping)\n`);
   }
 
   const results: Array<{
@@ -406,8 +406,9 @@ async function importStorePoisFromOSM() {
     .not('centroid_lng', 'is', null);
 
   if (!centroidError) {
-    console.log(`Districts with centroids: ${centroidCount || 0}`);
-    if ((centroidCount || 0) === 0) {
+    const centroidCountNum = !centroidCount ? 0 : (centroidCount as any[]).length;
+    console.log(`Districts with centroids: ${centroidCountNum}`);
+    if (centroidCountNum === 0) {
       console.warn(`  ⚠ WARNING: No districts have centroids! District mapping will fail.`);
       console.warn(`     Please import district centroids first using: npm run db:import-district-centroids`);
     }

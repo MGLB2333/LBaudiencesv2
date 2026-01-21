@@ -219,11 +219,11 @@ async function importMagnetPoisFromOverpass() {
     .not('centroid_lat', 'is', null)
     .not('centroid_lng', 'is', null);
 
-  if (!centroidCheckError && (centroidCheck || 0) === 0) {
+  if (!centroidCheckError && (!centroidCheck || (centroidCheck as any[]).length === 0)) {
     console.warn('⚠ WARNING: No districts have centroids! District mapping will fail.');
     console.warn('   Please import district centroids first using: npm run db:import-district-centroids\n');
   } else if (!centroidCheckError) {
-    console.log(`✓ Found ${centroidCheck} districts with centroids (ready for mapping)\n`);
+    console.log(`✓ Found ${(centroidCheck as any[]).length} districts with centroids (ready for mapping)\n`);
   }
 
   // Query Overpass
@@ -379,7 +379,7 @@ async function importMagnetPoisFromOverpass() {
       .in('poi_id', poiIds);
 
     if (!mappingError && mappingCount !== null) {
-      stats.mapped = mappingCount;
+      stats.mapped = (mappingCount as any[]).length;
     }
   }
 
@@ -408,7 +408,9 @@ async function importMagnetPoisFromOverpass() {
       .eq('source', 'osm');
     
     if (!osmError && osmCount !== null) {
-      console.log(`  (${osmCount} from OSM, ${(finalCount || 0) - osmCount} from other sources)`);
+      const osmCountNum = (osmCount as any[]).length;
+      const finalCountNum = typeof finalCount === 'number' ? finalCount : (finalCount as any[]).length;
+      console.log(`  (${osmCountNum} from OSM, ${(finalCountNum || 0) - osmCountNum} from other sources)`);
     }
   }
 

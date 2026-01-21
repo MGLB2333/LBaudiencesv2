@@ -26,7 +26,7 @@ export async function getSegmentProviderCoverage(
   
   // Group by provider and count distinct districts
   const providerMap = new Map<string, Set<string>>();
-  data?.forEach((row) => {
+  (data as any[])?.forEach((row: any) => {
     if (!row.provider || !row.district) return;
     // Normalize provider name (trim, exact case match)
     const normalizedProvider = row.provider.trim();

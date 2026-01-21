@@ -119,7 +119,7 @@ export async function buildAudience(audienceId: string, modeOverride?: 'validati
           provider: match.provider,
           segment_key: match.segment_key,
           segment_label: match.segment_label,
-          description: null,
+          description: undefined,
           origin: 'validated',
           match_type: 'name_match',
           evidence: {
@@ -249,16 +249,17 @@ async function populateAgreementData(audienceId: string, validatedProviders: str
   const totalProviders = validatedProviders.length || 7; // Default to 7 if no providers
 
   // Update each geo unit with agreement data (deterministic based on score and geo_id)
-  for (const unit of geoUnits) {
+  for (const unit of (geoUnits as any[])) {
+    const u = unit as any;
     // Deterministic agreement calculation based on unit properties
-    const seed = simpleHash(unit.geo_id + audienceId);
+    const seed = simpleHash(u.geo_id + audienceId);
     const baseAgreement = Math.floor((seed % 100) / 20); // 0-4 base agreement
-    const scoreModifier = Math.floor((unit.score || 0) / 20); // Higher score = more agreement
+    const scoreModifier = Math.floor((u.score || 0) / 20); // Higher score = more agreement
     const agreementCount = Math.min(totalProviders, Math.max(1, baseAgreement + scoreModifier + 1));
     
     // Select agreeing providers deterministically
     const agreeingProviders: string[] = [];
-    const providerSeed = simpleHash(unit.geo_id);
+    const providerSeed = simpleHash(u.geo_id);
     for (let i = 0; i < agreementCount && i < validatedProviders.length; i++) {
       const providerIndex = (providerSeed + i) % validatedProviders.length;
       agreeingProviders.push(validatedProviders[providerIndex]);
@@ -271,16 +272,16 @@ async function populateAgreementData(audienceId: string, validatedProviders: str
       }
     }
 
-    const { error: updateError } = await supabase
-      .from('geo_units')
+    const { error: updateError } = await (supabase
+      .from('geo_units') as any)
       .update({
         agreement_count: agreementCount,
         agreeing_providers: agreeingProviders,
       })
-      .eq('id', unit.id);
+      .eq('id', u.id);
     
     if (updateError) {
-      console.warn(`Failed to update geo unit ${unit.id}:`, updateError);
+      console.warn(`Failed to update geo unit ${u.id}:`, updateError);
       // Continue with other units even if one fails
     }
   }
@@ -334,9 +335,9 @@ async function upsertAnchorSegment(
   };
 
   // Use upsert with onConflict to handle insert/update atomically
-  const { data, error } = await supabase
-    .from('audience_segments')
-    .upsert(payload, {
+  const { data, error } = await (supabase
+    .from('audience_segments') as any)
+    .upsert(payload as any, {
       onConflict: 'audience_id,segment_type,provider,segment_key',
     })
     .select()

@@ -12,7 +12,7 @@ export async function getSelectedSegmentKeys(audienceId: string): Promise<string
     .order('added_at', { ascending: true });
 
   if (error) throw error;
-  return (data || []).map((row) => row.segment_key);
+  return ((data as any[]) || []).map((row: any) => row.segment_key);
 }
 
 /**
@@ -42,7 +42,7 @@ export async function setSelectedSegmentKeys(
 
     const { error: insertError } = await supabase
       .from('audience_selected_segments')
-      .insert(rows);
+      .insert(rows as any);
 
     if (insertError) throw insertError;
   }
@@ -66,7 +66,7 @@ export async function toggleSelectedSegment(
         {
           audience_id: audienceId,
           segment_key: segmentKey,
-        },
+        } as any,
         {
           onConflict: 'audience_id,segment_key',
         }

@@ -81,11 +81,12 @@ export async function getDistrictsWithAgreement(
 
   // Group signals by district
   const signalsByDistrict = new Map<string, GeoAudienceSignal[]>();
-  for (const signal of signals) {
-    if (!signalsByDistrict.has(signal.district)) {
-      signalsByDistrict.set(signal.district, []);
+  for (const signal of (signals as any[])) {
+    const sig = signal as any;
+    if (!signalsByDistrict.has(sig.district)) {
+      signalsByDistrict.set(sig.district, []);
     }
-    signalsByDistrict.get(signal.district)!.push(signal);
+    signalsByDistrict.get(sig.district)!.push(sig);
   }
 
   // Calculate agreement for each district
@@ -102,8 +103,9 @@ export async function getDistrictsWithAgreement(
   // Use a threshold of 0.5 for "agreeing" (can be made configurable)
   const confidenceThreshold = 0.5;
 
-  for (const district of districts) {
-    const districtSignals = signalsByDistrict.get(district.district) || [];
+  for (const district of (districts as any[])) {
+    const dist = district as any;
+    const districtSignals = signalsByDistrict.get(dist.district) || [];
     
     // Count providers with confidence >= threshold
     const agreeingProviders = districtSignals
@@ -119,10 +121,10 @@ export async function getDistrictsWithAgreement(
         : 0;
 
       results.push({
-        district: district.district,
-        centroid_lat: district.centroid_lat,
-        centroid_lng: district.centroid_lng,
-        geometry: district.geometry,
+        district: dist.district,
+        centroid_lat: dist.centroid_lat,
+        centroid_lng: dist.centroid_lng,
+        geometry: dist.geometry,
         agreeing_providers: agreeingProviders,
         agreement_count: agreementCount,
         avg_confidence: avgConfidence,

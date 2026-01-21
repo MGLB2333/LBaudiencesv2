@@ -27,7 +27,7 @@ export async function getDistrictsByTvRegion(
 
   // Return distinct normalized district codes
   const districts = new Set<string>();
-  for (const row of data || []) {
+  for (const row of (data as any[]) || []) {
     if (row.district_norm) {
       districts.add(row.district_norm);
     }
@@ -55,7 +55,7 @@ export async function getAllTvRegions(): Promise<
     return [];
   }
 
-  return (data || []).map((r) => ({
+  return ((data as any[]) || []).map((r: any) => ({
     region_key: r.region_key,
     name: r.name,
   }));

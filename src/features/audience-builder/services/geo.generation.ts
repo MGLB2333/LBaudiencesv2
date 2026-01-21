@@ -94,7 +94,7 @@ export async function scoreAndSaveGeoUnits(
 
   const { error } = await supabase
     .from('geo_units')
-    .insert(dbGeoUnits);
+    .insert(dbGeoUnits as any);
 
   if (error) throw error;
 }

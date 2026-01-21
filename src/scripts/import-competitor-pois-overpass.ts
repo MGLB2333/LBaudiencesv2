@@ -315,7 +315,7 @@ async function importCompetitorPoisFromOverpass() {
     .not('centroid_lat', 'is', null)
     .not('centroid_lng', 'is', null);
 
-  if (!centroidCheckError && (centroidCheck || 0) === 0) {
+  if (!centroidCheckError && (!centroidCheck || (centroidCheck as any[]).length === 0)) {
     console.warn('⚠ WARNING: No districts have centroids! District mapping will fail.');
     console.warn('   Please import district centroids first using: npm run db:import-district-centroids\n');
   } else if (!centroidCheckError) {
@@ -500,7 +500,7 @@ async function importCompetitorPoisFromOverpass() {
         .in('poi_id', poiIds);
 
       if (!mappingError && mappingCount !== null) {
-        stats.mapped = mappingCount;
+        stats.mapped = (mappingCount as any[]).length;
       }
     }
 

@@ -30,8 +30,8 @@ export async function updateSegmentSelection(
   isSelected: boolean
 ): Promise<AudienceSegment> {
   const supabase = createClient();
-  const { data, error } = await supabase
-    .from('audience_segments')
+  const { data, error } = await (supabase
+    .from('audience_segments') as any)
     .update({ is_selected: isSelected })
     .eq('id', segmentId)
     .select()
@@ -56,8 +56,8 @@ export async function updateConstructionMode(
   mode: ConstructionMode
 ): Promise<void> {
   const supabase = createClient();
-  const { error } = await supabase
-    .from('audience_segments')
+  const { error } = await (supabase
+    .from('audience_segments') as any)
     .update({ construction_mode: mode })
     .eq('audience_id', audienceId);
 
@@ -93,7 +93,7 @@ export async function addSegmentFromSuggestion(
     .single();
 
   // Check if segment already exists (to avoid unique constraint violation)
-  const segmentType = existing?.segment_type || 'primary';
+  const segmentType = (existing as any)?.segment_type || 'primary';
   const { data: existingSegment } = await supabase
     .from('audience_segments')
     .select('*')
@@ -105,21 +105,22 @@ export async function addSegmentFromSuggestion(
 
   if (existingSegment) {
     // Update existing segment instead of inserting
-    const { data, error } = await supabase
-      .from('audience_segments')
+    const existing = existingSegment as any;
+    const { data, error } = await (supabase
+      .from('audience_segments') as any)
       .update({
         segment_label: suggestion.segment_label,
         description: suggestion.description || null,
-        is_selected: suggestion.is_selected !== undefined ? suggestion.is_selected : existingSegment.is_selected,
+        is_selected: suggestion.is_selected !== undefined ? suggestion.is_selected : existing.is_selected,
         origin: suggestion.origin,
         match_type: suggestion.match_type,
         evidence: suggestion.evidence || {},
         source_providers: suggestion.source_providers || [],
-        created_by_mode: suggestion.created_by_mode || existingSegment.created_by_mode || 'extension',
+        created_by_mode: suggestion.created_by_mode || existing.created_by_mode || 'extension',
         added_at: new Date().toISOString(),
-        is_recommended: suggestion.is_recommended !== undefined ? suggestion.is_recommended : existingSegment.is_recommended || false,
+        is_recommended: suggestion.is_recommended !== undefined ? suggestion.is_recommended : existing.is_recommended || false,
       })
-      .eq('id', existingSegment.id)
+      .eq('id', existing.id)
       .select()
       .single();
 
@@ -128,12 +129,13 @@ export async function addSegmentFromSuggestion(
   }
 
   // Insert new segment
+  const existingMode = (existing as any)?.construction_mode || 'extension';
   const { data, error } = await supabase
     .from('audience_segments')
     .insert({
       audience_id: audienceId,
       segment_type: segmentType,
-      construction_mode: existing?.construction_mode || 'extension',
+      construction_mode: existingMode,
       provider: suggestion.provider,
       segment_key: suggestion.segment_key,
       segment_label: suggestion.segment_label,
@@ -148,7 +150,7 @@ export async function addSegmentFromSuggestion(
       created_by_mode: suggestion.created_by_mode || 'extension',
       added_at: new Date().toISOString(),
       is_recommended: suggestion.is_recommended || false,
-    })
+    } as any)
     .select()
     .single();
 

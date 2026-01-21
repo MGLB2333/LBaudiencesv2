@@ -25,8 +25,8 @@ export async function updateProfileSettings(
   const existing = await getProfileSettings(audienceId);
   
   if (existing) {
-    const { data, error } = await supabase
-      .from('audience_profile_settings')
+    const { data, error } = await (supabase
+      .from('audience_profile_settings') as any)
       .update(updates)
       .eq('audience_id', audienceId)
       .select()
@@ -40,7 +40,7 @@ export async function updateProfileSettings(
       .insert({
         audience_id: audienceId,
         ...updates,
-      })
+      } as any)
       .select()
       .single();
 

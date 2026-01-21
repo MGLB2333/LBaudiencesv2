@@ -26,7 +26,7 @@ export async function getAvailableSegmentKeys(params?: {
   
   // Group by segment_key and count distinct districts
   const segmentMap = new Map<string, Set<string>>();
-  data?.forEach(row => {
+  (data as any[])?.forEach((row: any) => {
     if (!row.segment_key || !row.district) return;
     if (!segmentMap.has(row.segment_key)) {
       segmentMap.set(row.segment_key, new Set());
@@ -63,7 +63,7 @@ export async function getAvailableSegments(params?: {
   
   // Group by segment_key
   const segmentMap = new Map<string, { districts: Set<string>; providers: Set<string> }>();
-  data?.forEach(row => {
+  (data as any[])?.forEach((row: any) => {
     if (!row.segment_key) return;
     if (!segmentMap.has(row.segment_key)) {
       segmentMap.set(row.segment_key, { districts: new Set(), providers: new Set() });

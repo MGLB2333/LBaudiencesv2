@@ -158,7 +158,7 @@ async function seed() {
       geo_type: 'h3' as const,
       geo_id: `h3_${i}_${Date.now()}`,
       score,
-      confidence_tier: tier as const,
+      confidence_tier: tier as 'high' | 'medium' | 'low' | 'discarded',
       drivers: {
         top_segments: ['older_school_age_families', 'tech_savvy_family_units'],
         variables: ['household_size', 'age_range', 'media_consumption'],

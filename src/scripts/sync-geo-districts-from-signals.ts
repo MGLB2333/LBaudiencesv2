@@ -138,28 +138,36 @@ async function syncGeoDistrictsFromSignals() {
   }
 
   // Check for missing joins
-  const { data: missingJoins, error: joinError } = await supabase
-    .rpc('check_missing_joins', { segment_key: 'home_movers' })
-    .catch(() => {
-      // If RPC doesn't exist, do manual check
-      return supabase
-        .from('geo_district_signals')
+  let missingJoins: any = null;
+  let joinError: any = null;
+  try {
+    const result = await supabase
+      .rpc('check_missing_joins', { segment_key: 'home_movers' } as any);
+    missingJoins = result.data;
+    joinError = result.error;
+  } catch (e) {
+    // If RPC doesn't exist, do manual check
+    const { data: signalData } = await supabase
+      .from('geo_district_signals')
+      .select('district')
+      .eq('segment_key', 'home_movers');
+    
+    if (!signalData) {
+      missingJoins = [];
+      joinError = null;
+    } else {
+      const unique = Array.from(new Set((signalData as any[]).map((s: any) => normalizeDistrict(s.district))));
+      const { data: geoData } = await supabase
+        .from('geo_districts')
         .select('district')
-        .eq('segment_key', 'home_movers')
-        .then(({ data }) => {
-          if (!data) return { data: [], error: null };
-          const unique = Array.from(new Set(data.map(s => normalizeDistrict(s.district))));
-          return supabase
-            .from('geo_districts')
-            .select('district')
-            .in('district', unique)
-            .then(({ data: found }) => {
-              const foundSet = new Set(found?.map(d => d.district) || []);
-              const missing = unique.filter(d => !foundSet.has(d));
-              return { data: missing, error: null };
-            });
-        });
-    });
+        .in('district', unique);
+      
+      const foundSet = new Set(((geoData as any[]) || []).map((d: any) => d.district));
+      const missing = unique.filter(d => !foundSet.has(d));
+      missingJoins = missing;
+      joinError = null;
+    }
+  }
 
   if (!joinError && missingJoins && Array.isArray(missingJoins) && missingJoins.length > 0) {
     console.warn(`⚠️  ${missingJoins.length} districts in signals not found in geo_districts`);

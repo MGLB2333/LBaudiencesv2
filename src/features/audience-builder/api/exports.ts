@@ -29,7 +29,7 @@ export async function createExport(
       user_id: user.id,
       export_type: exportType,
       storage_path: storagePath,
-    })
+    } as any)
     .select()
     .single();
 

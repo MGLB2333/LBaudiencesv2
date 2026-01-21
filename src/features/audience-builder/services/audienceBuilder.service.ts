@@ -73,7 +73,7 @@ export class AudienceBuilderService {
           });
           suggestedSegments.push(...segments);
         } catch (error) {
-          console.warn(`Provider ${provider.name} failed:`, error);
+          console.warn(`Provider ${provider.getMetadata().name} failed:`, error);
         }
       }
 
