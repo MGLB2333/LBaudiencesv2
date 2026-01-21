@@ -113,10 +113,7 @@ export function AudienceSelectionStep({ audienceId, onNext, onBack }: AudienceSe
     return Array.from(keys);
   }, [validators]);
   
-  const { data: providerMetadata = [] } = useProviderMetadata(providerKeys);
-  const providerMetadataMap = useMemo(() => {
-    return new Map(providerMetadata.map(p => [p.provider_key, p]));
-  }, [providerMetadata]);
+  const { data: providerMetadataMap = new Map<string, any>() } = useProviderMetadata(providerKeys);
   
   // Track selected providers (for extension mode)
   const [localSelectedProviders, setLocalSelectedProviders] = useState<string[]>([]);

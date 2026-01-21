@@ -93,7 +93,6 @@ export default function DataPartnersPage() {
           <TableHead>
             <TableRow>
               <TableCell sx={{ fontSize: '0.75rem', fontWeight: 600 }}>Logo</TableCell>
-              <TableCell sx={{ fontSize: '0.75rem', fontWeight: 600 }}>Provider Key</TableCell>
               <TableCell sx={{ fontSize: '0.75rem', fontWeight: 600 }}>Display Name</TableCell>
               <TableCell sx={{ fontSize: '0.75rem', fontWeight: 600 }}>Website</TableCell>
               <TableCell sx={{ fontSize: '0.75rem', fontWeight: 600 }}>Description</TableCell>
@@ -103,7 +102,7 @@ export default function DataPartnersPage() {
           <TableBody>
             {partners.length === 0 ? (
               <TableRow>
-                <TableCell colSpan={6} align="center" sx={{ py: 4 }}>
+                <TableCell colSpan={5} align="center" sx={{ py: 4 }}>
                   <Typography variant="body2" color="text.secondary">
                     No data partners yet. Click &quot;Sync from data&quot; to load providers from uploaded files.
                   </Typography>
@@ -120,7 +119,6 @@ export default function DataPartnersPage() {
                       {partner.display_name.charAt(0)}
                     </Avatar>
                   </TableCell>
-                  <TableCell sx={{ fontSize: '0.8125rem', fontFamily: 'monospace' }}>{partner.provider_key}</TableCell>
                   <TableCell sx={{ fontSize: '0.8125rem', fontWeight: 500 }}>{partner.display_name}</TableCell>
                   <TableCell sx={{ fontSize: '0.8125rem' }}>
                     {partner.website_url ? (

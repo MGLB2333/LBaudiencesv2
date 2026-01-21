@@ -107,10 +107,7 @@ export function useExportContext(audienceId: string): {
   }, [mode, validationResults, providerImpact]);
   
   // Fetch provider metadata
-  const { data: providerMetadata = [] } = useProviderMetadata(providerKeys);
-  const metadataMap = useMemo(() => {
-    return new Map(providerMetadata.map(p => [p.provider_key, p]));
-  }, [providerMetadata]);
+  const { data: providerMetadataMap = new Map<string, any>() } = useProviderMetadata(providerKeys);
 
   const isLoading = mode === 'validation' ? validationLoading : impactLoading;
 
@@ -165,10 +162,10 @@ export function useExportContext(audienceId: string): {
           ? (districtsContributed / totalIncluded) * 100
           : 0;
 
-        const metadata = metadataMap.get(provider);
+        const metadata = providerMetadataMap.get(provider);
         providersList.push({
           provider,
-          providerLabel: metadata?.display_name || stats.providerSegmentLabel || provider,
+          providerLabel: metadata?.display_name || stats.providerLabel || stats.providerSegmentLabel || provider,
           districtsContributed,
           percentContributed,
           iconUrl: getProviderFavicon(provider, metadata?.logo_url),
@@ -182,7 +179,7 @@ export function useExportContext(audienceId: string): {
           ? (stat.incrementalDistricts / totalIncluded) * 100
           : 0;
 
-        const metadata = metadataMap.get(stat.provider);
+        const metadata = providerMetadataMap.get(stat.provider);
         providersList.push({
           provider: stat.provider,
           providerLabel: metadata?.display_name || stat.provider,
@@ -243,7 +240,7 @@ export function useExportContext(audienceId: string): {
     state.validationMinAgreement,
     dbSelectedKeys,
     anchorKey,
-    metadataMap,
+    providerMetadataMap,
   ]);
 
   return { context, isLoading };

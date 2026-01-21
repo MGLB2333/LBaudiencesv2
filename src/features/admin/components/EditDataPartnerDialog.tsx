@@ -97,14 +97,6 @@ export function EditDataPartnerDialog({ open, onClose, onSave, partner }: EditDa
       <DialogContent>
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2, mt: 1 }}>
           <TextField
-            label="Provider Key"
-            value={partner?.provider_key || ''}
-            disabled
-            fullWidth
-            size="small"
-            helperText="Provider key cannot be changed (matches geo_district_signals.provider)"
-          />
-          <TextField
             label="Display Name"
             value={displayName}
             onChange={(e) => setDisplayName(e.target.value)}

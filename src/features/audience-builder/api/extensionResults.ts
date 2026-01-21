@@ -2,6 +2,7 @@ import { createClient } from '@/lib/supabase/client';
 import { fetchAll } from '@/lib/supabase/pagination';
 import { getAvailableSegmentKeys } from './segmentAvailability';
 import { getDistrictsByTvRegion } from './tvRegions';
+import { getDataPartnersByKeys } from '@/features/admin/api/dataPartners';
 
 export interface ExtensionSuggestion {
   segment_key: string;
@@ -19,6 +20,7 @@ export interface ExtensionSuggestion {
 
 export interface ProviderImpactStats {
   provider: string;
+  providerLabel?: string; // Display name from data_partners
   providerLabelForSegments: Record<string, string>; // segment_key -> provider_label
   districtsSupporting: number;
   incrementalDistricts: number;
@@ -480,10 +482,23 @@ export async function getProviderImpact({
     }
   }
 
+  // Get provider metadata from data_partners for display names
+  let providerMetadataMap = new Map<string, { display_name: string }>();
+  try {
+    const partners = await getDataPartnersByKeys(Array.from(allProviders));
+    partners.forEach(partner => {
+      providerMetadataMap.set(partner.provider_key, { display_name: partner.display_name });
+    });
+  } catch (error) {
+    console.warn('Failed to fetch provider metadata:', error);
+  }
+
   // Initialize provider stats
   for (const provider of allProviders) {
+    const metadata = providerMetadataMap.get(provider);
     providerStatsMap.set(provider, {
       provider,
+      providerLabel: metadata?.display_name || provider,
       providerLabelForSegments: {},
       districtsSupporting: 0,
       incrementalDistricts: 0,

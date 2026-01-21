@@ -1,10 +1,12 @@
 import { createClient } from '@/lib/supabase/client';
 import { fetchAll } from '@/lib/supabase/pagination';
 import { getDistrictsByTvRegion } from './tvRegions';
+import { getDataPartnersByKeys } from '@/features/admin/api/dataPartners';
 
 export interface ProviderStats {
   agreeingDistricts: number;
   providerSegmentLabel?: string;
+  providerLabel?: string; // Display name from data_partners
 }
 
 export interface IncludedDistrict {
@@ -178,6 +180,17 @@ export async function getValidationResults({
     districtMapsByProvider.set(provider, districtMap);
   }
 
+  // Get provider metadata from data_partners for display names
+  let providerMetadataMap = new Map<string, { display_name: string }>();
+  try {
+    const partners = await getDataPartnersByKeys(Array.from(validatingProviders));
+    partners.forEach(partner => {
+      providerMetadataMap.set(partner.provider_key, { display_name: partner.display_name });
+    });
+  } catch (error) {
+    console.warn('Failed to fetch provider metadata:', error);
+  }
+
   // Process each eligible district to compute agreement
   const agreementByDistrict: Record<string, number> = {};
   const providerStats: Record<string, ProviderStats> = {};
@@ -186,9 +199,11 @@ export async function getValidationResults({
   for (const provider of validatingProviders) {
     const providerSignals = signalsByProvider.get(provider) || [];
     const firstSignal = providerSignals[0];
+    const metadata = providerMetadataMap.get(provider);
     providerStats[provider] = {
       agreeingDistricts: 0,
       providerSegmentLabel: firstSignal?.provider_segment_label || undefined,
+      providerLabel: metadata?.display_name || provider,
     };
   }
 
